@@ -32,7 +32,7 @@ header {
         }  
     }
 }
-#site-logo {
+#site_logo {
     height: 40px;
     width: auto;
     display: flex;
@@ -50,203 +50,141 @@ header {
         }
     }
 }
-.header-text {
-    font-size: 1.2rem;
-    margin-left: 15px;
-}
 
-#header-right{
-    display: none;
-    background-image: url(common/images/sp-menu-bg.jpg);
-    background-size: auto;
-    position: fixed;
-    width: 100%;
-    top: 60px;
-    left: 0;
-    z-index: 1;
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: calc(100vh - 60px);
-    background-repeat: repeat;
-    height: calc((var(--vh) * 100) - 60px);
-    height: -webkit-fill-available;
-    // &.open{ 
-    //     height: calc((var(--vh) * 100) - 60px);
-    // }
-    #global-nav{
-        display: flex;
-        width: 100%;
-        height: 100%;
-        flex-flow: column;
-        justify-content: flex-start;
-        box-sizing: border-box;
-        padding: 60px;
-        li{
-            margin: 10px auto;
-            a {
-                font-size: 1.8rem;
-                color: #000;
-                text-decoration: none;
-                font-family: "Sawarabi Mincho";
-              }
-        }
-        .sns_icon_wrap {
-            display: flex;
-            justify-content: space-between;
-            .sns_icon_wrap {
-                width: 90px;
-              }
-            a {
-                width: 40px;
-                display: block;
-            }
-        }
-    }
-    @media screen and (min-width:960px){
-        display: flex !important;
-        background-color: transparent;
-        height: 40px;
-        width: auto;
-        position: relative;
-        overflow: visible;
-        background-image: none;
-        top: 0;
-        left: auto;
-        right: 0;
-        flex-flow: column;
-        justify-content: center;
-        justify-content: space-between;
-        #global-nav{
-            height: auto;
-            flex-flow: row nowrap;
-            justify-content: center;
-            line-height: 1;
-            padding: 0;
-            li{
-                margin: 0;
-                line-height: 1;
-                &:not(:nth-child(4)){
-                    margin-right: 30px;
-                }
-                a {
-                    font-size: 1.4rem;
-                    color: #395700;
-                  }
-            }
-        }
-        #sub-nav{
-            height: auto;
-            flex-flow: row nowrap;
-            justify-content: flex-end;
-            display: flex;
-            line-height: 1;
-            li{
-                margin: 0;
-                line-height: 1;
-                &:not(:last-child){
-                    margin-right: 15px;
-                }
-                a {
-                    font-size: 1.3rem;
-                    color: #717171;
-                  }
-            }
-        }
-    }
-    @media screen and (min-width:1280px){
-        height: 45px;
-        #global-nav{
-            li{
-                &:not(:nth-child(4)){
-                    margin-right: 40px;
-                }
-                a {
-                    font-size: 1.8rem;
-                  }
-            }
-        }
-        #sub-nav{
-            li{
-                &:not(:last-child){
-                    margin-right: 18px;
-                }
-                a {
-                    font-size: 1.4rem;
-                  }
-            }
-        }
-    }
-}
-
-#header-toggle {
-    position: fixed;
-    right: 0;
+#header-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    align-items: center;
+    height: 70px;
+    position: absolute;
     top: 0;
-    width: 60px;
-    height: 60px;
-    z-index: 2000;
-    cursor: pointer;
-    @media screen and (min-width:960px){
-        display: none;
+    width: 100%;
+    background-color: #fff;
+    z-index: 200;
+    
+  }
+
+#header-top-left {
+    a {
+        display: block;
+        margin-left: 15px;
+        position: relative;
+      }
+      .site-logo {
+        img {
+            height: 40px;
+            width: auto;
+        }
     }
 }
-.toggle-wrap{
-    width: 60px;
-    height: 60px; 
-    background-color: transparent;
-    position: relative;
-    transition: background-color .5s;
-    &.open {
-        transition: background-color .5s;
-        span{
-            border-top: 3px solid #000;
-            &:nth-child(1) {
-                transform-origin: left top;
-                transform: rotate(45deg)translateY(-50%);
-                transition: all .5s;
-                left: 13px;
-                width: 44px;
-                top: 15px;
+
+#header-top-right {
+    margin-right: 30px;
+}
+#sab-navi {
+    display: none; 
+    ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+        li{
+            margin-left: 30px;
+            font-size: 13px;
+            font-size: 1.3rem;
+            line-height: 1;
+            padding-left: 1.3rem;
+            position: relative;
+            &::before{
+                position: absolute;
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-right: 1px solid #3B453E;
+                border-bottom: 1px solid #3B453E;
+                left: 0;
+                top: 50%;
+                display: block;
+                transform: translateY(-50%) rotate(-45deg);
             }
-            &:nth-child(2)  {
-                transform-origin: center;
-                width: 0;
-                transition: width .5s;
-            }
-            &:nth-child(3) {
-                transform-origin: left bottom;
-                transform: rotate(-45deg)translateY(-50%);
-                transition: all .5s;
-                left: 15px;
-                width: 44px;
-                bottom: 12px;
+            &:first-child{
+                margin-left: 0px;
+                font-size: 13px;
+                font-size: 1.3rem;
+                line-height: 1;
             }
         }
     }
-    span {
-        position: absolute;
-        border-top: 3px solid #000;
-        width: 40px;
-        &:nth-child(1) {
-            top: 16px;
-            transform-origin: left top;
-            left: 10px;
-            transform: translateY(-50%);
-            transition: all .5s;
+ }
+ 
+
+
+ #toggle {
+    display: block;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    position: fixed;
+    top: 23px;
+    right: 20px;
+    z-index: 300;
+}
+#toggle-inner {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 100%;
+    span{
+        border-top: 3px solid #0080c9;
+        &:nth-child(1){
+            border-top: 3px solid #0080c9;
+            width: 100%;
+            transition:transform 0.5s;
+            transform-origin: top left;
+            transform: rotate(0)translate(0,0);
         }
-        &:nth-child(2) {
-            top: 50%;
-            width: 40px;
-            transition: width .5s;
-            left: 50%;
-            transform: translate(-50%,-50%);
+        &:nth-child(2){
+            border-top: 3px solid #0080c9;
+            width: 100%;
+            transform: scale(1,1);
+            transition:transform 0.5s;
+            transform-origin: center;
         }
-        &:nth-child(3) {
-            bottom: 13px;
-            transform-origin: left bottom;
-            left: 10px;
-            transform: translateY(-50%);
-            transition: all .5s;
+        &:nth-child(3){
+            border-top: 3px solid #0080c9;
+            width: 100%;
+            transition:transform 0.5s;
+            transform-origin: bottom left;
+            transform: rotate(0)translate(0,0);
+        }
+    }
+    .open {
+        #toggle-inner {
+            span{
+                border-top: 3px solid #fff;
+                &:nth-child(1){
+                    order-top: 3px solid #0080c9;
+                    width: 95%;
+                    transition: transform 0.5s;
+                    transform-origin: top left;
+                    transform: rotate(45deg)translate(3px,-3px);
+                }
+                &:nth-child(2){
+                    border-top: 3px solid #0080c9;
+                    width: 100%;
+                    transform: scale(0,1);
+                    transition:transform 0.5s;
+                    transform-origin: center;
+                }
+                &:nth-child(3){
+                    border-top: 3px solid #0080c9;
+                    width: 95%;
+                    transition: transform 0.5s;
+                    transform-origin: bottom left;
+                    transform: rotate(-45deg)translate(3px,3px);
+                }
+            }
         }
     }
 }
