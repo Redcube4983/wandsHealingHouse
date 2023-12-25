@@ -13,12 +13,11 @@
     <link rel="stylesheet" href="/common/css/layout/swiper.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/front-page.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <!-- jquery 3.4.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <header class="">
+    <header>
         <div id="header-top">
             <div id="header-top-left">
                 <a href="/">
@@ -37,15 +36,15 @@
             </div>
         </div>
         <div id="toggle">
-            <button id="toggle-inner">
+            <div id="toggle-inner">
                 <span></span>
                 <span></span>
                 <span></span>
-            </button>
+            </div>
         </div>
         <nav id="global-navi">
             <ul id="global-main">
-                <li class="main-navi">
+                <li class="main-navi parent">
                     <a class="main-navi-link" href="#">イベント案内</a>
                 </li>
                 <li class="main-navi">
@@ -97,6 +96,6 @@
     <footer>
     </footer>
     <!-- 共通js -->
-    <script src="<?php echo get_template_directory_uri(); ?>/common/js/common.js"></script>
+    <script src="./common/js/common.js"></script>
 </body>
 </html>
