@@ -1,6 +1,7 @@
 @charset "UTF-8";
 main {
   color: #304536;
+  margin-top: 100px;
 }
 
 .attachment {
@@ -22,7 +23,7 @@ main {
 }
 
 #fv-wrap {
-  margin: 120px 15px;
+  margin: auto 15px 0;
 }
 
 .fv-text-wrap h1 {
@@ -32,27 +33,30 @@ main {
 }
 .fv-text-wrap h1 span {
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  font-size: 20px;
+  font-size: 17px;
+  font-weight: 600;
 }
 .fv-text-wrap h2 {
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
   font-size: 17px;
   line-height: 1;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .fv-text-wrap p {
   font-size: 14px;
   margin-top: 10px;
   text-align: justify;
+  line-height: 2;
 }
 
 .slider {
-  height: 53vw;
   margin-inline: auto;
   overflow: hidden;
+  border-radius: 100% 100% 0 0;
 }
 
 .slick-img img {
-  width: 100%;
+  width: 120%;
 }
 
 @keyframes zoomUp {
