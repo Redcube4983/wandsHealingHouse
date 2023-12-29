@@ -10,11 +10,13 @@
     <meta name="format-detection" content="telephone=no,address=no,email=no">
     <link rel="icon" type="image/x-icon" href="">
     <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="/common/css/layout/swiper.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/front-page.css">
+    <link href="css/slick.css" rel="stylesheet" />
+  <link href="css/slick-theme.css" rel="stylesheet" />
     <!-- jquery 3.4.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/common/js/"></script>
 </head>
 <body>
     <header>
@@ -83,8 +85,8 @@
     </header>
     <main>
         <div class="attachment">
-        <section id="fv_wrap">
-            <div class="fv_text_wrap">
+        <section id="fv-wrap">
+            <div class="fv-text-wrap">
                 <h1><span>Wellness & Spiritual</span><br>健康と心の癒し</h1>
                 <h2>ワンズ ヒーリング ハウスへようこそ</h2>
                 <p>私たちが提供するのは、Wellness (健康)とSpiritual(心の癒し)
@@ -92,13 +94,19 @@
                     ボディセラピー、チャネリングセッション、ワークショップなど
                     一歩進んだヒーリング エクスペリエンスをお楽しみください。</p>
             </div>
-                <div id="slideshow">
-                    <img src="./images/top_slide01.jpg" alt="" class="active">
-                    <img src="./images/top_slide02.jpg" alt="">
-                    <img src="./images/top_slide03.jpg" alt="">
+            <div class="slider">
+                <div class="slick-img">
+                    <img src="./images/top_slide01.jpg" alt="" />
                 </div>
+                <div class="slick-img">
+                    <img src="./images/top_slide02.jpg" alt="" />
+                </div>
+                <div class="slick-img">
+                    <img src="./images/top_slide03.jpg" alt="" />
+                </div>
+            </div>
         </section>
-        <section class="section_p" id="bg_fix_section">
+        <section class="section_p" id="bg-fix-section">
             <div class="inner">
               <div class="bg-fix js-bg-fix">
               </div>
@@ -107,8 +115,44 @@
         </div>
     </main>
     <footer>
+        <script>
+            $(function () {
+            $(".slider")
+                // 最初のスライドに"add-animation"のclassを付ける(data-slick-index="0"が最初のスライドを指す)
+                .on("init", function () {
+                $('.slick-slide[data-slick-index="0"]').addClass("add-animation");
+                })
+                // 通常のオプション
+                .slick({
+                autoplay: true, // 自動再生ON
+                fade: true, // フェードON
+                arrows: false, // 矢印OFF
+                speed: 2000, // スライド、フェードアニメーションの速度1000ミリ秒
+                autoplaySpeed: 4000, // 自動再生速度4000ミリ秒
+                pauseOnFocus: false, // フォーカスで一時停止OFF
+                pauseOnHover: false, // マウスホバーで一時停止OFF
+                })
+                .on({
+                // スライドが移動する前に発生するイベント
+                beforeChange: function (event, slick, currentSlide, nextSlide) {
+                    // 表示されているスライドに"add-animation"のclassをつける
+                    $(".slick-slide", this).eq(nextSlide).addClass("add-animation");
+                    // あとで"add-animation"のclassを消すための"remove-animation"classを付ける
+                    $(".slick-slide", this).eq(currentSlide).addClass("remove-animation");
+                },
+                // スライドが移動した後に発生するイベント
+                afterChange: function () {
+                    // 表示していないスライドはアニメーションのclassを外す
+                    $(".remove-animation", this).removeClass(
+                    "remove-animation add-animation"
+                    );
+                },
+                });
+            });
+        </script>
     </footer>
     <!-- 共通js -->
     <script src="./common/js/common.js"></script>
+    
 </body>
 </html>
