@@ -1,3 +1,8 @@
+@charset "UTF-8";
+main {
+  color: #304536;
+}
+
 .attachment {
   position: relative;
 }
@@ -12,6 +17,52 @@
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("https://jito-site.com/wp-content/uploads/2022/12/test01.jpg");
+  background-image: url("https://base.cube-stg.com/images/bg_attachment.jpg");
   background-size: cover;
+}
+
+#fv-wrap {
+  margin: 120px 15px;
+}
+
+.fv-text-wrap h1 {
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 35px;
+  line-height: 1.3;
+}
+.fv-text-wrap h1 span {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 20px;
+}
+.fv-text-wrap h2 {
+  font-size: 17px;
+  line-height: 1;
+  margin-top: 20px;
+}
+.fv-text-wrap p {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.slider {
+  height: 53vw;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.slick-img img {
+  width: 100%;
+}
+
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15); /* 拡大率 */
+  }
+}
+.add-animation {
+  animation: zoomUp 10s linear 0s normal both;
 }/*# sourceMappingURL=front-page.css.map */

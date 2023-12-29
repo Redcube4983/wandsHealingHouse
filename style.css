@@ -140,7 +140,6 @@ header {
   position: fixed;
   height: 70px;
   width: 100%;
-  background-color: #fff;
   z-index: 100;
   top: 0;
 }
@@ -236,7 +235,6 @@ header {
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: #fff;
   z-index: 200;
 }
 @media screen and (min-width: 920px) {
