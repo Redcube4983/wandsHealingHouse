@@ -1,9 +1,5 @@
 @charset "UTF-8";
-/* CSS Document Theme Name : Wands healing house
-Author : Redcube
-Description : サンプルサンプルサンプル
-Version : 1.0
-*/
+/* CSS Document */
 /*************************************************************************************
                                         フッター
 *************************************************************************************/
@@ -1031,4 +1027,13 @@ strong {
 
 input[type=submit] {
   border-radius: 0;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*
+    Theme Name: WandsHealingHouse
+    Description: ワンズヒーリングハウス
+    Author: ワンズヒーリングハウス
+    Version: ver.1.0
+    License: ライセンス
+*/
+/* CSS Document *//*# sourceMappingURL=style.css.map */
