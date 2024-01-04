@@ -70,9 +70,8 @@ main{
 .pc{
     display: none;
     @media screen and (min-width:768px){
-        display: none;
+        display: block;
     }
-    @media screen and (min-width:960px){
-        display: block;    
+    @media screen and (min-width:960px){   
     }
 }
