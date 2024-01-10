@@ -6,11 +6,12 @@
 @mixin ff-en {
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
-
 main {
     color: #3B453E;
     margin-top: 100px;
-    
+    @media screen and (min-width:920px){
+        margin: 0;
+    }
 }
 .attachment {
     position: relative;
@@ -32,10 +33,33 @@ main {
 
 #fv-wrap {
     margin: auto 30px 0;
+    @media screen and (min-width:920px){
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        // max-width: 1600px;
+        margin: 100px 50px;
+        height: calc(100vh - 160px);
+    }
+    @media screen and (min-width:1280px){
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
   }
 .fv-text-wrap {
     @media screen and (min-width:768px){
         margin: 0 50px;
+    }
+    @media screen and (min-width:920px){
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        @media screen and (min-width:1280px){
+            margin: 100px 0 0 130px;
+            width: 40%;
+            display: block;
+        }
     }
     h1 {
         @include ff-jp();
@@ -45,6 +69,10 @@ main {
             font-size: 50px;
         }
         @media screen and (min-width:920px){
+            font-size: 55px;
+        }
+        @media screen and (min-width:1280px){
+            font-size: 80px;
         }
         span {
             @include ff-en();
@@ -53,7 +81,9 @@ main {
             @media screen and (min-width:768px){
                 font-size: 25px;
             }
-            @media screen and (min-width:920px){
+            @media screen and (min-width:1280px){
+                font-size: 30px;
+                
             }
           }
     }
@@ -67,6 +97,9 @@ main {
         }
         @media screen and (min-width:920px){
         }
+        @media screen and (min-width:1280px){
+            font-size: 30px;
+        }
     }
     p {
         font-size: 14px;
@@ -78,26 +111,13 @@ main {
             margin-top: 15px;
         }
         @media screen and (min-width:920px){
+            font-size: 18px;
+            margin: 20px 0 0 0;
         }
       }
 }
 
-.slider {
-  margin-inline: auto;
-  overflow: hidden;
-  border-radius: 300px 300px 0 0;
-    @media screen and (min-width:768px){
-        border-radius: 500px 500px 0 0;
-    }
-    @media screen and (min-width:920px){
-    }
-}
-.slick-img img {
-    width: 120%;
-    @media screen and (min-width:768px){
-        width: 100%;
-    }
-}
+
 @keyframes zoomUp {
     0% {
     transform: scale(1);
@@ -124,10 +144,15 @@ main {
     margin-top: 5px;
     font-size: 30px;
     @media screen and (min-width:768px){
-
     }
     @media screen and (min-width:920px){
+        margin-top: 10px;
+        font-size: 33px;
     }
+    @media screen and (min-width:1280px){
+        font-size: 40px;
+    }
+    
 }
 @mixin contents-en-ttl {
     color: #54A35D;
@@ -137,6 +162,10 @@ main {
         font-size: 18px;
     }
     @media screen and (min-width:920px){
+        font-size: 20px;
+    }
+    @media screen and (min-width:1280px){
+        
     }
 }
 
@@ -148,6 +177,10 @@ main {
         font-size: 18px;
     }
     @media screen and (min-width:920px){
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    @media screen and (min-width:1280px){
     }
 }
 
@@ -156,6 +189,10 @@ main {
     flex-flow: row-reverse;
     margin-top: 30px;
     @media screen and (min-width:768px){
+        margin-top: 50px;
+    }
+    @media screen and (min-width:920px){
+        margin-top: 30px;
     }
     a {
         padding: 15px 35px;
@@ -202,14 +239,35 @@ main {
         border-radius: 190px;
     }
     @media screen and (min-width:920px){
+        padding: 100px 130px;
     }
+    @media screen and (min-width:1280px){
+        padding: 200px;
+    }
+    
     .ttl-contents-wrap {
         @media screen and (min-width:768px){
             display: flex;
             flex-flow: column;
             justify-content: space-between;
         }
+        @media screen and (min-width:920px){
+            margin-top: 30px;
+            width: 100%;
+        }
+        @media screen and (min-width:1280px){
+            flex-flow: row-reverse;
+        }
       }
+    .ttl-wrap {
+        width: 45%;
+        @media screen and (min-width:920px){
+            width: 100%;
+        }
+        @media screen and (min-width:1280px){   
+            width: 45%;
+        }
+    }
     .en-ttl {
         @include contents-en-ttl();
     }
@@ -225,6 +283,17 @@ main {
             flex-flow: column;
             align-items: end;
         }
+        @media screen and (min-width:920px){
+            display: flex;
+            flex-flow: wrap;
+            align-items: end;
+            margin-top: 50px;
+            @media screen and (min-width:1280px){   
+                margin: 0;
+                width: 50%;
+            }
+        }
+        
         .content-wrap {
             margin: 50px 50px 0;
             @media screen and (min-width:768px){
@@ -235,14 +304,28 @@ main {
                 justify-content: space-between;
                 align-items: center;
             }
+            @media screen and (min-width:920px){
+                margin: 0;
+            }
+            @media screen and (min-width:1280px){   
+                align-items: end;
+            }
             .event-img {
                 @media screen and (min-width:768px){
                     width: 300px;
+                }
+                @media screen and (min-width:920px){
+                    width: 250px;
                 }
             }
             .event-text-button-wrap {
                 @media screen and (min-width:768px){
                     margin-left: 30px;
+                }
+                @media screen and (min-width:920px){
+                    margin-left: 100px;
+                }
+                @media screen and (min-width:1280px){ 
                 }
             }
             .text-wrap {
@@ -252,6 +335,12 @@ main {
                     @media screen and (min-width:768px){
                     }
                     @media screen and (min-width:920px){
+                        font-size: 15px;
+                        margin: 0;
+                    }
+                    @media screen and (min-width:1280px){
+                        font-size: 16px;
+                        margin: 0;
                     }
                     span {
                         font-size: 16px;
@@ -263,6 +352,9 @@ main {
                     }
                 }
             }
+        }
+        .content02-wrap {
+            margin-top: 50px;
         }
     }
     .report-wrap {
@@ -277,20 +369,33 @@ main {
             justify-content: space-between;
         }
         @media screen and (min-width:920px){
+            padding: 30px 30px;
         }
+        @media screen and (min-width:1280px){
+            margin: 100px 150px 0;
+        }
+        
         .text-wrap {
             h3 {
                 @include ff-jp();
                 font-size: 20px;
+                line-height: 1;
                 @media screen and (min-width:768px){
                     font-size: 23px;
                 }
                 @media screen and (min-width:920px){
+                    font-size: 25px;
                 }
             }
             p {
                 margin-top: 10px;
                 font-size: 14px;
+                @media screen and (min-width:768px){
+                    font-size: 15px;
+                }
+                @media screen and (min-width:1280px){
+                    font-size: 16px;
+                }
             }
         }
 
@@ -299,18 +404,28 @@ main {
 }
 
 #menu-wrap {
-    margin: 150px 30px 0;
+    margin: 50px 30px 0;
+    @media screen and (min-width:768px){
+        margin: 150px 80px 0;
+    }
+    @media screen and (min-width:920px){
+        margin: 150px 130px 0;
+    }
+    @media screen and (min-width:1280px){
+        margin: 150px 200px 0;
+    }
     .en-ttl {
         @include contents-en-ttl();
     }
     .contents-ttl {
         @include contents-jp-ttl();
     }
-    .tti-wrap {
+    .ttl-wrap {
         text-align: center;
         @media screen and (min-width:768px){
         }
-        @media screen and (min-width:920px){
+        @media screen and (min-width:1280px){
+            font-size: 33px;
         }
     }
     h3 {
@@ -322,22 +437,41 @@ main {
         }
         @media screen and (min-width:920px){
         }
+        @media screen and (min-width:1280px){
+            font-size: 30px;
+        }
         span {
             font-size: 14px;
             @media screen and (min-width:768px){
                 font-size: 15px;
             }
-            @media screen and (min-width:920px){
+            @media screen and (min-width:1280px){
+                font-size: 18px;
             }
         }          
     }
     p {
         font-size: 14px;
         margin-top: 20px;
+        @media screen and (min-width:768px){
+            font-size: 15px;
+        }
+        @media screen and (min-width:920px){
+            font-size: 16px;
+        }
+        @media screen and (min-width:1280px){
+        }
     }
     .content-wrap {
         margin-top: 50px;
         padding-bottom: 50px;
+        @media screen and (min-width:768px){
+            margin-top: 80px;
+            padding-bottom: 80px;
+        }
+        @media screen and (min-width:920px){
+            width: 100%;
+        }
         &:not(:last-child) {
             border-bottom: 2px dotted #8BBE8E;
         }
@@ -348,6 +482,9 @@ main {
     }
     .content-ttl-wrap {
         margin-top: 30px;
+        @media screen and (min-width:920px){
+            margin: 0;
+        }
     }
     .content-wrap-a {
         @media screen and (min-width:768px){
@@ -355,61 +492,140 @@ main {
         @media screen and (min-width:920px){
         }
     }
-    .content-wrap-a, .content-wrap-b {
+    .content-wrap-a {
         position: relative;
         width: 100%;
         @media screen and (min-width:768px){
             width: 80%;
         }
         @media screen and (min-width:920px){
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+            width: 100%;
         }
-    }
-    .content-wrap-01, .content-wrap-02 {
-      }
-    .menu-img-wrap-a {
-        .bg-wrap {
-            width: 53%;
-            @media screen and (min-width:768px){
-                width: 50%;
+        .menu-img-wrap-a {
+            @media screen and (min-width:920px){
+                width: 45%;
             }
-            .bg {
-                border-radius: 300px 300px 0 0;
+            @media screen and (min-width:1280px){
+                width: 47%;
             }
-        }
-        .menu-img-a {
-            position: absolute;
-            top: 55px;
-            width: 77%;
-            right: 0;
-            @media screen and (min-width:768px){
+            .bg-wrap {
+                width: 53%;
+                @media screen and (min-width:768px){
+                    width: 55%;
+                }
+                @media screen and (min-width:920px){
+                    width: 60%;
+                }
+                .bg {
+                    border-radius: 300px 300px 0 0;
+                }
+            }
+            .menu-img-a {
                 position: absolute;
-                top: 60px;
+                top: 55px;
                 width: 77%;
-                right: 40px;
+                right: 0;
+                @media screen and (min-width:768px){
+                    top: 70px;
+                    width: 80%;
+                    right: 0;
+                }
+                @media screen and (min-width:920px){
+                    top: 75px;
+                    width: 37%;
+                    left: 60px;
+                }
+                @media screen and (min-width:1280px){
+                    top: 130px;
+                    width: 37%;
+                    left: 80px;
+                }
+            }
+        }
+        .text-button-wrap {
+            @media screen and (min-width:920px){
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                width: 45%;
             }
         }
     }
-    .menu-img-wrap-b {
-        display: flex;
-        flex-flow: row-reverse;
-        .bg-wrap {
-            width: 53%;
-            .bg {
-                border-radius: 300px 300px 0 0;
+    .content-wrap-b {
+        position: relative;
+        width: 100%;
+        @media screen and (min-width:768px){
+            width: 80%;
+        }
+        @media screen and (min-width:920px){
+            display: flex;
+            flex-flow: row-reverse;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .menu-img-wrap-b {
+            display: flex;
+            flex-flow: row-reverse;
+            position: relative;
+            @media screen and (min-width:920px){
+                width: 45%;
+            }
+            .bg-wrap {
+                width: 55%;
+                @media screen and (min-width:920px){
+                    width: 60%;
+                }
+                .bg {
+                    border-radius: 300px 300px 0 0;
+                }
+            }
+            .menu-img-b {
+                position: absolute;
+                top: 70px;
+                width: 77%;
+                left: 0;
+                @media screen and (min-width:768px){
+                    width: 80%;
+                }
+                @media screen and (min-width:920px){
+                    right: 0;
+                    width: 83%;
+                    top: 70px;
+                }
+                @media screen and (min-width:1280px){
+                    width: 83%;
+                    top: 130px;
+                    left: 30px;
+                }
             }
         }
-        .menu-img-b {
-            position: absolute;
-            top: 55px;
-            width: 77%;
-            left: 0;
+        .text-button-wrap {
+            @media screen and (min-width:920px){
+                width: 45%;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+            }
         }
     }
+    
+    
 }
 #about-wrap {
-    background: linear-gradient(rgba(0,4,4,0), #9eccbb 30% 85%, rgba(4,4,4,0));
-    @include contents-mt();
-    padding: 0 30px;
+    background: linear-gradient(rgba(0,4,4,0), #9eccbb 30% 80%, rgba(4,4,4,0));
+    padding: 50px 30px;
+    @media screen and (min-width:768px){
+        padding: 100px 80px 50px;
+    }
+    @media screen and (min-width:920px){
+        padding:  150px 130px;
+    }
+    @media screen and (min-width:1280px){
+        padding:  150px 350px;
+    }
     .en-ttl {
         @include contents-en-ttl()
     }
@@ -421,32 +637,113 @@ main {
     }
     .content-wrap {
         margin: 50px 50px 0;
+        @media screen and (min-width:768px){
+            margin: 80px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        @media screen and (min-width:920px){
+        }
+        .about-img-wrap {
+            @media screen and (min-width:768px){
+                width: 40%;
+            }
+            @media screen and (min-width:920px){
+                width: 300px;
+            }  
+            @media screen and (min-width:1280px){
+                width: 350px;
+            }            
+        }
         .text-wrap {
             margin-top: 20px;
+            @media screen and (min-width:768px){
+                margin-top: 0;
+            }
+            @media screen and (min-width:920px){
+            }    
             .about-content-ttl {
                 font-size: 18px;
+                @media screen and (min-width:768px){
+                    font-size: 20px;
+                }
+                @media screen and (min-width:1280px){
+                    font-size: 25px;
+                }    
               }
               p {
                 font-size: 14px;
+                @media screen and (min-width:768px){
+                    
+                }
+                @media screen and (min-width:920px){
+                    margin-top: 10px;
+                    font-size: 15px;
+                }  
+                @media screen and (min-width:1280px){
+                    font-size: 16px;
+                }  
               }
+        }
+        .text-button-wrap {
+            @media screen and (min-width:768px){
+                width: 55%;
+                display: flex;
+                flex-flow: column;
+                justify-content: end;
+            }
+            @media screen and (min-width:920px){
+                width: 50%;
+            }
         }
     }
 }
 
 #contact-button-wrap {
     position: relative;
+    @include contents-mt();
+    @media screen and (min-width:920px){
+        margin: 0;
+    } 
     a {
-        span {
-            font-size: 15px;
-            @include ff-en();
-        }
-        text-decoration: underline;
-        font-size: 18px;
+        font-size: 16px;
         padding: 30px 80px 30px 50px;
         background-image: url(../images/contact-bg-sp.jpg);
         color: #fff;
         position: absolute;
         border-radius: 0 90px 90px 0;
-
+        background-size: cover;
+        transition: .3s;
+        &:hover {
+            opacity: .7;
+        }
+        @media screen and (min-width:768px){
+            padding: 8% 25% 8% 20%;
+            border-radius: 0 120px 120px 0;
+            background-size: cover;
+        }
+        @media screen and (min-width:920px){
+            border-radius: 0 200px 200px 0;
+        }     
+        h3 {
+            text-decoration: underline;
+            @include ff-jp();
+            @media screen and (min-width:768px){
+                font-size: 23px;
+            }
+            @media screen and (min-width:920px){
+                font-size: 26px;
+            }   
+        }
+        span {
+            font-size: 15px;
+            @include ff-en();
+            @media screen and (min-width:768px){
+                font-size: 20px;
+            }
+            @media screen and (min-width:920px){
+                font-size: 23px;
+            }    
+        }
     }
 }

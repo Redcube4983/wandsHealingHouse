@@ -20,24 +20,32 @@
 
 
 footer {
-    .sp {
-        @media screen and (min-width:768px){
-            display: none;
-        }
-    }
     position: relative;
-    margin-top: 230px;
     background: linear-gradient(rgba(0,0,0,0),rgb(255, 255, 255) 20%);
     text-align: center;
     font-size: 12px;
+    padding-top: 130px;
+    margin-top: 130px;
+    @media screen and (min-width:768px){
+        margin-top: 400px;
+    }
+    @media screen and (min-width:920px){
+        margin-top: 350px;
+    }
     .footer-wrap {
         background-image: url(./images/footer-bg.png);
         background-size: 100%;
         background-repeat: no-repeat;
         background-position-y: bottom;
-    }
-    .footer {
         padding: 0 30px;
+        @media screen and (min-width:768px){
+            background-size: 80%;
+        }
+        @media screen and (min-width:920px){
+            background-image: url(./images/footer-bg-pc.png);
+            background-size: 60%;
+            padding-top: 150px;
+        }
     }
   #footer-info {
     height: auto;
@@ -71,6 +79,18 @@ footer {
         // }
     }
     }
+    .sp {
+        @media screen and (min-width:768px){
+            display: none;
+        }
+    }
+    .footer-flbox {
+        @media screen and (min-width:920px){
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
 }
 .copyright {
     position: relative;
@@ -87,15 +107,26 @@ footer {
 #info-wrap {
     margin-top: 30px;
     text-align: left;
+    @media screen and (min-width:920px){
+        margin: 0;
+        width: 45%;
+    }
     p {
         font-size: 15px;
+        @media screen and (min-width:768px){
+            font-size: 17px;
+        }
     }
     span {
         font-size: 17px;
+        @media screen and (min-width:768px){
+            font-size: 19px;
+        }
+        
     }
     .open-wrap {
         padding-bottom: 30px;
-        border-bottom: dotted 2px #9bcc9a;
+        border-bottom: dotted 2px #CCEAE4;
     }
     .access-wrap {
         margin-top: 30px;
@@ -104,6 +135,12 @@ footer {
         margin-top: 30px;
         display: flex;
         justify-content: space-between;
+        font-size: 14px;
+        @media screen and (min-width:768px){
+            font-size: 16px;
+            justify-content: flex-start;
+            margin-top: 50px;
+        }
         a {
             padding: 15px 25px;
             border: solid 1px #629D7C;
@@ -111,6 +148,7 @@ footer {
             color: #629D7C;
             transition: .3s;
             background-color: #fff;
+            display: block;
             @media screen and (min-width:768px){
             }
             @media screen and (min-width:920px){
@@ -120,26 +158,44 @@ footer {
                 background-color: #54A35D;
             }
         }
+        .sns {
+            &:not(:first-child) {
+                margin-left: 12px;
+            }
+        }
     }
 }
-#contact-button-wrap {
-    @include contents-mt();
-}
+
 #footer-site-logo {
     width: 200px;
     display: block;
+    margin-bottom: 20px;
+    @media screen and (min-width:768px){
+        width: 230px;
+    }
+    @media screen and (min-width:920px){
+    }
 }
 #footer-sitemap {
     text-align: left;
     margin-top: 50px;
+    @media screen and (min-width:768px){
+        
+    }
+    @media screen and (min-width:920px){
+        margin: 0;
+        width: 50%;
+    }
 }
 .footer-sitemap {
     display: block;
     @media screen and (min-width:768px){
         display: flex;
         justify-content: space-between;
+        margin-top: 100px;
     }
     @media screen and (min-width:920px){
+        margin: 0;
     }
     .main-navi {
         width: 100%;
@@ -148,8 +204,11 @@ footer {
         position: relative;
         &:nth-child(-n + 3) {
             @media screen and (min-width:768px){
-                border-top: 2px solid #9bcc9a;
+                border-top: 2px solid #CCEAE4;
                 margin-bottom: 50px;
+            }
+            @media screen and (min-width:768px){
+                margin-bottom: 70px;
             }
           }
         h3 {
@@ -169,6 +228,9 @@ footer {
                 border-bottom: inherit;
                 padding: 0;
                 margin-top: 20px;
+            }
+            @media screen and (min-width:768px){
+                margin-top: 30px;
             }
             a.main-navi-link {
                 color: #304536;

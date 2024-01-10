@@ -46,14 +46,10 @@ main{
         display: none;
     }
     @media screen and (min-width:960px){
-        display: none;    
     }
 }
 .sp-tab{
     display: block;
-    @media screen and (min-width:768px){
-        display: block;
-    }
     @media screen and (min-width:960px){
         display: none;    
     }
@@ -69,9 +65,29 @@ main{
 }
 .pc{
     display: none;
+    @media screen and (min-width:960px){  
+        display: block; 
+    }
+    @media screen and (min-width:1280px){   
+       
+    }
+}
+.pc2 {
+    display: none;
     @media screen and (min-width:768px){
+    }
+    @media screen and (min-width:920px){
+    }
+    @media screen and (min-width:1280px){   
         display: block;
     }
-    @media screen and (min-width:960px){   
+}
+.br01 {
+    display: block;
+    @media screen and (min-width:960px){  
+        display: none; 
+    }
+    @media screen and (min-width:1280px){   
+       display: block;
     }
 }
