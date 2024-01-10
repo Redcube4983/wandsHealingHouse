@@ -16,13 +16,13 @@ Template Name: front-page
                 </div>
                 <div class="slider">
                     <div class="slick-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>./images/top_slide01.jpg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/top_slide01.jpg" alt="">
                     </div>
                     <div class="slick-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>./images/top_slide02.jpg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/top_slide02.jpg" alt="">
                     </div>
                     <div class="slick-img">
-                        <img src="<?php echo get_template_directory_uri(); ?>./images/top_slide03.jpg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/top_slide03.jpg" alt="">
                     </div>
                 </div>
             </section>
@@ -44,7 +44,7 @@ Template Name: front-page
                     <div class="contents-wrap">
                         <div class="content-wrap content01-wrap">
                             <div class="event-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>./images/event-img01.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/event-img01.jpg" alt="">
                             </div>
                             <div class="event-text-button-wrap">
                                 <div class="text-wrap">
@@ -57,7 +57,7 @@ Template Name: front-page
                         </div>
                         <div class="content-wrap content02-wrap">
                             <div class="event-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>./images/event-img02.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/event-img02.jpg" alt="">
                             </div>
                             <div class="event-text-button-wrap">
                                 <div class="text-wrap">
@@ -93,10 +93,10 @@ Template Name: front-page
                     <div class="content-wrap-a">
                         <div class="menu-img-wrap-a">
                             <div class="bg-wrap">
-                                <img class="bg" src="<?php echo get_template_directory_uri(); ?>./images/menu-bg-gre.jpg" alt="">
+                                <img class="bg" src="<?php echo get_template_directory_uri(); ?>/images/menu-bg-gre.jpg" alt="">
                             </div>
                             <div class="menu-img-a">
-                                <img src="<?php echo get_template_directory_uri(); ?>./images/menu-img01.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/menu-img01.jpg" alt="">
                             </div>
                         </div>
                         <div class="text-button-wrap">
@@ -117,10 +117,10 @@ Template Name: front-page
                     <div class="content-wrap-b">
                         <div class="menu-img-wrap-b">
                             <div class="bg-wrap">
-                                <img class="bg" src="<?php echo get_template_directory_uri(); ?>./images/menu-bg-yer.jpg" alt="">
+                                <img class="bg" src="<?php echo get_template_directory_uri(); ?>/images/menu-bg-yer.jpg" alt="">
                             </div>
                             <div class="menu-img-b">
-                                <img src="<?php echo get_template_directory_uri(); ?>./images/menu-img02.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/menu-img02.jpg" alt="">
                             </div>
                         </div>
                         <div class="text-button-wrap">
@@ -143,10 +143,10 @@ Template Name: front-page
                     <div class="content-wrap-a">
                         <div class="menu-img-wrap-a">
                             <div class="bg-wrap">
-                                <img class="bg" src="<?php echo get_template_directory_uri(); ?>./images/menu-bg-red.jpg" alt="">
+                                <img class="bg" src="<?php echo get_template_directory_uri(); ?>/images/menu-bg-red.jpg" alt="">
                             </div>
                             <div class="menu-img-a">
-                                <img src="<?php echo get_template_directory_uri(); ?>./images/menu-img03.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/menu-img03.jpg" alt="">
                             </div>
                         </div>
                         <div class="text-button-wrap">
@@ -179,7 +179,7 @@ Template Name: front-page
                 <div class="contents-wrap">
                     <div class="content-wrap content01-wrap">
                         <div class="about-img-wrap">
-                            <img src="<?php echo get_template_directory_uri(); ?>./images/about-img01.jpg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/about-img01.jpg" alt="">
                         </div>
                         <div class="text-button-wrap">
                             <div class="text-wrap">
@@ -195,7 +195,7 @@ Template Name: front-page
                     </div>
                     <div class="content-wrap content02-wrap">
                         <div class="about-img-wrap">
-                            <img src="<?php echo get_template_directory_uri(); ?>./images/about-img02.jpg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/about-img02.jpg" alt="">
                         </div>
                         <div class="text-button-wrap">
                             <div class="text-wrap">
@@ -210,7 +210,7 @@ Template Name: front-page
                     </div>
                     <div class="content-wrap content03-wrap">
                         <div class="about-img-wrap">
-                            <img src="<?php echo get_template_directory_uri(); ?>./images/about-img03.jpg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/about-img03.jpg" alt="">
                         </div>
                         <div class="text-button-wrap">
                             <div class="text-wrap">

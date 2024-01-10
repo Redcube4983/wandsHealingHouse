@@ -11,9 +11,9 @@
     <link rel="icon" type="image/x-icon" href="">
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>./css/front-page.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>./css/slick.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>./css/slick-theme.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/front-page.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick-theme.css">
     <!-- jquery 3.6.1 -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <?php wp_head(); ?>
@@ -23,7 +23,7 @@
         <div id="header-top">
             <div id="header-top-left">
                 <a href="/">
-                    <h1 class="site-logo"><img src="<?php echo get_template_directory_uri(); ?>./common/imges/house_logo.png" width="300" height="70" alt=""></h1>
+                    <h1 class="site-logo"><img src="<?php echo get_template_directory_uri(); ?>/common/images/house_logo.png" width="300" height="70" alt=""></h1>
                 </a>
             </div>
             <div id="header-top-right">
