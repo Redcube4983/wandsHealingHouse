@@ -31,7 +31,6 @@ footer {
         margin-top: 400px;
     }
     @media screen and (min-width:920px){
-        margin-top: 350px;
     }
     .footer-wrap {
         background-image: url(./images/footer-bg.png);
@@ -143,7 +142,7 @@ footer {
             margin-top: 50px;
         }
         a {
-            padding: 15px 25px;
+            padding: 12px 18px;
             border: solid 1px #629D7C;
             border-radius: 50px;
             color: #629D7C;
@@ -151,6 +150,7 @@ footer {
             background-color: #fff;
             display: block;
             @media screen and (min-width:768px){
+                padding: 15px 20px;
             }
             @media screen and (min-width:920px){
             }
@@ -161,7 +161,10 @@ footer {
         }
         .sns {
             &:not(:first-child) {
-                margin-left: 12px;
+                margin-left: 5px;
+                @media screen and (min-width:768px){
+                    margin-left: 15px;
+                }
             }
         }
     }

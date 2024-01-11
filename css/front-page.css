@@ -1,7 +1,7 @@
 @charset "UTF-8";
 main {
   color: #3B453E;
-  margin-top: 100px;
+  margin: 0;
 }
 @media screen and (min-width: 920px) {
   main {
@@ -23,20 +23,24 @@ main {
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("https://base.cube-stg.com/images/bg_attachment.jpg");
+  background-image: url("https://wandsjapan.cube-stg.com/wp-content/themes/wandsHealingHouse/images/bg_attachment.jpg");
   background-size: cover;
 }
 
 #fv-wrap {
-  margin: auto 30px 0;
+  margin: 0;
+  height: 100vh;
+  padding: 60px 30px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 920px) {
   #fv-wrap {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    margin: 100px 50px;
-    height: calc(100vh - 160px);
+    padding: 60px 50px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -151,7 +155,7 @@ main {
 .button-wrap {
   display: flex;
   flex-flow: row-reverse;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 @media screen and (min-width: 768px) {
   .button-wrap {
@@ -239,9 +243,6 @@ main {
   #event-wrap .ttl-contents-wrap {
     flex-flow: row-reverse;
   }
-}
-#event-wrap .ttl-wrap {
-  width: 45%;
 }
 @media screen and (min-width: 920px) {
   #event-wrap .ttl-wrap {
@@ -625,9 +626,9 @@ main {
 }
 #menu-wrap .content-wrap-a .menu-img-wrap-a .menu-img-a {
   position: absolute;
-  top: 55px;
+  top: 45px;
   width: 77%;
-  right: 0;
+  right: 32px;
 }
 @media screen and (min-width: 768px) {
   #menu-wrap .content-wrap-a .menu-img-wrap-a .menu-img-a {
@@ -698,9 +699,9 @@ main {
 }
 #menu-wrap .content-wrap-b .menu-img-wrap-b .menu-img-b {
   position: absolute;
-  top: 70px;
+  top: 50px;
   width: 77%;
-  left: 0;
+  left: 30px;
 }
 @media screen and (min-width: 768px) {
   #menu-wrap .content-wrap-b .menu-img-wrap-b .menu-img-b {
@@ -717,7 +718,7 @@ main {
 @media screen and (min-width: 1280px) {
   #menu-wrap .content-wrap-b .menu-img-wrap-b .menu-img-b {
     width: 83%;
-    top: 130px;
+    top: 115px;
     left: 30px;
   }
 }
@@ -886,7 +887,7 @@ main {
   }
 }
 #contact-button-wrap a {
-  font-size: 16px;
+  font-size: 14px;
   padding: 30px 80px 30px 50px;
   background-image: url(../images/contact-bg-sp.jpg);
   color: #fff;
@@ -900,9 +901,10 @@ main {
 }
 @media screen and (min-width: 768px) {
   #contact-button-wrap a {
-    padding: 8% 25% 8% 20%;
+    padding: 7% 20% 7% 16%;
     border-radius: 0 120px 120px 0;
     background-size: cover;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 920px) {

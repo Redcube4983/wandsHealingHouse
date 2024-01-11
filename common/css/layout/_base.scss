@@ -36,7 +36,6 @@ body.fixed {
         width: 80%;
 }
 main{
-    padding-top: 60px;
     @media screen and (min-width:960px){
         padding-top: 80px;   
     }
@@ -90,5 +89,11 @@ main{
     }
     @media screen and (min-width:1280px){   
        display: block;
+    }
+}
+.br02 {
+    display: block;
+    @media screen and (min-width:1280px){
+        display: none;    
     }
 }

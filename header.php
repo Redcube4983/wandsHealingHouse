@@ -10,7 +10,7 @@
     <meta name="format-detection" content="telephone=no,address=no,email=no">
     <link rel="icon" type="image/x-icon" href="">
     <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/front-page.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slick-theme.css">
@@ -58,10 +58,10 @@
                     <a class="main-navi-link" href="#">チャネリングセッション</a>
                 </li>
                 <li class="main-navi">
-                    <a class="main-navi-link" href="#">イベント/<br class="pc">ワークショップ</a>
+                    <a class="main-navi-link" href="#">イベント/<br class="br02">ワークショップ</a>
                 </li>
                 <li class="main-navi parent">
-                    <a class="main-navi-link" href="#">ワンズヒーリング<br class="pc">ハウスについて</a>
+                    <a class="main-navi-link" href="#">ワンズヒーリング<br class="br02">ハウスについて</a>
                     <div><span></span></div>
                     <ul class="sab-nav">
                         <li><a href="#">大天使ミハエル</a></li>
