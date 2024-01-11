@@ -85,6 +85,8 @@
         </div>
         <p class="copyright">Copyright ©  Wands Healing House. All rights reserved</p>
     </div>
+</footer>
+    <script src="<?php echo get_template_directory_uri(); ?>/common/js/swiper.min.js"></script>
     <script>
         const swiper = new Swiper(".swiper", {
         loop: true,
@@ -95,15 +97,8 @@
             disableOnInteraction: false, // ユーザーが操作しても自動再生を継続
         },
         speed: 2000, // 2秒かけてフェード
-        // ページネーション
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
         });
     </script>
-</footer>
-<script src="<?php echo get_template_directory_uri(); ?>/common/js/swiper-bundle.min.js"></script>
 <!-- 共通js -->
 <script src="<?php echo get_template_directory_uri(); ?>/common/js/common.js"></script>
 <?php wp_footer(); ?>
