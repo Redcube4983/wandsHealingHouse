@@ -221,12 +221,6 @@ body.fixed {
   width: 80%;
 }
 
-@media screen and (min-width: 960px) {
-  main {
-    padding-top: 80px;
-  }
-}
-
 .sp {
   display: block;
 }
