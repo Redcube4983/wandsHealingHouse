@@ -86,10 +86,24 @@
         <p class="copyright">Copyright ©  Wands Healing House. All rights reserved</p>
     </div>
     <script>
-        
+        const swiper = new Swiper(".swiper", {
+        loop: true,
+        effect: "fade", // フェード切り替え
+        // 自動再生
+        autoplay: {
+            delay: 4000, // 4秒後に次のスライドへ
+            disableOnInteraction: false, // ユーザーが操作しても自動再生を継続
+        },
+        speed: 2000, // 2秒かけてフェード
+        // ページネーション
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
     </script>
 </footer>
-<script src="<?php echo get_template_directory_uri(); ?>/common/js/slick.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/common/js/swiper-bundle.min.js"></script>
 <!-- 共通js -->
 <script src="<?php echo get_template_directory_uri(); ?>/common/js/common.js"></script>
 <?php wp_footer(); ?>

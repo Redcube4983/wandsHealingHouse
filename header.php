@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css.map">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/front-page.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/common/css/swiper-bundle.min.css">
     <!-- jquery 3.6.1 -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <?php wp_head(); ?>
