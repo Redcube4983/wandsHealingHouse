@@ -28,10 +28,51 @@ main {
     }
 }
 
+.swiper {
+    border-radius: 100vw 100vw 0 0;
+    margin-top: 20px;
+    width: 100%;
+    // &::before {
+    //     content: "";
+    //     width: 100%;
+    //     height: 100%;
+    //     background-color: #fff;
+    //     display: inline-block;
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     position: relative;
+    // }
+
+    @media screen and (min-width:768px){
+        
+    }
+    @media screen and (min-width:920px){
+    }
+    @media screen and (min-width:1280px){
+        width: 50%;
+        margin: 0;
+    }
+  }
+  
+  .swiper-slide img {
+    @media screen and (min-width:1280px){
+        width: 110%;
+    }
+  }
+
+  @mixin swiperIMG {
+    content: "";
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+  }
+  
 #fv-wrap {
     margin: 0;
     height: 100vh;
-    padding: 60px 30px;
+    padding: 60px 30px 0;
     box-sizing: border-box;
     position: relative;
     display: flex;
@@ -200,7 +241,7 @@ main {
         margin-top: 30px;
     }
     a {
-        padding: 15px 35px;
+        padding: 10px 25px;
         border-radius: 100px;
         border: solid 1px #54A35D;
         background-color: #fff;
@@ -530,18 +571,18 @@ main {
             }
             .menu-img-a {
                 position: absolute;
-                top: 45px;
+                top: 52px;
                 width: 77%;
                 right: 32px;
                 @media screen and (min-width:768px){
-                    top: 70px;
+                    top: 67px;
                     width: 80%;
                     right: 0;
                 }
                 @media screen and (min-width:920px){
-                    top: 75px;
+                    top: 65px;
                     width: 37%;
-                    left: 60px;
+                    left: 45px;
                 }
                 @media screen and (min-width:1280px){
                     top: 130px;
@@ -589,16 +630,16 @@ main {
             }
             .menu-img-b {
                 position: absolute;
-                top: 50px;
+                top: 60px;
                 width: 77%;
                 left: 30px;
                 @media screen and (min-width:768px){
                     width: 80%;
                 }
                 @media screen and (min-width:920px){
-                    right: 0;
+                    left: 15px;
                     width: 83%;
-                    top: 70px;
+                    top: 65px;
                 }
                 @media screen and (min-width:1280px){
                     width: 83%;

@@ -412,8 +412,7 @@ header.min {
     width: 100%;
     height: 100%;
     text-align: left;
-    // background: rgba(255, 255, 255, 0.9);
-    transition: right 300ms linear;
+    transition: right 300ms linear, background 1s;
     @media screen and (min-width:920px){
         display: block;
         position: relative;
@@ -715,7 +714,7 @@ header.min {
                 width: 100%;
                 li{
                     opacity: 1;
-                    transition: opacity 1s;
+                    transition: opacity .5s;
                 }
             }
             .sab-nav {
@@ -734,7 +733,7 @@ header.min {
 }
 #global-navi.open {
     right: 0;
-    transition: right 300ms linear,background 1s;
+    transition: right 300ms linear,background .5s;
     overflow-x: hidden;
     background: #fff;
     @media screen and (min-width:920px){

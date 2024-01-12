@@ -22,10 +22,28 @@ main {
   background-size: cover;
 }
 
+.swiper {
+  border-radius: 100vw 100vw 0 0;
+  margin-top: 20px;
+  width: 100%;
+}
+@media screen and (min-width: 1280px) {
+  .swiper {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-slide img {
+    width: 110%;
+  }
+}
+
 #fv-wrap {
   margin: 0;
   height: 100vh;
-  padding: 60px 30px;
+  padding: 60px 30px 0;
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -169,7 +187,7 @@ main {
   }
 }
 .button-wrap a {
-  padding: 15px 35px;
+  padding: 10px 25px;
   border-radius: 100px;
   border: solid 1px #54A35D;
   background-color: #fff;
@@ -627,22 +645,22 @@ main {
 }
 #menu-wrap .content-wrap-a .menu-img-wrap-a .menu-img-a {
   position: absolute;
-  top: 45px;
+  top: 52px;
   width: 77%;
   right: 32px;
 }
 @media screen and (min-width: 768px) {
   #menu-wrap .content-wrap-a .menu-img-wrap-a .menu-img-a {
-    top: 70px;
+    top: 67px;
     width: 80%;
     right: 0;
   }
 }
 @media screen and (min-width: 920px) {
   #menu-wrap .content-wrap-a .menu-img-wrap-a .menu-img-a {
-    top: 75px;
+    top: 65px;
     width: 37%;
-    left: 60px;
+    left: 45px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -700,7 +718,7 @@ main {
 }
 #menu-wrap .content-wrap-b .menu-img-wrap-b .menu-img-b {
   position: absolute;
-  top: 50px;
+  top: 60px;
   width: 77%;
   left: 30px;
 }
@@ -711,9 +729,9 @@ main {
 }
 @media screen and (min-width: 920px) {
   #menu-wrap .content-wrap-b .menu-img-wrap-b .menu-img-b {
-    right: 0;
+    left: 15px;
     width: 83%;
-    top: 70px;
+    top: 65px;
   }
 }
 @media screen and (min-width: 1280px) {

@@ -706,7 +706,7 @@ header {
   width: 100%;
   height: 100%;
   text-align: left;
-  transition: right 300ms linear;
+  transition: right 300ms linear, background 1s;
 }
 @media screen and (min-width: 920px) {
   #global-navi {
@@ -1022,7 +1022,7 @@ header {
 }
 #global-navi ul#global-main li ul.sab-nav.open li {
   opacity: 1;
-  transition: opacity 1s;
+  transition: opacity 0.5s;
 }
 @media screen and (min-width: 920px) {
   #global-navi ul#global-main li .sab-nav::before {
@@ -1036,7 +1036,7 @@ header {
 
 #global-navi.open {
   right: 0;
-  transition: right 300ms linear, background 1s;
+  transition: right 300ms linear, background 0.5s;
   overflow-x: hidden;
   background: #fff;
 }
@@ -1289,12 +1289,13 @@ footer #footer-info a .site-logo {
 }
 @media screen and (min-width: 768px) {
   .footer-sitemap .main-navi h3 {
+    font-size: 19px;
     border-bottom: inherit;
     padding: 0;
     margin-top: 20px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 920px) {
   .footer-sitemap .main-navi h3 {
     margin-top: 30px;
   }
