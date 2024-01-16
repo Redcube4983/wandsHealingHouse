@@ -14,24 +14,26 @@ Template Name: front-page
                     <p>私たちが提供するのは、Wellness(健康)と<br class="">Spiritual(心の癒し)<br>新しい価値観に基づくライフスタイルの提案です。<br>
                         ボディセラピー、チャネリングセッション、<br>ワークショップなど<br>一歩進んだヒーリングエクスペリエンスを<br>お楽しみください。</p>
                 </div>
-                <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="swiper-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/top_slide01.jpg" alt="">
+                <div id="swiper-wrap">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/top_slide01.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/top_slide02.jpg" alt="">   
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/top_slide03.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/top_slide02.jpg" alt="">   
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper-img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/top_slide03.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
                 </div>
 
             </section>

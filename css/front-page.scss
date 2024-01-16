@@ -29,20 +29,17 @@ main {
 }
 
 .swiper {
-    border-radius: 100vw 100vw 0 0;
-    margin-top: 20px;
     width: 100%;
-    // &::before {
-    //     content: "";
-    //     width: 100%;
-    //     height: 100%;
-    //     background-color: #fff;
-    //     display: inline-block;
-    //     background-size: cover;
-    //     background-repeat: no-repeat;
-    //     position: relative;
-    // }
-
+    border-radius: 50vw 50vw 0 0;
+    margin-top: 20px;
+    &::before {
+        content: "";
+        position: relative;
+        width: 100%;
+        display: block;
+        background-color: #fff;
+        padding-top: 100%;
+      }
     @media screen and (min-width:768px){
         
     }
@@ -53,22 +50,12 @@ main {
         margin: 0;
     }
   }
-  
   .swiper-slide img {
     @media screen and (min-width:1280px){
-        width: 110%;
+        width: 100%;
     }
   }
 
-  @mixin swiperIMG {
-    content: "";
-    display: inline-block;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 400px;
-  }
-  
 #fv-wrap {
     margin: 0;
     height: 100vh;

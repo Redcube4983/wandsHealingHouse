@@ -11,9 +11,11 @@
   .swiper-slide-active .swiper-img,
   .swiper-slide-duplicate-active .swiper-img,
   .swiper-slide-prev .swiper-img {
-    animation: zoomUp 7s linear 0s normal both;
+    
   }
   .swiper-slide img {
-    height: auto;
+    height: 100%;
     width: 100%;
+    object-fit: cover;
+    animation: zoomUp 7s linear 0s normal both;
   }
