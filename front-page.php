@@ -7,35 +7,30 @@ Template Name: front-page
     <main>
         <div class="attachment">
         </div>
-            <section id="fv-wrap">
-                <div class="fv-text-wrap">
-                    <h1><span>Wellness & Spiritual</span><br>健康と心の癒し</h1>
-                    <h2>ワンズ ヒーリング ハウスへようこそ</h2>
-                    <p>私たちが提供するのは、Wellness(健康)と<br class="">Spiritual(心の癒し)<br>新しい価値観に基づくライフスタイルの提案です。<br>
-                        ボディセラピー、チャネリングセッション、<br>ワークショップなど<br>一歩進んだヒーリングエクスペリエンスを<br>お楽しみください。</p>
-                </div>
-                <div id="swiper-wrap">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="swiper-img">
+            <section id="fv">
+                <div class="fv-wrap">
+                    <div class="fv-text-wrap">
+                        <h1><span>Wellness & Spiritual</span><br>健康と心の癒し</h1>
+                        <h2>ワンズ ヒーリング ハウスへようこそ</h2>
+                        <p>私たちが提供するのは、Wellness(健康)と<br class="">Spiritual(心の癒し)<br>新しい価値観に基づくライフスタイルの提案です。<br>
+                            ボディセラピー、チャネリングセッション、<br>ワークショップなど<br>一歩進んだヒーリングエクスペリエンスを<br>お楽しみください。</p>
+                    </div>
+                    <div class="swiper-wrap">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
                                     <img src="<?php echo get_template_directory_uri(); ?>/images/top_slide01.jpg" alt="">
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="swiper-img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/top_slide02.jpg" alt="">   
+                                <div class="swiper-slide">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/top_slide02.jpg" alt=""> 
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="swiper-img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/top_slide03.jpg" alt="">
+                                <div class="swiper-slide">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/top_slide03.jpg" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </section>
             <section id="event-wrap">
                 <div class="ttl-contents-wrap">
@@ -121,11 +116,11 @@ Template Name: front-page
                 <div class="content-wrap">
                     <div class="content-wrap-b">
                         <div class="menu-img-wrap-b">
-                            <div class="bg-wrap">
-                                <img class="bg" src="<?php echo get_template_directory_uri(); ?>/images/menu-bg-pin.jpg" alt="">
-                            </div>
                             <div class="menu-img-b">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/menu-img02.jpg" alt="">
+                            </div>
+                            <div class="bg-wrap">
+                                <img class="bg" src="<?php echo get_template_directory_uri(); ?>/images/menu-bg-pin.jpg" alt="">
                             </div>
                         </div>
                         <div class="text-button-wrap">
