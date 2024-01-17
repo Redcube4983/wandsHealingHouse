@@ -7,7 +7,7 @@
                     </h2>
                 </a>
                 <div class="open-wrap">
-                    <p><span>営業時間</span><br>11:00-18:00（最終受付時間）<br>定休日：水曜日</p>
+                    <p><span>営業時間</span><br>11:00-18:00（最終受付時間）<br>定休日：不定休</p>
                 </div>
                 <div class="access-wrap">
                     <p><span>アクセス</span><br>JR山手線 駒込駅（東口または北口）より<br class="sp">

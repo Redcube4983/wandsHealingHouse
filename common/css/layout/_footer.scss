@@ -43,7 +43,7 @@ footer {
         }
         @media screen and (min-width:920px){
             background-image: url(./images/footer-bg-pc.png);
-            background-size: 60%;
+            background-size: 55%;
             padding-top: 150px;
         }
     }
@@ -112,9 +112,9 @@ footer {
         width: 45%;
     }
     p {
-        font-size: 15px;
+        font-size: 13px;
         @media screen and (min-width:768px){
-            font-size: 17px;
+            font-size: 16px;
         }
     }
     span {
@@ -126,7 +126,10 @@ footer {
     }
     .open-wrap {
         padding-bottom: 30px;
-        border-bottom: dotted 2px #CCEAE4;
+        border-bottom: dotted 2px #8BBE8E;
+        @media screen and (min-width:920px){
+            border: none;
+        }
     }
     .access-wrap {
         margin-top: 30px;
@@ -208,7 +211,7 @@ footer {
         position: relative;
         &:nth-child(-n + 3) {
             @media screen and (min-width:768px){
-                border-top: 2px solid #CCEAE4;
+                border-top: 2px solid #8BBE8E;
                 margin-bottom: 50px;
             }
             @media screen and (min-width:768px){
@@ -216,7 +219,7 @@ footer {
             }
           }
         h3 {
-            font-size: 16px;
+            font-size: 13px;
             padding: 10px 0px 10px 0;
             border-bottom: 2px dotted #fff;
             position: relative;
@@ -229,7 +232,7 @@ footer {
             transform: translateX(0);
             text-align: left;
             @media screen and (min-width:768px){
-                font-size: 19px;
+                font-size: 16px;
                 border-bottom: inherit;
                 padding: 0;
                 margin-top: 20px;
@@ -272,7 +275,7 @@ ul.footer-sitemap {
             li {
                 padding: 8px 0px 8px 10px;
                 background-color: #fff;
-                font-size: 16px;
+                font-size: 13px;
                 @media screen and (min-width:768px){
                     background-color: inherit;
                     padding: 0;

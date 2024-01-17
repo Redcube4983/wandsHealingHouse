@@ -10,10 +10,10 @@ Template Name: front-page
             <section id="fv">
                 <div class="fv-wrap">
                     <div class="fv-text-wrap">
-                        <h1><span>Wellness & Spiritual</span><br>健康と心の癒し</h1>
-                        <h2>ワンズ ヒーリング ハウスへようこそ</h2>
-                        <p>私たちが提供するのは、Wellness(健康)と<br class="">Spiritual(心の癒し)<br>新しい価値観に基づくライフスタイルの提案です。<br>
-                            ボディセラピー、チャネリングセッション、<br>ワークショップなど<br>一歩進んだヒーリングエクスペリエンスを<br>お楽しみください。</p>
+                        <h1><span>Channeling & Healing House</span><br>チャネリング＆<br>ヒーリングの家</h1>
+                        <h2>チャネリング体験から始まる新しい<br>ヒーリングの世界へ</h2>
+                        <p>ワンズヒーリングハウスは、<br>都会の騒がしさを忘れる静寂な空間、<br>チャネラー・ミハエルノブコの家。<br>
+                        大天使、精霊など多くの高次元存在たちが織りなす<br>洗練された言葉は、新しい癒しの扉を開きます。</p>
                     </div>
                     <div class="swiper-wrap">
                         <div class="swiper">
@@ -36,7 +36,7 @@ Template Name: front-page
                 <div class="ttl-contents-wrap">
                     <div class="ttl-wrap">
                         <span class="en-ttl">event</span>
-                        <h2 class="contents-ttl">イベント案内</h2>
+                        <h2 class="contents-ttl">イベントプログラム</h2>
                         <p class="lead">ワーズヒーリングハウスでは、様々なイベントや<br>
                             ワークショップを開催しています。<br>
                             お気軽にご参加ください。</p>
@@ -72,7 +72,7 @@ Template Name: front-page
                 </div>
                 <div class="report-wrap">
                     <div class="text-wrap">
-                        <h3>レポート</h3>
+                        <h3>イベントストーリー</h3>
                         <p>開催を終了したイベントについての報告を掲載しています。</p>
                     </div>
                     <div class="button-wrap">
@@ -86,8 +86,8 @@ Template Name: front-page
 
             <section id="menu-wrap">
                 <div class="tti-wrap">
-                    <span class="en-ttl">menu</span>
-                    <h2 class="contents-ttl">ワンズ ヒーリング ハウス のメニュー</h2>
+                    <span class="en-ttl">personal</span>
+                    <h2 class="contents-ttl">パーソナルプログラム</h2>
                 </div>
                 <div class="content-wrap">
                     <div class="content-wrap-a">
@@ -102,9 +102,8 @@ Template Name: front-page
                         <div class="text-button-wrap">
                             <div class="text-wrap">
                                 <div class="content-ttl-wrap">
-                                    <h3>ボディセラピー<br><span>（Body-Reconnection ボディリコネクション）</span></h3>
-                                    <p>BodyとHeartとSpiritが繋がるためのボディセラピーです。<br>
-                                        完全予約制、女性のみ対象といたしております。</p>
+                                    <h3>ボディセラピー</h3>
+                                    <p>身体と心と魂（スピリット）がひとつに繋がるためのセラピーです。</p>
                                 </div>
                             </div>
                             <div class="button-wrap">
@@ -126,8 +125,8 @@ Template Name: front-page
                         <div class="text-button-wrap">
                             <div class="text-wrap">
                                 <div class="content-ttl-wrap">
-                                    <h3>個人チャネリングセッション＆<br class="br01">
-                                        カウンセリング</h3>
+                                    <h3>チャネリングダイアローグ（対話）<br class="br01">
+                                    個人セッション</h3>
                                     <p>お客様とチャネラーが対面(1対1)で大天使ミハエルからの<br>
                                         メッセージをお伝えいたします。<br>
                                         遠隔(ZOOM)でのセッションも承っております。</p>
@@ -183,7 +182,7 @@ Template Name: front-page
                         </div>
                         <div class="text-button-wrap">
                             <div class="text-wrap">
-                                <h3 class="about-content-ttl">代表プロフィール</h3>
+                                <h3 class="about-content-ttl">WANDS アソシエーション</h3>
                                 <p class="">ワンズ ヒーリング ハウス代表・ミハエル ノブコは、<br>
                                     ヒーリングセラピストであり、<br>
                                     大天使ミハエル オフィシャルチャネラーです。</p>
@@ -199,7 +198,7 @@ Template Name: front-page
                         </div>
                         <div class="text-button-wrap">
                             <div class="text-wrap">
-                                <h3 class="about-content-ttl">大天使ミハエル</h3>
+                                <h3 class="about-content-ttl">チャネリングについて</h3>
                                 <p class="">ミハエルは、深い愛のメッセージを私たちに伝え、<br>
                                     「自分を愛すること」の大切さを教えてくれる大天使です。</p>
                             </div>
@@ -216,8 +215,7 @@ Template Name: front-page
                             <div class="text-wrap">
                                 <h3 class="about-content-ttl">ワンズ ヒーリング ハウス<br>
                                     イメージ動画</h3>
-                                <p class="">ミハエルは、深い愛のメッセージを私たちに伝え、<br>
-                                    「自分を愛すること」の大切さを教えてくれる大天使です。</p>
+                                <p class="">ワンズヒーリングハウスの様子を動画でご覧いただけます。</p>
                             </div>
                             <div class="button-wrap">
                                 <a href="#" class="button">read more  ></a>

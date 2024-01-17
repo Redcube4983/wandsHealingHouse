@@ -570,12 +570,11 @@ header {
   position: relative;
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 13px;
 }
 @media screen and (min-width: 920px) {
   #sab-navi ul li:first-child {
     margin-left: 0px;
-    font-size: 14px;
     line-height: 1;
   }
 }
@@ -734,7 +733,7 @@ header {
 @media screen and (min-width: 920px) {
   #global-navi ul#global-main {
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0 0 0 auto;
     height: auto;
     padding: 0;
@@ -751,7 +750,7 @@ header {
 }
 @media screen and (min-width: 920px) {
   #global-navi ul#global-main li.main-navi {
-    width: 16.6666666667%;
+    width: auto;
     border-bottom: 0px solid rgb(0, 102, 75);
   }
 }
@@ -789,7 +788,7 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-size: 16px;
+  font-size: 13px;
   height: 100%;
 }
 #global-navi ul#global-main li.main-navi a.main-navi-link {
@@ -802,6 +801,8 @@ header {
   width: 200px;
   left: 0;
   text-align: left;
+  font-size: 13px;
+  line-height: 1.3;
 }
 @media screen and (min-width: 920px) {
   #global-navi ul#global-main li.main-navi a.main-navi-link {
@@ -814,12 +815,6 @@ header {
     padding: 0;
     font-weight: normal;
     transition: background 0.3s;
-    font-size: 14px;
-  }
-}
-@media screen and (min-width: 920px) {
-  #global-navi ul#global-main li.main-navi a.main-navi-link {
-    font-size: 16px;
   }
 }
 @media screen and (min-width: 920px) {
@@ -834,36 +829,6 @@ header {
 @media screen and (min-width: 920px) {
   #global-navi ul#global-main li.main-navi:first-child {
     border-top: 0px solid rgb(0, 102, 75);
-  }
-}
-@media screen and (min-width: 920px) {
-  #global-navi ul#global-main li.main-navi:nth-child(4) {
-    width: calc(13.3333333333% + 40px);
-  }
-}
-@media screen and (min-width: 1280px) {
-  #global-navi ul#global-main li.main-navi:nth-child(4) {
-    width: calc(10% + 120px);
-  }
-}
-@media screen and (min-width: 920px) {
-  #global-navi ul#global-main li.main-navi:nth-child(5) {
-    width: calc(13.3333333333% + 40px);
-  }
-}
-@media screen and (min-width: 1280px) {
-  #global-navi ul#global-main li.main-navi:nth-child(5) {
-    width: calc(10% + 120px);
-  }
-}
-@media screen and (min-width: 920px) {
-  #global-navi ul#global-main li.main-navi:nth-child(6) {
-    width: calc(13.3333333333% + 80px);
-  }
-}
-@media screen and (min-width: 1280px) {
-  #global-navi ul#global-main li.main-navi:nth-child(6) {
-    width: calc(10% + 250px);
   }
 }
 @media screen and (min-width: 920px) {
@@ -1097,7 +1062,7 @@ footer .footer-wrap {
 @media screen and (min-width: 920px) {
   footer .footer-wrap {
     background-image: url(./images/footer-bg-pc.png);
-    background-size: 60%;
+    background-size: 55%;
     padding-top: 150px;
   }
 }
@@ -1159,11 +1124,11 @@ footer #footer-info a .site-logo {
   }
 }
 #info-wrap p {
-  font-size: 15px;
+  font-size: 13px;
 }
 @media screen and (min-width: 768px) {
   #info-wrap p {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 #info-wrap span {
@@ -1176,7 +1141,12 @@ footer #footer-info a .site-logo {
 }
 #info-wrap .open-wrap {
   padding-bottom: 30px;
-  border-bottom: dotted 2px #CCEAE4;
+  border-bottom: dotted 2px #8BBE8E;
+}
+@media screen and (min-width: 920px) {
+  #info-wrap .open-wrap {
+    border: none;
+  }
 }
 #info-wrap .access-wrap {
   margin-top: 30px;
@@ -1265,7 +1235,7 @@ footer #footer-info a .site-logo {
 }
 @media screen and (min-width: 768px) {
   .footer-sitemap .main-navi:nth-child(-n+3) {
-    border-top: 2px solid #CCEAE4;
+    border-top: 2px solid #8BBE8E;
     margin-bottom: 50px;
   }
 }
@@ -1275,7 +1245,7 @@ footer #footer-info a .site-logo {
   }
 }
 .footer-sitemap .main-navi h3 {
-  font-size: 16px;
+  font-size: 13px;
   padding: 10px 0px 10px 0;
   border-bottom: 2px dotted #fff;
   position: relative;
@@ -1289,7 +1259,7 @@ footer #footer-info a .site-logo {
 }
 @media screen and (min-width: 768px) {
   .footer-sitemap .main-navi h3 {
-    font-size: 19px;
+    font-size: 16px;
     border-bottom: inherit;
     padding: 0;
     margin-top: 20px;
@@ -1334,7 +1304,7 @@ ul.footer-sitemap li.main-navi ul.sab-nav {
 ul.footer-sitemap li.main-navi ul.sab-nav li {
   padding: 8px 0px 8px 10px;
   background-color: #fff;
-  font-size: 16px;
+  font-size: 13px;
 }
 @media screen and (min-width: 768px) {
   ul.footer-sitemap li.main-navi ul.sab-nav li {

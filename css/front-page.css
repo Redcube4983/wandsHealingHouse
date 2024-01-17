@@ -26,6 +26,7 @@ main {
   width: 100%;
   margin-top: 20px;
   position: relative;
+  max-width: 450px;
 }
 .swiper-wrap::before {
   content: "";
@@ -35,11 +36,17 @@ main {
 }
 @media screen and (min-width: 920px) {
   .swiper-wrap::before {
-    padding-top: 90%;
+    padding-top: 120%;
+  }
+}
+@media (orientation: landscape) {
+  .swiper-wrap {
+    width: 50%;
   }
 }
 @media screen and (min-width: 920px) {
   .swiper-wrap {
+    max-width: none;
     width: 50%;
   }
 }
@@ -86,36 +93,43 @@ main {
 .fv-wrap {
   position: absolute;
   z-index: 2;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 85%;
   height: 100%;
-  padding-top: 50px;
+}
+@media (orientation: landscape) {
+  .fv-wrap {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
 }
 @media screen and (min-width: 768px) {
   .fv-wrap {
     width: 80%;
-    margin: 0 auto;
   }
 }
 @media screen and (min-width: 920px) {
   .fv-wrap {
-    align-items: inherit;
-    padding-top: 150px;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
-@media screen and (min-width: 1280px) {
-  .fv-wrap {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
+@media (orientation: landscape) {
+  .fv-text-wrap {
+    width: 48%;
   }
 }
-
 @media screen and (min-width: 920px) {
   .fv-text-wrap {
     display: flex;
@@ -125,61 +139,63 @@ main {
 }
 @media screen and (min-width: 920px) and (min-width: 1280px) {
   .fv-text-wrap {
-    width: 48%;
+    width: 50%;
     display: block;
-    padding: 30px;
-  }
-}
-@media screen and (min-width: 920px) and (min-width: 1480px) {
-  .fv-text-wrap {
-    padding: 100px;
+    margin-bottom: 50px;
   }
 }
 .fv-text-wrap h1 {
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-size: 10vw;
-  line-height: 1.3;
+  font-size: 9vw;
+  line-height: 1.2;
+}
+@media (orientation: landscape) {
+  .fv-text-wrap h1 {
+    font-size: 4vw;
+  }
 }
 @media screen and (min-width: 768px) {
   .fv-text-wrap h1 {
-    font-size: 9vw;
+    font-size: 8vw;
   }
 }
 @media screen and (min-width: 920px) {
   .fv-text-wrap h1 {
-    font-size: 6vw;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .fv-text-wrap h1 {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 }
 .fv-text-wrap h1 span {
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 4vw;
   font-weight: 600;
+  line-height: 1;
+}
+@media (orientation: landscape) {
+  .fv-text-wrap h1 span {
+    font-size: 1.8vw;
+  }
 }
 @media screen and (min-width: 768px) {
   .fv-text-wrap h1 span {
-    font-size: 3vw;
+    font-size: 2.4vw;
   }
 }
 @media screen and (min-width: 920px) {
   .fv-text-wrap h1 span {
-    font-size: 2.5vw;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .fv-text-wrap h1 span {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
 }
 .fv-text-wrap h2 {
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
   font-size: 4.8vw;
   line-height: 1;
-  margin-top: 20px;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+@media (orientation: landscape) {
+  .fv-text-wrap h2 {
+    font-size: 2vw;
+  }
 }
 @media screen and (min-width: 768px) {
   .fv-text-wrap h2 {
@@ -188,30 +204,29 @@ main {
 }
 @media screen and (min-width: 920px) {
   .fv-text-wrap h2 {
-    font-size: 2.5vw;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .fv-text-wrap h2 {
-    font-size: 2vw;
+    font-size: 1.5vw;
+    margin: 5% 0 0 0;
   }
 }
 .fv-text-wrap p {
-  font-size: 14px;
-  margin-top: 10px;
+  font-size: 13px;
+  margin: 10px 0 0 0;
   text-align: justify;
   line-height: 2;
 }
 @media screen and (min-width: 768px) {
   .fv-text-wrap p {
-    font-size: 16px;
-    margin-top: 15px;
+    font-size: 2vw;
   }
 }
 @media screen and (min-width: 920px) {
   .fv-text-wrap p {
-    font-size: 18px;
-    margin: 20px 0 0 0;
+    font-size: 1.2vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .fv-text-wrap p {
+    font-size: 1vw;
   }
 }
 
@@ -698,7 +713,7 @@ main {
 }
 @media screen and (min-width: 920px) {
   #menu-wrap .content-wrap-a .menu-img-wrap-a .bg-wrap {
-    width: 60%;
+    width: 65%;
   }
 }
 #menu-wrap .content-wrap-a .menu-img-wrap-a .bg-wrap .bg {
@@ -713,6 +728,11 @@ main {
 @media screen and (min-width: 1280px) {
   #menu-wrap .content-wrap-a .menu-img-wrap-a .menu-img-a {
     top: 90px;
+  }
+}
+@media screen and (min-width: 1480px) {
+  #menu-wrap .content-wrap-a .menu-img-wrap-a .menu-img-a {
+    top: 120px;
   }
 }
 @media screen and (min-width: 920px) {
@@ -760,7 +780,7 @@ main {
 }
 @media screen and (min-width: 920px) {
   #menu-wrap .content-wrap-b .menu-img-wrap-b .bg-wrap {
-    width: 60%;
+    width: 63%;
   }
 }
 #menu-wrap .content-wrap-b .menu-img-wrap-b .bg-wrap .bg {
@@ -775,6 +795,11 @@ main {
 @media screen and (min-width: 1280px) {
   #menu-wrap .content-wrap-b .menu-img-wrap-b .menu-img-b {
     top: 90px;
+  }
+}
+@media screen and (min-width: 1480px) {
+  #menu-wrap .content-wrap-b .menu-img-wrap-b .menu-img-b {
+    top: 120px;
   }
 }
 @media screen and (min-width: 920px) {
