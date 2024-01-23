@@ -148,7 +148,7 @@ main {
             font-size: 4vw;
         }
         @media screen and (min-width:768px){
-            font-size: 8vw;
+            font-size: 5vw;
         }
         @media screen and (min-width:920px){
             font-size: 3.5vw;
@@ -183,7 +183,7 @@ main {
             font-size: 2vw;
         }
         @media screen and (min-width:768px){
-            font-size: 3vw;
+            font-size: 2.3vw;
         }
         @media screen and (min-width:920px){
             font-size: 1.5vw;
@@ -198,7 +198,7 @@ main {
         text-align: justify;
         line-height: 2;
         @media screen and (min-width:768px){
-            font-size: 2vw;
+            font-size: 1.5vw;
         }
         @media screen and (min-width:920px){
             font-size: 1.2vw;
@@ -334,7 +334,7 @@ main {
         padding: 100px 130px;
     }
     @media screen and (min-width:1280px){
-        padding: 200px;
+        padding: 9%;
     }
     
     .ttl-contents-wrap {
@@ -408,7 +408,6 @@ main {
                     width: 300px;
                 }
                 @media screen and (min-width:920px){
-                    width: 250px;
                 }
             }
             .event-text-button-wrap {
@@ -416,7 +415,7 @@ main {
                     margin-left: 30px;
                 }
                 @media screen and (min-width:920px){
-                    margin-left: 100px;
+                    
                 }
                 @media screen and (min-width:1280px){ 
                 }
@@ -714,7 +713,7 @@ main {
         padding:  150px 130px;
     }
     @media screen and (min-width:1280px){
-        padding:  150px 350px;
+        padding:  150px 18%;
     }
     .en-ttl {
         @include contents-en-ttl()

@@ -47,16 +47,16 @@
         <nav id="global-navi">
             <ul id="global-main">
                 <li class="main-navi parent">
-                    <a class="main-navi-link" href="#">イベント案内</a>
+                    <a class="main-navi-link" href="#">イベントプログラム</a>
                 </li>
                 <li class="main-navi">
-                    <a class="main-navi-link" href="#">レポート</a>
+                    <a class="main-navi-link" href="#">イベントストーリー</a>
                 </li>
                 <li class="main-navi">
                     <a class="main-navi-link" href="#">ボディセラピー</a>
                 </li>
                 <li class="main-navi">
-                    <a class="main-navi-link" href="#">チャネリングセッション</a>
+                    <a class="main-navi-link" href="#">チャネリング ダイアローグ</a>
                 </li>
                 <li class="main-navi">
                     <a class="main-navi-link" href="#">イベント/<br class="br02">ワークショップ</a>
@@ -65,8 +65,8 @@
                     <a class="main-navi-link" href="#">ワンズヒーリング<br class="br02">ハウスについて</a>
                     <div><span></span></div>
                     <ul class="sab-nav">
-                        <li><a href="#">大天使ミハエル</a></li>
-                        <li><a href="#">代表プロフィール</a></li>
+                        <li><a href="#">チャネリングについて</a></li>
+                        <li><a href="#">WANDS アソシエーション</a></li>
                     </ul>
                 </li>
                 <li class="main-navi sp">

@@ -86,7 +86,7 @@ Template Name: front-page
 
             <section id="menu-wrap">
                 <div class="tti-wrap">
-                    <span class="en-ttl">personal</span>
+                    <span class="en-ttl">menu</span>
                     <h2 class="contents-ttl">パーソナルプログラム</h2>
                 </div>
                 <div class="content-wrap">
