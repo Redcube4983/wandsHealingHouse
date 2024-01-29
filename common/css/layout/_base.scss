@@ -21,7 +21,7 @@ body{
 }
 body.fixed {
     position: fixed;
-    @media screen and (min-width:960px){
+    @media screen and (min-width:920px){
         position: relative; 
     }
 }
@@ -36,7 +36,7 @@ body.fixed {
         width: 80%;
 }
 // main{
-//     @media screen and (min-width:960px){
+//     @media screen and (min-width:920px){
 //         padding-top: 80px;   
 //     }
 // }
@@ -45,12 +45,12 @@ body.fixed {
     @media screen and (min-width:768px){
         display: none;
     }
-    @media screen and (min-width:960px){
+    @media screen and (min-width:920px){
     }
 }
 .sp-tab{
     display: block;
-    @media screen and (min-width:960px){
+    @media screen and (min-width:920px){
         display: none;    
     }
 }
@@ -59,13 +59,13 @@ body.fixed {
     @media screen and (min-width:768px){
         display: block;
     }
-    @media screen and (min-width:960px){
+    @media screen and (min-width:920px){
         display: none;    
     }
 }
 .pc{
     display: none;
-    @media screen and (min-width:960px){  
+    @media screen and (min-width:920px){  
         display: block; 
     }
     @media screen and (min-width:1280px){   
@@ -84,7 +84,7 @@ body.fixed {
 }
 .br01 {
     display: block;
-    @media screen and (min-width:960px){  
+    @media screen and (min-width:920px){  
         display: none; 
     }
     @media screen and (min-width:1280px){   

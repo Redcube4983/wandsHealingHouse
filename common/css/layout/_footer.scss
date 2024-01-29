@@ -43,7 +43,7 @@ footer {
         }
         @media screen and (min-width:920px){
             background-image: url(./images/footer-bg-pc.png);
-            background-size: 55%;
+            background-size: 60%;
             padding-top: 150px;
         }
     }
@@ -282,7 +282,6 @@ ul.footer-sitemap {
                     margin-top: 15px;
                 }
                 a{
-                    color: #000;
                     transition: color .3s;
                     &:hover{
                         color: #629D7C;
@@ -290,12 +289,26 @@ ul.footer-sitemap {
                         opacity: 1;
                     }
                 }
+                a.sub-p {
+                    color: #304536;
+                }
+                a.grandchild-p {
+                    color: #52725b;
+                    @media screen and (min-width:768px){
+                        margin-left: 15px;
+                    }
+                }
             }
             li.grandchild {
                 ul {
                     padding: 10px 0 0;
+                    @media screen and (min-width:768px){
+                        padding: 0;
+                    }
+
                 }
             }
+
         }
         ul.sab-nav.open {
             background-color: #fff;

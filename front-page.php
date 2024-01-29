@@ -125,7 +125,7 @@ Template Name: front-page
                         <div class="text-button-wrap">
                             <div class="text-wrap">
                                 <div class="content-ttl-wrap">
-                                    <h3>チャネリングダイアローグ（対話）<br class="br01">
+                                    <h3>チャネリングダイアローグ<br class="br01">（対話）
                                     個人セッション</h3>
                                     <p>お客様とチャネラーが対面(1対1)で大天使ミハエルからの<br>
                                         メッセージをお伝えいたします。<br>

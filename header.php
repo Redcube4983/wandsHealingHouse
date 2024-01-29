@@ -49,11 +49,19 @@
                 <li class="main-navi parent">
                     <a class="main-navi-link" href="#">イベントプログラム</a>
                 </li>
-                <li class="main-navi">
+                <li class="main-navi parent">
                     <a class="main-navi-link" href="#">イベントストーリー</a>
+                    <div><span></span></div>
+                    <ul class="sab-nav">
+                        <li><a href="#">イベントストーリー詳細</a></li>
+                    </ul>
                 </li>
-                <li class="main-navi">
+                <li class="main-navi parent">
                     <a class="main-navi-link" href="#">ボディセラピー</a>
+                    <div><span></span></div>
+                    <ul class="sab-nav">
+                        <li><a href="#">ボディリコネクションセラピー</a></li>
+                    </ul>
                 </li>
                 <li class="main-navi">
                     <a class="main-navi-link" href="#">チャネリング ダイアローグ</a>
@@ -66,19 +74,21 @@
                     <div><span></span></div>
                     <ul class="sab-nav">
                         <li><a href="#">チャネリングについて</a></li>
+                        <li><a class="sp-sub-link" href="#">チャネリングの活用方法</a></li>
                         <li><a href="#">WANDS アソシエーション</a></li>
+                        <li><a class="sp-sub-link" href="#">大天使ミハエルは語る</a></li>
                     </ul>
                 </li>
-                <li class="main-navi sp">
+                <li class="main-navi sp-tab">
                     <a class="main-navi-link" href="#">お客様の声</a>
                 </li>
-                <li class="main-navi sp">
+                <li class="main-navi sp-tab">
                     <a class="main-navi-link" href="#">Q&A</a>
                 </li>
-                <li class="main-navi sp">
+                <li class="main-navi sp-tab">
                     <a class="main-navi-link" href="#">サイトのご利用について</a>
                 </li>
-                <li class="main-navi sp">
+                <li class="main-navi sp-tab">
                     <a class="main-navi-link" href="#">お問い合わせ</a>
                 </li>
             </ul>

@@ -565,15 +565,16 @@ header.min {
                     flex-flow: column;
                     background-color: transparent;
                     height: auto;
-                    padding: 15px 30px 0 45px;
                     list-style: none;
                     top: 100%;
                     position: absolute;
-                    width: 300px;
+                    width: 230px;
                     z-index: 2;
-                    left: 0;
-                    transform: translateX(0);
+                    // left: -60px;
+                    // transform: translateX(0);
                     transition: none;
+                    left: 50%;
+                    transform: translateX(-50%);
                 }
             }
         }
@@ -625,7 +626,7 @@ header.min {
                 margin: 0;
                 list-style: none;
                 position: relative;
-                padding: 0px 0px 20px;
+                padding: 10px 0px 20px;
                 background-color: transparent;
                 z-index: 2;
                 width: 100%;
@@ -662,14 +663,20 @@ header.min {
                         display: flex;
                         justify-content: flex-start;
                         align-items: flex-start;
-                        font-size: 16px;
+                        font-size: 13px;
                         height: 100%;
                         @media screen and (min-width:920px){
-                            font-size: 15px;
+                            font-size: 13px;
                             text-align: left;
                             &:hover {
                                 color: #fff;
                             }
+                        }
+                    }
+                    a.sp-sub-link {
+                        margin-left: 15px;
+                        @media screen and (min-width:768px){
+                            margin: 0;
                         }
                     }
                     

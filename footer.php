@@ -23,27 +23,56 @@
                 <ul class="footer-sitemap">
                     <div class="footer-left">
                         <li class="main-navi parent">
-                            <h3><a class="main-navi-link" href="">イベント案内</a></h3>
+                            <h3><a class="main-navi-link" href="#">イベントプログラム</a></h3>
                             <div><span></span></div>
                             <ul class="sab-nav">
-                                <li><span class="plus"></span><a href="＃">レポート</a></li>
+                                <li><span class="plus"></span><a class="sub-p" href="#">イベント詳細ページ</a></li>
+                                <li class="grandchild">
+                                    <span class="plus"></span><a class="sub-p" href="#">イベントストーリー</a>
+                                    <ul>
+                                        <li>
+                                            <span class="minus"></span><a class="grandchild-p" href="#">イベントストーリー詳細</a>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li class="main-navi parent">
-                            <h3><a class="main-navi-link" href="#">ワンズヒーリングハウスのメニュー</a></h3>
+                            <h3><a class="main-navi-link" href="#">パーソナルプログラム</a></h3>
                             <div><span></span></div>
                             <ul class="sab-nav">
-                                <li><span class="plus"></span><a href="#">ボディセラピー</a></li>
-                                <li><span class="plus"></span><a href="#">チャネリングセッション</a></li>
-                                <li><span class="plus"></span><a href="#">イベント/ワークショップ</a></li>
+                                <li class="grandchild">
+                                    <span class="plus"></span><a class="sub-p" href="#">ボディセラピー</a>
+                                    <ul>
+                                        <li>
+                                            <span class="minus"></span><a class="grandchild-p" href="#">ボディリコネクションセラピー</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="plus"></span><a class="sub-p" href="#">チャネリング ダイアローグ（対話）</a></li>
+                                <li><span class="plus"></span><a class="sub-p" href="#">イベント/ワークショップ</a></li>
                             </ul>
                         </li>
                         <li class="main-navi parent">
                             <h3><a class="main-navi-link" href="#">ワンズヒーリングハウスについて</a></h3>
                             <div><span></span></div>
                             <ul class="sab-nav">
-                                <li><span class="plus"></span><a href="#">大天使ミハエル</a></li>
-                                <li><span class="plus"></span><a href="#">代表プロフィール</a></li>
+                                <li class="grandchild">
+                                    <span class="plus"></span><a class="sub-p" href="#">チャネリングについて</a>
+                                    <ul>
+                                        <li>
+                                            <span class="minus"></span><a class="grandchild-p" href="#">チャネリングの活用方法</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="grandchild">
+                                    <span class="plus"></span><a class="sub-p" href="#">WANDS アソシエーション</a>
+                                    <ul>
+                                        <li>
+                                            <span class="minus"></span><a class="grandchild-p" href="#">大天使ミハエルは語る</a>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                     </div>

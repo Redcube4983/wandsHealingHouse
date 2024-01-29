@@ -204,7 +204,7 @@ body {
 body.fixed {
   position: fixed;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 920px) {
   body.fixed {
     position: relative;
   }
@@ -232,7 +232,7 @@ body.fixed {
 .sp-tab {
   display: block;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 920px) {
   .sp-tab {
     display: none;
   }
@@ -246,7 +246,7 @@ body.fixed {
     display: block;
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 920px) {
   .tab {
     display: none;
   }
@@ -255,7 +255,7 @@ body.fixed {
 .pc {
   display: none;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 920px) {
   .pc {
     display: block;
   }
@@ -272,7 +272,7 @@ body.fixed {
 .br01 {
   display: block;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 920px) {
   .br01 {
     display: none;
   }
@@ -837,15 +837,14 @@ header {
     flex-flow: column;
     background-color: transparent;
     height: auto;
-    padding: 15px 30px 0 45px;
     list-style: none;
     top: 100%;
     position: absolute;
-    width: 300px;
+    width: 230px;
     z-index: 2;
-    left: 0;
-    transform: translateX(0);
     transition: none;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 @media screen and (min-width: 920px) {
@@ -895,7 +894,7 @@ header {
   margin: 0;
   list-style: none;
   position: relative;
-  padding: 0px 0px 20px;
+  padding: 10px 0px 20px;
   background-color: transparent;
   z-index: 2;
   width: 100%;
@@ -936,16 +935,24 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  font-size: 16px;
+  font-size: 13px;
   height: 100%;
 }
 @media screen and (min-width: 920px) {
   #global-navi ul#global-main li ul.sab-nav li a {
-    font-size: 15px;
+    font-size: 13px;
     text-align: left;
   }
   #global-navi ul#global-main li ul.sab-nav li a:hover {
     color: #fff;
+  }
+}
+#global-navi ul#global-main li ul.sab-nav li a.sp-sub-link {
+  margin-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  #global-navi ul#global-main li ul.sab-nav li a.sp-sub-link {
+    margin: 0;
   }
 }
 #global-navi ul#global-main li ul.sab-nav li.grandchild {
@@ -1062,7 +1069,7 @@ footer .footer-wrap {
 @media screen and (min-width: 920px) {
   footer .footer-wrap {
     background-image: url(./images/footer-bg-pc.png);
-    background-size: 55%;
+    background-size: 60%;
     padding-top: 150px;
   }
 }
@@ -1314,7 +1321,6 @@ ul.footer-sitemap li.main-navi ul.sab-nav li {
   }
 }
 ul.footer-sitemap li.main-navi ul.sab-nav li a {
-  color: #000;
   transition: color 0.3s;
 }
 ul.footer-sitemap li.main-navi ul.sab-nav li a:hover {
@@ -1322,8 +1328,24 @@ ul.footer-sitemap li.main-navi ul.sab-nav li a:hover {
   transition: color 0.3s;
   opacity: 1;
 }
+ul.footer-sitemap li.main-navi ul.sab-nav li a.sub-p {
+  color: #304536;
+}
+ul.footer-sitemap li.main-navi ul.sab-nav li a.grandchild-p {
+  color: #52725b;
+}
+@media screen and (min-width: 768px) {
+  ul.footer-sitemap li.main-navi ul.sab-nav li a.grandchild-p {
+    margin-left: 15px;
+  }
+}
 ul.footer-sitemap li.main-navi ul.sab-nav li.grandchild ul {
   padding: 10px 0 0;
+}
+@media screen and (min-width: 768px) {
+  ul.footer-sitemap li.main-navi ul.sab-nav li.grandchild ul {
+    padding: 0;
+  }
 }
 ul.footer-sitemap li.main-navi ul.sab-nav.open {
   background-color: #fff;
