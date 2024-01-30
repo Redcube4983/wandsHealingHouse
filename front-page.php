@@ -12,8 +12,8 @@ Template Name: front-page
                     <div class="fv-text-wrap">
                         <h1><span>Channeling & Healing House</span><br>チャネリング＆<br>ヒーリングの家</h1>
                         <h2>チャネリング体験から始まる新しい<br>ヒーリングの世界へ</h2>
-                        <p>ワンズヒーリングハウスは、<br>都会の騒がしさを忘れる静寂な空間、<br>チャネラー・ミハエルノブコの家。<br>
-                        大天使、精霊など多くの高次元存在たちが織りなす<br>洗練された言葉は、新しい癒しの扉を開きます。</p>
+                        <p>ワンズヒーリングハウスは、<br class="br-se">都会の騒がしさを忘れる静寂な空間、<br class="br-se">チャネラー・ミハエルノブコの家。<br>
+                        大天使、精霊など多くの高次元存在たちが織りなす<br class="br-se">洗練された言葉は、新しい癒しの扉を開きます。</p>
                     </div>
                     <div class="swiper-wrap">
                         <div class="swiper">
