@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@use '/common/css/layout/swiper';
+
 @mixin ff-jp {
     font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
@@ -177,7 +179,7 @@ main {
         @include ff-jp();
         font-size: 4.8vw;
         line-height: 1;
-        margin-top: 30px;
+        margin-top: 10px;
         line-height: 1.5;
         @media (orientation: landscape){
             font-size: 2vw;
@@ -188,6 +190,7 @@ main {
         @media screen and (min-width:920px){
             font-size: 1.5vw;
             margin: 5% 0 0 0;
+            margin-top: 30px;
         }
         @media screen and (min-width:1280px){
         }
