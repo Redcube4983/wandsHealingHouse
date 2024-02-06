@@ -381,11 +381,11 @@ header {
 @media screen and (min-width: 920px) {
   header {
     position: fixed;
-    height: 160px;
+    height: 80px;
     width: 100%;
     z-index: 100;
     /*animation: StartAnime 1s forwards;*/
-    background: linear-gradient(rgb(255, 255, 255), 50%, rgba(255, 255, 255, 0));
+    background: linear-gradient(rgb(255, 255, 255), 90%, rgba(255, 255, 255, 0));
     padding-bottom: 50px;
   }
 }
@@ -436,10 +436,18 @@ header {
 
 @media screen and (min-width: 920px) {
   header.DownMove {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), 90%, rgb(255, 255, 255));
+    padding-bottom: 30px;
     position: fixed;
     width: 100%;
     animation: DownAnime 1s forwards;
-    height: auto;
+    height: 65px;
+  }
+  header.DownMove #sab-navi .contact-button a {
+    padding: 12px 20px;
+  }
+  header.DownMove #global-navi {
+    margin: 0;
   }
 }
 
@@ -501,7 +509,7 @@ header {
 }
 @media screen and (min-width: 920px) {
   header.min #header-top {
-    height: 60px;
+    height: 54px;
   }
 }
 @media screen and (min-width: 920px) {
@@ -742,11 +750,10 @@ header {
 @media screen and (min-width: 920px) {
   #global-navi ul#global-main {
     flex-flow: row nowrap;
-    justify-content: space-around;
-    margin: 0 0 0 auto;
+    justify-content: end;
+    margin: 0 40px 0 auto;
     height: auto;
     padding: 0;
-    width: 100%;
   }
 }
 #global-navi ul#global-main li.main-navi {
@@ -838,6 +845,12 @@ header {
 @media screen and (min-width: 920px) {
   #global-navi ul#global-main li.main-navi:first-child {
     border-top: 0px solid rgb(0, 102, 75);
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 920px) {
+  #global-navi ul#global-main li.main-navi:nth-child(2) {
+    margin-right: 50px;
   }
 }
 @media screen and (min-width: 920px) {
@@ -919,6 +932,25 @@ header {
   left: 0;
   top: 0;
 }
+#global-navi ul#global-main li ul.sab-nav li.sub-page-link {
+  padding-left: 30px;
+}
+@media screen and (min-width: 920px) {
+  #global-navi ul#global-main li ul.sab-nav li.sub-page-link::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    display: block;
+    z-index: 10;
+    width: 6px;
+    height: 6px;
+    border-right: 1px solid #71aa9b;
+    border-bottom: 1px solid #a6d4c8;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}
 #global-navi ul#global-main li ul.sab-nav li {
   height: auto;
   width: 100%;
@@ -935,9 +967,6 @@ header {
     transition: none;
     transition: 0.3s;
   }
-  #global-navi ul#global-main li ul.sab-nav li:hover {
-    background-color: #71aa9b;
-  }
 }
 #global-navi ul#global-main li ul.sab-nav li a {
   color: #71aa9b;
@@ -953,7 +982,7 @@ header {
     text-align: left;
   }
   #global-navi ul#global-main li ul.sab-nav li a:hover {
-    color: #fff;
+    color: #44796b;
   }
 }
 #global-navi ul#global-main li ul.sab-nav li a.sp-sub-link {

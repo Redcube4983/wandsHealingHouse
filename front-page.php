@@ -73,7 +73,7 @@ Template Name: front-page
                 <div class="report-wrap">
                     <div class="text-wrap">
                         <h3>イベントストーリー</h3>
-                        <p>開催を終了したイベントについての報告を掲載しています。</p>
+                        <p>終了したイベントについての報告を掲載しています。</p>
                     </div>
                     <div class="button-wrap">
                         <a href="#" class="button">read more  ></a>
@@ -216,9 +216,6 @@ Template Name: front-page
                                 <h3 class="about-content-ttl">ワンズ ヒーリング ハウス<br>
                                     イメージ動画</h3>
                                 <p class="">ワンズヒーリングハウスの様子を動画でご覧いただけます。</p>
-                            </div>
-                            <div class="button-wrap">
-                                <a href="#" class="button">read more  ></a>
                             </div>
                         </div>
                     </div>

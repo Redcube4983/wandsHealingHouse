@@ -46,35 +46,30 @@
             <ul id="global-main">
                 <li class="main-navi parent">
                     <a class="main-navi-link" href="#">イベントプログラム</a>
-                </li>
-                <li class="main-navi parent">
-                    <a class="main-navi-link" href="#">イベントストーリー</a>
                     <div><span></span></div>
                     <ul class="sab-nav">
-                        <li><a href="#">イベントストーリー詳細</a></li>
+                        <li><a href="#">イベント詳細ページ</a></li>
+                        <li><a href="#">イベントストーリー</a></li>
+                        <li class="sub-page-link"><a class="sp-sub-link" href="#">イベントストーリー詳細</a></li>
                     </ul>
                 </li>
                 <li class="main-navi parent">
-                    <a class="main-navi-link" href="#">ボディセラピー</a>
+                    <a class="main-navi-link" href="#">パーソナルプログラム</a>
                     <div><span></span></div>
                     <ul class="sab-nav">
-                        <li><a href="#">ボディリコネクションセラピー</a></li>
+                        <li><a href="#">ボディセラピー</a></li>
+                        <li class="sub-page-link"><a class="sp-sub-link" href="#">ボディリコネクションセラピー</a></li>
+                        <li><a href="#">チャネリングダイアローグ</a></li>
                     </ul>
                 </li>
-                <li class="main-navi">
-                    <a class="main-navi-link" href="#">チャネリング ダイアローグ</a>
-                </li>
-                <li class="main-navi">
-                    <a class="main-navi-link" href="#">イベント/<br class="br02">ワークショップ</a>
-                </li>
                 <li class="main-navi parent">
-                    <a class="main-navi-link" href="#">ワンズヒーリング<br class="br02">ハウスについて</a>
+                    <a class="main-navi-link" href="#">ワンズヒーリングハウスについて</a>
                     <div><span></span></div>
                     <ul class="sab-nav">
                         <li><a href="#">チャネリングについて</a></li>
-                        <li><a class="sp-sub-link" href="#">チャネリングの活用方法</a></li>
+                        <li class="sub-page-link"><a class="sp-sub-link" href="#">チャネリングの活用方法</a></li>
                         <li><a href="#">WANDS アソシエーション</a></li>
-                        <li><a class="sp-sub-link" href="#">大天使ミハエルは語る</a></li>
+                        <li class="sub-page-link"><a class="sp-sub-link" href="#">大天使ミハエルは語る</a></li>
                     </ul>
                 </li>
                 <li class="main-navi sp-tab">
