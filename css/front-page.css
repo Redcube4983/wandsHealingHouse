@@ -333,20 +333,20 @@ main {
   }
 }
 @media screen and (min-width: 768px) {
-  #event-wrap .ttl-contents-wrap {
+  #event-wrap .event-program-wrap {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
   }
 }
 @media screen and (min-width: 920px) {
-  #event-wrap .ttl-contents-wrap {
+  #event-wrap .event-program-wrap {
     margin-top: 30px;
     width: 100%;
   }
 }
 @media screen and (min-width: 1280px) {
-  #event-wrap .ttl-contents-wrap {
+  #event-wrap .event-program-wrap {
     flex-flow: row-reverse;
   }
 }

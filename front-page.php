@@ -19,13 +19,13 @@ Template Name: front-page
                         <div class="swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/top_slide01.jpg" alt="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/top_slide01.jpg" alt="">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/top_slide02.jpg" alt=""> 
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/top/top_slide02.jpg" alt=""> 
                                 </div>
                                 <div class="swiper-slide">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/top_slide03.jpg" alt="">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/top/top_slide03.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -33,7 +33,7 @@ Template Name: front-page
                 </div>
             </section>
             <section id="event-wrap">
-                <div class="ttl-contents-wrap">
+                <div class="event-program-wrap">
                     <div class="ttl-wrap">
                         <span class="en-ttl">event</span>
                         <h2 class="contents-ttl">イベントプログラム</h2>
@@ -41,34 +41,42 @@ Template Name: front-page
                             ワークショップを開催しています。<br>
                             お気軽にご参加ください。</p>
                     </div>
-                    <div class="contents-wrap">
-                        <div class="content-wrap content01-wrap">
-                            <div class="event-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/event-img01.jpg" alt="">
+                    <ul class="contents-wrap">
+                        <?php $args = array(
+                                'post_type' => 'event-program',
+                                'post_status' => 'publish',// 公開済の投稿を指定
+                                'paged' => $paged, 
+                                'posts_per_page' => 3// 投稿件数の指定
+                                );
+                                $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+                                $the_query = new WP_Query($args);
+                                if($the_query->have_posts()):?>
+                        <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+                        <li class="event-program-inner">
+                            <div class="img">
+                                <?php
+                                $image = get_field('メイン画像'); //フィールド名
+                                $size = 'thumbnail'; // 画像サイズ
+                                if( !empty($image) ) { //画像があれば表示
+                                    echo wp_get_attachment_image( $image, $size );
+                                }
+                                ?>
                             </div>
-                            <div class="event-text-button-wrap">
-                                <div class="text-wrap">
-                                    <p><span>お申し込み受付中</span><br>12月3日（日）<br>第３回スターシードお茶会のご案内</p>
-                                </div>
-                                <div class="button-wrap">
-                                    <a href="#" class="button">read more  ></a>
-                                </div>
+                            <div class="text-wrap">
+                                <p>
+                                <span><?php the_title(); ?></span><br>
+                                <time class="program-data"><?php echo get_the_date('Y/m/d'); ?></time><br>
+                                <?php the_field('detail'); ?>
+                                </p>
                             </div>
-                        </div>
-                        <div class="content-wrap content02-wrap">
-                            <div class="event-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/event-img02.jpg" alt="">
-                            </div>
-                            <div class="event-text-button-wrap">
-                                <div class="text-wrap">
-                                    <p><span>満席となりました</span><br>12月3日（日）<br>第３回スターシードお茶会のご案内</p>
-                                </div>
-                                <div class="button-wrap">
-                                    <a href="#" class="button">read more  ></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            <a class="link-button" href="<?php the_permalink(); ?>">read more</a>
+                        </li> 
+                        <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
+                        <?php else: ?>
+                        <!-- 投稿が無い場合の処理 -->
+                        <?php endif; ?>
+                    </ul>
                 </div>
                 <div class="report-wrap">
                     <div class="text-wrap">
@@ -85,7 +93,7 @@ Template Name: front-page
 
 
             <section id="menu-wrap">
-                <div class="tti-wrap">
+                <div class="ttl-wrap">
                     <span class="en-ttl">menu</span>
                     <h2 class="contents-ttl">パーソナルプログラム</h2>
                 </div>
@@ -93,10 +101,10 @@ Template Name: front-page
                     <div class="content-wrap-a">
                         <div class="menu-img-wrap-a">
                             <div class="bg-wrap">
-                                <img class="bg" src="<?php echo get_template_directory_uri(); ?>/images/menu-bg-gre.jpg" alt="">
+                                <img class="bg" src="<?php echo get_template_directory_uri(); ?>/images/top/menu-bg-gre.jpg" alt="">
                             </div>
                             <div class="menu-img-a">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/menu-img01.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/top/menu-img01.jpg" alt="">
                             </div>
                         </div>
                         <div class="text-button-wrap">
@@ -116,10 +124,10 @@ Template Name: front-page
                     <div class="content-wrap-b">
                         <div class="menu-img-wrap-b">
                             <div class="menu-img-b">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/menu-img02.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/top/menu-img02.jpg" alt="">
                             </div>
                             <div class="bg-wrap">
-                                <img class="bg" src="<?php echo get_template_directory_uri(); ?>/images/menu-bg-pin.jpg" alt="">
+                                <img class="bg" src="<?php echo get_template_directory_uri(); ?>/images/top/menu-bg-pin.jpg" alt="">
                             </div>
                         </div>
                         <div class="text-button-wrap">
@@ -142,10 +150,10 @@ Template Name: front-page
                     <div class="content-wrap-a">
                         <div class="menu-img-wrap-a">
                             <div class="bg-wrap">
-                                <img class="bg" src="<?php echo get_template_directory_uri(); ?>/images/menu-bg-red.jpg" alt="">
+                                <img class="bg" src="<?php echo get_template_directory_uri(); ?>/images/top/menu-bg-red.jpg" alt="">
                             </div>
                             <div class="menu-img-a">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/menu-img03.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/top/menu-img03.jpg" alt="">
                             </div>
                         </div>
                         <div class="text-button-wrap">
@@ -178,7 +186,7 @@ Template Name: front-page
                 <div class="contents-wrap">
                     <div class="content-wrap content01-wrap">
                         <div class="about-img-wrap">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/about-img01.jpg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/top/about-img01.jpg" alt="">
                         </div>
                         <div class="text-button-wrap">
                             <div class="text-wrap">
@@ -194,7 +202,7 @@ Template Name: front-page
                     </div>
                     <div class="content-wrap content02-wrap">
                         <div class="about-img-wrap">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/about-img02.jpg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/top/about-img02.jpg" alt="">
                         </div>
                         <div class="text-button-wrap">
                             <div class="text-wrap">
@@ -209,7 +217,7 @@ Template Name: front-page
                     </div>
                     <div class="content-wrap content03-wrap">
                         <div class="about-img-wrap">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/about-img03.jpg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/top/about-img03.jpg" alt="">
                         </div>
                         <div class="text-button-wrap">
                             <div class="text-wrap">
