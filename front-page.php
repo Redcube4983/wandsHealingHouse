@@ -33,49 +33,42 @@ Template Name: front-page
                 </div>
             </section>
             <section id="event-wrap">
-                <div class="event-program-wrap">
+            <div class="event-program-wrap">
                     <div class="ttl-wrap">
                         <span class="en-ttl">event</span>
-                        <h2 class="contents-ttl">イベントプログラム</h2>
+                        <h2 class="contents-ttl">イベント案内</h2>
                         <p class="lead">ワーズヒーリングハウスでは、様々なイベントや<br>
                             ワークショップを開催しています。<br>
                             お気軽にご参加ください。</p>
+                        <div class="button-wrap">
+                            <a href="<?php echo esc_url( home_url( 'event-program') ); ?>" class="button">read more</a>
+                        </div>
                     </div>
                     <ul class="contents-wrap">
-                        <?php $args = array(
-                                'post_type' => 'event-program',
-                                'post_status' => 'publish',// 公開済の投稿を指定
-                                'paged' => $paged, 
-                                'posts_per_page' => 3// 投稿件数の指定
-                                );
-                                $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-                                $the_query = new WP_Query($args);
-                                if($the_query->have_posts()):?>
-                        <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
-                        <li class="event-program-inner">
-                            <div class="img">
-                                <?php
-                                $image = get_field('メイン画像'); //フィールド名
-                                $size = 'thumbnail'; // 画像サイズ
-                                if( !empty($image) ) { //画像があれば表示
-                                    echo wp_get_attachment_image( $image, $size );
-                                }
-                                ?>
-                            </div>
-                            <div class="text-wrap">
-                                <p>
-                                <span><?php the_title(); ?></span><br>
-                                <time class="program-data"><?php echo get_the_date('Y/m/d'); ?></time><br>
-                                <?php the_field('detail'); ?>
-                                </p>
-                            </div>
-                            <a class="link-button" href="<?php the_permalink(); ?>">read more</a>
-                        </li> 
-                        <?php endwhile; ?>
-                        <?php wp_reset_postdata(); ?>
-                        <?php else: ?>
-                        <!-- 投稿が無い場合の処理 -->
-                        <?php endif; ?>
+                        <li>
+                            <a href="#" class="content-wrap content01-wrap">
+                                <div class="event-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/event-img01.jpg" alt="">
+                                </div>
+                                <div class="event-text-button-wrap">
+                                    <div class="text-wrap">
+                                        <p><span>お申し込み受付中</span><br>12月3日（日）<br>第３回スターシードお茶会のご案内</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="content-wrap content02-wrap">
+                                <div class="event-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/event-img02.jpg" alt="">
+                                </div>
+                                <div class="event-text-button-wrap">
+                                    <div class="text-wrap">
+                                        <p><span>満席となりました</span><br>12月3日（日）<br>第３回スターシードお茶会のご案内</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="report-wrap">
@@ -84,7 +77,7 @@ Template Name: front-page
                         <p>終了したイベントについての報告を掲載しています。</p>
                     </div>
                     <div class="button-wrap">
-                        <a href="#" class="button">read more  ></a>
+                        <a href="#" class="">read more</a>
                     </div>
                 </div>
             </section>
@@ -115,7 +108,7 @@ Template Name: front-page
                                 </div>
                             </div>
                             <div class="button-wrap">
-                                <a href="#" class="button">read more  ></a>
+                                <a href="#" class="button">read more</a>
                             </div>
                         </div>
                     </div>
@@ -141,7 +134,7 @@ Template Name: front-page
                                 </div>
                             </div>
                             <div class="button-wrap">
-                                <a href="#" class="button">read more  ></a>
+                                <a href="#" class="button">read more</a>
                             </div>
                         </div>
                     </div>
@@ -165,7 +158,7 @@ Template Name: front-page
                                 </div>
                             </div>
                             <div class="button-wrap">
-                                <a href="#" class="button">read more  ></a>
+                                <a href="#" class="button">read more</a>
                             </div>
                         </div>
                     </div>
@@ -196,7 +189,7 @@ Template Name: front-page
                                     大天使ミハエル オフィシャルチャネラーです。</p>
                             </div>
                             <div class="button-wrap">
-                                <a href="#" class="button">read more  ></a>
+                                <a href="#" class="button">read more</a>
                             </div>
                         </div>
                     </div>
@@ -211,7 +204,7 @@ Template Name: front-page
                                     「自分を愛すること」の大切さを教えてくれる大天使です。</p>
                             </div>
                             <div class="button-wrap">
-                                <a href="#" class="button">read more  ></a>
+                                <a href="#" class="button">read more</a>
                             </div>
                         </div>
                     </div>
