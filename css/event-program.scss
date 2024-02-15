@@ -10,7 +10,7 @@
 }
 
 .event-article-area {
-    margin: 0 30px;
+    padding: 0 30px;
     @media screen and (min-width:960px){
         max-width: 960px;
         margin: 0 auto;
@@ -54,7 +54,7 @@
                     .date {
                         font-size: 1.3rem;
                         @media screen and (min-width:960px){
-                            font-size: 1.6rem;
+                          font-size: 1.6rem;
                         }
                     }
                     .sentence {
@@ -88,6 +88,10 @@
         flex-flow: wrap;
         justify-content: space-between;
         padding: 80px 50px 0;
+    }
+    @media screen and (min-width:960px){
+        padding: 100px 130px 0;
+
         
     }
     .text-wrap {
@@ -95,11 +99,17 @@
         @media screen and (min-width:768px){
             width: 50%;
         }
+        @media screen and (min-width:960px){
+            width: 40%;
+        }
         .ttl {
             font-size: 2.3rem;
             @include ff-jp();
             line-height: 1;
             margin-bottom: 10px;
+            @media screen and (min-width:960px){
+                font-size: 3rem;
+            }
         }
         p {
             margin-bottom: 20px;
@@ -111,6 +121,9 @@
     .img-wrap {
         @media screen and (min-width:768px){
             width: 40%;
+        }
+        @media screen and (min-width:960px){
+            width: 30%;
         }
         img {
             border-radius: 50vw 50vw 0 0;
