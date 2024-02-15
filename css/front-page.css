@@ -225,7 +225,7 @@ main {
   }
 }
 .fv-text-wrap p {
-  font-size: 13px;
+  font-size: 1.3rem;
   margin: 10px 0 0 0;
   text-align: justify;
   line-height: 2;
@@ -274,18 +274,29 @@ main {
   }
 }
 .button-wrap a {
+  position: relative;
   padding: 10px 25px;
   border-radius: 100px;
   border: solid 1px #54A35D;
   background-color: #fff;
   color: #54A35D;
   transition: 0.3s;
-  font-size: 13px;
+  font-size: 1.3rem;
+}
+.button-wrap a::after {
+  position: absolute;
+  content: "";
+  border-right: 2px solid #54A35D;
+  border-bottom: 2px solid #54A35D;
+  top: 50%;
+  display: block;
+  transform: translateY(-50%) rotate(-45deg);
+  transition: right 0.5s;
 }
 @media screen and (min-width: 768px) {
   .button-wrap a {
     padding: 15px 40px;
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 }
 .button-wrap a:hover {
@@ -367,12 +378,12 @@ main {
 }
 @media screen and (min-width: 768px) {
   #event-wrap .en-ttl {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 @media screen and (min-width: 920px) {
   #event-wrap .en-ttl {
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
 #event-wrap .contents-ttl {
@@ -384,7 +395,7 @@ main {
 @media screen and (min-width: 920px) {
   #event-wrap .contents-ttl {
     margin-top: 10px;
-    font-size: 33px;
+    font-size: 3.3rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -393,19 +404,19 @@ main {
   }
 }
 #event-wrap .lead {
-  font-size: 15px;
+  font-size: 1.5rem;
   margin-top: 10px;
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
 @media screen and (min-width: 768px) {
   #event-wrap .lead {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 @media screen and (min-width: 920px) {
   #event-wrap .lead {
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -467,28 +478,28 @@ main {
   margin: 10px 0;
 }
 #event-wrap .contents-wrap .content-wrap .text-wrap p {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 @media screen and (min-width: 920px) {
   #event-wrap .contents-wrap .content-wrap .text-wrap p {
-    font-size: 15px;
+    font-size: 1.4rem;
     margin: 0;
   }
 }
 @media screen and (min-width: 1280px) {
   #event-wrap .contents-wrap .content-wrap .text-wrap p {
-    font-size: 16px;
+    font-size: 1.6rem;
     margin: 0;
   }
 }
 #event-wrap .contents-wrap .content-wrap .text-wrap p span {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
   text-decoration: underline;
 }
 @media screen and (min-width: 768px) {
   #event-wrap .contents-wrap .content-wrap .text-wrap p span {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 #event-wrap .contents-wrap .content02-wrap {
@@ -520,31 +531,31 @@ main {
 }
 #event-wrap .report-wrap .text-wrap h3 {
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 1;
 }
 @media screen and (min-width: 768px) {
   #event-wrap .report-wrap .text-wrap h3 {
-    font-size: 23px;
+    font-size: 2.3rem;
   }
 }
 @media screen and (min-width: 920px) {
   #event-wrap .report-wrap .text-wrap h3 {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
 }
 #event-wrap .report-wrap .text-wrap p {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 @media screen and (min-width: 768px) {
   #event-wrap .report-wrap .text-wrap p {
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 1280px) {
   #event-wrap .report-wrap .text-wrap p {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
 
@@ -573,12 +584,12 @@ main {
 }
 @media screen and (min-width: 768px) {
   #menu-wrap .en-ttl {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 @media screen and (min-width: 920px) {
   #menu-wrap .en-ttl {
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
 #menu-wrap .contents-ttl {
@@ -590,7 +601,7 @@ main {
 @media screen and (min-width: 920px) {
   #menu-wrap .contents-ttl {
     margin-top: 10px;
-    font-size: 33px;
+    font-size: 3.3rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -603,7 +614,7 @@ main {
 }
 @media screen and (min-width: 1280px) {
   #menu-wrap .ttl-wrap {
-    font-size: 33px;
+    font-size: 3.3rem;
   }
 }
 #menu-wrap h3 {
@@ -613,39 +624,39 @@ main {
 }
 @media screen and (min-width: 768px) {
   #menu-wrap h3 {
-    font-size: 28px;
+    font-size: 2.8rem;
   }
 }
 @media screen and (min-width: 1280px) {
   #menu-wrap h3 {
-    font-size: 30px;
+    font-size: 3rem;
   }
 }
 #menu-wrap h3 span {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 @media screen and (min-width: 768px) {
   #menu-wrap h3 span {
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 1280px) {
   #menu-wrap h3 span {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 #menu-wrap p {
-  font-size: 14px;
+  font-size: 1.4rem;
   margin-top: 20px;
 }
 @media screen and (min-width: 768px) {
   #menu-wrap p {
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 920px) {
   #menu-wrap p {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
 #menu-wrap .content-wrap {
@@ -843,12 +854,12 @@ main {
 }
 @media screen and (min-width: 768px) {
   #about-wrap .en-ttl {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 @media screen and (min-width: 920px) {
   #about-wrap .en-ttl {
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
 #about-wrap .contents-ttl {
@@ -860,7 +871,7 @@ main {
 @media screen and (min-width: 920px) {
   #about-wrap .contents-ttl {
     margin-top: 10px;
-    font-size: 33px;
+    font-size: 3.3rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -869,19 +880,19 @@ main {
   }
 }
 #about-wrap .lead {
-  font-size: 15px;
+  font-size: 1.5rem;
   margin-top: 10px;
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
 @media screen and (min-width: 768px) {
   #about-wrap .lead {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 @media screen and (min-width: 920px) {
   #about-wrap .lead {
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
 #about-wrap .content-wrap {
@@ -919,30 +930,30 @@ main {
   }
 }
 #about-wrap .content-wrap .text-wrap .about-content-ttl {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 @media screen and (min-width: 768px) {
   #about-wrap .content-wrap .text-wrap .about-content-ttl {
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 1280px) {
   #about-wrap .content-wrap .text-wrap .about-content-ttl {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
 }
 #about-wrap .content-wrap .text-wrap p {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 @media screen and (min-width: 920px) {
   #about-wrap .content-wrap .text-wrap p {
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 1280px) {
   #about-wrap .content-wrap .text-wrap p {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -956,74 +967,5 @@ main {
 @media screen and (min-width: 920px) {
   #about-wrap .content-wrap .text-button-wrap {
     width: 50%;
-  }
-}
-
-#contact-button-wrap {
-  position: relative;
-  margin-top: 50px;
-}
-@media screen and (min-width: 768px) {
-  #contact-button-wrap {
-    margin-top: 150px;
-  }
-}
-@media screen and (min-width: 920px) {
-  #contact-button-wrap {
-    margin: 0;
-  }
-}
-#contact-button-wrap a {
-  font-size: 14px;
-  padding: 30px 80px 30px 50px;
-  background-image: url(../images/contact-bg-sp.jpg);
-  color: #fff;
-  position: absolute;
-  border-radius: 0 90px 90px 0;
-  background-size: cover;
-  transition: 0.3s;
-}
-#contact-button-wrap a:hover {
-  opacity: 0.7;
-}
-@media screen and (min-width: 768px) {
-  #contact-button-wrap a {
-    padding: 7% 20% 7% 16%;
-    border-radius: 0 120px 120px 0;
-    background-size: cover;
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 920px) {
-  #contact-button-wrap a {
-    border-radius: 0 200px 200px 0;
-  }
-}
-#contact-button-wrap a h3 {
-  text-decoration: underline;
-  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
-}
-@media screen and (min-width: 768px) {
-  #contact-button-wrap a h3 {
-    font-size: 23px;
-  }
-}
-@media screen and (min-width: 920px) {
-  #contact-button-wrap a h3 {
-    font-size: 26px;
-  }
-}
-#contact-button-wrap a span {
-  font-size: 15px;
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-}
-@media screen and (min-width: 768px) {
-  #contact-button-wrap a span {
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 920px) {
-  #contact-button-wrap a span {
-    font-size: 23px;
   }
 }/*# sourceMappingURL=front-page.css.map */

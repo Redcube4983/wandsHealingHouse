@@ -346,19 +346,19 @@ body.fixed {
 
 p {
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 2;
   letter-spacing: 0;
 }
 @media screen and (min-width: 768px) {
   p {
-    font-size: 16px;
+    font-size: 1.6rem;
     letter-spacing: 1px;
   }
 }
 @media screen and (min-width: 920px) {
   p {
-    font-size: 18px;
+    font-size: 1.8rem;
     letter-spacing: 1px;
   }
 }
@@ -538,7 +538,7 @@ header {
   #header-top-left a {
     margin-left: 30px;
     color: #000;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1;
   }
 }
@@ -554,7 +554,7 @@ header {
 @media screen and (min-width: 920px) {
   #header-top-left a .site-logo span {
     display: inline-block;
-    font-size: 14px;
+    font-size: 1.4rem;
     position: relative;
     transform: translateX(-2rem);
   }
@@ -587,7 +587,7 @@ header {
   position: relative;
   display: flex;
   align-items: center;
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 @media screen and (min-width: 920px) {
   #sab-navi ul li:first-child {
@@ -804,7 +804,7 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-size: 13px;
+  font-size: 1.3rem;
   height: 100%;
 }
 #global-navi ul#global-main li.main-navi a.main-navi-link {
@@ -817,7 +817,7 @@ header {
   width: 200px;
   left: 0;
   text-align: left;
-  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 1.3;
 }
 @media screen and (min-width: 920px) {
@@ -973,7 +973,7 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  font-size: 13px;
+  font-size: 1.3rem;
   height: 100%;
 }
 @media screen and (min-width: 920px) {
@@ -1077,19 +1077,146 @@ header {
 }
 
 /*************************************************************************************
+                                      　main
+*************************************************************************************/
+.breadcrumbs-area {
+  margin: 15px 15px 0;
+}
+.breadcrumbs-area .breadcrumbs-list {
+  font-size: 1.2rem;
+  display: flex;
+  flex-flow: wrap;
+}
+@media screen and (min-width: 768px) {
+  .breadcrumbs-area .breadcrumbs-list {
+    font-size: 1.3rem;
+  }
+}
+.breadcrumbs-area .breadcrumbs-list .link a {
+  color: #73C0A5;
+  transition: 0.3s;
+}
+.breadcrumbs-area .breadcrumbs-list .link a:hover {
+  opacity: 0.8;
+}
+.breadcrumbs-area .breadcrumbs-list li:nth-child(n+2)::before {
+  content: "＞";
+  margin: 0 10px 0;
+}
+
+.lead-area {
+  margin: 30px 15px 0;
+}
+@media screen and (min-width: 768px) {
+  .lead-area {
+    margin: 50px 30px 0;
+  }
+}
+.lead-area .en {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 1.5rem;
+  color: #73C0A5;
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  .lead-area .en {
+    font-size: 2rem;
+  }
+}
+.lead-area .jp {
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 2.8rem;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .lead-area .jp {
+    font-size: 3.3rem;
+  }
+}
+
+.contents-area {
+  margin-top: 50px;
+}
+
+/*************************************************************************************
                                         フッター
 *************************************************************************************/
 footer {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0), rgb(255, 255, 255) 20%);
-  text-align: center;
   font-size: 12px;
   padding-top: 130px;
-  margin-top: 130px;
+  margin-top: 50px;
+}
+footer .contact-button-wrap {
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
 @media screen and (min-width: 768px) {
-  footer {
-    margin-top: 400px;
+  footer .contact-button-wrap {
+    top: -100px;
+  }
+}
+@media screen and (min-width: 920px) {
+  footer .contact-button-wrap {
+    margin: 0;
+    top: -130px;
+  }
+}
+footer .contact-button-wrap a {
+  font-size: 1.4rem;
+  padding: 30px 80px 30px 50px;
+  background-image: url(./images/top/contact-bg-sp.jpg);
+  color: #fff;
+  position: absolute;
+  border-radius: 0 90px 90px 0;
+  background-size: cover;
+  transition: 0.3s;
+}
+footer .contact-button-wrap a:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  footer .contact-button-wrap a {
+    padding: 7% 20% 7% 16%;
+    border-radius: 0 120px 120px 0;
+    background-size: cover;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 920px) {
+  footer .contact-button-wrap a {
+    border-radius: 0 200px 200px 0;
+  }
+}
+footer .contact-button-wrap a h3 {
+  text-decoration: underline;
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+@media screen and (min-width: 768px) {
+  footer .contact-button-wrap a h3 {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (min-width: 920px) {
+  footer .contact-button-wrap a h3 {
+    font-size: 2.6rem;
+  }
+}
+footer .contact-button-wrap a span {
+  font-size: 1.5rem;
+  font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  footer .contact-button-wrap a span {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 920px) {
+  footer .contact-button-wrap a span {
+    font-size: 2.3rem;
   }
 }
 footer .footer-wrap {
@@ -1129,6 +1256,22 @@ footer #footer-info a .site-logo {
   width: auto;
   height: 100%;
   object-fit: contain;
+}
+footer #footer-info h3 {
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 768px) {
+  footer #footer-info h3 {
+    font-size: 1.8rem;
+  }
+}
+footer #footer-info p {
+  font-size: 1.4em;
+}
+@media screen and (min-width: 768px) {
+  footer #footer-info p {
+    font-size: 1.6rem;
+  }
 }
 @media screen and (min-width: 768px) {
   footer .sp {

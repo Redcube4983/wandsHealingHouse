@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+@use '../common/css/Component/button';
+
+@mixin ff-jp {
+    font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+@mixin ff-en {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.event-article-area {
+    margin: 0 30px;
+    .article-wrap {
+        li {
+            &:nth-child(n+2) {
+                margin-top: 50px;
+            }
+            @media screen and (min-width:768px){
+                display: flex;
+                justify-content: space-between;
+            }
+            .text-wrap {
+                margin-top: 20px;
+                .ttl {
+                    font-size: 1.5rem;
+                    @include ff-jp();
+                    text-decoration: underline;
+                }
+                .date {
+                    font-size: 1.3rem;
+                }
+                .sentence {
+                    font-size: 1.3rem;
+                    .sub-ttl {
+                        font-size: 1.4rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .button-wrap {
+                @include button.btn-read_more;
+            }
+        }
+    }
+}
+.event-story-area {
+    padding: 50px 30px 0;
+    background-color: #AED4CA;
+    margin-top: 50px;
+    color: #fff;
+    .text-wrap {
+        margin-bottom: 20px;
+        .ttl {
+            font-size: 2.3rem;
+            @include ff-jp();
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .button-wrap {
+            @include button.btn-read_more;
+        }
+    }
+    .img-wrap {
+        img {
+            border-radius: 50vw 50vw 0 0;
+          }
+    }
+}

@@ -1,4 +1,7 @@
 <footer>
+    <section class="contact-button-wrap">
+        <a href="#" class="button"><span>contact</span><br><h3>ご予約・お問い合わせはこちら</h3></a>
+    </section>
     <div class="footer-wrap">
         <div class="footer-flbox">
             <div id="info-wrap">

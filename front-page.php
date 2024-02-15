@@ -223,13 +223,6 @@ Template Name: front-page
                 </div>
             </section>
 
-
-
-
-            <section id="contact-button-wrap">
-
-                <a href="#" class="button"><span>contact</span><br><h3>ご予約・お問い合わせはこちら</h3></a>
-            </section>
         
     </main>
     <?php get_footer(); ?>

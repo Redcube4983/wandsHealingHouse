@@ -11,8 +11,13 @@
     <link rel="icon" type="image/x-icon" href="">
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/front-page.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/common/css/swiper-bundle.min.css">
+    <?php if( is_front_page() ): ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/front-page.css">
+    <?php elseif(is_page(array('event-program'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/event-program.css">
+    <?php else: ?>
+    <?php endif; ?>
     <!-- jquery 3.6.1 -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <?php wp_head(); ?>

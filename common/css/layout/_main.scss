@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/*************************************************************************************
+                                      　main
+*************************************************************************************/
+@mixin ff-jp {
+    font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+@mixin ff-en {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.breadcrumbs-area {
+    margin: 15px 15px 0;
+    .breadcrumbs-list {
+        font-size: 1.2rem;
+        display: flex;
+        flex-flow: wrap;
+        @media screen and (min-width:768px){
+            font-size: 1.3rem;
+        }
+        .link {
+            a {
+            color: #73C0A5;
+            transition: .3s;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+        li {
+            &:nth-child(n+2){
+                &::before {
+                    content: "＞";
+                    margin: 0 10px 0;
+                  }
+            }
+        }
+      }
+}
+
+.lead-area {
+    margin: 30px 15px 0;
+    @media screen and (min-width:768px){
+        margin: 50px 30px 0;
+    }
+    .en {
+        @include ff-en;
+        font-size: 1.5rem;
+        color: #73C0A5;
+        margin-bottom: 5px;
+        @media screen and (min-width:768px){
+            font-size: 2rem;
+        }
+    }
+    .jp {
+        @include ff-jp;
+        font-size: 2.8rem;
+        line-height: 1;
+        margin-bottom: 10px;
+        @media screen and (min-width:768px){
+            font-size: 3.3rem;
+        }
+    }
+}
+.contents-area {
+    margin-top: 50px;
+}
