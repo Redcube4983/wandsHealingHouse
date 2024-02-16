@@ -32,7 +32,7 @@ Template Name: about-us
         <div class="top-description-area">
             <p class="sentence">ワンズヒーリングハウスは、東京・駒込の住宅街にある一軒家。チャネラー・ミハエルノブコが住む家です。常に大天使ミハエル、精霊たち、そして多くの高次元存在があなたの目の前まで降り立ち、見守っています。<br>このハウスを訪れ、チャネリングを体験することで、心身の浄化が起こります。あなたの 身体 - 心 - 魂（スピリット）は整い、本当の安らぎと健康を手に入れることができるでしょう。</p>
             <ul class="img-wrap">
-                <li><img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs-img01.jpg" alt=""></li>
+                <li><img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs_img01.jpg" alt=""></li>
                 <li><img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs-img02.jpg" alt=""></li>
                 <li><img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs-img03.jpg" alt=""></li>
                 <li><img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs-img04.jpg" alt=""></li>
