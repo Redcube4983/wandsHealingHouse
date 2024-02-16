@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: event-story
+Template Name: about-channeling
 */
 ?>
 <?php get_header(); ?>
@@ -25,14 +25,14 @@ Template Name: event-story
         <div class="contents-area">
             <ul class="story-boxes">
                 <li class="">
-                    <h4>ミハエルのオープンチャネリング ダイアローグ（対話）- カフェスタイル（月１回）</h4>
+                    <h3>ミハエルのオープンチャネリング ダイアローグ（対話）- カフェスタイル（月１回）</h3>
                     <div class="info-wrap">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/event-program/story-img01" alt="">
+                        <img src="/images/event-program/story-img01" alt="">
                         <div class="text-wrap">
                             <p>このグループワークは、大天使ミハエルからのメッセージを共に受け取り、理解し合い、人生の方向性を明確にするカジュアルなカフェ形式のイベントです。<br>オープン（公開）チャネリングで参加者全員へのメッセージを受け取った後、個別のご質問にもお答えしながら進めます。<br>様々な背景を持って集った参加者同士が、その経験を共有して、お互いが心を開いて共感しあい、多様な視点から気づきを得る楽しいグループワークです。毎回参加人数は異なります。</p>
                             <div class="about-detail-wrap">
                                 <div class="sub-info">
-                                    <h5>ミハエルのオープンチャネリング ダイアローグ(対話)<br>カフェスタイル</h5>
+                                    <h4>ミハエルのオープンチャネリング ダイアローグ(対話)<br>カフェスタイル</h4>
                                     <p class="">5,000円以上の<a href="<?php echo esc_url( home_url( 'event-program') ); ?>">ドネーション</a>（寄付・支援金）制</p>
                                 </div>
                                 <div class="detail-link">
