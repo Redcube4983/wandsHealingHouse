@@ -1,0 +1,15 @@
+#about-us .top-description-area {
+  padding: 0 15px;
+}
+#about-us .img-wrap {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+#about-us .img-wrap li {
+  width: 49%;
+}
+#about-us .img-wrap li:nth-child(n+3) {
+  margin-top: 2%;
+}/*# sourceMappingURL=about-us.css.map */

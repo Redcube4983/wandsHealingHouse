@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@use '../common/css/Component/button';
+
+@mixin ff-jp {
+    font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+@mixin ff-en {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+#about-us {
+    .top-description-area {
+        padding: 0 15px;
+    }
+    
+    .img-wrap {
+        margin-top: 20px;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+        li {
+            width: 49%;
+        }
+        li:nth-child(n+3) {
+            margin-top: 2%;
+        }
+    }
+}
