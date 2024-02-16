@@ -63,14 +63,16 @@ Template Name: event-program
 			</ul>
 		</div>
 		<div class="event-story-area">
-			<div class="text-wrap">
-				<h3 class="ttl">イベントストーリー</h3>
-				<p>イベントにご参加いただき、ありがとうございました。<br>開催を終了したイベントについてのレポートを掲載しています。<br>
-				どうぞご覧ください。</p>
-				<div class="button-wrap"><a href="<?php echo esc_url( home_url( '/') ); ?>">read more</a></div>
-			</div>
-			<div class="img-wrap">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/event-program/img03.jpg" alt="">
+			<div class="event-story-inner">
+				<div class="text-wrap">
+					<h3 class="ttl">イベントストーリー</h3>
+					<p>イベントにご参加いただき、ありがとうございました。<br>開催を終了したイベントについてのレポートを掲載しています。<br>
+					どうぞご覧ください。</p>
+					<div class="button-wrap"><a href="<?php echo esc_url( home_url( '/') ); ?>">read more</a></div>
+				</div>
+				<div class="img-wrap">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/event-program/img03.jpg" alt="">
+				</div>
 			</div>
 		</div>
 	</div>

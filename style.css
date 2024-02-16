@@ -1105,7 +1105,7 @@ header {
 
 .lead-area {
   padding: 30px 15px 0;
-  max-width: 1180px;
+  max-width: 1210px;
   margin: 0 auto;
 }
 @media screen and (min-width: 960px) {
@@ -1363,9 +1363,9 @@ footer #footer-info p {
 }
 #info-wrap .sns-wrap a {
   padding: 12px 18px;
-  border: solid 1px #629D7C;
+  border: solid 1px #54a37f;
   border-radius: 50px;
-  color: #629D7C;
+  color: #54a37f;
   transition: 0.3s;
   background-color: #fff;
   display: block;
@@ -1377,7 +1377,7 @@ footer #footer-info p {
 }
 #info-wrap .sns-wrap a:hover {
   color: #fff;
-  background-color: #54A35D;
+  background-color: #54a37f;
 }
 #info-wrap .sns-wrap .sns:not(:first-child) {
   margin-left: 5px;
@@ -1473,7 +1473,7 @@ footer #footer-info p {
 }
 .footer-sitemap .main-navi h3 a.main-navi-link:hover {
   opacity: 1;
-  color: #629D7C;
+  color: #54a37f;
   transition: color 0.3s;
 }
 @media screen and (min-width: 768px) {
@@ -1514,7 +1514,7 @@ ul.footer-sitemap li.main-navi ul.sab-nav li a {
   transition: color 0.3s;
 }
 ul.footer-sitemap li.main-navi ul.sab-nav li a:hover {
-  color: #629D7C;
+  color: #54a37f;
   transition: color 0.3s;
   opacity: 1;
 }
@@ -1559,8 +1559,8 @@ ul.footer-sitemap li.main-navi.parent div span {
   transform-origin: center;
   width: 12px;
   height: 12px;
-  border-bottom: 1px solid #629D7C;
-  border-right: 1px solid #629D7C;
+  border-bottom: 1px solid #54a37f;
+  border-right: 1px solid #54a37f;
   display: block;
   transition: transform 0.5s;
 }

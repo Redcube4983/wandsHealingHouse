@@ -30,14 +30,16 @@
             }
             .img {
                 @media screen and (min-width:768px){
-                    width: 35%;
+                    width: 40%;
                     margin: 0;
                 }
                 @media screen and (min-width:960px){
-                    width: 40%;
                 }
             }
             .right {
+                display: flex;
+                flex-flow: column;
+                justify-content: end;
                 @media screen and (min-width:768px){
                         width: 55%;
                 }
@@ -59,6 +61,10 @@
                     }
                     .sentence {
                         font-size: 1.3rem;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 4;
                         @media screen and (min-width:960px){
                             font-size: 1.6rem;
                         }
@@ -74,6 +80,7 @@
             }
             .button-wrap {
                 @include button.btn-read_more;
+                flex-flow: nowrap;
             }
         }
     }
@@ -82,17 +89,19 @@
     padding: 50px 30px 0;
     background-color: #AED4CA;
     margin-top: 50px;
+    @media screen and (min-width:960px){
+        padding: 100px 130px 0;
+        margin-top: 100px;
+    }
+}
+.event-story-inner {
     color: #fff;
     @media screen and (min-width:768px){
         display: flex;
         flex-flow: wrap;
         justify-content: space-between;
-        padding: 80px 50px 0;
-    }
-    @media screen and (min-width:960px){
-        padding: 100px 130px 0;
-
-        
+        max-width: 1180px;
+        margin: 0 auto;
     }
     .text-wrap {
         margin-bottom: 20px;
@@ -120,10 +129,10 @@
     }
     .img-wrap {
         @media screen and (min-width:768px){
-            width: 40%;
+            width: 45%;
+            max-width: 450px;
         }
         @media screen and (min-width:960px){
-            width: 30%;
         }
         img {
             border-radius: 50vw 50vw 0 0;

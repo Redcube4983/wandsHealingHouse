@@ -24,14 +24,14 @@
 }
 @media screen and (min-width: 768px) {
   .event-article-area .article-wrap li .img {
-    width: 35%;
+    width: 40%;
     margin: 0;
   }
 }
-@media screen and (min-width: 960px) {
-  .event-article-area .article-wrap li .img {
-    width: 40%;
-  }
+.event-article-area .article-wrap li .right {
+  display: flex;
+  flex-flow: column;
+  justify-content: end;
 }
 @media screen and (min-width: 768px) {
   .event-article-area .article-wrap li .right {
@@ -61,6 +61,10 @@
 }
 .event-article-area .article-wrap li .right .text-wrap .sentence {
   font-size: 1.3rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 @media screen and (min-width: 960px) {
   .event-article-area .article-wrap li .right .text-wrap .sentence {
@@ -80,6 +84,7 @@
   display: flex;
   flex-flow: row-reverse;
   margin-top: 20px;
+  flex-flow: nowrap;
 }
 @media screen and (min-width: 920px) {
   .event-article-area .article-wrap li .button-wrap {
@@ -88,131 +93,146 @@
 }
 .event-article-area .article-wrap li .button-wrap a {
   position: relative;
-  padding: 10px 25px;
+  padding: 10px 45px 10px 30px;
   border-radius: 100px;
-  border: solid 1px #54A35D;
+  border: solid 1px #54a37f;
   background-color: #fff;
-  color: #54A35D;
+  color: #54a37f;
   transition: 0.3s;
   font-size: 1.3rem;
+}
+.event-article-area .article-wrap li .button-wrap a:hover::after {
+  border-right: 1.5px solid #fff;
+  border-bottom: 1.5px solid #fff;
 }
 .event-article-area .article-wrap li .button-wrap a::after {
   position: absolute;
   content: "";
-  border-right: 2px solid #54A35D;
-  border-bottom: 2px solid #54A35D;
-  top: 50%;
+  border-right: 1.5px solid #54a37f;
+  border-bottom: 1.5px solid #54a37f;
+  top: 51%;
   display: block;
   transform: translateY(-50%) rotate(-45deg);
-  transition: right 0.5s;
+  transition: 0.3s;
+  width: 10px;
+  height: 10px;
+  right: 25px;
 }
 @media screen and (min-width: 768px) {
   .event-article-area .article-wrap li .button-wrap a {
-    padding: 15px 40px;
+    padding: 15px 45px 15px 40px;
     font-size: 1.5rem;
   }
 }
 .event-article-area .article-wrap li .button-wrap a:hover {
   color: #fff;
-  background-color: #54A35D;
+  background-color: #54a37f;
 }
 
 .event-story-area {
   padding: 50px 30px 0;
   background-color: #AED4CA;
   margin-top: 50px;
-  color: #fff;
-}
-@media screen and (min-width: 768px) {
-  .event-story-area {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    padding: 80px 50px 0;
-  }
 }
 @media screen and (min-width: 960px) {
   .event-story-area {
     padding: 100px 130px 0;
+    margin-top: 100px;
   }
 }
-.event-story-area .text-wrap {
+
+.event-story-inner {
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .event-story-inner {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+}
+.event-story-inner .text-wrap {
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
-  .event-story-area .text-wrap {
+  .event-story-inner .text-wrap {
     width: 50%;
   }
 }
 @media screen and (min-width: 960px) {
-  .event-story-area .text-wrap {
+  .event-story-inner .text-wrap {
     width: 40%;
   }
 }
-.event-story-area .text-wrap .ttl {
+.event-story-inner .text-wrap .ttl {
   font-size: 2.3rem;
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
   line-height: 1;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 960px) {
-  .event-story-area .text-wrap .ttl {
+  .event-story-inner .text-wrap .ttl {
     font-size: 3rem;
   }
 }
-.event-story-area .text-wrap p {
+.event-story-inner .text-wrap p {
   margin-bottom: 20px;
 }
-.event-story-area .text-wrap .button-wrap {
+.event-story-inner .text-wrap .button-wrap {
   display: flex;
   flex-flow: row-reverse;
   margin-top: 20px;
 }
 @media screen and (min-width: 920px) {
-  .event-story-area .text-wrap .button-wrap {
+  .event-story-inner .text-wrap .button-wrap {
     margin-top: 30px;
   }
 }
-.event-story-area .text-wrap .button-wrap a {
+.event-story-inner .text-wrap .button-wrap a {
   position: relative;
-  padding: 10px 25px;
+  padding: 10px 45px 10px 30px;
   border-radius: 100px;
-  border: solid 1px #54A35D;
+  border: solid 1px #54a37f;
   background-color: #fff;
-  color: #54A35D;
+  color: #54a37f;
   transition: 0.3s;
   font-size: 1.3rem;
 }
-.event-story-area .text-wrap .button-wrap a::after {
+.event-story-inner .text-wrap .button-wrap a:hover::after {
+  border-right: 1.5px solid #fff;
+  border-bottom: 1.5px solid #fff;
+}
+.event-story-inner .text-wrap .button-wrap a::after {
   position: absolute;
   content: "";
-  border-right: 2px solid #54A35D;
-  border-bottom: 2px solid #54A35D;
-  top: 50%;
+  border-right: 1.5px solid #54a37f;
+  border-bottom: 1.5px solid #54a37f;
+  top: 51%;
   display: block;
   transform: translateY(-50%) rotate(-45deg);
-  transition: right 0.5s;
+  transition: 0.3s;
+  width: 10px;
+  height: 10px;
+  right: 25px;
 }
 @media screen and (min-width: 768px) {
-  .event-story-area .text-wrap .button-wrap a {
-    padding: 15px 40px;
+  .event-story-inner .text-wrap .button-wrap a {
+    padding: 15px 45px 15px 40px;
     font-size: 1.5rem;
   }
 }
-.event-story-area .text-wrap .button-wrap a:hover {
+.event-story-inner .text-wrap .button-wrap a:hover {
   color: #fff;
-  background-color: #54A35D;
+  background-color: #54a37f;
 }
 @media screen and (min-width: 768px) {
-  .event-story-area .img-wrap {
-    width: 40%;
+  .event-story-inner .img-wrap {
+    width: 45%;
+    max-width: 450px;
   }
 }
-@media screen and (min-width: 960px) {
-  .event-story-area .img-wrap {
-    width: 30%;
-  }
-}
-.event-story-area .img-wrap img {
+.event-story-inner .img-wrap img {
   border-radius: 50vw 50vw 0 0;
 }/*# sourceMappingURL=event-program.css.map */
