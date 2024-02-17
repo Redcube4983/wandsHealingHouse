@@ -270,7 +270,7 @@ main {
 }
 .button-wrap a {
   position: relative;
-  padding: 10px 45px 10px 30px;
+  padding: 10px 50px 10px 25px;
   border-radius: 100px;
   border: solid 1px #54a37f;
   background-color: #fff;
@@ -297,7 +297,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   .button-wrap a {
-    padding: 15px 45px 15px 40px;
+    padding: 15px 60px 15px 25px;
     font-size: 1.5rem;
   }
 }

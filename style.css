@@ -1104,14 +1104,9 @@ header {
 }
 
 .lead-area {
-  padding: 30px 15px 0;
+  padding: 0 15px;
   max-width: 1210px;
   margin: 0 auto;
-}
-@media screen and (min-width: 960px) {
-  .lead-area {
-    padding-top: 100px;
-  }
 }
 .lead-area .en {
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -1142,7 +1137,7 @@ header {
 .contents-area {
   margin-top: 50px;
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 920px) {
   .contents-area {
     margin-top: 100px;
   }
@@ -1155,24 +1150,19 @@ footer {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0), rgb(255, 255, 255) 20%);
   font-size: 12px;
-  padding-top: 130px;
+  padding-top: 100px;
   margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    padding-top: 200px;
+    margin-top: 80px;
+  }
 }
 footer .contact-button-wrap {
   position: absolute;
   width: 100%;
   top: 0;
-}
-@media screen and (min-width: 768px) {
-  footer .contact-button-wrap {
-    top: -100px;
-  }
-}
-@media screen and (min-width: 920px) {
-  footer .contact-button-wrap {
-    margin: 0;
-    top: -130px;
-  }
 }
 footer .contact-button-wrap a {
   font-size: 1.4rem;
@@ -1245,6 +1235,11 @@ footer .footer-wrap {
     background-image: url(./images/footer-bg-pc.png);
     background-size: 60%;
     padding-top: 150px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  footer .footer-wrap {
+    padding-top: 200px;
   }
 }
 footer #footer-info {

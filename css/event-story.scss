@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+@use '../common/css/Component/button';
+
+@mixin ff-jp {
+    font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+@mixin ff-en {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+#event-story {
+    background-image: url(../images/event-program/bg-object.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    padding-top: 150px;
+    .visual-lead-area {
+        border-bottom: solid 1px #D8E8DA;
+        padding-bottom: 30px;
+    }
+    .story-boxes {
+        padding: 0 15px;
+        h4 {
+            font-size: 2rem;
+            @include ff-jp();
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+    }
+    .info-wrap {
+        p {
+            margin-top: 20px;
+        }
+    }
+    .sub-info {
+        margin-top: 50px;
+        h5 {
+            font-size: 1.8rem;
+            @include ff-jp();
+            line-height: 1.8;
+        }
+        p {
+            margin: 0;
+        }
+        a {
+            color: #73C0A5;
+            text-decoration: underline;
+        }
+        .detail-link {
+            display: flex;
+            box-shadow: 0 0 5px #c9c9c9;
+            margin-top: 20px;
+            width: 100%;
+            picture {
+                width: 30%;
+            }
+            .text-wrap {
+                width: 70%;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+#event-story {
+  background-image: url(../images/event-program/bg-object.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: top;
+  padding-top: 150px;
+}
+#event-story .visual-lead-area {
+  border-bottom: solid 1px #D8E8DA;
+  padding-bottom: 30px;
+}
+#event-story .story-boxes {
+  padding: 0 15px;
+}
+#event-story .story-boxes h4 {
+  font-size: 2rem;
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+#event-story .info-wrap p {
+  margin-top: 20px;
+}
+#event-story .sub-info {
+  margin-top: 50px;
+}
+#event-story .sub-info h5 {
+  font-size: 1.8rem;
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+  line-height: 1.8;
+}
+#event-story .sub-info p {
+  margin: 0;
+}
+#event-story .sub-info a {
+  color: #73C0A5;
+  text-decoration: underline;
+}
+#event-story .sub-info .detail-link {
+  display: flex;
+  box-shadow: 0 0 5px #c9c9c9;
+  margin-top: 20px;
+  width: 100%;
+}
+#event-story .sub-info .detail-link picture {
+  width: 30%;
+}
+#event-story .sub-info .detail-link .text-wrap {
+  width: 70%;
+}/*# sourceMappingURL=event-story.css.map */

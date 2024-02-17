@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 @use '../common/css/Component/button';
 
 @mixin ff-jp {
@@ -11,15 +12,15 @@
 
 .event-article-area {
     padding: 0 30px;
-    @media screen and (min-width:960px){
-        max-width: 960px;
+    @media screen and (min-width:920px){
+        max-width: 920px;
         margin: 0 auto;
     }
     .article-wrap {
         li {
             &:nth-child(n+2) {
                 margin-top: 50px;
-                @media screen and (min-width:960px){
+                @media screen and (min-width:920px){
                     margin-top: 100px;
                 }
             }
@@ -33,7 +34,7 @@
                     width: 40%;
                     margin: 0;
                 }
-                @media screen and (min-width:960px){
+                @media screen and (min-width:920px){
                 }
             }
             .right {
@@ -49,13 +50,13 @@
                         font-size: 1.5rem;
                         @include ff-jp();
                         text-decoration: underline;
-                        @media screen and (min-width:960px){
+                        @media screen and (min-width:920px){
                             font-size: 2rem;
                         }
                     }
                     .date {
                         font-size: 1.3rem;
-                        @media screen and (min-width:960px){
+                        @media screen and (min-width:920px){
                           font-size: 1.6rem;
                         }
                     }
@@ -65,13 +66,13 @@
                         display: -webkit-box;
                         -webkit-box-orient: vertical;
                         -webkit-line-clamp: 4;
-                        @media screen and (min-width:960px){
+                        @media screen and (min-width:920px){
                             font-size: 1.6rem;
                         }
                         .sub-ttl {
                             font-size: 1.4rem;
                             font-weight: bold;
-                            @media screen and (min-width:960px){
+                            @media screen and (min-width:920px){
                                 font-size: 1.6rem;
                             }
                         }
@@ -89,7 +90,7 @@
     padding: 50px 30px 0;
     background-color: #AED4CA;
     margin-top: 50px;
-    @media screen and (min-width:960px){
+    @media screen and (min-width:920px){
         padding: 100px 130px 0;
         margin-top: 100px;
     }
@@ -108,7 +109,7 @@
         @media screen and (min-width:768px){
             width: 50%;
         }
-        @media screen and (min-width:960px){
+        @media screen and (min-width:920px){
             width: 40%;
         }
         .ttl {
@@ -116,7 +117,7 @@
             @include ff-jp();
             line-height: 1;
             margin-bottom: 10px;
-            @media screen and (min-width:960px){
+            @media screen and (min-width:920px){
                 font-size: 3rem;
             }
         }
@@ -132,7 +133,7 @@
             width: 45%;
             max-width: 450px;
         }
-        @media screen and (min-width:960px){
+        @media screen and (min-width:920px){
         }
         img {
             border-radius: 50vw 50vw 0 0;

@@ -24,18 +24,21 @@ footer {
     position: relative;
     background: linear-gradient(rgba(0,0,0,0),rgb(255, 255, 255) 20%);
     font-size: 12px;
-    padding-top: 130px;
+    padding-top: 100px;
     margin-top: 50px;
+    @media screen and (min-width:768px){
+        padding-top: 200px;
+        margin-top: 80px;
+    }
+    @media screen and (min-width:920px){
+    }
     .contact-button-wrap {
         position: absolute;
         width: 100%;
         top: 0;
         @media screen and (min-width:768px){
-            top: -100px;
         }
         @media screen and (min-width:920px){
-            margin: 0;
-            top: -130px;
         } 
         a {
             font-size: 1.4rem;
@@ -93,6 +96,9 @@ footer {
             background-image: url(./images/footer-bg-pc.png);
             background-size: 60%;
             padding-top: 150px;
+        }
+        @media screen and (min-width: 1280px) {
+            padding-top: 200px;
         }
     }
   #footer-info {

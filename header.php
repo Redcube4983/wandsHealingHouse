@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/front-page.css">
     <?php elseif(is_page(array('event-program'))) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/event-program.css">
+    <?php elseif(is_page(array('event-story'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/event-story.css">
     <?php elseif(is_page(array('about-us'))) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/about-us.css">
     <?php else: ?>
