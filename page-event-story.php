@@ -20,18 +20,34 @@ Template Name: event-story
                 <li>イベントストーリー</li>
             </ul>
         </div>
-        <div class="contents-area">
+        <div class="contents-area"><?php $args = array(
+					'post_type' => array('post','nearby_gourmet','leisure_culture','tribe_events'),
+					'post_status' => 'publish',// 公開済の投稿を指定
+					'orderby' => 'date',
+					'paged' => $paged, 
+					'posts_per_page' => -1 // 投稿件数の指定
+					);
+			  $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+		      $the_query = new WP_Query($args);
+		      if($the_query->have_posts()):?>
             <ul class="story-boxes">
-                <li class="">
-                    <h4>ミハエルのオープンチャネリング<br class="sp">ダイアローグ（対話）<br class="sp">- カフェスタイル（月１回）</h4>
+            <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+			<?php 
+			$cat = get_the_category();
+			$cat = $cat[0];
+			?>
+                <li id="post-<?php the_ID(); ?>" class="">
+                    <h4><?php the_field('event-ttl'); ?></h4>
                     <div class="info-wrap">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/event-program/story-img01.jpg" alt="">
+                        <div class="img-wrap">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/event-program/story-img01.jpg" alt="">
+                        </div>
                         <div class="text-wrap">
-                            <p>このグループワークは、大天使ミハエルからのメッセージを共に受け取り、理解し合い、人生の方向性を明確にするカジュアルなカフェ形式のイベントです。<br>オープン（公開）チャネリングで参加者全員へのメッセージを受け取った後、個別のご質問にもお答えしながら進めます。<br>様々な背景を持って集った参加者同士が、その経験を共有して、お互いが心を開いて共感しあい、多様な視点から気づきを得る楽しいグループワークです。毎回参加人数は異なります。</p>
+                            <p><?php the_field('detail-sentence'); ?></p>
                             <div class="about-detail-wrap">
                                 <div class="sub-info">
                                     <h5>ミハエルのオープンチャネリング ダイアローグ(対話)<br>カフェスタイル</h5>
-                                    <p class="">5,000円以上の<a href="<?php echo esc_url( home_url( 'event-program') ); ?>">ドネーション</a>（寄付・支援金）制</p>
+                                    <p class="">5,000円以上の<a class="sentence-link" href="<?php echo esc_url( home_url( 'event-program') ); ?>">ドネーション</a>（寄付・支援金）制</p>
                                 </div>
                                 <div class="detail-link">
                                     <picture class="">
@@ -51,11 +67,11 @@ Template Name: event-story
                         </div>
                     </div>
                 </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <?php endwhile; ?>
             </ul>
+            <?php else: ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
             <div class="contact-button">
                 <a href="ご質問・お問い合わせ"></a>
             </div>
@@ -64,7 +80,7 @@ Template Name: event-story
             </div>
             <div class="check-box02">
                 <p class="ttl">イベントで行う「チャネリング体験」について</p>
-                <p class="sent">コラボレーションイベントでの「チャネリング体験」では、ゲストのエネルギーをミハエルが感知し、その方に向けたメッセージを個別にお届けいたします（約5分前後）。またご家族やお仕事、恋愛などに関するご相談がございましたら、ミハエルとの深い対話を楽しむために、<a href="<?php echo esc_url( home_url( '/') ); ?>">チャネリング ダイアローグ（45分の個人セッション）</a>のご予約をお勧めいたします。どうぞお気軽にお問い合わせください。</p>
+                <p class="sent">コラボレーションイベントでの「チャネリング体験」では、ゲストのエネルギーをミハエルが感知し、その方に向けたメッセージを個別にお届けいたします（約5分前後）。またご家族やお仕事、恋愛などに関するご相談がございましたら、ミハエルとの深い対話を楽しむために、<a class="sentence-link" href="<?php echo esc_url( home_url( '/') ); ?>">チャネリング ダイアローグ（45分の個人セッション）</a>のご予約をお勧めいたします。どうぞお気軽にお問い合わせください。</p>
             </div>
             <div class="consider-event-area">
                 <div class="wrap">
@@ -76,7 +92,7 @@ Template Name: event-story
                     </ul>
                     <p>ワンズヒーリングハウスでは、チャネリングとのコラボレーションイベントの企画を募集しています。<br>（ワンズヒーリングハウスでは、レンタルスペースや貸会議室のように、貸し出しはいたしておりません）１階フロアだけでなく、和室、２階のライブラリースペース、ガーデンなどを併用し、お客様が回遊できるようなイベントも可能です。スピリチュアルイベントなどをご検討中の方、ワンズヒーリングハウスで何かやってみたい、と思われる方は、ぜひお気軽にお問い合わせください。</p>
                     <div class="contact-button">
-                        <a href="ご質問・お問い合わせ"></a>
+                        <a href="/">ご質問・お問い合わせ</a>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: single-eventprogram
+Template Name: single-event-program-post
 */
 ?>
 <?php get_header(); ?>

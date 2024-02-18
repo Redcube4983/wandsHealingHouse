@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @use '../common/css/Component/button';
+@use '../common/css/layout/mixin';
 
 @mixin ff-jp {
     font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
@@ -8,28 +9,81 @@
 @mixin ff-en {
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
+.sentence-link {
+    @include mixin.sentence-link;
+}
 #event-story {
     background-image: url(../images/event-program/bg-object.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: top;
     padding-top: 150px;
+    @media screen and (min-width:768px){
+        background-size: 80%;
+        background-position-x: right;
+    }
+    @media screen and (min-width:920px){
+        background-size: 60%;
+        background-position-x: right;
+    }
+    .lead-area {
+        padding: 0;
+    }
     .visual-lead-area {
         border-bottom: solid 1px #D8E8DA;
         padding-bottom: 30px;
+        margin: 0 15px;
+        @media screen and (min-width:768px){
+            padding-bottom: 100px;
+        }
+       
+        
     }
     .story-boxes {
         padding: 0 15px;
+        @media screen and (min-width:768px){
+            margin-bottom: 30px;
+            max-width: 1210px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width:920px){
+        }
         h4 {
             font-size: 2rem;
             @include ff-jp();
             line-height: 1.8;
             margin-bottom: 20px;
+            @media screen and (min-width:768px){
+                margin-bottom: 30px;
+            }
         }
     }
     .info-wrap {
+        padding-bottom: 50px;
+        border-bottom: dotted 2px #D8E8DA;
+        @media screen and (min-width:768px){
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+        @media screen and (min-width:920px){
+        }
+        .img-wrap {
+            @media screen and (min-width:768px){
+                width: 35%;
+            }
+        }
+        .text-wrap {
+            @media screen and (min-width:768px){
+                width: 60%;
+            }
+        }
         p {
             margin-top: 20px;
+            @media screen and (min-width:768px){
+                margin: 0;
+            }
         }
     }
     .sub-info {
@@ -46,16 +100,160 @@
             color: #73C0A5;
             text-decoration: underline;
         }
-        .detail-link {
-            display: flex;
-            box-shadow: 0 0 5px #c9c9c9;
-            margin-top: 20px;
-            width: 100%;
-            picture {
-                width: 30%;
+    }
+    .detail-link {
+        display: flex;
+        box-shadow: 0 0 8px #d8dddb;
+        margin-top: 20px;
+        width: 100%;
+        background-color: #fff;
+        @media screen and (min-width:920px){
+            transition: .3s;
+        }
+        &:hover {
+            @media screen and (min-width:920px){
+                box-shadow: 0 0 13px #c0c6c4;
             }
-            .text-wrap {
-                width: 70%;
+        }
+        picture {
+            width: 30%;
+        }
+        .text-wrap {
+            width: 70%;
+            margin: 20px 10px 10px;
+        }
+        h6 {
+            font-size: 1.5rem;
+            line-height: 1;
+            @include ff-jp();
+            @media screen and (min-width:768px){
+                font-size: 1.8rem;
+            }
+            @media screen and (min-width:920px){
+                font-size: 2.1rem;
+            }
+        }
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+        p {
+            margin-top: 10px;
+            font-size: 1.3rem;
+            @media screen and (min-width:920px){
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .button-wrap {
+        @include button.btn-read_more;
+    }
+    .check-box {
+        p {
+            margin: 50px 15px;
+            position: relative;
+            text-align: center;
+            padding-top: 20px;
+            &::before {
+                content: "";
+                background-color: #AED4CA;
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50vw 50vw 0 0;
+            }
+        }
+    }
+    .check-box02 {
+        padding: 35px;
+        border: solid 1px #AED4CA;
+        border-radius: 20vw;
+        @media screen and (min-width:768px){
+            border-radius: 15vw;
+            padding: 60px;
+            margin: 0 15px;
+        }
+        @media screen and (min-width:768px){
+            max-width: 960px;
+            margin: 0 auto;
+            border-radius: 7vw;
+        }
+    }
+    .consider-event-area {
+        margin-top: 50px;
+        padding: 150px 30px 50px;
+        background-color: #E2FDF6;
+        border-radius: 50vw 50vw 0 0;
+        @media screen and (min-width:768px){
+            max-width: 960px;
+            margin: 50px auto 0;
+        }
+        @media screen and (min-width:920px){
+            padding: 250px 14% 100px;
+        }
+        h4 {
+            text-align: center;
+            font-size: 2rem;
+            @include ff-jp();
+            @media screen and (min-width:920px){
+                font-size: 3rem;
+                margin-bottom: 30px;
+            }
+        }
+        .wrap {
+            @media screen and (min-width:768px){
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            @media screen and (min-width:920px){
+                max-width: 960px;
+            }
+        } 
+        .img-wrap {
+            @media screen and (min-width:768px){
+                display: flex;
+                flex-flow: wrap;
+                justify-content: space-between;
+            }
+            li {
+                @media screen and (min-width:768px){
+                    width: 190px;
+                }
+                @media screen and (min-width:920px){
+                    width: 32%;
+                }
+                &:not(:first-child) {
+                    margin-top: 10px;
+                    @media screen and (min-width:768px){
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        p {
+            margin-top: 20px;
+        }
+        .contact-button {
+            margin: 30px auto;
+            width: 320px;
+            a {
+                height: 80px;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                font-size: 1.3rem;
+                background-image: url(../images/event-program/contact-button02.jpg);
+                border-radius: 10vw;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                @media screen and (min-width:768px){
+                    font-size: 1.6rem;
+                }
             }
         }
     }

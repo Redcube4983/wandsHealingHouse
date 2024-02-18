@@ -1,3 +1,8 @@
+.sentence-link {
+  color: #73C0A5;
+  text-decoration: underline;
+}
+
 #event-story {
   background-image: url(../images/event-program/bg-object.jpg);
   background-size: 100%;
@@ -5,12 +10,40 @@
   background-position-y: top;
   padding-top: 150px;
 }
+@media screen and (min-width: 768px) {
+  #event-story {
+    background-size: 80%;
+    background-position-x: right;
+  }
+}
+@media screen and (min-width: 920px) {
+  #event-story {
+    background-size: 60%;
+    background-position-x: right;
+  }
+}
+#event-story .lead-area {
+  padding: 0;
+}
 #event-story .visual-lead-area {
   border-bottom: solid 1px #D8E8DA;
   padding-bottom: 30px;
+  margin: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  #event-story .visual-lead-area {
+    padding-bottom: 100px;
+  }
 }
 #event-story .story-boxes {
   padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  #event-story .story-boxes {
+    margin-bottom: 30px;
+    max-width: 1210px;
+    margin: 0 auto;
+  }
 }
 #event-story .story-boxes h4 {
   font-size: 2rem;
@@ -18,8 +51,40 @@
   line-height: 1.8;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  #event-story .story-boxes h4 {
+    margin-bottom: 30px;
+  }
+}
+#event-story .info-wrap {
+  padding-bottom: 50px;
+  border-bottom: dotted 2px #D8E8DA;
+}
+@media screen and (min-width: 768px) {
+  #event-story .info-wrap {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #event-story .info-wrap .img-wrap {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #event-story .info-wrap .text-wrap {
+    width: 60%;
+  }
+}
 #event-story .info-wrap p {
   margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  #event-story .info-wrap p {
+    margin: 0;
+  }
 }
 #event-story .sub-info {
   margin-top: 50px;
@@ -36,15 +101,227 @@
   color: #73C0A5;
   text-decoration: underline;
 }
-#event-story .sub-info .detail-link {
+#event-story .detail-link {
   display: flex;
-  box-shadow: 0 0 5px #c9c9c9;
+  box-shadow: 0 0 8px #d8dddb;
   margin-top: 20px;
   width: 100%;
+  background-color: #fff;
 }
-#event-story .sub-info .detail-link picture {
+@media screen and (min-width: 920px) {
+  #event-story .detail-link {
+    transition: 0.3s;
+  }
+}
+@media screen and (min-width: 920px) {
+  #event-story .detail-link:hover {
+    box-shadow: 0 0 13px #c0c6c4;
+  }
+}
+#event-story .detail-link picture {
   width: 30%;
 }
-#event-story .sub-info .detail-link .text-wrap {
+#event-story .detail-link .text-wrap {
   width: 70%;
+  margin: 20px 10px 10px;
+}
+#event-story .detail-link h6 {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+@media screen and (min-width: 768px) {
+  #event-story .detail-link h6 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 920px) {
+  #event-story .detail-link h6 {
+    font-size: 2.1rem;
+  }
+}
+#event-story .detail-link img {
+  height: 100%;
+  object-fit: cover;
+}
+#event-story .detail-link p {
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 920px) {
+  #event-story .detail-link p {
+    font-size: 1.6rem;
+  }
+}
+#event-story .button-wrap {
+  display: flex;
+  flex-flow: row-reverse;
+  margin-top: 20px;
+}
+@media screen and (min-width: 920px) {
+  #event-story .button-wrap {
+    margin-top: 30px;
+  }
+}
+#event-story .button-wrap a {
+  position: relative;
+  padding: 10px 50px 10px 25px;
+  border-radius: 100px;
+  border: solid 1px #54a37f;
+  background-color: #fff;
+  color: #54a37f;
+  transition: 0.3s;
+  font-size: 1.3rem;
+}
+#event-story .button-wrap a:hover::after {
+  border-right: 1.5px solid #fff;
+  border-bottom: 1.5px solid #fff;
+}
+#event-story .button-wrap a::after {
+  position: absolute;
+  content: "";
+  border-right: 1.5px solid #54a37f;
+  border-bottom: 1.5px solid #54a37f;
+  top: 51%;
+  display: block;
+  transform: translateY(-50%) rotate(-45deg);
+  transition: 0.3s;
+  width: 10px;
+  height: 10px;
+  right: 25px;
+}
+@media screen and (min-width: 768px) {
+  #event-story .button-wrap a {
+    padding: 15px 60px 15px 25px;
+    font-size: 1.5rem;
+  }
+}
+#event-story .button-wrap a:hover {
+  color: #fff;
+  background-color: #54a37f;
+}
+#event-story .check-box p {
+  margin: 50px 15px;
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+}
+#event-story .check-box p::before {
+  content: "";
+  background-color: #AED4CA;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50vw 50vw 0 0;
+}
+#event-story .check-box02 {
+  padding: 35px;
+  border: solid 1px #AED4CA;
+  border-radius: 20vw;
+}
+@media screen and (min-width: 768px) {
+  #event-story .check-box02 {
+    border-radius: 15vw;
+    padding: 60px;
+    margin: 0 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #event-story .check-box02 {
+    max-width: 960px;
+    margin: 0 auto;
+    border-radius: 7vw;
+  }
+}
+#event-story .consider-event-area {
+  margin-top: 50px;
+  padding: 150px 30px 50px;
+  background-color: #E2FDF6;
+  border-radius: 50vw 50vw 0 0;
+}
+@media screen and (min-width: 768px) {
+  #event-story .consider-event-area {
+    max-width: 960px;
+    margin: 50px auto 0;
+  }
+}
+@media screen and (min-width: 920px) {
+  #event-story .consider-event-area {
+    padding: 250px 14% 100px;
+  }
+}
+#event-story .consider-event-area h4 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+@media screen and (min-width: 920px) {
+  #event-story .consider-event-area h4 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #event-story .consider-event-area .wrap {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 920px) {
+  #event-story .consider-event-area .wrap {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #event-story .consider-event-area .img-wrap {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) {
+  #event-story .consider-event-area .img-wrap li {
+    width: 190px;
+  }
+}
+@media screen and (min-width: 920px) {
+  #event-story .consider-event-area .img-wrap li {
+    width: 32%;
+  }
+}
+#event-story .consider-event-area .img-wrap li:not(:first-child) {
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  #event-story .consider-event-area .img-wrap li:not(:first-child) {
+    margin: 0;
+  }
+}
+#event-story .consider-event-area p {
+  margin-top: 20px;
+}
+#event-story .consider-event-area .contact-button {
+  margin: 30px auto;
+  width: 320px;
+}
+#event-story .consider-event-area .contact-button a {
+  height: 80px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.3rem;
+  background-image: url(../images/event-program/contact-button02.jpg);
+  border-radius: 10vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  #event-story .consider-event-area .contact-button a {
+    font-size: 1.6rem;
+  }
 }/*# sourceMappingURL=event-story.css.map */
