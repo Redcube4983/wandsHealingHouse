@@ -1,6 +1,32 @@
+<!-- <?php
+/*
+Template Name: event-story-post
+*/
+?>
+<?php get_header(); ?>
+<main>
+	<div id="event-story">
+        <div class="visual-lead-area">
+            <div class="lead-area">
+                <h4 class="en"></h4>
+                <h3 class="jp">イベントストーリー詳細</h3>
+                <p class="lead-sentence">コンプレックス（複合）型のワーズヒーリングハウスでは、定期的に多彩なイベントを企画しています。</p>
+            </div>
+        </div>
+        <div class="breadcrumbs-area">
+            <ul class="breadcrumbs-list">
+                <li class="link"><a href="<?php echo esc_url( home_url( '/') ); ?>">トップ</a></li>
+                <li><a href="<?php echo esc_url( home_url('event-program') ); ?>">イベントプログラム</a></li>
+                <li>イベントストーリー</li>
+            </ul>
+        </div>
+    </div>
+</main>
+<?php get_footer(); ?> -->
+
 <?php
 /*
-Template Name: event-story
+Template Name: event-story-post
 */
 ?>
 <?php get_header(); ?>
@@ -20,59 +46,35 @@ Template Name: event-story
                 <li>イベントストーリー</li>
             </ul>
         </div>
-        <div class="contents-area">
+        <div class="contents-area"><?php $args = array(
+					'post_type' => array('post','nearby_gourmet','leisure_culture','tribe_events'),
+					'post_status' => 'publish',// 公開済の投稿を指定
+					'orderby' => 'date',
+					'paged' => $paged, 
+					'posts_per_page' => -1 // 投稿件数の指定
+					);
+			  $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+		      $the_query = new WP_Query($args);
+		      if($the_query->have_posts()):?>
             <ul class="story-boxes">
-            <!-- -----------------サブループ--------------------- -->
-            <?php $args = array(
-            'post_type' => 'event-story-category',
-            'post_status' => 'publish',// 公開済の投稿を指定
-            'paged' => $paged, 
-            'posts_per_page' => -1// 投稿件数の指定
-            );
-            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-            $the_query = new WP_Query($args);
-
-            if($the_query->have_posts()):?>
-            <?php while ($the_query->have_posts()): $the_query->the_post();?>
-            <li class="">
-                    <h4><?php the_title(); ?></h4>
+            <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+			<?php 
+			$cat = get_the_category();
+			$cat = $cat[0];
+			?>
+                <li id="post-<?php the_ID(); ?>" class="">
+                    <h4><?php the_field('event-ttl'); ?></h4>
                     <div class="info-wrap">
                         <div class="img-wrap">
-                            <?php
-                            // プロフィールページで設定した画像を取得
-                            $profileImage = get_field('event-image');
-                            $size = 'large';
-                            // medium, large, fullなども指定可能
-                            if( $profileImage ) {
-                                echo wp_get_attachment_image( $profileImage, $size );
-                            }?>
-                            
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/event-program/story-img01.jpg" alt="">
                         </div>
                         <div class="text-wrap">
                             <p><?php the_field('detail-sentence'); ?></p>
                             <div class="about-detail-wrap">
                                 <div class="sub-info">
-                                    <h5><?php the_field('sub-event-ttl'); ?></h5>
-                                    <p class=""><?php the_field('sub-event-detail'); ?></p>
+                                    <h5>ミハエルのオープンチャネリング ダイアローグ(対話)<br>カフェスタイル</h5>
+                                    <p class="">5,000円以上の<a class="sentence-link" href="<?php echo esc_url( home_url( 'event-program') ); ?>">ドネーション</a>（寄付・支援金）制</p>
                                 </div>
-                                
-                                <!-- -----------------サブ サブループ--------------------- -->
-                                <?php
-                                $taxonomy_slug = $query_object->taxonomy;
-                                $temp = $the_query;  // 現在（カスタム投稿タイプA）のクエリを一旦格納
-                                $the_query = null;
-                                $args = array(
-                                    'post_type' => 'event-story', // カスタム投稿タイプBのスラッグ 
-                                    'post_status' => 'publish',// 公開済の投稿を指定
-                                    'paged' => $paged, 
-                                    'posts_per_page' => 1,// 投稿件数の指定
-                                    'taxonomy' => 'story-tax',
-                                    'term' => $taxonomy_slug,
-                                );
-                                $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-                                $the_query = new WP_Query($args);
-                                if($the_query->have_posts()):?>
-                                <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
                                 <div class="detail-link">
                                     <picture class="">
                                         <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/images/event-program/story-img00_sp.jpg 1x,<?php echo get_template_directory_uri(); ?>/images/event-program/story-img00_sp.jpg 2x">
@@ -80,18 +82,10 @@ Template Name: event-story
                                         <img src="<?php echo get_template_directory_uri(); ?>/images/event-program/story-img00_pc.jpg" alt="">
                                     </picture>
                                     <div class="text-wrap">
-                                        <h6><?php the_title(); ?></h6>
-                                        <p><?php the_field('story-detail'); ?></p>
+                                        <h6>イベントストーリー詳細</h6>
+                                        <p>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
                                     </div>
                                 </div>
-                                <?php endwhile; ?>
-                                <?php else: ?>
-                                <?php endif; ?>
-                                <?php 
-                                $the_query = null;
-                                $the_query = $temp;
-                                ?>
-                                <!-- ------------------------------------- -->
                                 <div class="button-wrap">
                                     <a href="<?php echo esc_url( home_url( '/') ); ?>">イベントストーリー一覧はこちら</a>
                                 </div>
@@ -100,11 +94,10 @@ Template Name: event-story
                     </div>
                 </li>
                 <?php endwhile; ?>
-                <?php else: ?>
-                <?php endif; ?>
-                <?php wp_reset_postdata(); ?>
             </ul>
-                
+            <?php else: ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata(); ?>
             <div class="contact-button">
                 <a href="ご質問・お問い合わせ"></a>
             </div>
@@ -133,3 +126,9 @@ Template Name: event-story
     </div>
 </main>
 <?php get_footer(); ?>
+
+
+
+
+
+

@@ -45,30 +45,33 @@ Template Name: front-page
                         </div>
                     </div>
                     <ul class="contents-wrap">
+                        <?php $args = array(
+                                'post_type' => 'event-program',
+                                'post_status' => 'publish',// 公開済の投稿を指定
+                                'paged' => $paged, 
+                                'posts_per_page' => 3// 投稿件数の指定
+                                );
+                                $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+                                $the_query = new WP_Query($args);
+                                if($the_query->have_posts()):?>
+                        <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
                         <li>
                             <a href="#" class="content-wrap content01-wrap">
                                 <div class="event-img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/event-img01.jpg" alt="">
+                                    <img src="<?php echo get_field('main-image'); ?>" alt="">
                                 </div>
                                 <div class="event-text-button-wrap">
                                     <div class="text-wrap">
-                                        <p><span>お申し込み受付中</span><br>12月3日（日）<br>第３回スターシードお茶会のご案内</p>
+                                        <p><span><?php echo get_field('title'); ?></span><br><?php echo get_field('date'); ?><br><?php echo get_field('sentence'); ?></p>
                                     </div>
                                 </div>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" class="content-wrap content02-wrap">
-                                <div class="event-img">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/images/event-img02.jpg" alt="">
-                                </div>
-                                <div class="event-text-button-wrap">
-                                    <div class="text-wrap">
-                                        <p><span>満席となりました</span><br>12月3日（日）<br>第３回スターシードお茶会のご案内</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
+                        <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
+                        <?php else: ?>
+                        <!-- 投稿が無い場合の処理 -->
+                        <?php endif; ?>
                     </ul>
                 </div>
                 <div class="report-wrap">

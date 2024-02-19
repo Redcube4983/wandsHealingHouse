@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: event-program
+Template Name: archive-event-program
 */
 ?>
 <?php get_header(); ?>
