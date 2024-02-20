@@ -47,6 +47,7 @@ Template Name: front-page
                     <ul class="contents-wrap">
                         <?php $args = array(
                                 'post_type' => 'event-program',
+                                'category_name' => 'event-program',
                                 'post_status' => 'publish',// 公開済の投稿を指定
                                 'paged' => $paged, 
                                 'posts_per_page' => 3// 投稿件数の指定

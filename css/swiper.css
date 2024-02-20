@@ -1,0 +1,14 @@
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+.swiper-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  animation: zoomUp 7s linear 0s normal both;
+}/*# sourceMappingURL=swiper.css.map */

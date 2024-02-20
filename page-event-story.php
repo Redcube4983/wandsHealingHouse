@@ -31,7 +31,6 @@ Template Name: event-story
             );
             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
             $the_query = new WP_Query($args);
-
             if($the_query->have_posts()):?>
             <?php while ($the_query->have_posts()): $the_query->the_post();?>
             <li class="">
@@ -55,42 +54,46 @@ Template Name: event-story
                                     <h5><?php the_field('sub-event-ttl'); ?></h5>
                                     <p class=""><?php the_field('sub-event-detail'); ?></p>
                                 </div>
-                                
                                 <!-- -----------------サブ サブループ--------------------- -->
                                 <?php
-                                $taxonomy_slug = $query_object->taxonomy;
-                                $temp = $the_query;  // 現在（カスタム投稿タイプA）のクエリを一旦格納
-                                $the_query = null;
-                                $args = array(
-                                    'post_type' => 'event-story', // カスタム投稿タイプBのスラッグ 
-                                    'post_status' => 'publish',// 公開済の投稿を指定
-                                    'paged' => $paged, 
-                                    'posts_per_page' => 1,// 投稿件数の指定
-                                    'taxonomy' => 'story-tax',
-                                    'term' => $taxonomy_slug,
+                                $terms = get_the_terms($post->ID, 'story-tax'); // ① カスタムタクソノミーのスラッグ
+                                foreach($terms as $term) {
+                                    $term_slug = $term->slug;
+                                }
+                                $parm = array(
+                                    'post__not_in' => array($post->ID),
+                                    'post_type' => 'event-story', // カスタム投稿タイプのスラッグ
+                                    'posts_per_page' => 1, //  表示件数
+
+                                    'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'story-tax', // カスタムタクソノミーのスラッグ
+                                        'field' => 'slug',
+                                        'terms' => $term_slug
+                                    )
+                                    )
                                 );
                                 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-                                $the_query = new WP_Query($args);
-                                if($the_query->have_posts()):?>
-                                <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+                                $sub_query = new WP_Query($parm);?>
+                                <?php if($sub_query->have_posts()):?>
+                                <?php while ($sub_query->have_posts()): $sub_query->the_post(); ?>
                                 <div class="detail-link">
-                                    <picture class="">
-                                        <source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/images/event-program/story-img00_sp.jpg 1x,<?php echo get_template_directory_uri(); ?>/images/event-program/story-img00_sp.jpg 2x">
-                                        <source media="(max-width: 920px)" srcset="<?php echo get_template_directory_uri(); ?>/images/event-program/story-img00_pc.jpg 1x,<?php echo get_template_directory_uri(); ?>/images/event-program/story-img00_pc.jpg 2x">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/event-program/story-img00_pc.jpg" alt="">
-                                    </picture>
+                                    <?php
+                                        // プロフィールページで設定した画像を取得
+                                        $profileImage = get_field('story-image');
+                                        $size = 'small';
+                                        // medium, large, fullなども指定可能
+                                        if( $profileImage ) {
+                                            echo wp_get_attachment_image( $profileImage, $size );
+                                        }?>
                                     <div class="text-wrap">
-                                        <h6><?php the_title(); ?></h6>
+                                        <h6><?php $title = the_title(); ?></h6>
                                         <p><?php the_field('story-detail'); ?></p>
                                     </div>
                                 </div>
                                 <?php endwhile; ?>
                                 <?php else: ?>
                                 <?php endif; ?>
-                                <?php 
-                                $the_query = null;
-                                $the_query = $temp;
-                                ?>
                                 <!-- ------------------------------------- -->
                                 <div class="button-wrap">
                                     <a href="<?php echo esc_url( home_url( '/') ); ?>">イベントストーリー一覧はこちら</a>
