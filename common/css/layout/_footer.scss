@@ -43,7 +43,7 @@ footer {
         a {
             font-size: 1.4rem;
             padding: 30px 80px 30px 50px;
-            background-image: url(./images/top/contact-bg-sp.jpg);
+            background-image: url(./images/top/contact-bg.jpg);
             color: #fff;
             position: absolute;
             border-radius: 0 90px 90px 0;
@@ -84,7 +84,7 @@ footer {
         }
     }
     .footer-wrap {
-        background-image: url(./images/footer-bg.png);
+        background-image: url(./images/footer-bg-pc.png);
         background-size: 100%;
         background-repeat: no-repeat;
         background-position-y: bottom;
@@ -93,7 +93,7 @@ footer {
             background-size: 80%;
         }
         @media screen and (min-width:920px){
-            background-image: url(./images/footer-bg-pc.png);
+            background-image: url(./images/footer-bg-sp.png);
             background-size: 60%;
             padding-top: 150px;
         }
