@@ -77,7 +77,7 @@ Template Name: event-story
                                 $sub_query = new WP_Query($parm);?>
                                 <?php if($sub_query->have_posts()):?>
                                 <?php while ($sub_query->have_posts()): $sub_query->the_post(); ?>
-                                <div class="detail-link">
+                                <a class="detail-link" href="<?php the_permalink(); ?>">
                                     <?php
                                         // プロフィールページで設定した画像を取得
                                         $profileImage = get_field('story-image');
@@ -90,7 +90,7 @@ Template Name: event-story
                                         <h6><?php $title = the_title(); ?></h6>
                                         <p><?php the_field('story-detail'); ?></p>
                                     </div>
-                                </div>
+                                </a>
                                 <?php endwhile; ?>
                                 <?php else: ?>
                                 <?php endif; ?>

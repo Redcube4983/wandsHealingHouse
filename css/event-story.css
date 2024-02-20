@@ -1,8 +1,3 @@
-.sentence-link {
-  color: #73C0A5;
-  text-decoration: underline;
-}
-
 #event-story {
   background-image: url(../images/event-program/bg-object.jpg);
   background-size: 100%;
@@ -21,6 +16,10 @@
     background-size: 60%;
     background-position-x: right;
   }
+}
+#event-story .sentence-link {
+  color: #73C0A5;
+  text-decoration: underline;
 }
 #event-story .lead-area {
   padding: 0;
@@ -55,6 +54,9 @@
   #event-story .story-boxes h4 {
     margin-bottom: 30px;
   }
+}
+#event-story .story-boxes li:not(:first-child) {
+  margin-top: 50px;
 }
 #event-story .info-wrap {
   padding-bottom: 50px;
@@ -123,11 +125,12 @@
 }
 #event-story .detail-link .text-wrap {
   width: 70%;
-  margin: 20px 10px 10px;
+  margin: 20px 13px 10px;
+  color: #3B453E;
 }
 #event-story .detail-link h6 {
   font-size: 1.5rem;
-  line-height: 1;
+  line-height: 1.5;
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
 }
 @media screen and (min-width: 768px) {
@@ -141,8 +144,19 @@
   }
 }
 #event-story .detail-link img {
-  height: 100%;
   object-fit: cover;
+  width: 23%;
+}
+@media screen and (min-width: 768px) {
+  #event-story .detail-link img {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 920px) {
+  #event-story .detail-link img {
+    width: 100%;
+    max-width: 220px;
+  }
 }
 #event-story .detail-link p {
   margin-top: 10px;
@@ -236,6 +250,9 @@
     border-radius: 7vw;
   }
 }
+#event-story .check-box02 .ttl {
+  font-weight: bold;
+}
 #event-story .consider-event-area {
   margin-top: 50px;
   padding: 150px 30px 50px;
@@ -252,6 +269,9 @@
   #event-story .consider-event-area {
     padding: 250px 14% 100px;
   }
+}
+#event-story .consider-event-area .img-wrap {
+  margin-top: 20px;
 }
 #event-story .consider-event-area h4 {
   text-align: center;
