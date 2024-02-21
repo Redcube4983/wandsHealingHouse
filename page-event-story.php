@@ -106,11 +106,11 @@ Template Name: event-story
                 <?php else: ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
+                <div class="contact-button">
+                        <a href="/">ご質問・お問い合わせ</a>
+                </div>
             </ul>
                 
-            <div class="contact-button">
-                <a href="ご質問・お問い合わせ"></a>
-            </div>
             <div class="check-box">
                 <p>今後のイベントご案内はこのページの他、Facebook, Instagram, <br>公式ラインでもお知らせいたします</p>
             </div>

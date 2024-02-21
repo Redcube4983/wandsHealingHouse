@@ -6,7 +6,7 @@
         <div class="footer-flbox">
             <div id="info-wrap">
                 <a id="footer-site-logo" href="#">
-                    <h2><img class="footer-site-logo" src="<?php echo get_template_directory_uri(); ?>/images/house_logo.png"  alt="">
+                    <h2><img class="footer-site-logo" src="<?php echo get_template_directory_uri(); ?>/images/top/house_logo.png"  alt="">
                     </h2>
                 </a>
                 <div class="open-wrap">

@@ -201,6 +201,26 @@
             font-weight: bold;
         }
     }
+    .contact-button {
+        margin: 30px auto;
+        width: 320px;
+        a {
+            height: 80px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            font-size: 1.3rem;
+            background-image: url(../images/event-program/contact-button02.jpg);
+            border-radius: 10vw;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            @media screen and (min-width:768px){
+                font-size: 1.6rem;
+            }
+        }
+    }
     .consider-event-area {
         margin-top: 50px;
         padding: 150px 30px 50px;
@@ -257,26 +277,6 @@
         }
         p {
             margin-top: 20px;
-        }
-        .contact-button {
-            margin: 30px auto;
-            width: 320px;
-            a {
-                height: 80px;
-                color: #fff;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                font-size: 1.3rem;
-                background-image: url(../images/event-program/contact-button02.jpg);
-                border-radius: 10vw;
-                background-size: 100%;
-                background-repeat: no-repeat;
-                @media screen and (min-width:768px){
-                    font-size: 1.6rem;
-                }
-            }
         }
     }
 }

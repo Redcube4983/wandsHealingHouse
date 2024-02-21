@@ -33,7 +33,7 @@ main {
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(../images/bg_attachment.jpg);
+  background-image: url(../images/top/bg_attachment.jpg);
   background-size: cover;
 }
 

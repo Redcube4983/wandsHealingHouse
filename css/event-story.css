@@ -253,6 +253,28 @@
 #event-story .check-box02 .ttl {
   font-weight: bold;
 }
+#event-story .contact-button {
+  margin: 30px auto;
+  width: 320px;
+}
+#event-story .contact-button a {
+  height: 80px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.3rem;
+  background-image: url(../images/event-program/contact-button02.jpg);
+  border-radius: 10vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  #event-story .contact-button a {
+    font-size: 1.6rem;
+  }
+}
 #event-story .consider-event-area {
   margin-top: 50px;
   padding: 150px 30px 50px;
@@ -322,26 +344,4 @@
 }
 #event-story .consider-event-area p {
   margin-top: 20px;
-}
-#event-story .consider-event-area .contact-button {
-  margin: 30px auto;
-  width: 320px;
-}
-#event-story .consider-event-area .contact-button a {
-  height: 80px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  font-size: 1.3rem;
-  background-image: url(../images/event-program/contact-button02.jpg);
-  border-radius: 10vw;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-@media screen and (min-width: 768px) {
-  #event-story .consider-event-area .contact-button a {
-    font-size: 1.6rem;
-  }
 }/*# sourceMappingURL=event-story.css.map */
