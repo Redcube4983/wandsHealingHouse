@@ -47,7 +47,6 @@ Template Name: front-page
                     <ul class="contents-wrap">
                         <?php $args = array(
                                 'post_type' => 'event-program',
-                                'category_name' => 'event-program',
                                 'post_status' => 'publish',// 公開済の投稿を指定
                                 'paged' => $paged, 
                                 'posts_per_page' => 3// 投稿件数の指定
@@ -59,7 +58,15 @@ Template Name: front-page
                         <li>
                             <a href="#" class="content-wrap content01-wrap">
                                 <div class="event-img">
-                                    <img src="<?php echo get_field('main-image'); ?>" alt="">
+                                    <?php
+                                    // プロフィールページで設定した画像を取得
+                                    $profileImage = get_field('main-img');
+                                    $size = 'large';
+                                    // medium, large, fullなども指定可能
+
+                                    if( $profileImage ) {
+                                        echo wp_get_attachment_image( $profileImage, $size );
+                                    }?>
                                 </div>
                                 <div class="event-text-button-wrap">
                                     <div class="text-wrap">

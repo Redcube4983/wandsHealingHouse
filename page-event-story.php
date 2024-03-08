@@ -37,15 +37,15 @@ Template Name: event-story
                     <h4><?php the_title(); ?></h4>
                     <div class="info-wrap">
                         <div class="img-wrap">
-                            <?php
-                            // プロフィールページで設定した画像を取得
-                            $profileImage = get_field('event-image');
-                            $size = 'large';
-                            // medium, large, fullなども指定可能
-                            if( $profileImage ) {
-                                echo wp_get_attachment_image( $profileImage, $size );
-                            }?>
-                            
+                        <?php
+                        // プロフィールページで設定した画像を取得
+                        $profileImage = get_field('main-img');
+                        $size = 'large';
+                        // medium, large, fullなども指定可能
+
+                        if( $profileImage ) {
+                            echo wp_get_attachment_image( $profileImage, $size );
+                        }?>
                         </div>
                         <div class="text-wrap">
                             <p><?php the_field('detail-sentence'); ?></p>
