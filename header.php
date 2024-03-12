@@ -25,6 +25,16 @@
     <!-- jquery 3.6.1 -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <?php wp_head(); ?>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HW08KB3L9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2HW08KB3L9');
+    </script>
+
 </head>
 <body>
     <header>

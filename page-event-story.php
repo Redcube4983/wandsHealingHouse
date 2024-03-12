@@ -35,17 +35,18 @@ Template Name: event-story
             <?php while ($the_query->have_posts()): $the_query->the_post();?>
             <li class="">
                     <h4><?php the_title(); ?></h4>
+
                     <div class="info-wrap">
                         <div class="img-wrap">
                         <?php
-                        // プロフィールページで設定した画像を取得
-                        $profileImage = get_field('main-img');
-                        $size = 'large';
-                        // medium, large, fullなども指定可能
+                            // プロフィールページで設定した画像を取得
+                            $profileImage = get_field('event-img');
+                            $size = 'large';
+                            // medium, large, fullなども指定可能
 
-                        if( $profileImage ) {
-                            echo wp_get_attachment_image( $profileImage, $size );
-                        }?>
+                            if( $profileImage ) {
+                                echo wp_get_attachment_image( $profileImage, $size );
+                            }?>
                         </div>
                         <div class="text-wrap">
                             <p><?php the_field('detail-sentence'); ?></p>
