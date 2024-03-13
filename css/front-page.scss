@@ -382,7 +382,7 @@ main {
             }
             .event-img {
                 @media screen and (min-width:768px){
-                    width: 300px;
+                    width: 200px;
                 }
                 @media screen and (min-width:920px){
                 }
@@ -427,10 +427,10 @@ main {
         }
     }
     .report-wrap {
-        padding: 20px 50px;
         margin: 50px 0 20px;
         border-bottom: solid 1px #A1DEB9;
         border-top: solid 1px #A1DEB9;
+        background-color: #fff;
         @media screen and (min-width:768px){
             padding: 20px 0;
             display: flex;
@@ -443,7 +443,9 @@ main {
         @media screen and (min-width:1280px){
             margin: 100px 150px 0;
         }
-        
+        .right {
+            margin: 20px;
+        }
         .text-wrap {
             h3 {
                 @include ff-jp();

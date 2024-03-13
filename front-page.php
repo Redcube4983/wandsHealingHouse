@@ -63,7 +63,6 @@ Template Name: front-page
                                     $profileImage = get_field('main-img');
                                     $size = 'large';
                                     // medium, large, fullなども指定可能
-
                                     if( $profileImage ) {
                                         echo wp_get_attachment_image( $profileImage, $size );
                                     }?>
@@ -83,12 +82,17 @@ Template Name: front-page
                     </ul>
                 </div>
                 <div class="report-wrap">
-                    <div class="text-wrap">
-                        <h3>イベントストーリー</h3>
-                        <p>終了したイベントについての報告を掲載しています。</p>
+                    <div class="left">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/top/eventStory-img.jpg" alt="">
                     </div>
-                    <div class="button-wrap">
-                        <a href="#" class="">read more</a>
+                    <div class="right">
+                        <div class="text-wrap">
+                            <h3>イベントストーリー</h3>
+                            <p>終了したイベントについての報告を掲載しています。</p>
+                        </div>
+                        <div class="button-wrap">
+                            <a href="#" class="">read more</a>
+                        </div>
                     </div>
                 </div>
             </section>

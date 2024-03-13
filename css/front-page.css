@@ -468,7 +468,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   #event-wrap .contents-wrap .content-wrap .event-img {
-    width: 300px;
+    width: 200px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -508,10 +508,10 @@ main {
   margin-top: 50px;
 }
 #event-wrap .report-wrap {
-  padding: 20px 50px;
   margin: 50px 0 20px;
   border-bottom: solid 1px #A1DEB9;
   border-top: solid 1px #A1DEB9;
+  background-color: #fff;
 }
 @media screen and (min-width: 768px) {
   #event-wrap .report-wrap {
@@ -530,6 +530,9 @@ main {
   #event-wrap .report-wrap {
     margin: 100px 150px 0;
   }
+}
+#event-wrap .report-wrap .right {
+  margin: 20px;
 }
 #event-wrap .report-wrap .text-wrap h3 {
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
