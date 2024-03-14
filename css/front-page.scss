@@ -283,17 +283,7 @@ main {
 .button-wrap {
     @include button.btn-read_more;
 }
-.report-wrap {
-    .button-wrap {
-        @media screen and (min-width:768px){
-            margin: 0;
-            display: block;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-}
+
 
 
 #event-wrap {
@@ -350,46 +340,50 @@ main {
         @media screen and (min-width:768px){
             display: flex;
             flex-flow: column;
-            align-items: end;
         }
         @media screen and (min-width:920px){
             display: flex;
             flex-flow: wrap;
             align-items: end;
-            margin-top: 50px;
             @media screen and (min-width:1280px){   
                 margin: 0;
                 width: 50%;
+            }
+        }
+        li {
+            @media screen and (min-width:768px){
+                width: 100%;
             }
         }
         
         .content-wrap {
             margin: 50px 50px 0;
             @media screen and (min-width:768px){
-                max-width: inherit;
                 margin: 50px 0 0;
                 display: flex;
                 flex-flow: wrap;
                 justify-content: space-between;
                 align-items: center;
+                width: 100%;
             }
             @media screen and (min-width:920px){
-                margin: 0;
-                flex-flow: initial;
             }
             @media screen and (min-width:1280px){   
                 align-items: end;
             }
+            
             .event-img {
                 @media screen and (min-width:768px){
-                    width: 200px;
+                    width: 40%;
                 }
                 @media screen and (min-width:920px){
+                    
                 }
             }
             .event-text-button-wrap {
                 @media screen and (min-width:768px){
-                    margin-left: 30px;
+                    width: 60%;
+                    padding: 0 0 0 30px;
                 }
                 @media screen and (min-width:920px){
                     
@@ -399,6 +393,9 @@ main {
             }
             .text-wrap {
                 margin: 10px 0;
+                @media screen and (min-width:768px){
+                    margin: 0;
+                }
                 p {
                     font-size: 1.4rem;
                     @media screen and (min-width:768px){
@@ -432,10 +429,10 @@ main {
         border-top: solid 1px #A1DEB9;
         background-color: #fff;
         @media screen and (min-width:768px){
-            padding: 20px 0;
             display: flex;
             flex-flow: wrap;
             justify-content: space-between;
+            width: 100%;
         }
         @media screen and (min-width:920px){
             padding: 30px 30px;
@@ -443,8 +440,27 @@ main {
         @media screen and (min-width:1280px){
             margin: 100px 150px 0;
         }
+        .button-wrap {
+            @media screen and (min-width:768px){
+                margin: 0;
+                display: block;
+                display: flex;
+                align-items: center;
+            }
+        }
+        .left {
+            @media screen and (min-width:768px){
+                width: 45%;
+            }
+        }
         .right {
             margin: 20px;
+            @media screen and (min-width:768px){
+                display: flex;
+                flex-flow: column;
+                width: 55%;
+                margin: 0;
+            }
         }
         .text-wrap {
             h3 {
@@ -526,6 +542,7 @@ main {
         margin-top: 20px;
         @media screen and (min-width:768px){
             font-size: 1.5rem;
+            
         }
         @media screen and (min-width:920px){
             font-size: 1.6rem;
