@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-@use '../common/css/Component/button';
-@use '../common/css/layout/mixin';
+@use "../../common/css/component" as *;
+@use "../../common/css/layout" as *;
+@use '../../common/css/component/button';
 
 @mixin ff-jp {
     font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
@@ -9,7 +10,10 @@
 @mixin ff-en {
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
-
+@mixin sentence-link {
+    color: #73C0A5;
+    text-decoration: underline;
+}
 #event-story {
     background-image: url(../images/event-program/bg-object.jpg);
     background-size: 100%;
@@ -25,7 +29,7 @@
         background-position-x: right;
     }
     .sentence-link {
-        @include mixin.sentence-link;
+        @include sentence-link();
     }
     .lead-area {
         padding: 0;

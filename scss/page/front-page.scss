@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-@use '../common/css/layout/swiper';
-@use '../common/css/Component/button';
+@use "../../common/css/component" as *;
+@use "../../common/css/layout" as *;
+@use '../../common/css/component/button';
 
 @mixin ff-jp {
     font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
