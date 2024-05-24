@@ -4,3 +4,26 @@
     color: #73C0A5;
     text-decoration: underline;
 }
+
+
+@mixin ff-jp {
+    font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+@mixin ff-en {
+    // font-family: font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
+    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+@mixin contents-mt {
+    margin-top: 50px;
+    @media screen and (min-width:768px){
+    }
+    @media screen and (min-width:920px){
+    }
+}
+
+
+@mixin sentence-link {
+    color: #73C0A5;
+    text-decoration: underline;
+}

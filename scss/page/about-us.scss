@@ -1,15 +1,10 @@
 
 @use "../global" as *;
 @use "../object" as *;
+@use "../../common/css/layout" as *;
 
 
 
-@mixin ff-jp {
-    font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
-}
-@mixin ff-en {
-    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-}
 
 #about-us {
     .top-description-area {

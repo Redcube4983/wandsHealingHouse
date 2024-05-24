@@ -3,13 +3,10 @@
 @use "../../common/css/component" as *;
 @use "../../common/css/layout" as *;
 @use '../../common/css/component/button';
+@use '../../common/css/layout/main';
 
-@mixin ff-jp {
-    font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
-}
-@mixin ff-en {
-    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-}
+
+
 main {
     color: #3B453E;
     margin: 0;

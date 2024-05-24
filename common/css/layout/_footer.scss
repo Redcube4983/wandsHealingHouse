@@ -2,23 +2,7 @@
 /*************************************************************************************
                                         フッター
 *************************************************************************************/
-
-@mixin ff-jp {
-    font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
-}
-@mixin ff-en {
-    // font-family: font-family: '小塚ゴシック Pro','Kozuka Gothic Pro',sans-serif;
-    font-family: "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-}
-
-@mixin contents-mt {
-    margin-top: 50px;
-    @media screen and (min-width:768px){
-    }
-    @media screen and (min-width:920px){
-    }
-}
-
+@use '../layout/mixin';
 
 footer {
     position: relative;
@@ -75,7 +59,7 @@ footer {
                 &:hover::after {
                     transform: scale(1, 1);     /*ホバー後、x軸方向に1（相対値）伸長*/
                 }
-                @include ff-jp();
+                @include mixin.ff-jp();
                 @media screen and (min-width:768px){
                     font-size: 2.3rem;
                 }
@@ -85,7 +69,7 @@ footer {
             }
             span {
                 font-size: 1.5rem;
-                @include ff-en();
+                @include mixin.ff-en();
                 @media screen and (min-width:768px){
                     font-size: 2rem;
                 }

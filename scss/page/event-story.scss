@@ -3,17 +3,9 @@
 @use "../../common/css/component" as *;
 @use "../../common/css/layout" as *;
 @use '../../common/css/component/button';
+@use '../../common/css/layout/mixin';
 
-@mixin ff-jp {
-    font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
-}
-@mixin ff-en {
-    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-}
-@mixin sentence-link {
-    color: #73C0A5;
-    text-decoration: underline;
-}
+
 #event-story {
     background-image: url(../images/event-program/bg-object.jpg);
     background-size: 100%;
@@ -29,7 +21,7 @@
         background-position-x: right;
     }
     .sentence-link {
-        @include sentence-link();
+        @include mixin.sentence-link();
     }
     .lead-area {
         padding: 0;
@@ -53,7 +45,7 @@
         }
         h4 {
             font-size: 2rem;
-            @include ff-jp();
+            @include mixin.ff-jp();
             line-height: 1.8;
             margin-bottom: 20px;
             @media screen and (min-width:768px){
@@ -98,7 +90,7 @@
         margin-top: 50px;
         h5 {
             font-size: 1.8rem;
-            @include ff-jp();
+            @include mixin.ff-jp();
             line-height: 1.8;
         }
         p {
@@ -138,7 +130,7 @@
         h6 {
             font-size: 1.5rem;
             line-height: 1.5;
-            @include ff-jp();
+            @include mixin.ff-jp();
             @media screen and (min-width:768px){
                 font-size: 1.8rem;
             }
@@ -243,7 +235,7 @@
         h4 {
             text-align: center;
             font-size: 2rem;
-            @include ff-jp();
+            @include mixin.ff-jp();
             @media screen and (min-width:920px){
                 font-size: 3rem;
                 margin-bottom: 30px;
