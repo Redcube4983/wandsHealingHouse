@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@use "../common/css/global/size";
 @use '../common/css/Component/button';
 
 @mixin ff-jp {
@@ -12,6 +12,9 @@
 #about-us {
     .top-description-area {
         padding: 0 15px;
+        @include mq(md) {
+            padding: 0 32px;
+        }
     }
     
     .img-wrap {
