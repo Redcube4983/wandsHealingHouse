@@ -8,9 +8,14 @@ Version: 1.0
 License: 
 */
 /* CSS Document */
-@use './common/css/foundation/reset';
+
+@use "../global" as *;
+@use "../object" as *;
+
+@use "/common/css/foundation/" as *;
 @use './common/css/layout/base';
 @use './common/css/foundation/themes';
 @use './common/css/layout/header';
 @use './common/css/layout/main';
 @use './common/css/layout/footer';
+

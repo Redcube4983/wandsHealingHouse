@@ -10,8 +10,8 @@
     <meta name="format-detection" content="telephone=no,address=no,email=no">
     <link rel="icon" type="image/x-icon" href="">
     <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/common/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/swiper-bundle.min.css">
     <?php if( is_front_page() ): ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/front-page.css">
     <?php elseif(is_page(array('event-program'))) : ?>

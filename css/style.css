@@ -1,3 +1,12 @@
+/* CSS Document 
+Theme Name: Wands Healing House
+Author: the redcube
+Author URI: 
+Description: 
+Version: 1.0
+License: 
+*/
+/* CSS Document */
 :root {
   --clip-triangle-top: polygon(50% 0, 100% 100%, 0 100%);
   --clip-triangle-bottom: polygon(0 0, 100% 0, 50% 100%);
@@ -9,6 +18,15 @@
   --clip-triangle-upper-right: polygon(0 0, 100% 0, 100% 100%);
 }
 
+/* CSS Document 
+Theme Name: Wands Healing House
+Author: the redcube
+Author URI: 
+Description: 
+Version: 1.0
+License: 
+*/
+/* CSS Document */
 .link_btn {
   padding: 0 15px 0;
   margin-bottom: 60px;
@@ -221,30 +239,4 @@
   .link_btn .link_btn_inner li:last-child {
     margin: 0;
   }
-}
-
-#about-us .top-description-area {
-  padding: 0 15px;
-}
-@media screen and (min-width: 768px) {
-  #about-us .top-description-area {
-    padding: 0 32px;
-  }
-}
-#about-us .img-wrap {
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-#about-us .img-wrap li {
-  width: 49%;
-}
-#about-us .img-wrap li:nth-child(n+3) {
-  margin-top: 2%;
-}/*# sourceMappingURL=about-us.css.map */
+}/*# sourceMappingURL=style.css.map */
