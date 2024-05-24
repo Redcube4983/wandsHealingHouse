@@ -1,14 +1,28 @@
-@keyframes zoomUp {
+@-webkit-keyframes zoomUp {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
-    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
+@keyframes zoomUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
 }
 .swiper-slide img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
-  animation: zoomUp 7s linear 0s normal both;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-animation: zoomUp 7s linear 0s normal both;
+          animation: zoomUp 7s linear 0s normal both;
 }/*# sourceMappingURL=swiper.css.map */

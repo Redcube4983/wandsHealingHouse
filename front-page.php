@@ -105,6 +105,9 @@ Template Name: front-page
                     <span class="en-ttl">menu</span>
                     <h2 class="contents-ttl">パーソナルプログラム</h2>
                 </div>
+                
+                
+
                 <div class="content-wrap">
                     <div class="content-wrap-a">
                         <div class="menu-img-wrap-a">
@@ -112,30 +115,7 @@ Template Name: front-page
                                 <img class="bg" src="<?php echo get_template_directory_uri(); ?>/images/top/menu-bg-gre.jpg" alt="">
                             </div>
                             <div class="menu-img-a">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/top/menu-img01.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="text-button-wrap">
-                            <div class="text-wrap">
-                                <div class="content-ttl-wrap">
-                                    <h3>ボディセラピー</h3>
-                                    <p>身体と心と魂（スピリット）がひとつに繋がるためのセラピーです。</p>
-                                </div>
-                            </div>
-                            <div class="button-wrap">
-                                <a href="#" class="button">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-wrap">
-                    <div class="content-wrap-b">
-                        <div class="menu-img-wrap-b">
-                            <div class="menu-img-b">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/top/menu-img02.jpg" alt="">
-                            </div>
-                            <div class="bg-wrap">
-                                <img class="bg" src="<?php echo get_template_directory_uri(); ?>/images/top/menu-bg-pin.jpg" alt="">
                             </div>
                         </div>
                         <div class="text-button-wrap">
@@ -143,8 +123,7 @@ Template Name: front-page
                                 <div class="content-ttl-wrap">
                                     <h3>チャネリングダイアローグ<br class="br01">（対話）
                                     個人セッション</h3>
-                                    <p>お客様とチャネラーが対面(1対1)で大天使ミハエルからの<br>
-                                        メッセージをお伝えいたします。<br>
+                                    <p>お客様とチャネラーが対面(1対1)で大天使ミハエルからのメッセージをお伝えいたします。<br>
                                         遠隔(ZOOM)でのセッションも承っております。</p>
                                 </div>
                             </div>
@@ -154,22 +133,22 @@ Template Name: front-page
                         </div>
                     </div>
                 </div>
+                
                 <div class="content-wrap">
-                    <div class="content-wrap-a">
-                        <div class="menu-img-wrap-a">
-                            <div class="bg-wrap">
-                                <img class="bg" src="<?php echo get_template_directory_uri(); ?>/images/top/menu-bg-red.jpg" alt="">
+                    <div class="content-wrap-b">
+                        <div class="menu-img-wrap-b">
+                            <div class="menu-img-b">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/top/menu-img01.jpg" alt="">
                             </div>
-                            <div class="menu-img-a">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/top/menu-img03.jpg" alt="">
+                            <div class="bg-wrap">
+                                <img class="bg" src="<?php echo get_template_directory_uri(); ?>/images/top/menu-bg-pin.jpg" alt="">
                             </div>
                         </div>
                         <div class="text-button-wrap">
                             <div class="text-wrap">
                                 <div class="content-ttl-wrap">
-                                    <h3>イベント/ワークショップ</h3>
-                                    <p>ホームパーティやお茶会のような和やかな雰囲気の中で、<br>
-                                        高次元エネルギーに触れ、気づき、癒される集いの場です。</p>
+                                    <h3>ボディセラピー&チャネリング</h3>
+                                    <p>身体と心と魂（スピリット）がひとつに繋がるためのセラピーです。</p>
                                 </div>
                             </div>
                             <div class="button-wrap">
@@ -178,6 +157,7 @@ Template Name: front-page
                         </div>
                     </div>
                 </div>
+                
             </section>
 
 

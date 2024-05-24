@@ -311,8 +311,9 @@ main {
             justify-content: space-between;
         }
         @media screen and (min-width:920px){
-            margin-top: 30px;
             width: 100%;
+            max-width: 1200px;
+            margin: 30px auto 0;
         }
         @media screen and (min-width:1280px){
             flex-flow: row-reverse;
@@ -433,16 +434,15 @@ main {
             flex-flow: wrap;
             justify-content: space-between;
             width: 100%;
+            max-width: 1200px;
+            margin: 50px auto;
         }
         @media screen and (min-width:920px){
-            padding: 30px 30px;
         }
         @media screen and (min-width:1280px){
-            margin: 100px 150px 0;
         }
         .button-wrap {
             @media screen and (min-width:768px){
-                margin: 0;
                 display: block;
                 display: flex;
                 align-items: center;
@@ -450,7 +450,7 @@ main {
         }
         .left {
             @media screen and (min-width:768px){
-                width: 45%;
+                width: 40%;
             }
         }
         .right {
@@ -458,7 +458,9 @@ main {
             @media screen and (min-width:768px){
                 display: flex;
                 flex-flow: column;
-                width: 55%;
+                width: 50%;
+                justify-content: center;
+                padding: 0 30px;
                 margin: 0;
             }
         }
@@ -493,13 +495,13 @@ main {
 #menu-wrap {
     margin: 50px 30px 0;
     @media screen and (min-width:768px){
-        margin: 150px 80px 0;
+        max-width: 1200px;
+        margin: 150px auto 0;
+        padding: 0 80px;
     }
     @media screen and (min-width:920px){
-        margin: 150px 130px 0;
     }
     @media screen and (min-width:1280px){
-        margin: 150px 200px 0;
     }
     .en-ttl {
         @include contents-en-ttl();
@@ -616,7 +618,7 @@ main {
             .menu-img-a {
                 position: absolute;
                 top: 60px;
-                width: 85%;
+                width: 78%;
                 right: 0;
                 @media screen and (min-width:768px){
                 }
@@ -626,7 +628,6 @@ main {
                     top: 90px;
                 }
                 @media screen and (min-width:1480px){
-                    top: 120px;
                 }
             }
         }
@@ -673,7 +674,7 @@ main {
             .menu-img-b {
                 position: absolute;
                 top: 60px;
-                width: 85%;
+                width: 78%;
                 left: 0;
                 @media screen and (min-width:768px){
                 }
@@ -683,7 +684,6 @@ main {
                     top: 90px;
                 }
                 @media screen and (min-width:1480px){
-                    top: 120px;
                 }
             }
         }

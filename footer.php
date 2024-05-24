@@ -101,7 +101,7 @@
                         <h3><a class="main-navi-link" href="#">サイトマップ</a></h3>
                     </li>
                     <div class="footer-right">
-                        <li class="pc main-navi">
+                        <li class="br-se main-navi">
                             <h3><a class="main-navi-link" href="#">お客様の声</a></h3>
                             <h3><a class="main-navi-link" href="#">Q&A</a></h3>
                             <h3><a class="main-navi-link" href="#">ご予約・お問い合わせ</a></h3>

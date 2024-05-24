@@ -64,9 +64,14 @@
 }
 @media screen and (min-width: 768px) {
   #event-story .info-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
   }
 }
@@ -104,20 +109,25 @@
   text-decoration: underline;
 }
 #event-story .detail-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  box-shadow: 0 0 8px #d8dddb;
+  -webkit-box-shadow: 0 0 8px #d8dddb;
+          box-shadow: 0 0 8px #d8dddb;
   margin-top: 20px;
   width: 100%;
   background-color: #fff;
 }
 @media screen and (min-width: 920px) {
   #event-story .detail-link {
+    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
 }
 @media screen and (min-width: 920px) {
   #event-story .detail-link:hover {
-    box-shadow: 0 0 13px #c0c6c4;
+    -webkit-box-shadow: 0 0 13px #c0c6c4;
+            box-shadow: 0 0 13px #c0c6c4;
   }
 }
 #event-story .detail-link picture {
@@ -144,7 +154,8 @@
   }
 }
 #event-story .detail-link img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 23%;
 }
 @media screen and (min-width: 768px) {
@@ -168,8 +179,13 @@
   }
 }
 #event-story .button-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
   margin-top: 20px;
 }
 @media screen and (min-width: 920px) {
@@ -184,6 +200,7 @@
   border: solid 1px #54a37f;
   background-color: #fff;
   color: #54a37f;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: 1.3rem;
 }
@@ -198,7 +215,9 @@
   border-bottom: 1.5px solid #54a37f;
   top: 51%;
   display: block;
-  transform: translateY(-50%) rotate(-45deg);
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 10px;
   height: 10px;
@@ -228,7 +247,8 @@
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   border-radius: 50vw 50vw 0 0;
 }
 #event-story .check-box02 {
@@ -260,9 +280,15 @@
 #event-story .contact-button a {
   height: 80px;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   font-size: 1.3rem;
   background-image: url(../images/event-program/contact-button02.jpg);
@@ -319,9 +345,14 @@
 }
 @media screen and (min-width: 768px) {
   #event-story .consider-event-area .img-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media screen and (min-width: 768px) {

@@ -3,9 +3,14 @@
 }
 #about-us .img-wrap {
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 #about-us .img-wrap li {
   width: 49%;
