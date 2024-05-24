@@ -363,9 +363,9 @@ main {
 
 #event-wrap {
   margin-top: 50px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: #fff;
   padding: 50px 30px;
-  border-radius: 70px;
+  border-radius: 15vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,7 +382,6 @@ main {
 @media screen and (min-width: 768px) {
   #event-wrap {
     padding: 100px 80px;
-    border-radius: 190px;
   }
 }
 @media screen and (min-width: 920px) {

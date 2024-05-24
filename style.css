@@ -1391,9 +1391,6 @@ footer .contact-button-wrap a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-footer .contact-button-wrap a:hover {
-  opacity: 0.7;
-}
 @media screen and (min-width: 768px) {
   footer .contact-button-wrap a {
     padding: 7% 20% 7% 16%;
@@ -1408,8 +1405,29 @@ footer .contact-button-wrap a:hover {
   }
 }
 footer .contact-button-wrap a h3 {
-  text-decoration: underline;
+  position: relative;
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+footer .contact-button-wrap a h3::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  bottom: 0;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+footer .contact-button-wrap a h3:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
 }
 @media screen and (min-width: 768px) {
   footer .contact-button-wrap a h3 {

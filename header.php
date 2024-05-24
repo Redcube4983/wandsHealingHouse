@@ -64,11 +64,11 @@
         <nav id="global-navi">
             <ul id="global-main">
                 <li class="main-navi parent">
-                    <a class="main-navi-link" href="#">イベントプログラム</a>
+                    <a class="main-navi-link" href="<?php echo esc_url( home_url('event-program') ); ?>">イベントプログラム</a>
                     <div><span></span></div>
                     <ul class="sab-nav">
                         <li><a href="#">イベント詳細ページ</a></li>
-                        <li><a href="#">イベントストーリー</a></li>
+                        <li><a href="<?php echo esc_url( home_url('event-story') ); ?>">イベントストーリー</a></li>
                         <li class="sub-page-link"><a class="sp-sub-link" href="#">イベントストーリー詳細</a></li>
                     </ul>
                 </li>
@@ -76,13 +76,13 @@
                     <a class="main-navi-link" href="#">パーソナルプログラム</a>
                     <div><span></span></div>
                     <ul class="sab-nav">
-                        <li><a href="#">ボディセラピー</a></li>
-                        <li class="sub-page-link"><a class="sp-sub-link" href="#">ボディリコネクションセラピー</a></li>
                         <li><a href="#">チャネリングダイアローグ</a></li>
+                        <li><a href="#">ボディセラピー&チャネリング</a></li>
+                        <li class="sub-page-link"><a class="sp-sub-link" href="#">ボディリコネクションセラピー</a></li>
                     </ul>
                 </li>
                 <li class="main-navi parent">
-                    <a class="main-navi-link" href="#">ワンズヒーリングハウスについて</a>
+                    <a class="main-navi-link" href="<?php echo esc_url( home_url( 'about-us') ); ?>">ワンズヒーリングハウスについて</a>
                     <div><span></span></div>
                     <ul class="sab-nav">
                         <li><a href="#">チャネリングについて</a></li>

@@ -288,14 +288,13 @@ main {
 
 #event-wrap {
     @include contents-mt();
-    background-color: rgba(#ffffffa7, $alpha: .7);
+    background-color: #fff;
     padding: 50px 30px;
-    border-radius: 70px;
+    border-radius: 15vw;
     display: flex;
     flex-flow: column;
     @media screen and (min-width:768px){
         padding: 100px 80px;
-        border-radius: 190px;
     }
     @media screen and (min-width:920px){
         padding: 100px 130px;

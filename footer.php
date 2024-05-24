@@ -44,16 +44,15 @@
                             <h3><a class="main-navi-link" href="#">パーソナルプログラム</a></h3>
                             <div><span></span></div>
                             <ul class="sab-nav">
+                            <li><span class="plus"></span><a class="sub-p" href="#">チャネリング ダイアローグ（対話）</a></li>
                                 <li class="grandchild">
-                                    <span class="plus"></span><a class="sub-p" href="#">ボディセラピー</a>
+                                    <span class="plus"></span><a class="sub-p" href="#">ボディセラピー&チャネリング</a>
                                     <ul>
                                         <li>
                                             <span class="minus"></span><a class="grandchild-p" href="#">ボディリコネクションセラピー</a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li><span class="plus"></span><a class="sub-p" href="#">チャネリング ダイアローグ（対話）</a></li>
-                                <li><span class="plus"></span><a class="sub-p" href="#">イベント/ワークショップ</a></li>
                             </ul>
                         </li>
                         <li class="main-navi parent">
