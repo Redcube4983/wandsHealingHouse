@@ -2,6 +2,7 @@
 @use "../global" as *;
 @use "../object" as *;
 @use "../../common/css/layout" as *;
+@use '../../common/css/layout/mixin';
 
 
 
@@ -11,6 +12,20 @@
         padding: 0 20px;
         @include mq (md) {
         }
+    }
+    .sub-description-area {
+        padding: 0 20px;
+        li {
+            margin-top: 32px;
+        }
+        .text-wrap {
+            margin-top: 12px;
+        }
+        h4 {
+            font-size: 24px;
+            @include mixin.ff-jp();
+        }
+          
     }
     
     .img-wrap {
