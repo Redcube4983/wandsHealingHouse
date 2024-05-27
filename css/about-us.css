@@ -1461,7 +1461,7 @@ footer .contact-button-wrap {
 footer .contact-button-wrap a {
   font-size: 1.4rem;
   padding: 30px 80px 30px 50px;
-  background-image: url(images/top/contact-bg.jpg);
+  background-image: url(../../../images/top/contact-bg.jpg);
   color: #fff;
   position: absolute;
   border-radius: 0 90px 90px 0;
@@ -1532,7 +1532,7 @@ footer .contact-button-wrap a span {
   }
 }
 footer .footer-wrap {
-  background-image: url(images/top/footer-bg_sp.png);
+  background-image: url(/images/top/contact-bg-sp.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: bottom;
@@ -1928,12 +1928,7 @@ ul.footer-sitemap li.main-navi.parent div.open span {
 }
 
 #about-us .top-description-area {
-  padding: 0 15px;
-}
-@media screen and (min-width: 768px) {
-  #about-us .top-description-area {
-    padding: 0 32px;
-  }
+  padding: 0 20px;
 }
 #about-us .img-wrap {
   margin-top: 20px;

@@ -1245,7 +1245,7 @@ footer .contact-button-wrap {
 footer .contact-button-wrap a {
   font-size: 1.4rem;
   padding: 30px 80px 30px 50px;
-  background-image: url(images/top/contact-bg.jpg);
+  background-image: url(../../../images/top/contact-bg.jpg);
   color: #fff;
   position: absolute;
   border-radius: 0 90px 90px 0;
@@ -1316,7 +1316,7 @@ footer .contact-button-wrap a span {
   }
 }
 footer .footer-wrap {
-  background-image: url(images/top/footer-bg_sp.png);
+  background-image: url(/images/top/contact-bg-sp.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: bottom;

@@ -8,9 +8,8 @@
 
 #about-us {
     .top-description-area {
-        padding: 0 15px;
+        padding: 0 20px;
         @include mq (md) {
-            padding: 0 32px;
         }
     }
     
