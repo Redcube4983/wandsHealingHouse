@@ -74,6 +74,9 @@
     border-radius: 10vw;
     position: relative;
     color: #fff;
+    @media screen and (min-width:768px){
+        font-size: 1.6rem;
+    }
     &::after {
         position: absolute;
         content: "";
