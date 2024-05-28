@@ -58,7 +58,8 @@ Template Name: about-us
                     </div>
                     <p>ワンズヒーリングハウスのセッションでは、大天使ミハエルからのチャネリングメッセージを受け取ることができます。<br>高次元からの深い愛のメッセージは、あなたの魂を癒し、より幸せな人生へと進むエッセンスとなることでしょう。<br>ワンズ ヒーリング ハウスを運営するWANDS JAPAN（ワンズジャパン）の代表・ミハエル ノブコは、大天使ミハエルのオフィシャルチャネラーです。<span>※ワンズ ヒーリング ハウスの活動は、いかなる宗教団体にも属しておらず、関係は一切ございません。</span></p>
                     <div class="button02-wrap">
-                        <a href="/">ミハエルから受け取ったメッセージをより多くの人たちにシェアし、真実の拡大のために(ダミーダミーダミー)</a>
+                        <a class="button02" href="/">ミハエルから受け取ったメッセージをより多くの人たちにシェアし、真実の拡大のために(ダミーダミーダミー)</a>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs_button_bg" alt="">
                     </div>
                 </div>
             </li>
@@ -76,8 +77,9 @@ Template Name: about-us
                         <p>30歳までパリ暮らしの後、フォーシーズンズホテルスパ ヘッドセラピスト、その後ゲラン/スパ部門のトレーニングマネージャーを経て独立。2022年、WANDS JAPANを設立し、2023年4月、ワンズヒーリングハウスをオープン。大天使ミハエルとのチャネリングとともに、ボディセラピーやイベントなどを行い、新しい時代に向かって意欲的に活動を進めている。</p>
                         <div class="button-wrap"><a href="<?php echo esc_url( home_url( '/') ); ?>">read more</a></div>
                     </div>
-                    <div class="button02-wrap">
-                        <a href="<?php echo esc_url( home_url( '/') ); ?>">ミハエルから受け取ったメッセージをより多くの人たちにシェアし、真実の拡大のために(ダミーダミーダミー)</a>
+                    <div class="button03-wrap">
+                        <a class="button03" href="<?php echo esc_url( home_url( '/') ); ?>">ミハエルから受け取ったメッセージをより多くの人たちにシェアし、真実の拡大のために(ダミーダミーダミー)</a>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs_button_bg.jpg" alt="">
                     </div>
                 </div>
             </li>

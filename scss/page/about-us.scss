@@ -2,7 +2,8 @@
 @use "../global" as *;
 @use "../object" as *;
 @use "../../common/css/layout" as *;
-@use '../../common/css/layout/mixin';
+@use "../../common/css/layout/mixin" as *;
+@use "../../common/css/component/button" as *;
 
 
 
@@ -27,7 +28,7 @@
         }
         h4 {
             font-size: 24px;
-            @include mixin.ff-jp();
+            @include ff-jp();
             line-height: 1.3;
         }
         .sub-wrap {
@@ -42,7 +43,6 @@
             margin-top: 8px;
         }
     }
-    
     .img-wrap {
         margin-top: 20px;
         display: flex;
@@ -55,4 +55,20 @@
             margin-top: 2%;
         }
     }
+    .button-wrap {
+        @include btn-read_more($base-margin:0);
+    }
+    .button02-wrap {
+        margin-top: 16px;
+        .button02 {
+            @include btn-read_more2();
+          }
+    }
+    .box {
+        border: solid 1.3px #AED4CA;
+        margin-top: 16px;
+        p {
+            padding: 16px;
+        }
+      }
 }
