@@ -82,7 +82,7 @@ Template Name: about-us
                         <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs_button_bg.jpg" alt="">
                     </div>
                 </div>
-            </li>
+                </li>
             <li>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs_img08.jpg" alt="">
                 <div class="text-wrap">
