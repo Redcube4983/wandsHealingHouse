@@ -1947,12 +1947,26 @@ ul.footer-sitemap li.main-navi.parent div.open span {
 #about-us .sub-description-area li {
   margin-top: 32px;
 }
+#about-us .sub-description-area li:not(:first-child) {
+  border-top: dotted 2px #AED4CA;
+  padding-top: 40px;
+}
 #about-us .sub-description-area .text-wrap {
   margin-top: 12px;
 }
 #about-us .sub-description-area h4 {
   font-size: 24px;
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+  line-height: 1.3;
+}
+#about-us .sub-description-area .sub-wrap img {
+  width: 24px;
+}
+#about-us .sub-description-area h4 {
+  margin-top: 8px;
+}
+#about-us .sub-description-area p {
+  margin-top: 8px;
 }
 #about-us .img-wrap {
   margin-top: 20px;

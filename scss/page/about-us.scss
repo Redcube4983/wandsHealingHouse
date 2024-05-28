@@ -17,6 +17,10 @@
         padding: 0 20px;
         li {
             margin-top: 32px;
+            &:not(:first-child) {
+                border-top: dotted 2px #AED4CA;
+                padding-top: 40px;
+            }
         }
         .text-wrap {
             margin-top: 12px;
@@ -24,8 +28,19 @@
         h4 {
             font-size: 24px;
             @include mixin.ff-jp();
+            line-height: 1.3;
         }
-          
+        .sub-wrap {
+            img {
+                width: 24px;
+            }
+        }
+        h4 {
+            margin-top: 8px;
+        }
+        p {
+            margin-top: 8px;
+        }
     }
     
     .img-wrap {

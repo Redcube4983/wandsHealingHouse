@@ -42,14 +42,20 @@ Template Name: about-us
             <li>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs_img05.jpg" alt="">
                 <div class="text-wrap">
-                    <h4>「杖」という存在として～「ワンズ」の名前の由来</h4>
+                    <div class="sub-wrap">
+                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/ornament01.png" alt="">
+                        <h4>「杖」という存在として～「ワンズ」の名前の由来</h4>
+                    </div>
                     <p>WAND (ワンド)とは、英語で「杖」<br>”道迷う時に、光へ向かって歩き続けるための支えになる杖”という願いを込めて、ハウスの名前としました。ゆっくりと丁寧に歩むための大切な杖 -WAND として、皆様と一緒に道を進んでいきたいと思っています。</p>
                 </div>
             </li>
             <li>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs_img06.jpg" alt="">
                 <div class="text-wrap">
-                    <h4>チャネリングについて</h4>
+                    <div class="sub-wrap">
+                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/ornament01.png" alt="">
+                        <h4>チャネリングについて</h4>
+                    </div>
                     <p>ワンズヒーリングハウスのセッションでは、大天使ミハエルからのチャネリングメッセージを受け取ることができます。<br>高次元からの深い愛のメッセージは、あなたの魂を癒し、より幸せな人生へと進むエッセンスとなることでしょう。<br>ワンズ ヒーリング ハウスを運営するWANDS JAPAN（ワンズジャパン）の代表・ミハエル ノブコは、大天使ミハエルのオフィシャルチャネラーです。<span>※ワンズ ヒーリング ハウスの活動は、いかなる宗教団体にも属しておらず、関係は一切ございません。</span></p>
                     <div class="button02-wrap">
                         <a href="/">ミハエルから受け取ったメッセージをより多くの人たちにシェアし、真実の拡大のために(ダミーダミーダミー)</a>
@@ -59,7 +65,10 @@ Template Name: about-us
             <li>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs_img07.jpg" alt="">
                 <div class="text-wrap">
-                    <h4>WANDS アソシエーション</h4>
+                    <div class="sub-wrap">
+                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/ornament01.png" alt="">
+                        <h4>WANDS アソシエーション</h4>
+                    </div>
                     <p class="profile"><span>ミハエル ノブコ</span><br>
                     大天使ミハエルオフィシャルチャネラー<br>
                     ヒーリングセラピスト<br>WANDS JAPAN代表</p>
