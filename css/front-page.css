@@ -1993,7 +1993,7 @@ main {
 .button-wrap {
   margin-top: 20px;
 }
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 768px) {
   .button-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2023,7 +2023,7 @@ main {
   transition: 0.3s;
   font-size: 1.3rem;
 }
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 768px) {
   .button-wrap a {
     display: inherit;
     width: inherit;
@@ -2052,7 +2052,7 @@ main {
   height: 10px;
   right: 25px;
 }
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 768px) {
   .button-wrap a::after {
     border-right: 1.5px solid #54a37f;
     border-bottom: 1.5px solid #54a37f;

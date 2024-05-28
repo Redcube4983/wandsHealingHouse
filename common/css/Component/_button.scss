@@ -4,11 +4,12 @@
 @mixin btn-read_more($base-margin:20px) {
     margin-top: $base-margin;
     @media screen and (min-width:768px){
-    }
-    @media screen and (min-width:920px){
         display: flex;
         flex-flow: row-reverse;
         margin-top: $base-margin;
+    }
+    @media screen and (min-width:920px){
+        
     }
     a {
         position: relative;
@@ -20,7 +21,7 @@
         color: #fff;
         transition: .3s;
         font-size: 1.3rem;
-        @media screen and (min-width:920px){
+        @media screen and (min-width:768px){
             display: inherit;
             width: inherit;
             border-radius: 100px;
@@ -44,7 +45,7 @@
             width: 10px;
             height: 10px;
             right: 25px;
-            @media screen and (min-width:920px){
+            @media screen and (min-width:768px){
                 border-right: 1.5px solid #54a37f;
                 border-bottom: 1.5px solid #54a37f;
             }
@@ -65,13 +66,13 @@
 @mixin btn-read_more2 {
     background-color: #AED4CA;
     display: flex;
-    height: 100px;
+    height: 100%;
     width: 100%;
     font-size: 1.3rem;
     justify-content: center;
     align-items: center;
-    padding: 16px 40px 16px 16px;
-    border-radius: 10vw;
+    padding: 6vw 10vw 6vw 6vw;
+    border-radius: 30vw;
     position: relative;
     color: #fff;
     @media screen and (min-width:768px){

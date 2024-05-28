@@ -25,6 +25,9 @@
         }
         .text-wrap {
             margin-top: 12px;
+            @include mq(md){
+                margin-top: 40px;
+            }
         }
         h4 {
             font-size: 24px;
@@ -57,6 +60,9 @@
     }
     .button-wrap {
         @include btn-read_more($base-margin:0);
+        @include mq(md){
+            @include btn-read_more($base-margin:inherit);
+        }
     }
     .button02-wrap {
         margin-top: 16px;
@@ -67,12 +73,14 @@
     .button03-wrap {
         position: relative;
         margin-top: 16px;
+        @include mq(md){
+        }
         .button03 {
             color: #fff;
             display: flex;
             align-items: center;
             height: 100%;
-            padding: 16px 10vw 16px 16px;
+            padding: 6vw 10vw 6vw 6vw;
             justify-content: center;
             font-size: 1.3rem;
             @include mq(md){
@@ -108,8 +116,14 @@
     .box {
         border: solid 1.3px #AED4CA;
         margin-top: 16px;
+        @include mq(md){
+            padding: 32px;
+        }
         p {
             padding: 16px;
+            @include mq(md){
+                padding: 0;
+            }
         }
       }
 }
