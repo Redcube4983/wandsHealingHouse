@@ -9,24 +9,39 @@
 
 
 #about-us {
-    .top-description-area {
+    .contents-area {
+        max-width: 1200px;
+        margin: 0 auto;
         padding: 0 20px;
-        @include mq (md) {
-        }
     }
     .sub-description-area {
-        padding: 0 20px;
         li {
-            margin-top: 32px;
+            margin-top: 40px;
+            @include mq(lg){
+                margin-top: 64px;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+            }
             &:not(:first-child) {
                 border-top: dotted 2px #AED4CA;
                 padding-top: 40px;
+                @include mq(lg){
+                    padding-top: 64px;
+                }
+            }
+            img {
+                
+                @include mq(lg){
+                    width: 45%;
+                    object-fit: contain;
+                }
             }
         }
         .text-wrap {
             margin-top: 12px;
-            @include mq(md){
-                margin-top: 40px;
+            @include mq(lg){
+                width: 50%;
             }
         }
         h4 {
@@ -53,9 +68,15 @@
         justify-content: space-between;
         li {
             width: 49%;
+            @include mq(lg){
+                width: 24%;
+            }
         }
         li:nth-child(n+3) {
             margin-top: 2%;
+            @include mq(lg){
+                margin-top: 0;
+            }
         }
     }
     .button-wrap {
@@ -80,7 +101,7 @@
             display: flex;
             align-items: center;
             height: 100%;
-            padding: 6vw 10vw 6vw 6vw;
+            padding: 4vw 10vw 4vw 4vw;
             justify-content: center;
             font-size: 1.3rem;
             @include mq(md){
@@ -101,7 +122,13 @@
                 height: 10px;
                 right: 25px;
                 font-size: 1.3rem;
+                @include mq(md){
+                    width: 16px;
+                    height: 16px;
+                    right: 40px;
+                }
             }
+            
         }
         img {
             position: absolute;
@@ -109,8 +136,11 @@
             left: 0;
             z-index: -2;
             height: 100%;
-            object-fit: cover;
             border-radius: 30vw;
+            @include mq(lg){
+                object-fit: inherit;
+                width: 100%;
+            }
           }
       }
     .box {

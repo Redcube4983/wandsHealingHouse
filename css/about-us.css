@@ -1938,6 +1938,10 @@ ul.footer-sitemap li.main-navi.parent div.open span {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
+#about-us .contents-area {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 #about-us .top-description-area {
   padding: 0 20px;
 }
@@ -1945,18 +1949,42 @@ ul.footer-sitemap li.main-navi.parent div.open span {
   padding: 0 20px;
 }
 #about-us .sub-description-area li {
-  margin-top: 32px;
+  margin-top: 40px;
+}
+@media screen and (min-width: 1024px) {
+  #about-us .sub-description-area li {
+    margin-top: 64px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 #about-us .sub-description-area li:not(:first-child) {
   border-top: dotted 2px #AED4CA;
   padding-top: 40px;
 }
+@media screen and (min-width: 1024px) {
+  #about-us .sub-description-area li:not(:first-child) {
+    padding-top: 64px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #about-us .sub-description-area li img {
+    width: 45%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
 #about-us .sub-description-area .text-wrap {
   margin-top: 12px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   #about-us .sub-description-area .text-wrap {
-    margin-top: 40px;
+    width: 50%;
   }
 }
 #about-us .sub-description-area h4 {
@@ -1987,8 +2015,18 @@ ul.footer-sitemap li.main-navi.parent div.open span {
 #about-us .img-wrap li {
   width: 49%;
 }
+@media screen and (min-width: 1024px) {
+  #about-us .img-wrap li {
+    width: 24%;
+  }
+}
 #about-us .img-wrap li:nth-child(n+3) {
   margin-top: 2%;
+}
+@media screen and (min-width: 1024px) {
+  #about-us .img-wrap li:nth-child(n+3) {
+    margin-top: 0;
+  }
 }
 #about-us .button-wrap {
   margin-top: 0;
@@ -2171,7 +2209,7 @@ ul.footer-sitemap li.main-navi.parent div.open span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 6vw 10vw 6vw 6vw;
+  padding: 4vw 10vw 4vw 4vw;
   border-radius: 30vw;
   position: relative;
   color: #fff;
@@ -2196,6 +2234,13 @@ ul.footer-sitemap li.main-navi.parent div.open span {
   height: 10px;
   right: 25px;
 }
+@media screen and (min-width: 768px) {
+  #about-us .button02-wrap .button02::after {
+    width: 16px;
+    height: 16px;
+    right: 40px;
+  }
+}
 #about-us .button03-wrap {
   position: relative;
   margin-top: 16px;
@@ -2209,7 +2254,7 @@ ul.footer-sitemap li.main-navi.parent div.open span {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  padding: 6vw 10vw 6vw 6vw;
+  padding: 4vw 10vw 4vw 4vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2236,15 +2281,27 @@ ul.footer-sitemap li.main-navi.parent div.open span {
   right: 25px;
   font-size: 1.3rem;
 }
+@media screen and (min-width: 768px) {
+  #about-us .button03-wrap .button03::after {
+    width: 16px;
+    height: 16px;
+    right: 40px;
+  }
+}
 #about-us .button03-wrap img {
   position: absolute;
   top: 0;
   left: 0;
   z-index: -2;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   border-radius: 30vw;
+}
+@media screen and (min-width: 1024px) {
+  #about-us .button03-wrap img {
+    -o-object-fit: inherit;
+       object-fit: inherit;
+    width: 100%;
+  }
 }
 #about-us .box {
   border: solid 1.3px #AED4CA;
