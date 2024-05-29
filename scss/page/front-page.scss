@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
-@use "../../common/css/component" as *;
+@use "../object" as *;
 @use "../../common/css/layout" as *;
-@use '../../common/css/component/button';
-@use '../../common/css/layout/mixin';
+
+
+
 
 
 
@@ -142,7 +143,7 @@ main {
         }
     }
     h1 {
-        @include mixin.ff-jp();
+        @include ff-jp();
         font-size: 9vw;
         line-height: 1.2;
         @media (orientation: landscape){
@@ -157,7 +158,7 @@ main {
         @media screen and (min-width:1280px){
         }
         span {
-            @include mixin.ff-en();
+            @include ff-en();
             font-size: 4vw;
             font-weight: 600;
             line-height: 1;
@@ -175,7 +176,7 @@ main {
           }
     }
     h2 {
-        @include mixin.ff-jp();
+        @include ff-jp();
         font-size: 4.8vw;
         line-height: 1;
         margin-top: 10px;
@@ -279,7 +280,7 @@ main {
 }
 
 .button-wrap {
-    @include button.btn-read_more;
+    @include btn-read_more;
 }
 
 
@@ -408,7 +409,7 @@ main {
                     }
                     span {
                         font-size: 1.6rem;
-                        @include mixin.ff-jp();
+                        @include ff-jp();
                         text-decoration: underline;
                         @media screen and (min-width:768px){
                             font-size: 1.8rem;
@@ -463,7 +464,7 @@ main {
         }
         .text-wrap {
             h3 {
-                @include mixin.ff-jp();
+                @include ff-jp();
                 font-size: 2rem;
                 line-height: 1;
                 @media screen and (min-width:768px){
@@ -516,7 +517,7 @@ main {
     }
     h3 {
         font-size: 23px;
-        @include mixin.ff-jp();
+        @include ff-jp();
         line-height: 1.3;
         @media screen and (min-width:768px){
             font-size: 2.8rem;

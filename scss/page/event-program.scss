@@ -1,7 +1,8 @@
 @charset "UTF-8";
-@use "../../common/css/component" as *;
-@use '../../common/css/component/button';
-@use '../../common/css/layout/mixin';
+@use "../object" as *;
+@use "../../common/css/layout" as *;
+
+
 
 
 
@@ -43,7 +44,7 @@
                     margin-top: 20px;
                     .ttl {
                         font-size: 1.5rem;
-                        @include mixin.ff-jp();
+                        @include ff-jp();
                         text-decoration: underline;
                         @media screen and (min-width:920px){
                             font-size: 2rem;
@@ -75,7 +76,7 @@
                 }
             }
             .button-wrap {
-                @include button.btn-read_more;
+                @include btn-read_more;
                 flex-flow: nowrap;
             }
         }
@@ -109,7 +110,7 @@
         }
         .ttl {
             font-size: 2.3rem;
-            @include mixin.ff-jp();
+            @include ff-jp();
             line-height: 1;
             margin-bottom: 10px;
             @media screen and (min-width:920px){
@@ -120,7 +121,7 @@
             margin-bottom: 20px;
         }
         .button-wrap {
-            @include button.btn-read_more;
+            @include btn-read_more;
         }
     }
     .img-wrap {

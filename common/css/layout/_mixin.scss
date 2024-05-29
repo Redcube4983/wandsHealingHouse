@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@use "../../../scss/global" as *;
+
 
 @mixin sentence-link {
     color: #73C0A5;
@@ -26,4 +28,50 @@
 @mixin sentence-link {
     color: #73C0A5;
     text-decoration: underline;
+}
+
+
+
+@mixin description-area {
+    li {
+        margin-top: 40px;
+        @media screen and (min-width:920px){
+            margin-top: 64px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        img {
+            @media screen and (min-width:920px){
+                width: 45%;
+                object-fit: contain;
+            }
+        }
+    }
+    .text-wrap {
+        margin-top: 12px;
+        @media screen and (min-width:920px){
+            width: 50%;
+        }
+    }
+    h4 {
+        font-size: 24px;
+        @include ff-jp();
+        line-height: 1.3;
+    }
+    .sub-wrap {
+        img {
+            width: 24px;
+            @media screen and (min-width:920px){
+                width: 32px;
+            }
+        }
+    }
+    h4 {
+        margin-top: 8px;
+    }
+    p {
+        margin-top: 8px;
+    }
 }
