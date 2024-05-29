@@ -24,14 +24,9 @@ Template Name: about-channeling
             <div class="about-channeling-area">
                 <ul>
                     <li>
-                        <ul class="img-wrap">
-                            <li>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs_img05.jpg" alt="">
-                            </li>
-                            <li>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs_img05.jpg" alt="">
-                            </li>
-                        </ul>
+                        <div class="img-wrap">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/about-channeling/aboutChanneling_img01.jpg" alt="">
+                        </div>
                         <div class="text-wrap">
                             <div class="sub-wrap">
                                 <h4>チャネリングとは</h4>
@@ -43,11 +38,9 @@ Template Name: about-channeling
                         </div>
                     </li>
                     <li>
-                        <ul class="img-wrap">
-                            <li>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs_img05.jpg" alt="">
-                            </li>
-                        </ul>
+                    <div class="img-wrap">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/about-channeling/aboutChanneling_img02.jpg" alt="">
+                        </div>
                         <div class="text-wrap">
                             <div class="sub-wrap">
                                 <h4>チャネリングメッセージを受け取ることで起こる変化</h4>
@@ -56,11 +49,9 @@ Template Name: about-channeling
                         </div>
                     </li>
                     <li>
-                        <ul class="img-wrap">
-                            <li>
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs_img05.jpg" alt="">
-                            </li>
-                        </ul>
+                        <div class="img-wrap">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/about-channeling/aboutChanneling_img03.jpg" alt="">
+                        </div>
                         <div class="text-wrap">
                             <div class="sub-wrap">
                                 <h4>大天使ミハエル</h4>
