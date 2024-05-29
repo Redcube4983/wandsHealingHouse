@@ -22,6 +22,7 @@
                 display: flex;
                 width: 100%;
                 justify-content: space-between;
+                align-items: flex-start;
             }
             &:not(:first-child) {
                 border-top: dotted 2px #AED4CA;
@@ -52,6 +53,9 @@
         .sub-wrap {
             img {
                 width: 24px;
+                @include mq(lg){
+                    width: 32px;
+                }
             }
         }
         h4 {
@@ -107,6 +111,9 @@
             @include mq(md){
                 font-size: 1.6rem;
             }
+            @include mq(lg){
+                padding: 2vw 6vw 2vw 2vw;
+            }
             &::after {
                 position: absolute;
                 content: "";
@@ -130,7 +137,7 @@
             }
             
         }
-        img {
+        .button-bg {
             position: absolute;
             top: 0;
             left: 0;

@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/event-story.css">
     <?php elseif(is_page(array('about-us'))) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/about-us.css">
+    <?php elseif(is_page(array('about-channeling'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/about-channeling.css">
     <?php else: ?>
     <?php endif; ?>
     <!-- jquery 3.6.1 -->
@@ -73,7 +75,7 @@
                     </ul>
                 </li>
                 <li class="main-navi parent">
-                    <a class="main-navi-link" href="#">パーソナルプログラム</a>
+                    <a class="main-navi-link" href="<?php echo esc_url( home_url('personal-program') ); ?>">パーソナルプログラム</a>
                     <div><span></span></div>
                     <ul class="sab-nav">
                         <li><a href="#">チャネリングダイアローグ</a></li>
@@ -85,7 +87,7 @@
                     <a class="main-navi-link" href="<?php echo esc_url( home_url( 'about-us') ); ?>">ワンズヒーリングハウスについて</a>
                     <div><span></span></div>
                     <ul class="sab-nav">
-                        <li><a href="#">チャネリングについて</a></li>
+                        <li><a href="<?php echo esc_url( home_url( 'about-channeling') ); ?>">チャネリングについて</a></li>
                         <li class="sub-page-link"><a class="sp-sub-link" href="#">チャネリングの活用方法</a></li>
                         <li><a href="#">WANDS アソシエーション</a></li>
                         <li class="sub-page-link"><a class="sp-sub-link" href="#">大天使ミハエルは語る</a></li>
