@@ -46,6 +46,7 @@
     }
     a {
         color: #fff;
+        @include btn-read_more2;
     }
     h4 {
         @media screen and (min-width:768px){
@@ -64,7 +65,9 @@
     }
     .button02-wrap {
         margin-top: 24px;
-        @include btn-read_more2;
+        .button02 {
+            @include btn-read_more2;
+        }
     }
     ul {
         li {
@@ -84,7 +87,9 @@
         }
     }
     .img-wrap {
-        width: 45%;
+        @media screen and (min-width:920px){
+            width: 45%;
+        }
         img {
             width: 100%;
         }

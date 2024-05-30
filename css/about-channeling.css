@@ -3554,6 +3554,55 @@ body.fixed {
 }
 .about-channeling-area a {
   color: #fff;
+  background-color: #AED4CA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  font-size: 1.3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4vw 10vw 4vw 4vw;
+  border-radius: 30vw;
+  position: relative;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .about-channeling-area a {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 920px) {
+  .about-channeling-area a {
+    padding: 2vw 6vw 2vw 2vw;
+  }
+}
+.about-channeling-area a::after {
+  position: absolute;
+  content: "";
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  top: 51%;
+  display: block;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 10px;
+  height: 10px;
+  right: 25px;
+}
+@media screen and (min-width: 768px) {
+  .about-channeling-area a::after {
+    width: 16px;
+    height: 16px;
+    right: 40px;
+  }
 }
 @media screen and (min-width: 768px) {
   .about-channeling-area h4 {
@@ -3576,6 +3625,8 @@ body.fixed {
 }
 .about-channeling-area .button02-wrap {
   margin-top: 24px;
+}
+.about-channeling-area .button02-wrap .button02 {
   background-color: #AED4CA;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3595,16 +3646,16 @@ body.fixed {
   color: #fff;
 }
 @media screen and (min-width: 768px) {
-  .about-channeling-area .button02-wrap {
+  .about-channeling-area .button02-wrap .button02 {
     font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 920px) {
-  .about-channeling-area .button02-wrap {
+  .about-channeling-area .button02-wrap .button02 {
     padding: 2vw 6vw 2vw 2vw;
   }
 }
-.about-channeling-area .button02-wrap::after {
+.about-channeling-area .button02-wrap .button02::after {
   position: absolute;
   content: "";
   border-right: 2px solid #fff;
@@ -3620,7 +3671,7 @@ body.fixed {
   right: 25px;
 }
 @media screen and (min-width: 768px) {
-  .about-channeling-area .button02-wrap::after {
+  .about-channeling-area .button02-wrap .button02::after {
     width: 16px;
     height: 16px;
     right: 40px;
@@ -3643,8 +3694,10 @@ body.fixed {
     margin: 0 auto;
   }
 }
-.about-channeling-area .img-wrap {
-  width: 45%;
+@media screen and (min-width: 920px) {
+  .about-channeling-area .img-wrap {
+    width: 45%;
+  }
 }
 .about-channeling-area .img-wrap img {
   width: 100%;

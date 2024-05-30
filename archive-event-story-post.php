@@ -15,8 +15,8 @@ Template Name: event-story-post
         </div>
         <div class="breadcrumbs-area">
             <ul class="breadcrumbs-list">
-                <li class="link"><a href="<?php echo esc_url( home_url( '/') ); ?>">トップ</a></li>
-                <li><a href="<?php echo esc_url( home_url('event-program') ); ?>">イベントプログラム</a></li>
+                <li class="link"><a href="</?php echo esc_url( home_url( '/') ); ?>">トップ</a></li>
+                <li><a href="</?php echo esc_url( home_url('event-program') ); ?>">イベントプログラム</a></li>
                 <li>イベントストーリー</li>
             </ul>
         </div>
@@ -46,7 +46,8 @@ Template Name: event-story-post
                 <li>イベントストーリー</li>
             </ul>
         </div>
-        <div class="contents-area"><?php $args = array(
+        <div class="contents-area">
+            <?php $args = array(
 					'post_type' => array('post','nearby_gourmet','leisure_culture','tribe_events'),
 					'post_status' => 'publish',// 公開済の投稿を指定
 					'orderby' => 'date',

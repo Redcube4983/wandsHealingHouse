@@ -3771,6 +3771,7 @@ main {
   .button-wrap a {
     display: inherit;
     width: inherit;
+    height: auto;
     border-radius: 100px;
     border: solid 1px #54a37f;
     background-color: #fff;

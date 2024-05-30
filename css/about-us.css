@@ -3578,6 +3578,7 @@ body.fixed {
   #about-us .button-wrap a {
     display: inherit;
     width: inherit;
+    height: auto;
     border-radius: 100px;
     border: solid 1px #54a37f;
     background-color: #fff;
@@ -3660,6 +3661,7 @@ body.fixed {
   #about-us .button-wrap a {
     display: inherit;
     width: inherit;
+    height: auto;
     border-radius: 100px;
     border: solid 1px #54a37f;
     background-color: #fff;
@@ -3855,8 +3857,8 @@ body.fixed {
 }
 @media screen and (min-width: 920px) {
   #about-us .button03-wrap .button-bg {
-    -o-object-fit: inherit;
-       object-fit: inherit;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
   }
 }

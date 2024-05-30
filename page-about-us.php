@@ -78,7 +78,7 @@ Template Name: about-us
                         <div class="button-wrap"><a href="<?php echo esc_url( home_url( '/') ); ?>">read more</a></div>
                     </div>
                     <div class="button03-wrap">
-                        <a class="button03" href="<?php echo esc_url( home_url( '/') ); ?>">ミハエルから受け取ったメッセージをより多くの人たちにシェアし、真実の拡大のために(ダミーダミーダミー)</a>
+                        <a class="button03" href="<?php echo esc_url( home_url( '/') ); ?>">ミハエルから受け取ったメッセージをより多くの人たちにシェアし、真実の拡大のために、個人ブログを発信しています。</a>
                         <img class="button-bg" src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs_button_bg.jpg" alt="">
                     </div>
                 </div>

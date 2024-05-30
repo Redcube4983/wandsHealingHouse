@@ -3580,6 +3580,7 @@ body.fixed {
   .event-article-area .article-wrap li .button-wrap a {
     display: inherit;
     width: inherit;
+    height: auto;
     border-radius: 100px;
     border: solid 1px #54a37f;
     background-color: #fff;
@@ -3715,6 +3716,7 @@ body.fixed {
   .event-story-inner .text-wrap .button-wrap a {
     display: inherit;
     width: inherit;
+    height: auto;
     border-radius: 100px;
     border: solid 1px #54a37f;
     background-color: #fff;
