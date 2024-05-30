@@ -16,7 +16,7 @@ Template Name: about-channeling
         <div class="breadcrumbs-area">
             <ul class="breadcrumbs-list">
                 <li class="link"><a href="<?php echo esc_url( home_url( '/') ); ?>">トップ</a></li>
-                <li><a href="<?php echo esc_url( home_url('event-program') ); ?>">ワンズヒーリングハウスについて</a></li>
+                <li><a href="<?php echo esc_url( home_url('about-us') ); ?>">ワンズヒーリングハウスについて</a></li>
                 <li>チャネリングについて</li>
             </ul>
         </div>

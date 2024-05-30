@@ -1844,7 +1844,7 @@ footer .contact-button-wrap a span {
   }
 }
 footer .footer-wrap {
-  background-image: url(../images/top/contact-bg-sp.jpg);
+  background-image: url(../images/top/footer-bg_sp.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: bottom;
@@ -3544,20 +3544,34 @@ body.fixed {
 }
 @media screen and (min-width: 768px) {
   .about-channeling-area {
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 64px;
+  }
+}
+@media screen and (min-width: 920px) {
+  .about-channeling-area {
+    padding: 100px;
   }
 }
 .about-channeling-area a {
   color: #fff;
 }
+@media screen and (min-width: 768px) {
+  .about-channeling-area h4 {
+    margin-top: 24px;
+  }
+}
+@media screen and (min-width: 920px) {
+  .about-channeling-area h4 {
+    margin-top: 0;
+  }
+}
 .about-channeling-area span {
   font-size: 1.6rem;
   line-height: 1.5;
 }
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 768px) {
   .about-channeling-area span {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 .about-channeling-area .button02-wrap {
@@ -3618,10 +3632,54 @@ body.fixed {
 .about-channeling-area ul li:first-child {
   margin: 0;
 }
+@media screen and (min-width: 768px) {
+  .about-channeling-area ul li {
+    margin-top: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-channeling-area ul {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+.about-channeling-area .img-wrap {
+  width: 45%;
+}
+.about-channeling-area .img-wrap img {
+  width: 100%;
+}
+.about-channeling-area .text-wrap ul li {
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+@media screen and (min-width: 768px) {
+  .about-channeling-area .text-wrap ul li {
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 920px) {
+  .about-channeling-area .text-wrap {
+    margin-top: 0;
+  }
+}
 .about-channeling-area .comment-box {
   margin-top: 32px;
   padding: 23px 24px;
   background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .about-channeling-area .comment-box {
+    padding: 120px;
+    max-width: 1200px;
+    margin: 64px auto;
+  }
 }
 .about-channeling-area .comment-box .comment {
   margin-top: 16px;
