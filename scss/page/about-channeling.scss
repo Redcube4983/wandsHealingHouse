@@ -121,9 +121,16 @@
         .comment {
             margin-top: 16px;
             display: block;
+            line-height: 2;
+            @media screen and (min-width:920px){
+                margin-top: 24px;  
+            }
         }
         p {
-            padding-top: 16px;
+            margin-top: 16px;
+            @media screen and (min-width:920px){
+                margin-top: 24px;  
+            }
         }
     }
     

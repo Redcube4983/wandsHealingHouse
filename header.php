@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/about-us.css">
     <?php elseif(is_page(array('about-channeling'))) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/about-channeling.css">
+    <?php elseif(is_page(array('channeling-message'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/channeling-message.css">
     <?php else: ?>
     <?php endif; ?>
     <!-- jquery 3.6.1 -->

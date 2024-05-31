@@ -33,7 +33,7 @@ Template Name: about-channeling
                             </div>
                             <p>世の中のチャネリングには様々な方法が存在しますが、すべて高次元からのメッセージを受け取り伝えるという目的は同じです。<br>ワンズヒーリングハウスで行うチャネリングは、チャネラーの意識はそのままでメッセージを直接お伝えするコンシャスチャネリングです。<br>ミハエルノブコによるチャネリングは、交信対象である大天使ミハエルとの共同創造によって行われ、チャネラー自身の個人的な意見や価値観、思想などは一切入らず、純粋な言葉だけで構成されています。不明な宇宙存在などからの介入も一切ございません。</p>
                             <div class="button02-wrap">
-                                <a class="button02" href="<?php echo esc_url( home_url( 'about-channeling') ); ?>">チャネラーの詳しいプロフィールはこちらから</a>
+                                <a class="button02" target="_blank" href="https://michaelnobuko.com/">チャネラーの詳しいプロフィールはこちらから</a>
                             </div>
                         </div>
                     </li>
@@ -46,6 +46,9 @@ Template Name: about-channeling
                                 <h4>チャネリングメッセージを受け取ることで起こる変化</h4>
                             </div>
                             <p>チャネリングは、高次元のメッセージを「言葉」として伝える手段です。チャネリングの場では、純粋なエネルギーが流れており、このエネルギーによって人々は浄化され、魂が清らか（クリアリング）になり癒されます。その強力なエネルギーは魂を活性化（アクティベーション）させ、新しい自分を発見すること、すなわち潜在意識の中に眠っている可能性を目覚めさせます。</p>
+                            <div class="button02-wrap">
+                                <a class="button02" target="_blank" href="<?php echo esc_url( home_url('channeling-message') ); ?>">チャネリングメッセージの活用方法</a>
+                            </div>
                         </div>
                     </li>
                     <li>

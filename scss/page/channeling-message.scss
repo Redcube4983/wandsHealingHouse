@@ -1,0 +1,39 @@
+
+@use "../global" as *;
+@use "../object" as *;
+@use "../../common/css/layout" as *;
+
+
+
+
+#channeling-message {
+    .lead-area {
+        margin: 120px auto 0;
+        h3 {
+            text-align: center;
+        }
+    }
+    .contents-area {
+        max-width: 960px;
+        margin: 64px auto;
+        padding: 0 24px;
+    }
+
+}
+.channeling-message-inner {
+    ol {
+        li {
+            list-style-type: decimal;
+            margin-left: 24px;
+            &::marker {
+                list-style-type: decimal;
+                font-size: 1.6rem;
+                font-weight: bold;
+              }
+        }
+    }
+    h4 {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+}
