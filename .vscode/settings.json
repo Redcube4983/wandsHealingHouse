@@ -6,4 +6,11 @@
           "savePath": "/css"
         }
     ],
+    "scm.alwaysShowActions": false,
+    "scm.alwaysShowRepositories": false,
+    "terminal.integrated.enableImages": false,
+    "scm.autoReveal": true,
+    "scm.providerCountBadge": "auto",
+    "extensions.webWorker": "auto",
+    "terminal.integrated.allowChords": true,
 }
