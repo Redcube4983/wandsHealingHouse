@@ -49,11 +49,14 @@
         @include btn-read_more2;
     }
     h4 {
-        @media screen and (min-width:768px){
-            margin-top: 24px;
-        }
+        margin-top: 24px;
         @media screen and (min-width:920px){
             margin-top: 0;
+        }
+    }
+    p {
+        @media screen and (min-width:920px){
+            margin-top: 12px;
         }
     }
     span {

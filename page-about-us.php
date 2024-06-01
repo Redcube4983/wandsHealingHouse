@@ -75,10 +75,10 @@ Template Name: about-us
                     ヒーリングセラピスト<br>WANDS JAPAN代表</p>
                     <div class="box">
                         <p>30歳までパリ暮らしの後、フォーシーズンズホテルスパ ヘッドセラピスト、その後ゲラン/スパ部門のトレーニングマネージャーを経て独立。2022年、WANDS JAPANを設立し、2023年4月、ワンズヒーリングハウスをオープン。大天使ミハエルとのチャネリングとともに、ボディセラピーやイベントなどを行い、新しい時代に向かって意欲的に活動を進めている。</p>
-                        <div class="button-wrap"><a href="<?php echo esc_url( home_url( '/') ); ?>">read more</a></div>
+                        <div class="button-wrap"><a href="<?php echo esc_url( home_url( 'wands-association') ); ?>">read more</a></div>
                     </div>
                     <div class="button03-wrap">
-                        <a class="button03" href="<?php echo esc_url( home_url( '/') ); ?>">ミハエルから受け取ったメッセージをより多くの人たちにシェアし、真実の拡大のために、個人ブログを発信しています。</a>
+                        <a class="button03" target="_blank" href="https://michaelnobuko.com/category/blog/">ミハエルから受け取ったメッセージをより多くの人たちにシェアし、真実の拡大のために、個人ブログを発信しています。</a>
                         <img class="button-bg" src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs_button_bg.jpg" alt="">
                     </div>
                 </div>

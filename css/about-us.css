@@ -3731,12 +3731,13 @@ body.fixed {
 }
 @media screen and (min-width: 768px) {
   #about-us .button02-wrap .button02 {
+    padding: 2vw 5vw 2vw 2vw;
     font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 920px) {
   #about-us .button02-wrap .button02 {
-    padding: 2vw 5vw 2vw 2vw;
+    padding: 1.5vw 5vw 1.5vw 1.5vw;
     font-size: 1.6rem;
   }
 }

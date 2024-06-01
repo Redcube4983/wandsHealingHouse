@@ -3574,12 +3574,13 @@ body.fixed {
 }
 @media screen and (min-width: 768px) {
   .about-channeling-area a {
+    padding: 2vw 5vw 2vw 2vw;
     font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 920px) {
   .about-channeling-area a {
-    padding: 2vw 5vw 2vw 2vw;
+    padding: 1.5vw 5vw 1.5vw 1.5vw;
     font-size: 1.6rem;
   }
 }
@@ -3605,14 +3606,17 @@ body.fixed {
     right: 40px;
   }
 }
-@media screen and (min-width: 768px) {
-  .about-channeling-area h4 {
-    margin-top: 24px;
-  }
+.about-channeling-area h4 {
+  margin-top: 24px;
 }
 @media screen and (min-width: 920px) {
   .about-channeling-area h4 {
     margin-top: 0;
+  }
+}
+@media screen and (min-width: 920px) {
+  .about-channeling-area p {
+    margin-top: 12px;
   }
 }
 .about-channeling-area span {
@@ -3648,12 +3652,13 @@ body.fixed {
 }
 @media screen and (min-width: 768px) {
   .about-channeling-area .button02-wrap .button02 {
+    padding: 2vw 5vw 2vw 2vw;
     font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 920px) {
   .about-channeling-area .button02-wrap .button02 {
-    padding: 2vw 5vw 2vw 2vw;
+    padding: 1.5vw 5vw 1.5vw 1.5vw;
     font-size: 1.6rem;
   }
 }

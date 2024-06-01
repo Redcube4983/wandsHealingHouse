@@ -51,9 +51,9 @@
             <div id="header-top-right">
                 <div id="sab-navi">
                     <ul>
-                        <li><a href="#">お客様の声</a></li>
-                        <li><a href="#">Q&A</a></li>
-                        <li class="contact-button"><a href="#">予約・お問い合わせ</a></li>
+                        <li><a href="<?php echo esc_url( home_url('#') ); ?>">お客様の声</a></li>
+                        <li><a href="<?php echo esc_url( home_url('#') ); ?>">Q&A</a></li>
+                        <li class="contact-button"><a href="<?php echo esc_url( home_url('#') ); ?>">予約・お問い合わせ</a></li>
                     </ul>    
                 </div>
             </div>
@@ -73,7 +73,7 @@
                     <ul class="sab-nav">
                         <li><a href="#">イベント詳細ページ</a></li>
                         <li><a href="<?php echo esc_url( home_url('event-story') ); ?>">イベントストーリー</a></li>
-                        <li class="sub-page-link"><a class="sp-sub-link" href="#">イベントストーリー詳細</a></li>
+                        <li class="sub-page-link"><a class="sp-sub-link" href="<?php echo esc_url( home_url('#') ); ?>">イベントストーリー詳細</a></li>
                     </ul>
                 </li>
                 <li class="main-navi parent">
@@ -82,7 +82,7 @@
                     <ul class="sab-nav">
                         <li><a href="#">チャネリングダイアローグ</a></li>
                         <li><a href="#">ボディセラピー&チャネリング</a></li>
-                        <li class="sub-page-link"><a class="sp-sub-link" href="#">ボディリコネクションセラピー</a></li>
+                        <li class="sub-page-link"><a class="sp-sub-link" href="<?php echo esc_url( home_url('#') ); ?>">ボディリコネクションセラピー</a></li>
                     </ul>
                 </li>
                 <li class="main-navi parent">
@@ -91,21 +91,21 @@
                     <ul class="sab-nav">
                         <li><a href="<?php echo esc_url( home_url( 'about-channeling') ); ?>">チャネリングについて</a></li>
                         <li class="sub-page-link"><a class="sp-sub-link" href="#">チャネリングの活用方法</a></li>
-                        <li><a href="#">WANDS アソシエーション</a></li>
-                        <li class="sub-page-link"><a class="sp-sub-link" href="#">大天使ミハエルは語る</a></li>
+                        <li><a href="<?php echo esc_url( home_url( 'wands-association') ); ?>">WANDS アソシエーション</a></li>
+                        <li class="sub-page-link"><a class="sp-sub-link" target="_blank" href="https://michaelnobuko.com/">大天使ミハエルは語る</a></li>
                     </ul>
                 </li>
                 <li class="main-navi sp-tab">
-                    <a class="main-navi-link" href="#">お客様の声</a>
+                    <a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">お客様の声</a>
                 </li>
                 <li class="main-navi sp-tab">
-                    <a class="main-navi-link" href="#">Q&A</a>
+                    <a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">Q&A</a>
                 </li>
                 <li class="main-navi sp-tab">
-                    <a class="main-navi-link" href="#">サイトのご利用について</a>
+                    <a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">サイトのご利用について</a>
                 </li>
                 <li class="main-navi sp-tab">
-                    <a class="main-navi-link" href="#">お問い合わせ</a>
+                    <a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">お問い合わせ</a>
                 </li>
             </ul>
         </nav>
