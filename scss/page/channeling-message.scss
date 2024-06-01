@@ -9,8 +9,12 @@
 #channeling-message {
     .lead-area {
         margin: 120px auto 0;
-        h3 {
+        @media screen and (min-width:768px){
             text-align: center;
+        }
+        @media screen and (min-width:920px){
+            margin: 160px auto 120px;
+            max-width: 960px;
         }
     }
     .contents-area {
@@ -30,11 +34,39 @@
                 list-style-type: decimal;
                 font-size: 1.6rem;
                 font-weight: bold;
+                @media screen and (min-width:920px){
+                    font-size: 1.8rem;
+                }
+              }
+              &:not(:first-child) {
+                margin-top: 32px;
+                @media screen and (min-width:920px){
+                    margin-top: 96px;
+                }
               }
         }
     }
     h4 {
         font-size: 1.6rem;
         font-weight: bold;
+        @media screen and (min-width:920px){
+            font-size: 1.8rem;
+        }
+    }
+    p {
+        margin-top: 12px;
+        text-align: justify;
+        @media screen and (min-width:920px){
+            margin-top: 24px;
+        }
+    }
+    .box {
+        padding: 32px;
+        background-color: #EBFFF2;
+        margin-top: 32px;
+        @media screen and (min-width:920px){
+            margin-top: 96px;
+            padding: 80px;
+        }
     }
 }

@@ -58,7 +58,7 @@ Template Name: about-us
                     </div>
                     <p>ワンズヒーリングハウスのセッションでは、大天使ミハエルからのチャネリングメッセージを受け取ることができます。<br>高次元からの深い愛のメッセージは、あなたの魂を癒し、より幸せな人生へと進むエッセンスとなることでしょう。<br>ワンズ ヒーリング ハウスを運営するWANDS JAPAN（ワンズジャパン）の代表・ミハエル ノブコは、大天使ミハエルのオフィシャルチャネラーです。<span>※ワンズ ヒーリング ハウスの活動は、いかなる宗教団体にも属しておらず、関係は一切ございません。</span></p>
                     <div class="button02-wrap">
-                        <a class="button02" href="<?php echo esc_url( home_url( 'about-channeling') ); ?>">ミハエルから受け取ったメッセージをより多くの人たちにシェアし、真実の拡大のために(ダミーダミーダミー)</a>
+                        <a class="button02" href="<?php echo esc_url( home_url( 'about-channeling') ); ?>">さらにチャネリングを詳しくお知りになりたい方はこちらから</a>
                         <img src="<?php echo get_template_directory_uri(); ?>/images/about-us/aboutUs_button_bg" alt="">
                     </div>
                 </div>

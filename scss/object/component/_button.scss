@@ -213,7 +213,7 @@
 }
 
 @mixin btn-read_more2 {
-    background-color: #AED4CA;
+    background-color: #88C4B4;
     display: flex;
     height: 100%;
     width: 100%;
@@ -228,7 +228,8 @@
         font-size: 1.6rem;
     }
     @media screen and (min-width:920px){
-        padding: 2vw 6vw 2vw 2vw;
+        padding: 2vw 5vw 2vw 2vw;
+        font-size: 1.6rem;
     }
     &::after {
         position: absolute;

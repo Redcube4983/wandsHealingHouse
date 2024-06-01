@@ -3711,7 +3711,7 @@ body.fixed {
   margin-top: 16px;
 }
 #about-us .button02-wrap .button02 {
-  background-color: #AED4CA;
+  background-color: #88C4B4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3736,7 +3736,8 @@ body.fixed {
 }
 @media screen and (min-width: 920px) {
   #about-us .button02-wrap .button02 {
-    padding: 2vw 6vw 2vw 2vw;
+    padding: 2vw 5vw 2vw 2vw;
+    font-size: 1.6rem;
   }
 }
 #about-us .button02-wrap .button02::after {

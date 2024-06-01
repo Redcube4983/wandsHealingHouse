@@ -3451,8 +3451,16 @@ body.fixed {
 #channeling-message .lead-area {
   margin: 120px auto 0;
 }
-#channeling-message .lead-area h3 {
-  text-align: center;
+@media screen and (min-width: 768px) {
+  #channeling-message .lead-area {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 920px) {
+  #channeling-message .lead-area {
+    margin: 160px auto 120px;
+    max-width: 960px;
+  }
 }
 #channeling-message .contents-area {
   max-width: 960px;
@@ -3469,7 +3477,45 @@ body.fixed {
   font-size: 1.6rem;
   font-weight: bold;
 }
+@media screen and (min-width: 920px) {
+  .channeling-message-inner ol li::marker {
+    font-size: 1.8rem;
+  }
+}
+.channeling-message-inner ol li:not(:first-child) {
+  margin-top: 32px;
+}
+@media screen and (min-width: 920px) {
+  .channeling-message-inner ol li:not(:first-child) {
+    margin-top: 96px;
+  }
+}
 .channeling-message-inner h4 {
   font-size: 1.6rem;
   font-weight: bold;
+}
+@media screen and (min-width: 920px) {
+  .channeling-message-inner h4 {
+    font-size: 1.8rem;
+  }
+}
+.channeling-message-inner p {
+  margin-top: 12px;
+  text-align: justify;
+}
+@media screen and (min-width: 920px) {
+  .channeling-message-inner p {
+    margin-top: 24px;
+  }
+}
+.channeling-message-inner .box {
+  padding: 32px;
+  background-color: #EBFFF2;
+  margin-top: 32px;
+}
+@media screen and (min-width: 920px) {
+  .channeling-message-inner .box {
+    margin-top: 96px;
+    padding: 80px;
+  }
 }/*# sourceMappingURL=channeling-message.css.map */

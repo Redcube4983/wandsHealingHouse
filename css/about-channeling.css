@@ -3554,7 +3554,7 @@ body.fixed {
 }
 .about-channeling-area a {
   color: #fff;
-  background-color: #AED4CA;
+  background-color: #88C4B4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3579,7 +3579,8 @@ body.fixed {
 }
 @media screen and (min-width: 920px) {
   .about-channeling-area a {
-    padding: 2vw 6vw 2vw 2vw;
+    padding: 2vw 5vw 2vw 2vw;
+    font-size: 1.6rem;
   }
 }
 .about-channeling-area a::after {
@@ -3627,7 +3628,7 @@ body.fixed {
   margin-top: 24px;
 }
 .about-channeling-area .button02-wrap .button02 {
-  background-color: #AED4CA;
+  background-color: #88C4B4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3652,7 +3653,8 @@ body.fixed {
 }
 @media screen and (min-width: 920px) {
   .about-channeling-area .button02-wrap .button02 {
-    padding: 2vw 6vw 2vw 2vw;
+    padding: 2vw 5vw 2vw 2vw;
+    font-size: 1.6rem;
   }
 }
 .about-channeling-area .button02-wrap .button02::after {
@@ -3703,7 +3705,7 @@ body.fixed {
   width: 100%;
 }
 .about-channeling-area .text-wrap ul li {
-  margin-top: 16px;
+  margin-top: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

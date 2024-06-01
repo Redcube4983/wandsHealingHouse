@@ -8,8 +8,8 @@ Template Name: channeling-message
 	<div id="channeling-message">
         <div class="visual-lead-area">
             <div class="lead-area">
-                <h3 class="jp">チャネリングメッセージの<br class="sp">活用方法</h3>
-                <p class="lead-sentence">見えない世界と現実世界は密接に結びついています。<br>受け取ったメッセージをどのように日常生活に役立てるか、またメッセージを受け取るべきタイミングについて、参考になれば幸いです。</p>
+                <h3 class="jp">チャネリングメッセージの活用方法</h3>
+                <p class="lead-sentence">見えない世界と現実世界は密接に結びついています。<br>受け取ったメッセージをどのように日常生活に役立てるか、<br class="pc">またメッセージを受け取るべきタイミングについて、参考になれば幸いです。</p>
             </div>
         </div>
         <div class="breadcrumbs-area">
