@@ -3518,4 +3518,12 @@ body.fixed {
     margin-top: 96px;
     padding: 80px;
   }
+}
+.channeling-message-inner img {
+  margin-top: 16px;
+}
+@media screen and (min-width: 920px) {
+  .channeling-message-inner img {
+    margin-top: 64px;
+  }
 }/*# sourceMappingURL=channeling-message.css.map */

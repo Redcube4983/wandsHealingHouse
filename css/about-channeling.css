@@ -3729,33 +3729,57 @@ body.fixed {
     margin-top: 0;
   }
 }
-.about-channeling-area .comment-box {
+
+.comment-box {
   margin-top: 32px;
   padding: 23px 24px;
   background-color: #fff;
 }
 @media screen and (min-width: 768px) {
-  .about-channeling-area .comment-box {
-    padding: 120px;
+  .comment-box {
+    padding: 80px;
     max-width: 1200px;
     margin: 64px auto;
   }
 }
-.about-channeling-area .comment-box .comment {
+.comment-box img {
+  margin-top: 16px;
+}
+.comment-box .comment {
   margin-top: 16px;
   display: block;
   line-height: 2;
 }
 @media screen and (min-width: 920px) {
-  .about-channeling-area .comment-box .comment {
+  .comment-box .comment {
     margin-top: 24px;
   }
 }
-.about-channeling-area .comment-box p {
+.comment-box p {
   margin-top: 16px;
 }
 @media screen and (min-width: 920px) {
-  .about-channeling-area .comment-box p {
+  .comment-box p {
     margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .box1 .text {
+    width: 55%;
+  }
+  .box1 img {
+    width: 40%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }/*# sourceMappingURL=about-channeling.css.map */
