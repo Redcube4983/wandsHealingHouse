@@ -24,6 +24,22 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/about-channeling.css">
     <?php elseif(is_page(array('channeling-message'))) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/channeling-message.css">
+    <?php elseif(is_page(array('wands-association'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/channeling-message.css">
+    <?php elseif(is_page(array('personal-program'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/personal-program.css">
+    <?php elseif(is_page(array('voice'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/voice.css">
+    <?php elseif(is_page(array('surrounding-info'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/surrounding-info.css">
+    <?php elseif(is_page(array('faq'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/faq.css">
+    <?php elseif(is_page(array('contact'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact.css">
+    <?php elseif(is_page(array('policy'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/policy.css">
+    <?php elseif(is_page(array('term-of-use'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/term-of-use.css">
     <?php else: ?>
     <?php endif; ?>
     <!-- jquery 3.6.1 -->

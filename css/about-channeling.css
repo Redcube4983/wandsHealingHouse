@@ -3559,7 +3559,7 @@ body.fixed {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  width: 100%;
+  width: auto;
   font-size: 1.3rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -3637,7 +3637,7 @@ body.fixed {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  width: 100%;
+  width: auto;
   font-size: 1.3rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
