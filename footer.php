@@ -26,12 +26,12 @@
                 <ul class="footer-sitemap">
                     <div class="footer-left">
                         <li class="main-navi parent">
-                            <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">イベントプログラム</a></h3>
+                            <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('event-program') ); ?>">イベントプログラム</a></h3>
                             <div><span></span></div>
                             <ul class="sab-nav">
                                 <li><span class="plus"></span><a class="sub-p" href="<?php echo esc_url( home_url('#') ); ?>">イベント詳細ページ</a></li>
                                 <li class="grandchild">
-                                    <span class="plus"></span><a class="sub-p" href="<?php echo esc_url( home_url('#') ); ?>">イベントストーリー</a>
+                                    <span class="plus"></span><a class="sub-p" href="<?php echo esc_url( home_url('event-story') ); ?>">イベントストーリー</a>
                                     <ul>
                                         <li>
                                             <span class="minus"></span><a class="grandchild-p" href="<?php echo esc_url( home_url('#') ); ?>">イベントストーリー詳細</a>
@@ -41,7 +41,7 @@
                             </ul>
                         </li>
                         <li class="main-navi parent">
-                            <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">パーソナルプログラム</a></h3>
+                            <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('event-personal') ); ?>">パーソナルプログラム</a></h3>
                             <div><span></span></div>
                             <ul class="sab-nav">
                             <li><span class="plus"></span><a class="sub-p" href="<?php echo esc_url( home_url('#') ); ?>">チャネリング ダイアローグ（対話）</a></li>
@@ -56,19 +56,19 @@
                             </ul>
                         </li>
                         <li class="main-navi parent">
-                            <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">ワンズヒーリングハウスについて</a></h3>
+                            <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('about-us') ); ?>">ワンズヒーリングハウスについて</a></h3>
                             <div><span></span></div>
                             <ul class="sab-nav">
                                 <li class="grandchild">
-                                    <span class="plus"></span><a class="sub-p" href="<?php echo esc_url( home_url('#') ); ?>">チャネリングについて</a>
+                                    <span class="plus"></span><a class="sub-p" href="<?php echo esc_url( home_url('about-channeling') ); ?>">チャネリングについて</a>
                                     <ul>
                                         <li>
-                                            <span class="minus"></span><a class="grandchild-p" href="<?php echo esc_url( home_url('#') ); ?>">チャネリングの活用方法</a>
+                                            <span class="minus"></span><a class="grandchild-p" href="<?php echo esc_url( home_url('channeling-message') ); ?>">チャネリングの活用方法</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="grandchild">
-                                    <span class="plus"></span><a class="sub-p" href="<?php echo esc_url( home_url('#') ); ?>">WANDS アソシエーション</a>
+                                    <span class="plus"></span><a class="sub-p" href="<?php echo esc_url( home_url('wands-association') ); ?>">WANDS アソシエーション</a>
                                     <ul>
                                         <li>
                                             <span class="minus"></span><a class="grandchild-p" target="_blank" href="https://michaelnobuko.com/">大天使ミハエルは語る</a>
@@ -79,35 +79,31 @@
                         </li>
                     </div>
                     <li class="sp main-navi">
-                        <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">お客様の声</a></h3>
+                        <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('voice') ); ?>">お客様の声</a></h3>
                     </li>
                     <li class="sp main-navi">
-                        <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">Q&A</a></h3>
+                        <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('faq') ); ?>">FAQ</a></h3>
                     </li>
                     <li class="sp main-navi">
-                        <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">ご予約・お問い合わせ</a></h3>
+                        <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('contact') ); ?>">ご予約・お問い合わせ</a></h3>
                     </li>
                     <li class="sp main-navi">
-                        <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">プライバシーポリシー</a></h3>
+                        <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('policy') ); ?>">プライバシーポリシー</a></h3>
                     </li>
                     <li class="sp main-navi">
-                        <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">免責事項</a></h3>
+                        <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('term-of-use') ); ?>">サイトのご利用について</a></h3>
                     </li>
                     <li class="sp main-navi">
-                        <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">サイトのご利用について</a></h3>
-                    </li>
-                    <li class="sp main-navi">
-                        <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">サイトマップ</a></h3>
+                        <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('site-map') ); ?>">サイトマップ</a></h3>
                     </li>
                     <div class="footer-right">
                         <li class="br-se main-navi">
-                            <h3><a class="main-navi-link" href="#">お客様の声</a></h3>
-                            <h3><a class="main-navi-link" href="#">Q&A</a></h3>
-                            <h3><a class="main-navi-link" href="#">ご予約・お問い合わせ</a></h3>
-                            <h3><a class="main-navi-link" href="#">プライバシーポリシー</a></h3>
-                            <h3><a class="main-navi-link" href="#">免責事項</a></h3>
-                            <h3><a class="main-navi-link" href="#">サイトのご利用について</a></h3>
-                            <h3><a class="main-navi-link" href="#">サイトマップ</a></h3>
+                            <h3><a class="main-navi-link" href="voice">お客様の声</a></h3>
+                            <h3><a class="main-navi-link" href="faq">FAQ</a></h3>
+                            <h3><a class="main-navi-link" href="contact">ご予約・お問い合わせ</a></h3>
+                            <h3><a class="main-navi-link" href="policy">プライバシーポリシー</a></h3>
+                            <h3><a class="main-navi-link" href="term-of-use">サイトのご利用について</a></h3>
+                            <h3><a class="main-navi-link" href="site-map">サイトマップ</a></h3>
                         </li>
                     </div>
                 </ul>

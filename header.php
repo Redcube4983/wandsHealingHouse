@@ -67,9 +67,9 @@
             <div id="header-top-right">
                 <div id="sab-navi">
                     <ul>
-                        <li><a href="<?php echo esc_url( home_url('#') ); ?>">お客様の声</a></li>
-                        <li><a href="<?php echo esc_url( home_url('#') ); ?>">Q&A</a></li>
-                        <li class="contact-button"><a href="<?php echo esc_url( home_url('#') ); ?>">予約・お問い合わせ</a></li>
+                        <li><a href="<?php echo esc_url( home_url('voice') ); ?>">お客様の声</a></li>
+                        <li><a href="<?php echo esc_url( home_url('faq') ); ?>">FAQ</a></li>
+                        <li class="contact-button"><a href="<?php echo esc_url( home_url('contact') ); ?>">予約・お問い合わせ</a></li>
                     </ul>    
                 </div>
             </div>
@@ -106,22 +106,22 @@
                     <div><span></span></div>
                     <ul class="sab-nav">
                         <li><a href="<?php echo esc_url( home_url( 'about-channeling') ); ?>">チャネリングについて</a></li>
-                        <li class="sub-page-link"><a class="sp-sub-link" href="#">チャネリングの活用方法</a></li>
+                        <li class="sub-page-link"><a class="sp-sub-link" href="<?php echo esc_url( home_url( 'channeling-message') ); ?>">チャネリングの活用方法</a></li>
                         <li><a href="<?php echo esc_url( home_url( 'wands-association') ); ?>">WANDS アソシエーション</a></li>
                         <li class="sub-page-link"><a class="sp-sub-link" target="_blank" href="https://michaelnobuko.com/">大天使ミハエルは語る</a></li>
                     </ul>
                 </li>
                 <li class="main-navi sp-tab">
-                    <a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">お客様の声</a>
+                    <a class="main-navi-link" href="<?php echo esc_url( home_url('voice') ); ?>">お客様の声</a>
                 </li>
                 <li class="main-navi sp-tab">
-                    <a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">Q&A</a>
+                    <a class="main-navi-link" href="<?php echo esc_url( home_url('faq') ); ?>">FAQ</a>
                 </li>
                 <li class="main-navi sp-tab">
-                    <a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">サイトのご利用について</a>
+                    <a class="main-navi-link" href="<?php echo esc_url( home_url('term-of-use') ); ?>">サイトのご利用について</a>
                 </li>
                 <li class="main-navi sp-tab">
-                    <a class="main-navi-link" href="<?php echo esc_url( home_url('#') ); ?>">お問い合わせ</a>
+                    <a class="main-navi-link" href="<?php echo esc_url( home_url('contact') ); ?>">お問い合わせ</a>
                 </li>
             </ul>
         </nav>
