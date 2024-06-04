@@ -5,8 +5,7 @@
 
 
 
-
-#about-us {
+#policy {
     .contents-area {
         max-width: 1200px;
         margin: 0 auto;
@@ -24,126 +23,47 @@
             }
         }
     }
-    .img-wrap {
-        margin-top: 20px;
-        display: flex;
-        flex-flow: wrap;
-        justify-content: space-between;
-        li {
-            width: 49%;
-            @media screen and (min-width:920px){
-                width: 24%;
-            }
-        }
-        li:nth-child(n+3) {
-            margin-top: 2%;
-            @media screen and (min-width:920px){
-                margin-top: 0;
-            }
-        }
+    
+}
+
+ul.policy-list {
+    margin-top: 24px;
+    @media screen and (min-width:920px){
+        max-width: 960px;
+        margin: 64px auto 0;
+
     }
-    .button-wrap {
-        @include btn-read_more($base-margin:0);
-        @media screen and (min-width:768px){
-            @include btn-read_more($base-margin:inherit);
-        }
-    }
-    .button02-wrap {
-        margin-top: 16px;
-        .button02 {
-            @include btn-read_more2();
-            li {
-                margin-top: 40px;
-                @media screen and (min-width:920px){
-                    margin-top: 64px;
-                    display: flex;
-                    width: 100%;
-                    justify-content: space-between;
-                    align-items: flex-start;
-                }
-                &:not(:first-child) {
-                    border-top: dotted 2px #AED4CA;
-                    padding-top: 40px;
-                    @media screen and (min-width:920px){
-                        padding-top: 64px;
-                    }
-                }
-                img {
-                    
-                    @media screen and (min-width:920px){
-                        width: 45%;
-                        object-fit: contain;
-                    }
-                }
-            }
-        }
-    }
-    .button03-wrap {
-        position: relative;
-        margin-top: 16px;
-        @media screen and (min-width:768px){
-        }
-        .button03 {
-            color: #fff;
-            display: flex;
-            align-items: center;
-            height: 100%;
-            padding: 4vw 10vw 4vw 4vw;
-            justify-content: center;
-            font-size: 1.3rem;
-            @media screen and (min-width:768px){
+    li {
+        &:first-child {
+            h3 {
                 font-size: 1.6rem;
-            }
-            @media screen and (min-width:920px){
-                padding: 2vw 6vw 2vw 2vw;
-            }
-            &::after {
-                position: absolute;
-                content: "";
-                border-right: 2px solid #fff;
-                border-bottom: 2px solid #fff;
-                top: 51%;
-                display: block;
-                -webkit-transform: translateY(-50%) rotate(-45deg);
-                transform: translateY(-50%) rotate(-45deg);
-                -webkit-transition: 0.3s;
-                transition: 0.3s;
-                width: 10px;
-                height: 10px;
-                right: 25px;
-                font-size: 1.3rem;
-                @media screen and (min-width:768px){
-                    width: 16px;
-                    height: 16px;
-                    right: 40px;
+                font-weight: bold;
+                @media screen and (min-width:920px){
+                    font-size: 2rem;
                 }
             }
-            
         }
-        .button-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -2;
-            height: 100%;
-            border-radius: 30vw;
+        &:not(:first-child) {
+            margin-top: 24px;
             @media screen and (min-width:920px){
-                object-fit: cover;
-                width: 100%;
+                margin-top: 32px;
             }
-          }
-      }
-    .box {
-        border: solid 1.3px #AED4CA;
-        margin-top: 16px;
-        @media screen and (min-width:768px){
-            padding: 32px;
+        }
+        h3 {
+            font-size: 1.4rem;
+            font-weight: bold;
+            @media screen and (min-width:920px){
+                font-size: 1.8rem;
+            }
         }
         p {
-            padding: 16px;
-            @media screen and (min-width:768px){
-                padding: 0;
+            font-size: 1.3rem;
+            margin-top: 8px;
+            @media screen and (min-width:920px){
+                font-size: 1.6rem;
+                margin-top: 16px;
             }
         }
-      }
+    }
+    
 }
