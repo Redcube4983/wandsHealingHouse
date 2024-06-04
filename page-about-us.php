@@ -9,9 +9,9 @@ Template Name: about-us
 	<div class="top-visual-area">
 		<div class="img">
 			<picture class="">
-				<source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/main-visual_sp.jpg 1x,<?php echo get_template_directory_uri(); ?>/images/about-us/main-visual_sp.jpg 2x">
-				<source media="(max-width: 920px)" srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/main-visual_pc.jpg 1x,<?php echo get_template_directory_uri(); ?>/images/about-us/main-visual_pc.jpg 2x">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/about-us/main-visual_pc.jpg" alt="トップ背景画像">
+				<source media="(max-width: 767px)" srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/main_visual-sp.jpg 1x,<?php echo get_template_directory_uri(); ?>/images/about-us/main_visual-sp.jpg 2x">
+				<source media="(max-width: 920px)" srcset="<?php echo get_template_directory_uri(); ?>/images/about-us/main_visual-pc.jpg 1x,<?php echo get_template_directory_uri(); ?>/images/about-us/main_visual-pc.jpg 2x">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/about-us/main_visual-pc.jpg" alt="トップ背景画像">
 			</picture>
 		</div>
 	</div>

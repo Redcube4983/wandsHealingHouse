@@ -18,7 +18,7 @@ Template Name: voice
 	<div class="breadcrumbs-area">
 		<ul class="breadcrumbs-list">
 			<li class="link"><a href="<?php echo esc_url( home_url( '/') ); ?>">トップ</a></li>
-			<li>パーソナルプログラム</li>
+			<li>お客様の声</li>
 		</ul>
 	</div>
 	<div class="lead-area">
