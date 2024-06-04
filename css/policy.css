@@ -3538,7 +3538,7 @@ ul.policy-list li:not(:first-child) {
 }
 @media screen and (min-width: 920px) {
   ul.policy-list li:not(:first-child) {
-    margin-top: 32px;
+    margin-top: 40px;
   }
 }
 ul.policy-list li h3 {

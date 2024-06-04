@@ -4,7 +4,7 @@
 @use "../../common/css/layout" as *;
 
 
-#term-of-site {
+#term-of-use {
     .contents-area {
         max-width: 1200px;
         margin: 0 auto;
@@ -15,12 +15,26 @@
         li {
             &:not(:first-child) {
                 border-top: dotted 2px #AED4CA;
-                padding-top: 40px;
+                margin-top: 40px;
                 @media screen and (min-width:920px){
-                    padding-top: 64px;
+                    margin-top: 64px;
                 }
             }
         }
     }
-    
+}
+
+ul.term-of-use {
+    li {
+        margin-top: 40px;
+        @media screen and (min-width:920px){
+            margin-top: 64px;
+        }
+        h3 {
+           font-size: 1.6rem; 
+           @media screen and (min-width:920px){
+                font-size: 2rem;
+            }
+        }
+    }
 }
