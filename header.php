@@ -68,6 +68,7 @@
                 <div id="sab-navi">
                     <ul>
                         <li><a href="<?php echo esc_url( home_url('voice') ); ?>">お客様の声</a></li>
+                        <li><a href="<?php echo esc_url( home_url('surrounding-info') ); ?>">周辺情報</a></li>
                         <li><a href="<?php echo esc_url( home_url('faq') ); ?>">FAQ</a></li>
                         <li class="contact-button"><a href="<?php echo esc_url( home_url('contact') ); ?>">予約・お問い合わせ</a></li>
                     </ul>    
@@ -113,6 +114,9 @@
                 </li>
                 <li class="main-navi sp-tab">
                     <a class="main-navi-link" href="<?php echo esc_url( home_url('voice') ); ?>">お客様の声</a>
+                </li>
+                <li class="main-navi sp-tab">
+                    <a class="main-navi-link" href="<?php echo esc_url( home_url('surrounding-info') ); ?>">周辺情報</a>
                 </li>
                 <li class="main-navi sp-tab">
                     <a class="main-navi-link" href="<?php echo esc_url( home_url('faq') ); ?>">FAQ</a>

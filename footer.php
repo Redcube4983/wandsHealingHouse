@@ -82,6 +82,9 @@
                         <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('voice') ); ?>">お客様の声</a></h3>
                     </li>
                     <li class="sp main-navi">
+                        <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('surrounding-info') ); ?>">周辺情報</a></h3>
+                    </li>
+                    <li class="sp main-navi">
                         <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('faq') ); ?>">FAQ</a></h3>
                     </li>
                     <li class="sp main-navi">
@@ -98,12 +101,13 @@
                     </li>
                     <div class="footer-right">
                         <li class="br-se main-navi">
-                            <h3><a class="main-navi-link" href="voice">お客様の声</a></h3>
-                            <h3><a class="main-navi-link" href="faq">FAQ</a></h3>
-                            <h3><a class="main-navi-link" href="contact">ご予約・お問い合わせ</a></h3>
-                            <h3><a class="main-navi-link" href="policy">プライバシーポリシー</a></h3>
-                            <h3><a class="main-navi-link" href="term-of-use">サイトのご利用について</a></h3>
-                            <h3><a class="main-navi-link" href="site-map">サイトマップ</a></h3>
+                            <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('voice') ); ?>">お客様の声</a></h3>
+                            <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('surrounding-info') ); ?>">周辺情報</a></h3>
+                            <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('faq') ); ?>">FAQ</a></h3>
+                            <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('contact') ); ?>">ご予約・お問い合わせ</a></h3>
+                            <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('policy') ); ?>">プライバシーポリシー</a></h3>
+                            <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('term-of-use') ); ?>">サイトのご利用について</a></h3>
+                            <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('site-map') ); ?>">サイトマップ</a></h3>
                         </li>
                     </div>
                 </ul>
@@ -128,6 +132,17 @@
     </script>
 <!-- 共通js -->
 <script src="<?php echo get_template_directory_uri(); ?>/common/js/common.js"></script>
+<!-- voice-page -->
+<?php if( is_page(array('voice'))): ?>
+    <script>
+        $(function(){
+        $(".more").on("click", function() {
+            $(this).toggleClass("on-click");
+            $(".txt-hide").slideToggle(300);
+        });
+        }); 
+    </script>
+<?php endif; ?>
 <?php wp_footer(); ?>
 </body>
 </html>
