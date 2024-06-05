@@ -24,7 +24,7 @@
     }
 }
 
-ul.term-of-use {
+ul.term-of-use-list {
     li {
         margin-top: 40px;
         @media screen and (min-width:920px){
@@ -32,9 +32,54 @@ ul.term-of-use {
         }
         h3 {
            font-size: 1.6rem; 
+           font-weight: bold;
            @media screen and (min-width:920px){
                 font-size: 2rem;
             }
         }
+        p {
+            margin-top: 8px;
+            @media screen and (min-width:920px){
+                margin-top: 16px;
+            }
+        }
+        .device-wrp {
+            font-size: 1.3rem;
+            @media screen and (min-width:920px){
+                font-size: 1.6rem;
+                display: flex;
+                flex-flow: nowrap;
+                justify-content: space-between;
+                width: 100%;
+            }
+            ul {
+                li {
+                    list-style: square;
+                    margin-top: 4px;
+                    margin-left: 16px;
+                }
+            }
+        }
+        .box {
+            padding: 16px;
+            border: solid 1px #AED4CA;
+            margin-top: 24px;
+            @media screen and (min-width:920px){
+                width: 48%;
+                padding: 40px;
+            }
+            .os-box {
+                margin-top: 16px;
+            }
+            .browser-box {
+                margin-top: 16px;
+            }
+            
+        }
+        .note {
+            margin-top: 16px;
+            display: block;
+        }
+        
     }
 }

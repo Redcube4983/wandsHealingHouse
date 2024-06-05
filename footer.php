@@ -97,7 +97,7 @@
                         <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('term-of-use') ); ?>">サイトのご利用について</a></h3>
                     </li>
                     <li class="sp main-navi">
-                        <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('site-map') ); ?>">サイトマップ</a></h3>
+                        <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('sitemap') ); ?>">サイトマップ</a></h3>
                     </li>
                     <div class="footer-right">
                         <li class="br-se main-navi">
@@ -107,7 +107,7 @@
                             <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('contact') ); ?>">ご予約・お問い合わせ</a></h3>
                             <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('policy') ); ?>">プライバシーポリシー</a></h3>
                             <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('term-of-use') ); ?>">サイトのご利用について</a></h3>
-                            <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('site-map') ); ?>">サイトマップ</a></h3>
+                            <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('sitemap') ); ?>">サイトマップ</a></h3>
                         </li>
                     </div>
                 </ul>

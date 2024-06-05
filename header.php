@@ -25,7 +25,7 @@
     <?php elseif(is_page(array('channeling-message'))) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/channeling-message.css">
     <?php elseif(is_page(array('wands-association'))) : ?>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/channeling-message.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/wands-association.css">
     <?php elseif(is_page(array('personal-program'))) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/personal-program.css">
     <?php elseif(is_page(array('voice'))) : ?>
@@ -40,6 +40,8 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/policy.css">
     <?php elseif(is_page(array('term-of-use'))) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/term-of-use.css">
+    <?php elseif(is_page(array('sitemap'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sitemap.css">
     <?php else: ?>
     <?php endif; ?>
     <!-- jquery 3.6.1 -->
@@ -126,6 +128,9 @@
                 </li>
                 <li class="main-navi sp-tab">
                     <a class="main-navi-link" href="<?php echo esc_url( home_url('contact') ); ?>">お問い合わせ</a>
+                </li>
+                <li class="main-navi sp-tab">
+                    <a class="main-navi-link" href="<?php echo esc_url( home_url('sitemap') ); ?>">サイトマップ</a>
                 </li>
             </ul>
         </nav>

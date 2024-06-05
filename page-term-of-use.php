@@ -34,8 +34,8 @@ Template Name: term-of-use
 				<h3>ご利用環境について</h3>
 				<p>当ウェブサイトは以下の環境での閲覧を推奨いたします。</p>
 				<div class="device-wrp">
-					<div class="pc-box">
-						<span>PC</span>
+					<div class="box pc-box">
+						<b>PC</b>
 						<div class="os-box">
 							<span>推奨OS</span>
 							<ul>
@@ -54,24 +54,23 @@ Template Name: term-of-use
 						</div>
 						<span class="note">※他のブラウザでご覧になった際、一部コンテンツが正しく表示されない場合がございますので、あらかじめご了承ください。</span>
 					</div>
-					<div class="sp-box">
-						<span>スマートホン</span>
+					<div class="box sp-box">
+						<b>スマートホン</b>
 						<div class="os-box">
 							<span>推奨OS</span>
 							<ul>
-								<li>・iOS16 以上</li>
-								<li>・Android13 以上</li>
+								<li>iOS16 以上</li>
+								<li>Android13 以上</li>
 							</ul>
 						</div>
 						<div class="browser-box">
 							<span>推奨ブラウザ</span>
 							<ul>
-								<li>・iOS：Safari（最新版）</li>
-								<li>・Google Chrome（最新版）</li>
-								<li>・Firefox for Mobile（最新版）</li>
-								<li>・Android：Chrome for Android（最新版）</li>
-								<li>・Firefox for Mobile（最新版）</li>
-								<li>・Firefox for Mobile（最新版）</li>
+								<li>iOS：Safari（最新版）</li>
+								<li>Google Chrome（最新版）</li>
+								<li>Firefox for Mobile（最新版）</li>
+								<li>Android：Chrome for Android（最新版）</li>
+								<li>Firefox for Mobile（最新版）</li>
 							</ul>
 						</div>
 						<span class="note">※他のブラウザでご覧になった際、一部コンテンツが正しく表示されない場合がございますので、あらかじめご了承ください。</span>
