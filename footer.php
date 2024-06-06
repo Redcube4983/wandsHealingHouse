@@ -142,7 +142,20 @@
         });
         }); 
     </script>
+    
+<?php endif; ?>
+<?php if( is_page(array('faq'))): ?>
+    <script>
+     $(function(){
+    		//クリックで動く
+    		$('.nav-open').click(function(){
+    			$(this).toggleClass('active');
+    			$(this).next('nav').slideToggle();
+    		});
+    	});
+    </script>
 <?php endif; ?>
 <?php wp_footer(); ?>
 </body>
 </html>
+

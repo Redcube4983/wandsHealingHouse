@@ -5,23 +5,105 @@
 
 
 
-#site-map {
+#sitemap {
     .contents-area {
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 20px;
     }
-    .sub-description-area {
-        @include description-area;
+    a {
+        color: #3B453E;
+        &:hover {
+            border-bottom: solid 1.5px #3B453E;
+        }
+    }
+    h2 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-top: 32px;
+        @media screen and (min-width:920px){
+            font-size: 1.6rem;
+        }
+    }
+    ul {
         li {
-            &:not(:first-child) {
-                border-top: dotted 2px #AED4CA;
-                padding-top: 40px;
-                @media screen and (min-width:920px){
-                    padding-top: 64px;
-                }
+            font-size: 1.3rem;
+            @media screen and (min-width:920px){
+                font-size: 1.5rem;
             }
         }
     }
-    
+    .directory {
+        margin-top: 12px;
+        @media screen and (min-width:768px){
+            margin-top: 24px;
+        }
+    }
+    .third-directory {
+        position: relative;
+        padding-left: 1.5em;
+        &::before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 15px;
+            height: 2px;
+            background-color: #AED4CA;
+            top: 0;
+            bottom: 0;
+            margin: auto 0 auto -1.5em;
+        }
+    }
+    .fourth-directory {
+        position: relative;
+        padding-left: 3em;
+        &::before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 15px;
+            height: 2px;
+            background-color: #AED4CA;
+            top: 0;
+            bottom: 0;
+            margin: auto 0 auto -1.5em;
+        }
+    }
+    .fifth-directory {
+        position: relative;
+        padding-left: 4.5em;
+        &::before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 15px;
+            height: 2px;
+            background-color: #AED4CA;
+            top: 0;
+            bottom: 0;
+            margin: auto 0 auto -1.5em;
+        }
+    }
+    ul.sitemap-column {
+        @media screen and (min-width:768px){
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+        }
+    }
+    ul.sitemap-wrap {
+        @media screen and (min-width:768px){
+            display: flex;
+            flex-flow: wrap;
+            width: 70%;
+        }
+        @media screen and (min-width:920px){
+            margin-top: 32px;
+        }
+        li {
+            @media screen and (min-width:768px){
+                margin-right: 80px;
+            }
+        }
+    }
 }

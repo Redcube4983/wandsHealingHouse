@@ -5,7 +5,7 @@ Template Name: sitemap
 ?>
 <?php get_header(); ?>
 <main>
-<div id="site-map">
+<div id="sitemap">
 	<div class="top-visual-area">
 		<div class="img">
 			<picture class="">
@@ -18,19 +18,54 @@ Template Name: sitemap
 	<div class="breadcrumbs-area">
 		<ul class="breadcrumbs-list">
 			<li class="link"><a href="<?php echo esc_url( home_url( '/') ); ?>">トップ</a></li>
-			<li>パーソナルプログラム</li>
+			<li>サイトマップ</li>
 		</ul>
 	</div>
 	<div class="lead-area">
 		<div class="ttl-wrap">
-			<h4 class="en">Personal Program</h4>
-			<h3 class="jp">パーソナルプログラム</h3>
+			<h4 class="en">Sitemap</h4>
+			<h3 class="jp">サイトマップ</h3>
 		</div>
-		<p class="lead-sentence">都会の喧騒の中にある静寂な空間。そしてチャネラーが住む家。多くの高次元存在が降り立つヒーリングハウス。</p>
 	</div>
 	<div class="contents-area">
-		<div class="sitemap-column">
-
+		<div class="sitemap-list">
+			<h2><a href="<?php echo esc_url( home_url( '/') ); ?>">トップ</a></h2>
+			<ul class="sitemap-column">
+				<li>
+					<h2><a href="<?php echo esc_url( home_url('event-program') ); ?>">イベントプログラム</a></h2>
+					<ul>
+						<li class="directory third-directory"><a href="<?php echo esc_url( home_url('#') ); ?>">イベント詳細ページ</a></li>
+						<li class="directory third-directory"><a href="<?php echo esc_url( home_url('event-story') ); ?>">イベントストーリー</a></li>
+						<li class="directory fourth-directory"><a href="<?php echo esc_url( home_url('#') ); ?>">イベントストーリー一覧</a></li>
+						<li class="directory fifth-directory"><a href="<?php echo esc_url( home_url('#') ); ?>">イベントストーリー詳細</a></li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="<?php echo esc_url( home_url('personal-program') ); ?>">パーソナルプログラム</a></h2>
+					<ul>
+						<li class="directory third-directory"><a href="<?php echo esc_url( home_url('#') ); ?>">チャネリングダイアローグ</a></li>
+						<li class="directory fourth-directory"><a href="<?php echo esc_url( home_url('#') ); ?>">ボディセラピー＆チャネリング</a></li>
+						<li class="directory third-directory"><a href="<?php echo esc_url( home_url('#') ); ?>">ボディリコネクションセラピー</a></li>
+					</ul>
+				</li>
+				<li>
+					<h2><a href="<?php echo esc_url( home_url('about-us') ); ?>">ワンズヒーリングハウスについて</a></h2>
+					<ul>
+						<li class="directory third-directory"><a href="<?php echo esc_url( home_url('about-channeling') ); ?>">チャネリングについて</a></li>
+						<li class="directory fourth-directory"><a href="<?php echo esc_url( home_url('channeling-message') ); ?>">チャネリングの活用方法</a></li>
+						<li class="directory third-directory"><a href="<?php echo esc_url( home_url('wands-association') ); ?>">WANDSアソシエーション</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="sitemap-wrap">
+				<li><h2><a href="<?php echo esc_url( home_url('voice') ); ?>">お客様の声</a></h2></li>
+				<li><h2><a href="<?php echo esc_url( home_url('surrounding-info') ); ?>">周辺情報</a></h2></li>
+				<li><h2><a href="<?php echo esc_url( home_url('faq') ); ?>">FAQ</a></h2></li>
+				<li><h2><a href="<?php echo esc_url( home_url('contact') ); ?>">ご予約・お問い合わせ</a></h2></li>
+				<li><h2><a href="<?php echo esc_url( home_url('policy') ); ?>">プライバシーポリシー</a></h2></li>
+				<li><h2><a href="<?php echo esc_url( home_url('term-of-use') ); ?>">サイトのご利用について</a></h2></li>
+				<li><h2><a href="<?php echo esc_url( home_url('sitemap') ); ?>">サイトマップ</a></h2></li>
+			</ul>
 		</div>
 	</div>
 </div>
