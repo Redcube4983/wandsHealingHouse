@@ -3758,9 +3758,9 @@ body.fixed {
 }
 @media screen and (min-width: 920px) {
   #about-us .button02-wrap .button02::after {
-    width: 16px;
-    height: 16px;
-    right: 40px;
+    width: 14px;
+    height: 14px;
+    right: 30px;
   }
 }
 #about-us .button02-wrap .button02 li {

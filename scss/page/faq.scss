@@ -111,14 +111,17 @@
         display: none;
         background: #EBFFF2;
         p {
-            font-size: 14px;
+            font-size: 1.3rem;
             line-height: 2;
             padding: 32px;
             color: #3D424B;
+            @media screen and (min-width:920px){
+                font-size: 1.6rem;
+            }
           }
     }
     .nav-open {
-        font-size: 14px;
+        font-size: 1.3rem;
         text-align: left;
         padding: 15px 30px 15px 0;
         border-bottom: #E1EBEE solid 2px;
@@ -126,6 +129,9 @@
         display: flex;
         flex-flow: row;
         align-items: center;
+        @media screen and (min-width:920px){
+            font-size: 1.6rem;
+        }
         &::before {
             position: absolute;
             right: 0px;
@@ -162,7 +168,7 @@
             padding: 40px;
         }
         li {
-            list-style: disc;
+            list-style-type: circle;
             margin-left: 20px;
             
         }
@@ -182,7 +188,7 @@
     .button02-wrap {
         display: flex;
         justify-content: end;
-        padding: 0 32px 32px 0;
+        padding: 0 32px 32px;
         .button02 {
             @include btn-read_more2();
             li {
@@ -209,6 +215,14 @@
                     }
                 }
             }
+        }
+    }
+    .note {
+        font-size: 1.5rem;
+        margin-top: 32px;
+        text-align: center;
+        @media screen and (min-width:920px){
+            font-size: 1.8rem;
         }
     }
 }

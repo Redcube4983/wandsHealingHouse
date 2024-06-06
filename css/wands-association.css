@@ -3543,9 +3543,9 @@ body.fixed {
 }
 @media screen and (min-width: 920px) {
   .wands-association-area a::after {
-    width: 16px;
-    height: 16px;
-    right: 40px;
+    width: 14px;
+    height: 14px;
+    right: 30px;
   }
 }
 .wands-association-area h4 {
@@ -3707,9 +3707,9 @@ body.fixed {
 }
 @media screen and (min-width: 920px) {
   .wands-association-area .profileA-01 .button02-wrap .button02::after {
-    width: 16px;
-    height: 16px;
-    right: 40px;
+    width: 14px;
+    height: 14px;
+    right: 30px;
   }
 }
 .wands-association-area .profileA-02 {

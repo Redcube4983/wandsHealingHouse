@@ -3607,13 +3607,18 @@ body.fixed {
   background: #EBFFF2;
 }
 #faq-content nav p {
-  font-size: 14px;
+  font-size: 1.3rem;
   line-height: 2;
   padding: 32px;
   color: #3D424B;
 }
+@media screen and (min-width: 920px) {
+  #faq-content nav p {
+    font-size: 1.6rem;
+  }
+}
 #faq-content .nav-open {
-  font-size: 14px;
+  font-size: 1.3rem;
   text-align: left;
   padding: 15px 30px 15px 0;
   border-bottom: #E1EBEE solid 2px;
@@ -3628,6 +3633,11 @@ body.fixed {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 920px) {
+  #faq-content .nav-open {
+    font-size: 1.6rem;
+  }
 }
 #faq-content .nav-open::before {
   position: absolute;
@@ -3675,7 +3685,7 @@ body.fixed {
   }
 }
 #faq-content ul.contents-list li {
-  list-style: disc;
+  list-style-type: circle;
   margin-left: 20px;
 }
 #faq-content ul.contents-list a {
@@ -3696,7 +3706,7 @@ body.fixed {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  padding: 0 32px 32px 0;
+  padding: 0 32px 32px;
 }
 #faq-content .button02-wrap .button02 {
   background-color: #88C4B4;
@@ -3746,9 +3756,9 @@ body.fixed {
 }
 @media screen and (min-width: 920px) {
   #faq-content .button02-wrap .button02::after {
-    width: 16px;
-    height: 16px;
-    right: 40px;
+    width: 14px;
+    height: 14px;
+    right: 30px;
   }
 }
 #faq-content .button02-wrap .button02 li {
@@ -3783,5 +3793,15 @@ body.fixed {
     width: 45%;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+}
+#faq-content .note {
+  font-size: 1.5rem;
+  margin-top: 32px;
+  text-align: center;
+}
+@media screen and (min-width: 920px) {
+  #faq-content .note {
+    font-size: 1.8rem;
   }
 }/*# sourceMappingURL=faq.css.map */
