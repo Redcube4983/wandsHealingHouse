@@ -32,11 +32,28 @@
     h3 {
         font-size: 1.8rem;
         text-align: center;
+        padding-top: 12px;
+        position: relative;
+        @include ff-jp;
         &::before {
-            background-image: url(../common/images/ornament01);
-        }
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 10px;
+            background-image: url(../common/images/ornament01.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            @media screen and (min-width:920px){
+                height: 15px;
+            }
+          }
         @media screen and (min-width:920px){
             font-size: 2.3rem;
+            padding-top: 16px;
         }
         
     }
@@ -64,7 +81,7 @@
             font-size: 20px;
             text-align: left;
             font-weight: 500;
-            color: #4D6EBF;
+            color: #AED4CA;
             padding-right: 10px;
         }
     }
@@ -92,11 +109,11 @@
     }
     nav{
         display: none;
-        background: #F0F8FF;
+        background: #EBFFF2;
         p {
             font-size: 14px;
             line-height: 2;
-            padding: 30px;
+            padding: 32px;
             color: #3D424B;
           }
     }
@@ -115,8 +132,8 @@
             top: 45%;
             width: 14px;
             height: 14px;
-            border-bottom: 4px solid #3E5EAC;
-            border-left: 4px solid #3E5EAC;
+            border-bottom: 4px solid #AED4CA;
+            border-left: 4px solid #AED4CA;
             transform: translate(-50%,-50%) rotate(-45deg);
             content: "";
             transition: transform .5s;
@@ -127,8 +144,8 @@
             top: 55%;
             width: 14px;
             height: 14px;
-            border-bottom: 4px solid #3E5EAC;
-            border-left: 4px solid #3E5EAC;
+            border-bottom: 4px solid #AED4CA;
+            border-left: 4px solid #AED4CA;
             transform: translate(-50%,-50%) rotate(135deg);
             content: "";
             transition: transform .5s;
@@ -152,15 +169,46 @@
         a {
             color: #3D424B;
             &:hover {
-                border-bottom: #3D424B;
+                text-decoration: underline;
             }
         }
     }
     .faq-list-wrap {
         margin-top: 24px;
-        @media screen and (min-width:920px){
-            margin-top: 40px;
-        }
+        padding-top: 120px;
+        margin-top: -80px;
         
+    }
+    .button02-wrap {
+        display: flex;
+        justify-content: end;
+        padding: 0 32px 32px 0;
+        .button02 {
+            @include btn-read_more2();
+            li {
+                margin-top: 40px;
+                @media screen and (min-width:920px){
+                    margin-top: 64px;
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+                &:not(:first-child) {
+                    border-top: dotted 2px #AED4CA;
+                    padding-top: 40px;
+                    @media screen and (min-width:920px){
+                        padding-top: 64px;
+                    }
+                }
+                img {
+                    
+                    @media screen and (min-width:920px){
+                        width: 45%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
     }
 }

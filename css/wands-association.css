@@ -3541,7 +3541,7 @@ body.fixed {
   height: 10px;
   right: 25px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 920px) {
   .wands-association-area a::after {
     width: 16px;
     height: 16px;
@@ -3705,7 +3705,7 @@ body.fixed {
   height: 10px;
   right: 25px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 920px) {
   .wands-association-area .profileA-01 .button02-wrap .button02::after {
     width: 16px;
     height: 16px;

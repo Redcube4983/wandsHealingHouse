@@ -3756,7 +3756,7 @@ body.fixed {
   height: 10px;
   right: 25px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 920px) {
   #about-us .button02-wrap .button02::after {
     width: 16px;
     height: 16px;
