@@ -18,13 +18,13 @@ Template Name: contact
 	<div class="breadcrumbs-area">
 		<ul class="breadcrumbs-list">
 			<li class="link"><a href="<?php echo esc_url( home_url( '/') ); ?>">トップ</a></li>
-			<li>パーソナルプログラム</li>
+			<li>ご予約・お問い合わせ</li>
 		</ul>
 	</div>
 	<div class="lead-area">
 		<div class="ttl-wrap">
-			<h4 class="en">Personal Program</h4>
-			<h3 class="jp">パーソナルプログラム</h3>
+			<h4 class="en">Contact Form</h4>
+			<h3 class="jp">ご予約・お問い合わせ</h3>
 		</div>
 		<p class="lead-sentence">都会の喧騒の中にある静寂な空間。そしてチャネラーが住む家。多くの高次元存在が降り立つヒーリングハウス。</p>
 	</div>

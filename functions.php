@@ -1,75 +1,64 @@
 <?php
 
+/* メインクエリの表示を置き換える */
+function change_posts_per_page($query) {
+  /* 管理画面,メインクエリに干渉しないために必須 */
+  if ( is_admin() || ! $query->is_main_query() ){
+       return;
+  }
+  /* フロントページ表示件数を12件にする */
+  if ( $query->is_front_page() ) {
+       $query->set( 'posts_per_page', '12' );
+  }
+  //  if ( $query->is_page('event-story') ) {
+  //      $query->set( 'posts_per_page', '-1' );
+  //      $query->set('post_type', 'event-story-category');
+  //   return;
+  // } 
+  /* ホームページ表示件数を12件にする */
+  if ( $query->is_home() ) {
+       $query->set( 'posts_per_page', '12' );
+       return;
+  }
+  /* アーカイブページ表示件数を12件にする */
+  if ( $query->is_archive() ) {
+       $query->set( 'posts_per_page', '12' );
+       return;
+  }
+  /* カテゴリーページ表示件数を12件にする */
+  if ( $query->is_category() ) {
+       $query->set( 'posts_per_page', '12' );
+       return;
+   }
+  /* 日付別ページの表示件数を12件にする */
+  if ( $query->is_date() ) {
+       $query->set( 'posts_per_page', '12' );
+       return;
+   }
+  /* 年別ページの表示件数を12件にする */
+   if ( $query->is_year() ) {
+       $query->set( 'posts_per_page', '12' );
+       return;
+  }
+  }
+  add_action( 'pre_get_posts', 'change_posts_per_page' );
+
 /* mwwpform エラーメッセージ変更 */
 function my_error_message($error, $key, $rule){
-  if($key === 'your-company' && $rule === 'noempty'){
-      return '会社名が入力されていません';
+  if($key === 'name' && $rule === 'noempty'){
+      return 'お名前が入力されていません';
   }
-  if($key === 'your-second-name' && $rule === 'noempty'){
-      return '担当者名が入力されていません';
+  if($key === 'email' && $rule === 'noempty'){
+      return 'メールアドレスが入力されていません';
   }
-  if($key === 'your-first-name' && $rule === 'noempty'){
-      return '担当者名が入力されていません';
+  if($key === 'email-confirm' && $rule === 'noempty'){
+    return 'メールアドレスを確認して下さい';
   }
-  if($key === 'your-second-name-kana' && $rule === 'noempty'){
-      return 'フリガナが入力されていません';
+  if($key === 'menu' && $rule === 'noempty'){
+    return 'ご希望のイベント・ご希望のメニューが入力されていません';
   }
-  if($key === 'your-first-name-kana' && $rule === 'noempty'){
-      return 'フリガナが入力されていません';
+  return $error;
   }
-  if($key === 'year' && $rule === 'noempty'){
-    return '項目が選択されていません';
-  }  
-  if($key === 'month' && $rule === 'noempty'){
-    return '項目が選択されていません';
-  }  
-  if($key === 'day' && $rule === 'noempty'){
-    return '項目が選択されていません';
-  }  
-  if($key === 'uni' && $rule === 'noempty'){
-    return '最終学歴が入力されていません';
-  }
-  if($key === 'school' && $rule === 'noempty'){
-    return '項目が選択されていません';
-  }  
-  if($key === 'zip-code' && $rule === 'noempty'){
-      return '郵便番号が入力されていません';
-  }
-  if($key === 'prefectures' && $rule === 'noempty'){
-      return '都道府県が選択されていません';
-  }
-  if($key === 'city' && $rule === 'noempty'){
-      return '市区町村が入力されていません';
-  }
-  if($key === 'banchi' && $rule === 'noempty'){
-    return '番地が入力されていません';
-}
-if($key === 'tel' && $rule === 'noempty'){
-  return 'お電話番号が入力されていません';
-}
-if($key === 'email' && $rule === 'noempty'){
-  return 'メールアドレスが入力されていません';
-}
-if($key === 'industry' && $rule === 'noempty'){
-  return '業種が選択されていません';
-}
-if($key === 'job' && $rule === 'noempty'){
-  return '職種が選択されていません';
-}
-if($key === 'question' && $rule === 'noempty'){
-  return '項目が選択されていません';
-}
-if($key === 'kind' && $rule === 'noempty'){
-  return '項目が選択されていません';
-}
-if($key === 'your-content' && $rule === 'noempty'){
-  return 'お問い合わせ内容が入力されていません';
-}
-if($key === 'ryosho' && $rule === 'required'){
-    return '個人情報に関する取扱いについて同意するがチェックされていません';
-}
-return $error;
-}
 add_filter( 'mwform_error_message_mw-wp-form-147', 'my_error_message', 10, 3 );
 
 

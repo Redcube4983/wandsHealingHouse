@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/faq.css">
     <?php elseif(is_page(array('contact'))) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact.css">
+    <?php elseif(is_page(array('error'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact-error.css">
     <?php elseif(is_page(array('policy'))) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/policy.css">
     <?php elseif(is_page(array('term-of-use'))) : ?>
