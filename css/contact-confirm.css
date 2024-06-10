@@ -3619,4 +3619,17 @@ body.fixed {
   .contact-lead {
     margin-top: 32px;
   }
-}/*# sourceMappingURL=contact.css.map */
+}
+
+.requireLabel {
+  display: none;
+}
+
+td {
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 920px) {
+  td {
+    font-size: 1.6rem;
+  }
+}/*# sourceMappingURL=contact-confirm.css.map */

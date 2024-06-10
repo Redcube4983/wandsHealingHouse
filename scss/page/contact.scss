@@ -104,3 +104,9 @@
 #error {
     display: none;
 }
+.contact-lead {
+    margin-top: 16px;
+    @media screen and (min-width:920px){
+        margin-top: 32px;
+    }
+}

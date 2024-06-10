@@ -34,8 +34,10 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/surrounding-info.css">
     <?php elseif(is_page(array('faq'))) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/faq.css">
-    <?php elseif(is_page(array('contact'))) : ?>
+    <?php elseif(is_page(array('contact','complete'))) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact.css">
+    <?php elseif(is_page(array('confirm'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact-confirm.css">
     <?php elseif(is_page(array('error'))) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/contact-error.css">
     <?php elseif(is_page(array('policy'))) : ?>
