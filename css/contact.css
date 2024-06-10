@@ -3449,7 +3449,7 @@ body.fixed {
 }
 
 #contact .contents-area {
-  max-width: 1200px;
+  max-width: 920px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -3461,9 +3461,90 @@ body.fixed {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  margin-top: 16px;
 }
-#contact .contents-area input {
+#contact .contents-area input, #contact .contents-area textarea {
   width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 920px) {
+  #contact .contents-area input, #contact .contents-area textarea {
+    font-size: 2rem;
+  }
+}
+#contact .contents-area td {
+  margin-top: 8px;
+}
+#contact .contents-area th {
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 920px) {
+  #contact .contents-area th {
+    font-size: 1.6rem;
+  }
+}
+#contact .contents-area .p-form {
+  margin-top: 32px;
+}
+#contact .contents-area .p-form .p-form__btnArea {
+  margin-top: 32px;
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  #contact .contents-area .p-form .p-form__btnArea {
+    place-items: center;
+  }
+}
+#contact .contents-area .p-form .p-form__submit {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #88C4B4;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 10vw;
+}
+#contact .contents-area .p-form .p-form__submit::after {
+  position: absolute;
+  content: "";
+  border-right: 1.5px solid #fff;
+  border-bottom: 1.5px solid #fff;
+  top: 51%;
+  display: block;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 10px;
+  height: 10px;
+  right: 25px;
+}
+@media screen and (min-width: 768px) {
+  #contact .contents-area .p-form .p-form__submit {
+    padding: 15px 60px 15px 25px;
+    font-size: 1.5rem;
+  }
+}
+#contact .contents-area .p-form .p-form__submit:hover {
+  color: #fff;
+  background-color: #54a37f;
+}
+#contact .requireLabel {
+  color: red;
+  margin-left: 4px;
 }
 #contact .sub-description-area li {
   margin-top: 40px;

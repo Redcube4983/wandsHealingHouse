@@ -52,7 +52,7 @@ function my_error_message($error, $key, $rule){
       return 'メールアドレスが入力されていません';
   }
   if($key === 'email-confirm' && $rule === 'noempty'){
-    return 'メールアドレスを確認して下さい';
+    return 'メールアドレスが一致しません';
   }
   if($key === 'menu' && $rule === 'noempty'){
     return 'ご希望のイベント・ご希望のメニューが入力されていません';
