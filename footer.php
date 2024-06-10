@@ -132,19 +132,7 @@
     </script>
 <!-- 共通js -->
 <script src="<?php echo get_template_directory_uri(); ?>/common/js/common.js"></script>
-<!-- voice-page -->
-<?php if( is_page(array('voice'))): ?>
-    <script>
-        $(function(){
-        $(".more").on("click", function() {
-            $(this).toggleClass("on-click");
-            $(this).next(".txt-hide").slideToggle(300);
-        });
-        }); 
-    </script>
-    
-<?php endif; ?>
-<?php if( is_page(array('faq'))): ?>
+<?php if( is_page(array('faq','voice'))): ?>
     <script>
      $(function(){
     		//クリックで動く
