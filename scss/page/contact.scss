@@ -29,57 +29,59 @@
         }
         th {
             font-size: 1.3rem;
+            font-weight: bold;
             @media screen and (min-width:920px){
                 font-size: 1.6rem;
             }
         }
-        .p-form {
+        
+    }
+    .p-form {
+        margin-top: 32px;
+        .p-form__btnArea {
             margin-top: 32px;
-            .p-form__btnArea {
-                margin-top: 32px;
-                display: grid;
-                
-                @media screen and (min-width:768px){
-                    place-items: center;
-                }
+            display: grid;
+            
+            @media screen and (min-width:768px){
+                place-items: center;
             }
-            .p-form__submit {
-                position: relative;
-                display: flex;
-                height: 48px;
-                justify-content: center;
-                align-items: center;
-                background-color: #88C4B4;
+        }
+        .p-form__submit {
+            position: relative;
+            display: flex;
+            height: 48px;
+            justify-content: center;
+            align-items: center;
+            background-color: #88C4B4;
+            color: #fff;
+            transition: .3s;
+            font-size: 1.3rem;
+            border: none;
+            border-radius: 10vw;
+            @media screen and (min-width:768px){
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                border-right: 1.5px solid #fff;
+                border-bottom: 1.5px solid #fff;
+                top: 51%;
+                display: block;
+                transform: translateY(-50%) rotate(-45deg);
+                transition: 0.3s;
+                width: 10px;
+                height: 10px;
+                right: 25px;
+            }
+            @media screen and (min-width:768px){
+                padding: 15px 60px 15px 25px;
+                font-size: 1.5rem;
+            }
+            @media screen and (min-width:920px){
+            }
+            &:hover {
                 color: #fff;
-                transition: .3s;
-                font-size: 1.3rem;
-                border: none;
-                border-radius: 10vw;
-                @media screen and (min-width:768px){
-                }
-                &::after {
-                    position: absolute;
-                    content: "";
-                    border-right: 1.5px solid #fff;
-                    border-bottom: 1.5px solid #fff;
-                    top: 51%;
-                    display: block;
-                    transform: translateY(-50%) rotate(-45deg);
-                    transition: 0.3s;
-                    width: 10px;
-                    height: 10px;
-                    right: 25px;
-                }
-                @media screen and (min-width:768px){
-                    padding: 15px 60px 15px 25px;
-                    font-size: 1.5rem;
-                }
-                @media screen and (min-width:920px){
-                }
-                &:hover {
-                    color: #fff;
-                    background-color: #54a37f;
-                }
+                background-color: #54a37f;
             }
         }
     }
@@ -108,5 +110,13 @@
     margin-top: 16px;
     @media screen and (min-width:920px){
         margin-top: 32px;
+    }
+}
+.mw_wp_form_complete {
+    font-size: 1.3rem;
+    line-height: 2;
+    margin-top: 16px;
+    @media screen and (min-width:920px){
+        font-size: 1.6rem;
     }
 }

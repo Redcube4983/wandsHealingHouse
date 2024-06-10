@@ -23,7 +23,7 @@ Template Name: contact
 	</div>
 	<div class="lead-area">
 		<div class="ttl-wrap">
-			<h4 class="en">Contact Form</h4>
+			<h4 class="en">Contact</h4>
 			<h3 class="jp">ご予約・お問い合わせ</h3>
 		</div>
 		<p class="lead-sentence">都会の喧騒の中にある静寂な空間。そしてチャネラーが住む家。多くの高次元存在が降り立つヒーリングハウス。</p>

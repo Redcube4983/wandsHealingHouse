@@ -2142,6 +2142,7 @@ ul.footer-sitemap li.main-navi ul.sab-nav {
     background-color: inherit;
     padding: 0;
     margin-top: 15px;
+    display: block !important;
   }
 }
 ul.footer-sitemap li.main-navi ul.sab-nav li {
