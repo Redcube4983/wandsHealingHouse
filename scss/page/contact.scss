@@ -11,6 +11,13 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 20px;
+        tr {
+            display: flex;
+            flex-flow: column;
+          }
+        input {
+            width: 100%;
+        }
     }
     .sub-description-area {
         @include description-area;

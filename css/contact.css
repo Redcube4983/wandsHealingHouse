@@ -3453,6 +3453,18 @@ body.fixed {
   margin: 0 auto;
   padding: 0 20px;
 }
+#contact .contents-area tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+#contact .contents-area input {
+  width: 100%;
+}
 #contact .sub-description-area li {
   margin-top: 40px;
 }

@@ -5,7 +5,26 @@
 
 
 
-
+#contact {
+    .contents-area {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .sub-description-area {
+        @include description-area;
+        li {
+            &:not(:first-child) {
+                border-top: dotted 2px #AED4CA;
+                padding-top: 40px;
+                @media screen and (min-width:920px){
+                    padding-top: 64px;
+                }
+            }
+        }
+    }
+    
+}
 #error {
     display: block;
 }
