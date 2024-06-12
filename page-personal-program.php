@@ -43,8 +43,10 @@ Template Name: personal-program
 					<a href="<?php echo esc_url( home_url( 'reconnection-therapy') ); ?>" class="">read more</a>
 				</div>
 				<div class="box">
-					<h4><span>Body Re-connection Therapy</span><br>ボディ リコネクション セラピー</h4>
-					<span class="caption">2種類のボディトリートメント＋チャネリング</span>
+					<div class="text-box">
+						<h4><span>Body Re-connection Therapy</span><br>ボディ リコネクション セラピー</h4>
+						<span class="caption">2種類のボディトリートメント＋チャネリング</span>
+					</div>
 					<div class="price-box">
 						<div class="price">
 							<span>price</span>
@@ -82,7 +84,7 @@ Template Name: personal-program
 							</ul>
 						</div>
 						<div class="button-wrap">
-                            <a href="<?php echo esc_url( home_url( 'dialogue') ); ?>" class="">read more</a>
+                            <a href="<?php echo esc_url( home_url( 'channeling-dialogue') ); ?>" class="">read more</a>
                         </div>
 					</div>
 				</div>

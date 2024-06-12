@@ -25,41 +25,5 @@
             }
         }
     }
-    .img-wrap {
-        margin-top: 20px;
-        display: flex;
-        flex-flow: wrap;
-        justify-content: space-between;
-        li {
-            width: 49%;
-            @media screen and (min-width:920px){
-                width: 24%;
-            }
-        }
-        li:nth-child(n+3) {
-            margin-top: 2%;
-            @media screen and (min-width:920px){
-                margin-top: 0;
-            }
-        }
-    }
-    .button-wrap {
-        @include btn-read_more($base-margin:0);
-        @media screen and (min-width:768px){
-            @include btn-read_more($base-margin:inherit);
-        }
-    }
-    .box {
-        border: solid 1.3px #AED4CA;
-        margin-top: 16px;
-        @media screen and (min-width:768px){
-            padding: 32px;
-        }
-        p {
-            padding: 16px;
-            @media screen and (min-width:768px){
-                padding: 0;
-            }
-        }
-      }
+    
 }

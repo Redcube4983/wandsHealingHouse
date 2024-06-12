@@ -1,5 +1,7 @@
 
 .box {
+    border: solid 1px #AED4CA;
+    margin-top: 32px;
     h4 {
 
     }
@@ -15,7 +17,32 @@
     }
 }
 
+.contents-inner {
+    h3 {
+        @include ff-jp;
+        font-size: 23px;
+        position: relative;
+        @media screen and (min-width:920px){
+            font-size: 28px;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            display: block;
+            background-repeat: no-repeat;
+            background-image: url(../../../common/images/ornament01.png);
+            width: 25px;
+            height: auto;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
 ul.right-img-box {
+    margin-top: 32px;
+    @media screen and (min-width:920px){
+    }
     li {
         &:not(:first-child) {
             margin-top: 12px;

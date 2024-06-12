@@ -3449,6 +3449,9 @@ body.fixed {
   }
 }
 
+ul.right-img-box {
+  margin-top: 32px;
+}
 ul.right-img-box li:not(:first-child) {
   margin-top: 12px;
 }

@@ -3452,6 +3452,11 @@ body.fixed {
 ul.right-img-box {
   margin-top: 32px;
 }
+@media screen and (min-width: 920px) {
+  ul.right-img-box {
+    margin-top: 44px;
+  }
+}
 ul.right-img-box li:not(:first-child) {
   margin-top: 12px;
 }
@@ -3491,69 +3496,22 @@ ul.black-point .point-none {
   }
 }
 
-#personal-program .contents-area {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+#channeling-message .lead-area {
+  margin: 120px auto 0;
 }
-#personal-program .sub-description-area li {
-  margin-top: 40px;
-}
-@media screen and (min-width: 920px) {
-  #personal-program .sub-description-area li {
-    margin-top: 64px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+@media screen and (min-width: 768px) {
+  #channeling-message .lead-area {
+    text-align: center;
   }
 }
 @media screen and (min-width: 920px) {
-  #personal-program .sub-description-area li img {
-    width: 45%;
-    -o-object-fit: contain;
-       object-fit: contain;
+  #channeling-message .lead-area {
+    margin: 160px auto 120px;
+    max-width: 960px;
   }
 }
-#personal-program .sub-description-area .text-wrap {
-  margin-top: 12px;
-}
-@media screen and (min-width: 920px) {
-  #personal-program .sub-description-area .text-wrap {
-    width: 50%;
-  }
-}
-#personal-program .sub-description-area h4 {
-  font-size: 24px;
-  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
-  line-height: 1.3;
-}
-#personal-program .sub-description-area .sub-wrap img {
-  width: 24px;
-}
-@media screen and (min-width: 920px) {
-  #personal-program .sub-description-area .sub-wrap img {
-    width: 32px;
-  }
-}
-#personal-program .sub-description-area h4 {
-  margin-top: 8px;
-}
-#personal-program .sub-description-area p {
-  margin-top: 8px;
-}
-#personal-program .sub-description-area li:not(:first-child) {
-  border-top: dotted 2px #AED4CA;
-  padding-top: 40px;
-}
-@media screen and (min-width: 920px) {
-  #personal-program .sub-description-area li:not(:first-child) {
-    padding-top: 64px;
-  }
-}/*# sourceMappingURL=personal-program.css.map */
+#channeling-message .contents-area {
+  max-width: 960px;
+  margin: 64px auto;
+  padding: 0 24px;
+}/*# sourceMappingURL=channeling-dialogue.css.map */
