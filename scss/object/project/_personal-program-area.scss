@@ -12,8 +12,14 @@
 .box {
     border: solid 1px #AED4CA;
     margin-top: 32px;
+    @media screen and (min-width:920px){
+        padding: 32px;
+    }
     .text-box {
         padding: 32px 32px 0;
+        @media screen and (min-width:920px){
+            padding: 0;
+        }
     }
     h4 {
         @include ff-jp;
@@ -32,9 +38,19 @@
         @include fz-p();
     }
     .price-box {
+        @media screen and (min-width:920px){
+            display: flex;
+            flex-flow: nowrap;
+            justify-content: space-between;
+            width: 100%;
+        }
         .price {
             padding: 24px 32px 0;
             @include fz-p();
+            @media screen and (min-width:920px){
+                padding: 0;
+                margin-top: 32px;
+            }
             span {
                 color: #53b79d;
                 @include fz-p();
@@ -49,21 +65,43 @@
               }
         }
     }
+    .button-wrap {
+        @media screen and (min-width:920px){
+            margin: 0;
+            display: flex;
+            flex-flow: column-reverse;
+        }
+    }
 }
 .text-wrap {
     h3 {
         margin-top: 16px;
         line-height: 1.5;
+        @media screen and (min-width:920px){
+            margin: 0;
+        }
     }
     p {
         margin-top: 8px;
     }
 }
 .button-wrap {
-    margin: 32px;
+    @media screen and (min-width:920px){
+        margin: 32px;
+    }
   }
   
 .contents-inner {
+    .img-wrap {
+        @media screen and (min-width:920px){
+            width: 40%;
+        }
+    }
+    .text-wrap {
+        @media screen and (min-width:920px){
+            width: 54%;
+        }
+    }
     h3 {
         @include ff-jp();
         font-size: 23px;
@@ -88,6 +126,7 @@
 ul.right-img-box {
     margin-top: 32px;
     @media screen and (min-width:920px){
+        margin: 0;
     }
     li {
         &:not(:first-child) {

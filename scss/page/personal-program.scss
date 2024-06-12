@@ -27,8 +27,14 @@
         }
     }
     .contents-inner {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
+        @media screen and (min-width:920px){
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 64px;
+        }
+    }
+    .dialogue-area {
+        margin-top: 120px;
     }
 }

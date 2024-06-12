@@ -75,7 +75,7 @@ Template Name: personal-program
 				<p>お客様とチャネラーが1対1の対話形式で、大天使ミハエルからのメッセージをお伝えいたします。（ボディセラピーは行いません）<br>自分自身で聞くことが難しい、魂の中に眠る純粋なスピリットの声を受け取り、ミハエルノブコを通して、言葉としてお伝えいたします。遠隔（ZOOM）でのセッションも承っております。</p>
 				<div class="box">
 					<div class="text-box">
-						<h4><span>channeling Dialogue</span><br>チャネリング ダイアローグ（対話）- 個人セッション</h4>
+						<h4><span>channeling Dialogue</span><br>チャネリング ダイアローグ（対話）<br>- 個人セッション</h4>
 						<span class="caption">（対面またはZOOM遠隔）</span>
 					</div>
 					<div class="price-box">

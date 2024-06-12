@@ -3453,8 +3453,18 @@ body.fixed {
   border: solid 1px #AED4CA;
   margin-top: 32px;
 }
+@media screen and (min-width: 920px) {
+  .box {
+    padding: 32px;
+  }
+}
 .box .text-box {
   padding: 32px 32px 0;
+}
+@media screen and (min-width: 920px) {
+  .box .text-box {
+    padding: 0;
+  }
 }
 .box h4 {
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
@@ -3483,6 +3493,19 @@ body.fixed {
     font-size: 1.6rem;
   }
 }
+@media screen and (min-width: 920px) {
+  .box .price-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: nowrap;
+        flex-flow: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+}
 .box .price-box .price {
   padding: 24px 32px 0;
   font-size: 1.3rem;
@@ -3490,6 +3513,12 @@ body.fixed {
 @media screen and (min-width: 920px) {
   .box .price-box .price {
     font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 920px) {
+  .box .price-box .price {
+    padding: 0;
+    margin-top: 32px;
   }
 }
 .box .price-box .price span {
@@ -3507,19 +3536,48 @@ body.fixed {
   text-underline-offset: 8px;
   margin-top: 12px;
 }
+@media screen and (min-width: 920px) {
+  .box .button-wrap {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+  }
+}
 
 .text-wrap h3 {
   margin-top: 16px;
   line-height: 1.5;
 }
+@media screen and (min-width: 920px) {
+  .text-wrap h3 {
+    margin: 0;
+  }
+}
 .text-wrap p {
   margin-top: 8px;
 }
 
-.button-wrap {
-  margin: 32px;
+@media screen and (min-width: 920px) {
+  .button-wrap {
+    margin: 32px;
+  }
 }
 
+@media screen and (min-width: 920px) {
+  .contents-inner .img-wrap {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 920px) {
+  .contents-inner .text-wrap {
+    width: 54%;
+  }
+}
 .contents-inner h3 {
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
   font-size: 23px;
@@ -3544,6 +3602,11 @@ body.fixed {
 
 ul.right-img-box {
   margin-top: 32px;
+}
+@media screen and (min-width: 920px) {
+  ul.right-img-box {
+    margin: 0;
+  }
 }
 ul.right-img-box li:not(:first-child) {
   margin-top: 12px;
@@ -3650,12 +3713,18 @@ ul.black-point .point-none {
     padding-top: 64px;
   }
 }
-#personal-program .contents-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
+@media screen and (min-width: 920px) {
+  #personal-program .contents-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-top: 64px;
+  }
+}
+#personal-program .dialogue-area {
+  margin-top: 120px;
 }/*# sourceMappingURL=personal-program.css.map */
