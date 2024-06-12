@@ -53,7 +53,9 @@ ul.black-point {
 .bg-green {
     background: #E2FDF6;
     padding: 40px 32px;
+    margin-top: 32px;
     @media screen and (min-width:920px){
         padding: 64px 40px;
+        margin-top: 64px;
     }
 }

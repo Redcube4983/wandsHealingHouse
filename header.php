@@ -28,6 +28,12 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/wands-association.css">
     <?php elseif(is_page(array('personal-program'))) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/personal-program.css">
+    <?php elseif(is_page(array('body-therapy'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/body-therapy.css">
+    <?php elseif(is_page(array('reconnection-therapy'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reconnection-therapy.css">
+    <?php elseif(is_page(array('channeling-dialogue'))) : ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/channeling-dialogue.css">
     <?php elseif(is_page(array('voice'))) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/voice.css">
     <?php elseif(is_page(array('surrounding-info'))) : ?>

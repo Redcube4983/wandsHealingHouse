@@ -1,0 +1,27 @@
+
+@use "../global" as *;
+@use "../object" as *;
+@use "../../common/css/layout" as *;
+@use '../object/project/personal-program-area';
+
+
+
+#channeling-message {
+    .lead-area {
+        margin: 120px auto 0;
+        @media screen and (min-width:768px){
+            text-align: center;
+        }
+        @media screen and (min-width:920px){
+            margin: 160px auto 120px;
+            max-width: 960px;
+        }
+    }
+    .contents-area {
+        max-width: 960px;
+        margin: 64px auto;
+        padding: 0 24px;
+    }
+
+    
+}
