@@ -37,8 +37,11 @@ Template Name: personal-program
 				</ul>
 			</div>
 			<div class="text-wrap">
-				<h3>ボディセラピー</h3>
+				<h3>ボディセラピー＆チャネリング</h3>
 				<p>ボディリコネクション、それは、自分自身との「再統合・再接続」身体と心と魂（スピリット）がひとつに繋がるためのセラピーです。<br>ボディセラピー施術中に受け取ったチャネリングメッセージをお伝えいたします。完全予約制、女性のみ対象といたしております。</p>
+				<div class="button-wrap">
+					<a href="<?php echo esc_url( home_url( 'reconnection-therapy') ); ?>" class="">read more</a>
+				</div>
 				<div class="box">
 					<h4><span>Body Re-connection Therapy</span><br>ボディ リコネクション セラピー</h4>
 					<span class="caption">2種類のボディトリートメント＋チャネリング</span>
