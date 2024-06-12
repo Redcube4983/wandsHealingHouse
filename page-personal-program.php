@@ -31,7 +31,7 @@ Template Name: personal-program
 	<div class="contents-area">
 		<div class="contents-inner therapy-area">
 			<div class="img-wrap">
-				<ul>
+				<ul class="right-img-box">
 					<li><img src="<?php echo get_template_directory_uri(); ?>/images/personal-program/personalProgram_img01.jpg" alt=""></li>
 					<li><img src="<?php echo get_template_directory_uri(); ?>/images/personal-program/personalProgram_img02.jpg" alt=""></li>
 				</ul>
@@ -63,7 +63,7 @@ Template Name: personal-program
 		</div>
 		<div class="contents-inner dialogue-area">
 			<div class="img-wrap">
-				<ul>
+				<ul class="right-img-box">
 					<li><img src="<?php echo get_template_directory_uri(); ?>/images/personal-program/personalProgram_img03.jpg" alt=""></li>
 					<li><img src="<?php echo get_template_directory_uri(); ?>/images/personal-program/personalProgram_img04.jpg" alt=""></li>
 				</ul>

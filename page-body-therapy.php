@@ -25,10 +25,10 @@ Template Name: body-therapy
                 <div class="comment">
                     <p>ミハエルノブコはチャネラーでもあり、ヒーリングセラピスト。<br>施術中にボディに触れながらチャネリングを行い、大天使ミハエルから受け取ったメッセージお伝えいたします。<br>身体が温まり筋肉が緩むだけでなく、同時にご自身の本当の内面の声を聞くことで、閉ざされていた内なる自分と繋がり、心の解放と癒しが起こります。</p>
                 </div>
-                <div class="contents-inner">
+                <div class="contents-inner bg-green">
                     <div class="content1">
                         <div class="img-wrap">
-                            <ul>
+                            <ul class="right-img-box">
                                 <li><img src="<?php echo get_template_directory_uri(); ?>/images/body-therapy/personalProgram_img01.jpg" alt=""></li>
                                 <li><img src="<?php echo get_template_directory_uri(); ?>/images/body-therapy/personalProgram_img02.jpg" alt=""></li>
                             </ul>
@@ -59,7 +59,7 @@ Template Name: body-therapy
                     </div>
                     <div class="content2">
                         <div class="text-wrap">
-                            <ul>
+                            <ul class="black-point">
                                 <li>その日のご体調やご希望をうかがい、オリジナルのメニューを作ります。</li>
                                 <li>チャネリングメッセージは、施術中もしくは施術後にお伝えいたします。<br>　大天使ミハエルからのコンタクトのタイミングは、毎回異なります。
                                 <li>90分・120分コースは、ご希望によって、リフトアップ フェイシャルを組み込むこともできます。<br>　当日セラピストにお申し付けください。</li>
@@ -71,7 +71,7 @@ Template Name: body-therapy
                         </div>
                     </div>
                     <div class="content3">
-                        <ul>
+                        <ul class="green-back">
                             <li>
                                 <div class="">
                                     <h4>価格・時間について</h4>
@@ -81,7 +81,7 @@ Template Name: body-therapy
                             <li>
                                 <div class="">
                                     <h4>ご予約の前に同意いただきたい重要事項</h4>
-                                    <ul>
+                                    <ul class="black-point">
                                         <li>テラスリーを使用するセラピーは、健康増進するためにサポートであり、医療行為ではないことをご理解ください。</li>
                                         <li>CBD（カンナビジオール）は、麻種子由来の天然成分です。<br>　CBD配合製品を使用した施術は、病気の診断、治療、治癒を目的としたものではございません。</li>
                                     </ul>

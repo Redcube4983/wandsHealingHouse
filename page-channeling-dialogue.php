@@ -27,10 +27,10 @@ Template Name: channeling-dialogue
                     <p>ワンズヒーリングハウスでは、お客様とチャネラー1対1で行う個人チャネリングセッションを行なっております。<br>
                     実際にハウスで対面して行う形式と、遠隔で行う形式（ZOOM）の２種類をご用意しております。</p>
                 </div>
-                <div class="contents-inner">
+                <div class="contents-inner bg-green">
                     <div class="content1">
                         <div class="img-wrap">
-                            <ul>
+                            <ul class="right-img-box">
                                 <li><img src="<?php echo get_template_directory_uri(); ?>/images/channeling-dialogue/personalProgram_img01.jpg" alt=""></li>
                                 <li><img src="<?php echo get_template_directory_uri(); ?>/images/channeling-dialogue/personalProgram_img02.jpg" alt=""></li>
                             </ul>
@@ -65,7 +65,7 @@ Template Name: channeling-dialogue
                         </div>
                     </div>
                     <div class="content2">
-                        <ul>
+                        <ul class="green-back">
                             <li>
                                 <div class="">
                                     <h4>大天使ミハエルとのチャネリング</h4>

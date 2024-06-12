@@ -3579,6 +3579,7 @@ main {
 }
 @media screen and (min-width: 920px) {
   .fv-wrap {
+    margin: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;

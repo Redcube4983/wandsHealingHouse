@@ -1,0 +1,59 @@
+
+.box {
+    h4 {
+
+    }
+    .caption {
+
+    }
+    .price-box {
+        .price {
+            span {
+
+            }
+        }
+    }
+}
+
+ul.right-img-box {
+    li {
+        &:not(:first-child) {
+            margin-top: 12px;
+            @media screen and (min-width:920px){
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+ul.green-back {
+    h4 {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            background-image: url(../../../common/images/ornament02.png);
+            background-repeat: no-repeat;
+            width: 30px;
+            height: auto;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+ul.black-point {
+    li {
+
+    }
+    .point-none {
+        display: none;
+    }
+}
+.bg-green {
+    background: #E2FDF6;
+    padding: 40px 32px;
+    @media screen and (min-width:920px){
+        padding: 64px 40px;
+    }
+}
