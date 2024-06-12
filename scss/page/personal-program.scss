@@ -37,4 +37,43 @@
     .dialogue-area {
         margin-top: 120px;
     }
+
+    .box {
+        border: solid 1px #AED4CA;
+        margin-top: 32px;
+        @media screen and (min-width:920px){
+            padding: 32px;
+        }
+        .text-box {
+            padding: 32px 32px 0;
+            @media screen and (min-width:920px){
+                padding: 0;
+            }
+        }
+        h4 {
+            @include ff-jp;
+            font-size: 2rem;
+            line-height: 1.5;
+    
+            @media screen and (min-width:920px){
+                font-size: 2.5rem;
+            }
+            span {
+                color: #88C4B4;
+                @include fz-p();
+            }
+        }
+        .caption {
+            @include fz-p();
+        }
+        
+        .button-wrap {
+            @media screen and (min-width:920px){
+                margin: 0;
+                display: flex;
+                flex-flow: column-reverse;
+            }
+        }
+    }
 }
+

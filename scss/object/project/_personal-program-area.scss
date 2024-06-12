@@ -3,74 +3,33 @@
 @use "../../../common/css/layout" as *;
 
 
-@mixin fz-p {
-    font-size: 1.3rem;
+
+.price-box {
     @media screen and (min-width:920px){
-        font-size: 1.6rem;
+        display: flex;
+        flex-flow: nowrap;
+        justify-content: space-between;
+        width: 100%;
     }
-}
-.box {
-    border: solid 1px #AED4CA;
-    margin-top: 32px;
-    @media screen and (min-width:920px){
-        padding: 32px;
-    }
-    .text-box {
-        padding: 32px 32px 0;
+    .price {
+        padding: 24px 32px 0;
+        @include fz-p();
         @media screen and (min-width:920px){
             padding: 0;
-        }
-    }
-    h4 {
-        @include ff-jp;
-        font-size: 2rem;
-        line-height: 1.5;
-
-        @media screen and (min-width:920px){
-            font-size: 2.5rem;
+            margin-top: 32px;
         }
         span {
-            color: #88C4B4;
+            color: #53b79d;
             @include fz-p();
         }
     }
-    .caption {
-        @include fz-p();
-    }
-    .price-box {
-        @media screen and (min-width:920px){
-            display: flex;
-            flex-flow: nowrap;
-            justify-content: space-between;
-            width: 100%;
-        }
-        .price {
-            padding: 24px 32px 0;
-            @include fz-p();
-            @media screen and (min-width:920px){
-                padding: 0;
-                margin-top: 32px;
-            }
-            span {
-                color: #53b79d;
-                @include fz-p();
-            }
-        }
-        ul {
-            li {
-                text-decoration: underline;
-                text-decoration-color: #AED4CA;
-                text-underline-offset: 8px;
-                margin-top: 12px;
-              }
-        }
-    }
-    .button-wrap {
-        @media screen and (min-width:920px){
-            margin: 0;
-            display: flex;
-            flex-flow: column-reverse;
-        }
+    ul {
+        li {
+            text-decoration: underline;
+            text-decoration-color: #AED4CA;
+            text-underline-offset: 8px;
+            margin-top: 12px;
+          }
     }
 }
 .text-wrap {

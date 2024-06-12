@@ -75,3 +75,10 @@
         margin-top: 8px;
     }
 }
+
+@mixin fz-p {
+    font-size: 1.3rem;
+    @media screen and (min-width:920px){
+        font-size: 1.6rem;
+    }
+}

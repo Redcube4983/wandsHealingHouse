@@ -3449,52 +3449,8 @@ body.fixed {
   }
 }
 
-.box {
-  border: solid 1px #AED4CA;
-  margin-top: 32px;
-}
 @media screen and (min-width: 920px) {
-  .box {
-    padding: 32px;
-  }
-}
-.box .text-box {
-  padding: 32px 32px 0;
-}
-@media screen and (min-width: 920px) {
-  .box .text-box {
-    padding: 0;
-  }
-}
-.box h4 {
-  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-size: 2rem;
-  line-height: 1.5;
-}
-@media screen and (min-width: 920px) {
-  .box h4 {
-    font-size: 2.5rem;
-  }
-}
-.box h4 span {
-  color: #88C4B4;
-  font-size: 1.3rem;
-}
-@media screen and (min-width: 920px) {
-  .box h4 span {
-    font-size: 1.6rem;
-  }
-}
-.box .caption {
-  font-size: 1.3rem;
-}
-@media screen and (min-width: 920px) {
-  .box .caption {
-    font-size: 1.6rem;
-  }
-}
-@media screen and (min-width: 920px) {
-  .box .price-box {
+  .price-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3506,47 +3462,35 @@ body.fixed {
     width: 100%;
   }
 }
-.box .price-box .price {
+.price-box .price {
   padding: 24px 32px 0;
   font-size: 1.3rem;
 }
 @media screen and (min-width: 920px) {
-  .box .price-box .price {
+  .price-box .price {
     font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 920px) {
-  .box .price-box .price {
+  .price-box .price {
     padding: 0;
     margin-top: 32px;
   }
 }
-.box .price-box .price span {
+.price-box .price span {
   color: #53b79d;
   font-size: 1.3rem;
 }
 @media screen and (min-width: 920px) {
-  .box .price-box .price span {
+  .price-box .price span {
     font-size: 1.6rem;
   }
 }
-.box .price-box ul li {
+.price-box ul li {
   text-decoration: underline;
   text-decoration-color: #AED4CA;
   text-underline-offset: 8px;
   margin-top: 12px;
-}
-@media screen and (min-width: 920px) {
-  .box .button-wrap {
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-flow: column-reverse;
-            flex-flow: column-reverse;
-  }
 }
 
 .text-wrap h3 {
