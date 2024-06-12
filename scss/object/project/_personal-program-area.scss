@@ -1,25 +1,71 @@
+@use "../../global" as *;
+@use "../../object" as *;
+@use "../../../common/css/layout" as *;
 
+
+@mixin fz-p {
+    font-size: 1.3rem;
+    @media screen and (min-width:920px){
+        font-size: 1.6rem;
+    }
+}
 .box {
     border: solid 1px #AED4CA;
     margin-top: 32px;
+    .text-box {
+        padding: 32px 32px 0;
+    }
     h4 {
+        @include ff-jp;
+        font-size: 2rem;
+        line-height: 1.5;
 
+        @media screen and (min-width:920px){
+            font-size: 2.5rem;
+        }
+        span {
+            color: #88C4B4;
+            @include fz-p();
+        }
     }
     .caption {
-
+        @include fz-p();
     }
     .price-box {
         .price {
+            padding: 24px 32px 0;
+            @include fz-p();
             span {
-
+                color: #53b79d;
+                @include fz-p();
             }
+        }
+        ul {
+            li {
+                text-decoration: underline;
+                text-decoration-color: #AED4CA;
+                text-underline-offset: 8px;
+                margin-top: 12px;
+              }
         }
     }
 }
-
+.text-wrap {
+    h3 {
+        margin-top: 16px;
+        line-height: 1.5;
+    }
+    p {
+        margin-top: 8px;
+    }
+}
+.button-wrap {
+    margin: 32px;
+  }
+  
 .contents-inner {
     h3 {
-        @include ff-jp;
+        @include ff-jp();
         font-size: 23px;
         position: relative;
         @media screen and (min-width:920px){

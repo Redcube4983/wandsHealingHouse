@@ -1,8 +1,9 @@
-
+@charset "UTF-8";
 @use "../global" as *;
 @use "../object" as *;
 @use "../../common/css/layout" as *;
 @use '../object/project/personal-program-area';
+
 
 
 
@@ -25,5 +26,9 @@
             }
         }
     }
-    
+    .contents-inner {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 }

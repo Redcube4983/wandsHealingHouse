@@ -40,7 +40,7 @@ Template Name: personal-program
 				<h3>ボディセラピー＆チャネリング</h3>
 				<p>ボディリコネクション、それは、自分自身との「再統合・再接続」身体と心と魂（スピリット）がひとつに繋がるためのセラピーです。<br>ボディセラピー施術中に受け取ったチャネリングメッセージをお伝えいたします。完全予約制、女性のみ対象といたしております。</p>
 				<div class="button-wrap">
-					<a href="<?php echo esc_url( home_url( 'reconnection-therapy') ); ?>" class="">read more</a>
+					<a href="<?php echo esc_url( home_url( 'body-therapy') ); ?>" class="">read more</a>
 				</div>
 				<div class="box">
 					<div class="text-box">
@@ -49,7 +49,7 @@ Template Name: personal-program
 					</div>
 					<div class="price-box">
 						<div class="price">
-							<span>price</span>
+							<span>PRICE</span>
 							<ul>
 								<li>60分　13,000円（税込）</li>
 								<li>90分　16,000円（税込）</li>
@@ -74,11 +74,13 @@ Template Name: personal-program
 				<h3>チャネリング ダイアローグ（対話）- 個人セッション</h3>
 				<p>お客様とチャネラーが1対1の対話形式で、大天使ミハエルからのメッセージをお伝えいたします。（ボディセラピーは行いません）<br>自分自身で聞くことが難しい、魂の中に眠る純粋なスピリットの声を受け取り、ミハエルノブコを通して、言葉としてお伝えいたします。遠隔（ZOOM）でのセッションも承っております。</p>
 				<div class="box">
-					<h4><span>channeling Dialogue</span><br>チャネリング ダイアローグ（対話）- 個人セッション</h4>
-					<span class="caption">（対面またはZOOM遠隔）</span>
+					<div class="text-box">
+						<h4><span>channeling Dialogue</span><br>チャネリング ダイアローグ（対話）- 個人セッション</h4>
+						<span class="caption">（対面またはZOOM遠隔）</span>
+					</div>
 					<div class="price-box">
 						<div class="price">
-							<span>price</span>
+							<span>PRICE</span>
 							<ul>
 							<li>-45分　5,000円〜ドネーション性</li>
 							</ul>

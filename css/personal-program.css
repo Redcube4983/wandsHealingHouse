@@ -3449,6 +3449,99 @@ body.fixed {
   }
 }
 
+.box {
+  border: solid 1px #AED4CA;
+  margin-top: 32px;
+}
+.box .text-box {
+  padding: 32px 32px 0;
+}
+.box h4 {
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+@media screen and (min-width: 920px) {
+  .box h4 {
+    font-size: 2.5rem;
+  }
+}
+.box h4 span {
+  color: #88C4B4;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 920px) {
+  .box h4 span {
+    font-size: 1.6rem;
+  }
+}
+.box .caption {
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 920px) {
+  .box .caption {
+    font-size: 1.6rem;
+  }
+}
+.box .price-box .price {
+  padding: 24px 32px 0;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 920px) {
+  .box .price-box .price {
+    font-size: 1.6rem;
+  }
+}
+.box .price-box .price span {
+  color: #53b79d;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 920px) {
+  .box .price-box .price span {
+    font-size: 1.6rem;
+  }
+}
+.box .price-box ul li {
+  text-decoration: underline;
+  text-decoration-color: #AED4CA;
+  text-underline-offset: 8px;
+  margin-top: 12px;
+}
+
+.text-wrap h3 {
+  margin-top: 16px;
+  line-height: 1.5;
+}
+.text-wrap p {
+  margin-top: 8px;
+}
+
+.button-wrap {
+  margin: 32px;
+}
+
+.contents-inner h3 {
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 23px;
+  position: relative;
+}
+@media screen and (min-width: 920px) {
+  .contents-inner h3 {
+    font-size: 28px;
+  }
+}
+.contents-inner h3::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url(../../../common/images/ornament01.png);
+  width: 25px;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
 ul.right-img-box {
   margin-top: 32px;
 }
@@ -3556,4 +3649,13 @@ ul.black-point .point-none {
   #personal-program .sub-description-area li:not(:first-child) {
     padding-top: 64px;
   }
+}
+#personal-program .contents-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }/*# sourceMappingURL=personal-program.css.map */
