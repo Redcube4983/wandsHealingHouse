@@ -3715,7 +3715,14 @@ body.fixed {
 }
 .wands-association-area .profileA-02 {
   padding: 0 24px;
+  display: block;
   margin-top: 64px;
+  padding-top: 80px;
+}
+@media screen and (min-width: 920px) {
+  .wands-association-area .profileA-02 {
+    margin-top: 80px;
+  }
 }
 .wands-association-area .profileA-02 h3 {
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;

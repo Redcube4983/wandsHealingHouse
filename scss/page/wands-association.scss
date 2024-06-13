@@ -142,7 +142,12 @@
     }
     .profileA-02 {
         @include padding_side();
+        display: block;
         margin-top: 64px;
+        padding-top: 80px;
+        @media screen and (min-width:920px){
+            margin-top: 80px;
+        }
         h3 {
             @include ff-jp();
             font-size: 1.8rem;
