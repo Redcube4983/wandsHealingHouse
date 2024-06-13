@@ -10,7 +10,7 @@ Template Name: body-therapy
             <div class="lead-area">
                 <h4 class="en">Body Therapy & Channeling</h4>
                 <h3 class="jp">ボディセラピー＆チャネリング</h3>
-                <p class="lead-sentence">ワンズヒーリングハウスのボディセラピーは、チャネリングを融合させた新しいスタイルのヒーリングです。<br>身体と魂の両面から深く癒していきます。</p>
+                <p class="lead-sentence">ワンズヒーリングハウスのボディセラピーは、チャネリングを融合させた新しいスタイルのヒーリングです。<br class="pc">身体と魂の両面から深く癒していきます。</p>
             </div>
         </div>
         <div class="breadcrumbs-area">

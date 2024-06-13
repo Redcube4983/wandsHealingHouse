@@ -1795,12 +1795,12 @@ footer .contact-button-wrap a {
     padding: 7% 20% 7% 16%;
     border-radius: 0 120px 120px 0;
     background-size: cover;
-    font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 920px) {
   footer .contact-button-wrap a {
     border-radius: 0 200px 200px 0;
+    font-size: 1.6rem;
   }
 }
 footer .contact-button-wrap a h3 {
@@ -1906,7 +1906,7 @@ footer #footer-info a .site-logo {
 footer #footer-info h3 {
   font-size: 1.6rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 920px) {
   footer #footer-info h3 {
     font-size: 1.8rem;
   }
@@ -1914,7 +1914,7 @@ footer #footer-info h3 {
 footer #footer-info p {
   font-size: 1.4em;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 920px) {
   footer #footer-info p {
     font-size: 1.6rem;
   }
@@ -1962,19 +1962,19 @@ footer #footer-info p {
   }
 }
 #info-wrap p {
-  font-size: 13px;
+  font-size: 1.3rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 920px) {
   #info-wrap p {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
 #info-wrap span {
-  font-size: 17px;
+  font-size: 1.7rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 920px) {
   #info-wrap span {
-    font-size: 19px;
+    font-size: 1.9rem;
   }
 }
 #info-wrap .open-wrap {
@@ -1997,15 +1997,19 @@ footer #footer-info p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 14px;
+  font-size: 1.3rem;
 }
 @media screen and (min-width: 768px) {
   #info-wrap .sns-wrap {
-    font-size: 16px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-top: 50px;
+  }
+}
+@media screen and (min-width: 920px) {
+  #info-wrap .sns-wrap {
+    font-size: 1.6rem;
   }
 }
 #info-wrap .sns-wrap a {
@@ -2301,13 +2305,13 @@ p {
 }
 @media screen and (min-width: 768px) {
   p {
-    font-size: 1.6rem;
     letter-spacing: 1px;
   }
 }
 @media screen and (min-width: 920px) {
   p {
     letter-spacing: 1px;
+    font-size: 1.6rem;
   }
 }
 
@@ -3132,7 +3136,6 @@ header {
 }
 @media screen and (min-width: 920px) {
   #global-navi ul#global-main li ul.sab-nav li a {
-    font-size: 13px;
     text-align: left;
   }
   #global-navi ul#global-main li ul.sab-nav li a:hover {

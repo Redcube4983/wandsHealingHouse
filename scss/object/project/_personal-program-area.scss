@@ -8,7 +8,7 @@
     padding: 32px;
     border: solid 1px #AED4CA;
     margin-top: 24px;
-    ul {
+    ol {
         li {
             @include fz-p;
             &:not(:last-child) {

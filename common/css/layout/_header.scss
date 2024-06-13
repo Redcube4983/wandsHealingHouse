@@ -44,11 +44,11 @@ p{
     line-height: 2;
     letter-spacing: 0;
     @media screen and (min-width:768px){
-        font-size: 1.6rem;
         letter-spacing: 1px;
     }
     @media screen and (min-width:920px){
         letter-spacing: 1px;
+        font-size: 1.6rem;
     }
 }
 .Scroll-fade　, .Scroll-top　, .Scroll-bottom　, .Scroll-right　, .Scroll-left {
@@ -677,7 +677,6 @@ header.min {
                         font-size: 1.3rem;
                         height: 100%;
                         @media screen and (min-width:920px){
-                            font-size: 13px;
                             text-align: left;
                             &:hover {
                                 color: #44796b;
