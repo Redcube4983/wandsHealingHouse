@@ -3449,6 +3449,34 @@ body.fixed {
   }
 }
 
+.box {
+  background-color: #fff;
+  padding: 32px;
+  border: solid 1px #AED4CA;
+  margin-top: 24px;
+}
+.box ul li {
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 920px) {
+  .box ul li {
+    font-size: 1.6rem;
+  }
+}
+.box ul li:not(:last-child) {
+  list-style: conic-gradient;
+  margin-left: 12px;
+}
+.box .red {
+  font-size: 1.3rem;
+  color: red;
+}
+@media screen and (min-width: 920px) {
+  .box .red {
+    font-size: 1.6rem;
+  }
+}
+
 @media screen and (min-width: 920px) {
   .price-box {
     display: -webkit-box;
@@ -3463,7 +3491,8 @@ body.fixed {
   }
 }
 .price-box .price {
-  padding: 24px 32px 0;
+  padding: 0;
+  margin-top: 24px;
   font-size: 1.3rem;
 }
 @media screen and (min-width: 920px) {
@@ -3561,18 +3590,38 @@ ul.right-img-box li:not(:first-child) {
   }
 }
 
+ul.green-back {
+  margin-top: 40px;
+}
 ul.green-back h4 {
+  font-size: 1.8rem;
   position: relative;
+  padding-top: 20px;
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+@media screen and (min-width: 920px) {
+  ul.green-back h4 {
+    font-size: 2.3rem;
+  }
 }
 ul.green-back h4::before {
   position: absolute;
   content: "";
-  background-image: url(../../../common/images/ornament02.png);
+  background-image: url(../common/images/ornament02.png);
   background-repeat: no-repeat;
-  width: 30px;
-  height: auto;
+  width: 100%;
+  height: 15px;
   top: 0;
   left: 0;
+  background-size: contain;
+}
+ul.green-back li:not(:first-child) {
+  margin-top: 24px;
+}
+@media screen and (min-width: 920px) {
+  ul.green-back li:not(:first-child) {
+    margin-top: 64px;
+  }
 }
 
 ul.black-point .point-none {
@@ -3591,22 +3640,132 @@ ul.black-point .point-none {
   }
 }
 
-#channeling-message .lead-area {
+.black-point li {
+  font-size: 1.3rem;
+  margin-top: 8px;
+  position: relative;
+  padding-left: 1.5em;
+}
+@media screen and (min-width: 920px) {
+  .black-point li {
+    font-size: 1.6rem;
+  }
+}
+.black-point li::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  top: 6px;
+  left: 0;
+  border-radius: 3vw;
+}
+.black-point p {
+  margin-top: 16px;
+}
+
+#body-therapy .lead-area {
   margin: 120px auto 0;
 }
 @media screen and (min-width: 768px) {
-  #channeling-message .lead-area {
+  #body-therapy .lead-area {
     text-align: center;
   }
 }
 @media screen and (min-width: 920px) {
-  #channeling-message .lead-area {
+  #body-therapy .lead-area {
     margin: 160px auto 120px;
     max-width: 960px;
   }
 }
-#channeling-message .contents-area {
+#body-therapy .contents-area {
   max-width: 960px;
   margin: 64px auto;
-  padding: 0 24px;
+}
+#body-therapy .comment {
+  padding: 20px 24px;
+  position: relative;
+  padding-top: 20px;
+}
+#body-therapy .comment::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background-image: url(../common/images/ornament01.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 15px;
+  top: 0;
+  left: 0;
+  background-size: contain;
+  background-position-x: right;
+  background-position-x: center;
+}
+#body-therapy .box ol {
+  margin-top: 16px;
+}
+#body-therapy .box ol li {
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 920px) {
+  #body-therapy .box ol li {
+    font-size: 1.6rem;
+  }
+}
+#body-therapy .box ol li:not(:last-child) {
+  list-style: conic-gradient;
+  margin-left: 12px;
+}
+#body-therapy .content1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
+}
+#body-therapy .content2 {
+  margin-top: 64px;
+  background-color: #fff;
+}
+#body-therapy .content2 .text-wrap {
+  padding: 32px;
+}
+#body-therapy .content2 .button02-wrap {
+  background-color: #88C4B4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: auto;
+  font-size: 1.3rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+#body-therapy .content2 .button02-wrap a.button02 {
+  padding: 4vw 10vw 4vw 4vw;
+  color: #fff;
+}
+#body-therapy .content2 .button02-wrap::after {
+  position: absolute;
+  content: "";
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  top: 51%;
+  display: block;
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 10px;
+  height: 10px;
+  right: 25px;
 }/*# sourceMappingURL=body-therapy.css.map */

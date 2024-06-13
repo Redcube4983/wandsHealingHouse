@@ -29,8 +29,8 @@ Template Name: body-therapy
                     <div class="content1">
                         <div class="img-wrap">
                             <ul class="right-img-box">
-                                <li><img src="<?php echo get_template_directory_uri(); ?>/images/body-therapy/personalProgram_img01.jpg" alt=""></li>
-                                <li><img src="<?php echo get_template_directory_uri(); ?>/images/body-therapy/personalProgram_img02.jpg" alt=""></li>
+                                <li><img src="<?php echo get_template_directory_uri(); ?>/images/body-therapy/bodyTherapy_img01.jpg" alt=""></li>
+                                <li><img src="<?php echo get_template_directory_uri(); ?>/images/body-therapy/bodyTherapy_img02.jpg" alt=""></li>
                             </ul>
                         </div>
                         <div class="text-wrap">
@@ -46,7 +46,7 @@ Template Name: body-therapy
                                 <small class="red">※下記の時間は、施術のみの時間です。</small>
                                 <div class="price-box">
                                     <div class="price">
-                                        <span>price</span>
+                                        <span>PRICE</span>
                                         <ul>
                                             <li>60分　13,000円（税込）</li>
                                             <li>90分　16,000円（税込）</li>
@@ -62,7 +62,7 @@ Template Name: body-therapy
                             <ul class="black-point">
                                 <li>その日のご体調やご希望をうかがい、オリジナルのメニューを作ります。</li>
                                 <li>チャネリングメッセージは、施術中もしくは施術後にお伝えいたします。<br>　大天使ミハエルからのコンタクトのタイミングは、毎回異なります。
-                                <li>90分・120分コースは、ご希望によって、リフトアップ フェイシャルを組み込むこともできます。<br>　当日セラピストにお申し付けください。</li>
+                                <li>90分・120分コースは、ご希望によって、リフトアップ フェイシャルを組み込むこともできます。<br>当日セラピストにお申し付けください。</li>
                             </ul>
                             <p>リフトアップ フェイシャルテラスリーを使った温熱療法とCBD製品を使ったリフトアップのためのフェイシャルタッチです。<br>セラピストの指先の感覚で表情筋をとらえてほぐし、肌を蘇らせます。終了後に鏡を見て、フェイスラインの変化に驚かれる方が多くいらっしゃいます。<br>なお、この施術にマスク（フェイシャルパック）は含まれておりませんので、ご了承ください。</p>
                         </div>

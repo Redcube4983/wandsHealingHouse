@@ -3449,6 +3449,34 @@ body.fixed {
   }
 }
 
+.box {
+  background-color: #fff;
+  padding: 32px;
+  border: solid 1px #AED4CA;
+  margin-top: 24px;
+}
+.box ul li {
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 920px) {
+  .box ul li {
+    font-size: 1.6rem;
+  }
+}
+.box ul li:not(:last-child) {
+  list-style: conic-gradient;
+  margin-left: 12px;
+}
+.box .red {
+  font-size: 1.3rem;
+  color: red;
+}
+@media screen and (min-width: 920px) {
+  .box .red {
+    font-size: 1.6rem;
+  }
+}
+
 @media screen and (min-width: 920px) {
   .price-box {
     display: -webkit-box;
@@ -3463,7 +3491,8 @@ body.fixed {
   }
 }
 .price-box .price {
-  padding: 24px 32px 0;
+  padding: 0;
+  margin-top: 24px;
   font-size: 1.3rem;
 }
 @media screen and (min-width: 920px) {
@@ -3561,18 +3590,38 @@ ul.right-img-box li:not(:first-child) {
   }
 }
 
+ul.green-back {
+  margin-top: 40px;
+}
 ul.green-back h4 {
+  font-size: 1.8rem;
   position: relative;
+  padding-top: 20px;
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+@media screen and (min-width: 920px) {
+  ul.green-back h4 {
+    font-size: 2.3rem;
+  }
 }
 ul.green-back h4::before {
   position: absolute;
   content: "";
-  background-image: url(../../../common/images/ornament02.png);
+  background-image: url(../common/images/ornament02.png);
   background-repeat: no-repeat;
-  width: 30px;
-  height: auto;
+  width: 100%;
+  height: 15px;
   top: 0;
   left: 0;
+  background-size: contain;
+}
+ul.green-back li:not(:first-child) {
+  margin-top: 24px;
+}
+@media screen and (min-width: 920px) {
+  ul.green-back li:not(:first-child) {
+    margin-top: 64px;
+  }
 }
 
 ul.black-point .point-none {
@@ -3589,6 +3638,32 @@ ul.black-point .point-none {
     padding: 64px 40px;
     margin-top: 64px;
   }
+}
+
+.black-point li {
+  font-size: 1.3rem;
+  margin-top: 8px;
+  position: relative;
+  padding-left: 1.5em;
+}
+@media screen and (min-width: 920px) {
+  .black-point li {
+    font-size: 1.6rem;
+  }
+}
+.black-point li::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  top: 6px;
+  left: 0;
+  border-radius: 3vw;
+}
+.black-point p {
+  margin-top: 16px;
 }
 
 #channeling-message .lead-area {
