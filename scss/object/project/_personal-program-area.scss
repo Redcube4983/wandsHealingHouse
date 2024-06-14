@@ -100,7 +100,14 @@
         }
     }
 }
-
+.content1 {
+    display: flex;
+    flex-flow: column-reverse;
+    @media screen and (min-width:920px){
+        flex-flow: nowrap;
+        justify-content: space-between;
+    }
+}
 ul.right-img-box {
     margin-top: 32px;
     @media screen and (min-width:920px){

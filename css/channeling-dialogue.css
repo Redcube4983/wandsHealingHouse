@@ -3576,6 +3576,25 @@ body.fixed {
   left: 0;
 }
 
+.content1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
+}
+@media screen and (min-width: 920px) {
+  .content1 {
+    -ms-flex-flow: nowrap;
+        flex-flow: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 ul.right-img-box {
   margin-top: 32px;
 }
@@ -3708,5 +3727,81 @@ ul.black-point p {
 @media screen and (min-width: 768px) {
   #channeling-dialogue .visual-lead-area {
     padding-bottom: 100px;
+  }
+}
+#channeling-dialogue .comment {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  position: relative;
+  padding-top: 20px;
+}
+#channeling-dialogue .comment::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background-image: url(../common/images/ornament01.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 15px;
+  top: 0;
+  left: 0;
+  background-size: contain;
+  background-position-x: right;
+  background-position-x: center;
+}
+@media screen and (min-width: 920px) {
+  #channeling-dialogue .comment::before {
+    background-position-x: revert;
+    left: 25px;
+  }
+}
+#channeling-dialogue .red {
+  margin-top: 12px;
+  display: block;
+}
+#channeling-dialogue .box ul {
+  list-style: disc;
+  margin-left: 12px;
+}
+#channeling-dialogue .box ul li {
+  font-size: 1.3rem;
+  margin-top: 12px;
+}
+@media screen and (min-width: 920px) {
+  #channeling-dialogue .box ul li {
+    font-size: 1.6rem;
+  }
+}
+#channeling-dialogue .price-box ul {
+  list-style: none;
+  margin-left: 0;
+}
+#channeling-dialogue .michael-comment {
+  padding: 32px;
+  background-color: #fff;
+  margin: 32px 0;
+}
+#channeling-dialogue .michael-comment b {
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 920px) {
+  #channeling-dialogue .michael-comment b {
+    font-size: 1.7rem;
+  }
+}
+#channeling-dialogue .michael-comment p {
+  margin-top: 8px;
+}
+#channeling-dialogue h5 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 32px 0;
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+@media screen and (min-width: 920px) {
+  #channeling-dialogue h5 {
+    font-size: 2rem;
+    margin: 64px 0;
   }
 }/*# sourceMappingURL=channeling-dialogue.css.map */

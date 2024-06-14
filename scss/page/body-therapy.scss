@@ -76,12 +76,6 @@
     }
     .content1 {
         @include max-width;
-        display: flex;
-        flex-flow: column-reverse;
-        @media screen and (min-width:920px){
-            flex-flow: nowrap;
-            justify-content: space-between;
-        }
     }
     .content2 {
         @include max-width;
