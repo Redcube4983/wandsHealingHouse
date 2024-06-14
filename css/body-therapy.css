@@ -3646,6 +3646,16 @@ ul.green-back li:not(:first-child) {
   }
 }
 
+.content1 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content2 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 ul.black-point .point-none {
   display: none;
 }
@@ -3771,13 +3781,7 @@ ul.black-point p {
   list-style: conic-gradient;
   margin-left: 12px;
 }
-#body-therapy .content1 {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 #body-therapy .content2 {
-  max-width: 1200px;
-  margin: 0 auto;
   margin-top: 64px;
   background-color: #fff;
 }

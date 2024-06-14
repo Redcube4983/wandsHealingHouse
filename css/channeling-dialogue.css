@@ -3646,6 +3646,16 @@ ul.green-back li:not(:first-child) {
   }
 }
 
+.content1 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content2 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 ul.black-point .point-none {
   display: none;
 }
@@ -3773,9 +3783,22 @@ ul.black-point p {
     font-size: 1.6rem;
   }
 }
+@media screen and (min-width: 920px) {
+  #channeling-dialogue .price-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
 #channeling-dialogue .price-box ul {
   list-style: none;
   margin-left: 0;
+}
+@media screen and (min-width: 920px) {
+  #channeling-dialogue .price-box .button-wrap {
+    margin: 32px 0 auto;
+  }
 }
 #channeling-dialogue .michael-comment {
   padding: 32px;

@@ -82,3 +82,8 @@
         font-size: 1.6rem;
     }
 }
+
+@mixin secondHierarchy-max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}

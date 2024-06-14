@@ -153,11 +153,13 @@ ul.green-back {
         }
     }
 }
-
+.content1 {
+    @include secondHierarchy-max-width;
+}
+.content2 {
+    @include secondHierarchy-max-width;
+}
 ul.black-point {
-    li {
-
-    }
     .point-none {
         display: none;
     }

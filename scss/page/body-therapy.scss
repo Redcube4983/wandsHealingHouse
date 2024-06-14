@@ -5,11 +5,6 @@
 @use '../object/project/personal-program-area';
 
 
-@mixin max-width {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 #body-therapy {
     background-image: url(../images/event-program/bg-object.jpg);
     background-size: 100%;
@@ -39,7 +34,7 @@
         }
     }
     .comment {
-        @include max-width;
+        @include secondHierarchy-max-width;
         padding: 20px 24px;
         position: relative;
         padding-top: 20px;
@@ -74,11 +69,7 @@
             }
         }
     }
-    .content1 {
-        @include max-width;
-    }
     .content2 {
-        @include max-width;
         margin-top: 64px;
         background-color: #fff;
         .text-wrap {
@@ -134,6 +125,6 @@
         }
     }
     .content3 {
-        @include max-width;
+        @include secondHierarchy-max-width;
     }
 }

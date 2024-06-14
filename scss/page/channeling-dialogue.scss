@@ -5,10 +5,7 @@
 @use '../object/project/personal-program-area';
 
 
-@mixin max-width {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 #channeling-dialogue {
     background-image: url(../images/event-program/bg-object.jpg);
@@ -39,7 +36,7 @@
         }
     }
     .comment {
-        @include max-width;
+        @include secondHierarchy-max-width;
         padding: 20px 24px;
         position: relative;
         padding-top: 20px;
@@ -78,9 +75,17 @@
         }
     }
     .price-box {
+        @media screen and (min-width:920px){
+            flex-flow: column;
+        }
         ul {
             list-style: none;
             margin-left: 0;
+        }
+        .button-wrap {
+            @media screen and (min-width:920px){
+                margin: 32px 0 auto;
+            }
         }
     }
     .michael-comment {
@@ -106,5 +111,5 @@
             font-size: 2rem;
             margin: 64px 0;
         }
-      }
+    }
 }
