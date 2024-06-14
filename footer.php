@@ -41,15 +41,15 @@
                             </ul>
                         </li>
                         <li class="main-navi parent">
-                            <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('event-personal') ); ?>">パーソナルプログラム</a></h3>
+                            <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('personal-program') ); ?>">パーソナルプログラム</a></h3>
                             <div><span></span></div>
                             <ul class="sab-nav">
-                            <li><span class="plus"></span><a class="sub-p" href="<?php echo esc_url( home_url('#') ); ?>">チャネリング ダイアローグ（対話）</a></li>
+                            <li><span class="plus"></span><a class="sub-p" href="<?php echo esc_url( home_url('channeling-dialogue') ); ?>">チャネリング ダイアローグ（対話）</a></li>
                                 <li class="grandchild">
-                                    <span class="plus"></span><a class="sub-p" href="<?php echo esc_url( home_url('#') ); ?>">ボディセラピー&チャネリング</a>
+                                    <span class="plus"></span><a class="sub-p" href="<?php echo esc_url( home_url('body-therapy') ); ?>">ボディセラピー&チャネリング</a>
                                     <ul>
                                         <li>
-                                            <span class="minus"></span><a class="grandchild-p" href="<?php echo esc_url( home_url('#') ); ?>">ボディリコネクションセラピー</a>
+                                            <span class="minus"></span><a class="grandchild-p" href="<?php echo esc_url( home_url('reconnection-therapy') ); ?>">ボディリコネクションセラピー</a>
                                         </li>
                                     </ul>
                                 </li>

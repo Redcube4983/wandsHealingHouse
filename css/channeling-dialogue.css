@@ -3643,18 +3643,18 @@ ul.black-point .point-none {
   }
 }
 
-.black-point li {
+ul.black-point li {
   font-size: 1.3rem;
   margin-top: 8px;
   position: relative;
   padding-left: 1.5em;
 }
 @media screen and (min-width: 920px) {
-  .black-point li {
+  ul.black-point li {
     font-size: 1.6rem;
   }
 }
-.black-point li::before {
+ul.black-point li::before {
   position: absolute;
   display: block;
   content: "";
@@ -3665,26 +3665,48 @@ ul.black-point .point-none {
   left: 0;
   border-radius: 3vw;
 }
-.black-point p {
+@media screen and (min-width: 920px) {
+  ul.black-point li:not(:first-child) {
+    margin-top: 16px;
+  }
+}
+ul.black-point p {
   margin-top: 16px;
 }
 
-#channeling-message .lead-area {
-  margin: 120px auto 0;
+#channeling-dialogue {
+  background-image: url(../images/event-program/bg-object.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: top;
+  padding-top: 150px;
 }
 @media screen and (min-width: 768px) {
-  #channeling-message .lead-area {
-    text-align: center;
+  #channeling-dialogue {
+    background-size: 80%;
+    background-position-x: right;
   }
 }
 @media screen and (min-width: 920px) {
-  #channeling-message .lead-area {
-    margin: 160px auto 120px;
-    max-width: 960px;
+  #channeling-dialogue {
+    background-size: 60%;
+    background-position-x: right;
   }
 }
-#channeling-message .contents-area {
-  max-width: 960px;
-  margin: 64px auto;
-  padding: 0 24px;
+#channeling-dialogue .sentence-link {
+  color: #73C0A5;
+  text-decoration: underline;
+}
+#channeling-dialogue .lead-area {
+  padding: 0;
+}
+#channeling-dialogue .visual-lead-area {
+  border-bottom: solid 1px #D8E8DA;
+  padding-bottom: 30px;
+  margin: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  #channeling-dialogue .visual-lead-area {
+    padding-bottom: 100px;
+  }
 }/*# sourceMappingURL=channeling-dialogue.css.map */

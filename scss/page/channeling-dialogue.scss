@@ -5,23 +5,37 @@
 @use '../object/project/personal-program-area';
 
 
+@mixin max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-#channeling-message {
+#channeling-dialogue {
+    background-image: url(../images/event-program/bg-object.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: top;
+    padding-top: 150px;
+    @media screen and (min-width:768px){
+        background-size: 80%;
+        background-position-x: right;
+    }
+    @media screen and (min-width:920px){
+        background-size: 60%;
+        background-position-x: right;
+    }
+    .sentence-link {
+        @include sentence-link();
+    }
     .lead-area {
-        margin: 120px auto 0;
+        padding: 0;
+    }
+    .visual-lead-area {
+        border-bottom: solid 1px #D8E8DA;
+        padding-bottom: 30px;
+        margin: 0 15px;
         @media screen and (min-width:768px){
-            text-align: center;
-        }
-        @media screen and (min-width:920px){
-            margin: 160px auto 120px;
-            max-width: 960px;
+            padding-bottom: 100px;
         }
     }
-    .contents-area {
-        max-width: 960px;
-        margin: 64px auto;
-        padding: 0 24px;
-    }
-
-    
 }

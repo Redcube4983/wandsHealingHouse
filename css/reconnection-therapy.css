@@ -3643,18 +3643,18 @@ ul.black-point .point-none {
   }
 }
 
-.black-point li {
+ul.black-point li {
   font-size: 1.3rem;
   margin-top: 8px;
   position: relative;
   padding-left: 1.5em;
 }
 @media screen and (min-width: 920px) {
-  .black-point li {
+  ul.black-point li {
     font-size: 1.6rem;
   }
 }
-.black-point li::before {
+ul.black-point li::before {
   position: absolute;
   display: block;
   content: "";
@@ -3665,7 +3665,12 @@ ul.black-point .point-none {
   left: 0;
   border-radius: 3vw;
 }
-.black-point p {
+@media screen and (min-width: 920px) {
+  ul.black-point li:not(:first-child) {
+    margin-top: 16px;
+  }
+}
+ul.black-point p {
   margin-top: 16px;
 }
 

@@ -109,9 +109,9 @@
                     <a class="main-navi-link" href="<?php echo esc_url( home_url('personal-program') ); ?>">パーソナルプログラム</a>
                     <div><span></span></div>
                     <ul class="sab-nav">
-                        <li><a href="#">チャネリングダイアローグ</a></li>
-                        <li><a href="#">ボディセラピー&チャネリング</a></li>
-                        <li class="sub-page-link"><a class="sp-sub-link" href="<?php echo esc_url( home_url('#') ); ?>">ボディリコネクションセラピー</a></li>
+                        <li><a href="<?php echo esc_url( home_url('channeling-dialogue') ); ?>">チャネリングダイアローグ</a></li>
+                        <li><a href="<?php echo esc_url( home_url('body-therapy') ); ?>">ボディセラピー&チャネリング</a></li>
+                        <li class="sub-page-link"><a class="sp-sub-link" href="<?php echo esc_url( home_url('reconnection-therapy') ); ?>">ボディリコネクションセラピー</a></li>
                     </ul>
                 </li>
                 <li class="main-navi parent">

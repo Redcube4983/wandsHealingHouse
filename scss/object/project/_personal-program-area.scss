@@ -165,7 +165,7 @@ ul.black-point {
     }
 }
 
-.black-point {
+ul.black-point {
     li {
         @include fz-p;
         margin-top: 8px;
@@ -181,6 +181,11 @@ ul.black-point {
             top: 6px;
             left: 0;
             border-radius: 3vw;
+          }
+          @media screen and (min-width:920px){
+            &:not(:first-child) {
+                margin-top: 16px;
+            }
           }
     }
     p {

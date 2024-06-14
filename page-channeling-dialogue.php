@@ -3,10 +3,20 @@
 Template Name: channeling-dialogue
 */
 ?>
+
+<?php get_header(); ?>
+
+
+
+<?php
+/*
+Template Name: channeling-dialogue
+*/
+?>
 <?php get_header(); ?>
 <main>
 	<div id="channeling-dialogue">
-        <div class="visual-lead-area">
+    <div class="visual-lead-area">
             <div class="lead-area">
                 <h4 class="en">Channeling Dialogue</h4>
                 <h3 class="jp">チャネリング ダイアローグ</h3>
@@ -17,8 +27,8 @@ Template Name: channeling-dialogue
         <div class="breadcrumbs-area">
             <ul class="breadcrumbs-list">
                 <li class="link"><a href="<?php echo esc_url( home_url( '/') ); ?>">トップ</a></li>
-                <li><a href="<?php echo esc_url( home_url('personal-program') ); ?>">パーソナルプログラム</a></li>
-                <li>チャネリング ダイアローグ</li>
+                <li><a href="<?php echo esc_url( home_url('about-us') ); ?>">ワンズヒーリングハウスについて</a></li>
+                <li>チャネリングについて</li>
             </ul>
         </div>
         <div class="contents-area">
@@ -114,3 +124,17 @@ Template Name: channeling-dialogue
     </div>
 </main>
 <?php get_footer(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
