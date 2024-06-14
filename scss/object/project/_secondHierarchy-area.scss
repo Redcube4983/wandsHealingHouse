@@ -159,6 +159,9 @@ ul.green-back {
 .content2 {
     @include max-width-920;
 }
+.content3 {
+    @include max-width-920;
+}
 ul.black-point {
     .point-none {
         display: none;

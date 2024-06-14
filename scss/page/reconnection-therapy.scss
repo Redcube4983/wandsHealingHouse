@@ -13,11 +13,11 @@
         }
         @media screen and (min-width:920px){
             margin: 160px auto 120px;
-            max-width: 960px;
+            @include max-width-920;
         }
     }
     .contents-area {
-        max-width: 960px;
+        @include max-width-920;
         margin: 64px auto;
         padding: 0 24px;
     }

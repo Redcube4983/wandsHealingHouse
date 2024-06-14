@@ -85,7 +85,7 @@
             
         }
         @media screen and (min-width:768px){
-            max-width: 1200px;
+            @include max-width-1200;
             margin: 0 auto;
         }
     }

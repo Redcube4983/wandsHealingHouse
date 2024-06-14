@@ -3493,6 +3493,7 @@ body.fixed {
   .wands-association-area {
     max-width: 1200px;
     margin: 0 auto;
+    margin: 0 auto;
   }
 }
 .wands-association-area img {
@@ -3591,6 +3592,7 @@ body.fixed {
 @media screen and (min-width: 768px) {
   .wands-association-area ul {
     max-width: 1200px;
+    margin: 0 auto;
     margin: 0 auto;
   }
 }
@@ -3802,6 +3804,7 @@ body.fixed {
   .wands-association-area .comment-box {
     padding: 120px;
     max-width: 1200px;
+    margin: 0 auto;
     margin: 64px auto;
   }
 }

@@ -2,7 +2,7 @@
 @use "../global" as *;
 @use "../object" as *;
 @use "../../common/css/layout" as *;
-@use '../object/project/personal-program-area';
+@use '../object/project/secondHierarchy-area';
 
 
 
@@ -10,7 +10,7 @@
 
 #personal-program {
     .contents-area {
-        max-width: 1200px;
+        @include max-width-1200;
         margin: 0 auto;
         padding: 0 20px;
     }

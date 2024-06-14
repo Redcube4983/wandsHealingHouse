@@ -3455,6 +3455,7 @@ body.fixed {
 #policy .contents-area {
   max-width: 1200px;
   margin: 0 auto;
+  margin: 0 auto;
   padding: 0 20px;
 }
 #policy .sub-description-area li {
@@ -3524,7 +3525,8 @@ ul.policy-list {
 }
 @media screen and (min-width: 920px) {
   ul.policy-list {
-    max-width: 960px;
+    max-width: 920px;
+    margin: 0 auto;
     margin: 64px auto 0;
   }
 }

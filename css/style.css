@@ -3850,6 +3850,7 @@ main {
   #event-wrap .event-program-wrap {
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
     margin: 30px auto 0;
   }
 }
@@ -4045,6 +4046,7 @@ main {
             justify-content: space-between;
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
     margin: 50px auto;
   }
 }
@@ -4120,6 +4122,7 @@ main {
 @media screen and (min-width: 768px) {
   #menu-wrap {
     max-width: 1200px;
+    margin: 0 auto;
     margin: 150px auto 0;
     padding: 0 80px;
   }

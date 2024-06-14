@@ -6,7 +6,7 @@
 
 #faq {
     .contents-area {
-        max-width: 1200px;
+        @include max-width-1200;
         margin: 0 auto;
         padding: 0 20px;
     }
@@ -26,7 +26,7 @@
 
 #faq-content {
     @media screen and (min-width:920px){
-        max-width: 960px;
+        @include max-width-920;
         margin: auto;
     }
     h3 {

@@ -3494,7 +3494,8 @@ body.fixed {
 @media screen and (min-width: 768px) {
   #event-story .story-boxes {
     margin-bottom: 30px;
-    max-width: 1210px;
+    max-width: 1200px;
+    margin: 0 auto;
     margin: 0 auto;
   }
 }
@@ -3743,7 +3744,8 @@ body.fixed {
 }
 @media screen and (min-width: 768px) {
   #event-story .check-box02 {
-    max-width: 960px;
+    max-width: 920px;
+    margin: 0 auto;
     margin: 0 auto;
     border-radius: 7vw;
   }

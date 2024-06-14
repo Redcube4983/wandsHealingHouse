@@ -39,7 +39,7 @@
 }
 .wands-association-area {
     @media screen and (min-width:920px){
-        max-width: 1200px;
+        @include max-width-1200;
         margin: 0 auto;
     }
     img {
@@ -82,7 +82,7 @@
             }
         }
         @media screen and (min-width:768px){
-            max-width: 1200px;
+            @include max-width-1200;
             margin: 0 auto;
         }
     }
@@ -208,7 +208,7 @@
         background-color: #EBFFF2;
         @media screen and (min-width:768px){
             padding: 120px;
-            max-width: 1200px;
+            @include max-width-1200;
             margin: 64px auto;
         }
         .comment {

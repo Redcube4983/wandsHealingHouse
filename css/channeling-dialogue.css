@@ -3656,6 +3656,11 @@ ul.green-back li:not(:first-child) {
   margin: 0 auto;
 }
 
+.content3 {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
 ul.black-point .point-none {
   display: none;
 }

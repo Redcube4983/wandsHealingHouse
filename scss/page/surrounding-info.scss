@@ -7,7 +7,7 @@
 
 #surrounding-info {
     .contents-area {
-        max-width: 1200px;
+        @include max-width-1200;
         margin: 0 auto;
         padding: 0 20px;
     }
@@ -42,7 +42,7 @@ ul.info-list {
             display: flex;
             justify-content: space-between;
             width: 100%;
-            max-width: 960px;
+            @include max-width-920;
             margin: 64px auto 0;
         }
         h3 {

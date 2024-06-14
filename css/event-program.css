@@ -3652,7 +3652,8 @@ body.fixed {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    max-width: 1180px;
+    max-width: 1200px;
+    margin: 0 auto;
     margin: 0 auto;
   }
 }

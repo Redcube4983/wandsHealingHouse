@@ -7,7 +7,7 @@
 
 #policy {
     .contents-area {
-        max-width: 1200px;
+        @include max-width-1200;
         margin: 0 auto;
         padding: 0 20px;
     }
@@ -29,7 +29,7 @@
 ul.policy-list {
     margin-top: 24px;
     @media screen and (min-width:920px){
-        max-width: 960px;
+        @include max-width-920;
         margin: 64px auto 0;
 
     }

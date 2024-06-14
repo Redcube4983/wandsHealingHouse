@@ -3463,11 +3463,13 @@ body.fixed {
 @media screen and (min-width: 920px) {
   #channeling-message .lead-area {
     margin: 160px auto 120px;
-    max-width: 960px;
+    max-width: 920px;
+    margin: 0 auto;
   }
 }
 #channeling-message .contents-area {
-  max-width: 960px;
+  max-width: 920px;
+  margin: 0 auto;
   margin: 64px auto;
   padding: 0 24px;
 }
