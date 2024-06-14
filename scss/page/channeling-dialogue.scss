@@ -2,7 +2,7 @@
 @use "../global" as *;
 @use "../object" as *;
 @use "../../common/css/layout" as *;
-@use '../object/project/personal-program-area';
+@use '../object/project/secondHierarchy-area';
 
 
 
@@ -36,7 +36,7 @@
         }
     }
     .comment {
-        @include secondHierarchy-max-width;
+        @include max-width-1200;
         padding: 20px 24px;
         position: relative;
         padding-top: 20px;

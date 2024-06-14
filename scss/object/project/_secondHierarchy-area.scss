@@ -154,10 +154,10 @@ ul.green-back {
     }
 }
 .content1 {
-    @include secondHierarchy-max-width;
+    @include max-width-1200;
 }
 .content2 {
-    @include secondHierarchy-max-width;
+    @include max-width-920;
 }
 ul.black-point {
     .point-none {

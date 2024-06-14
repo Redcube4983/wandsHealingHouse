@@ -2,11 +2,10 @@
 @use "../global" as *;
 @use "../object" as *;
 @use "../../common/css/layout" as *;
-@use '../object/project/personal-program-area';
 
 
 
-#channeling-message {
+#reconnection-therapy {
     .lead-area {
         margin: 120px auto 0;
         @media screen and (min-width:768px){
@@ -22,6 +21,32 @@
         margin: 64px auto;
         padding: 0 24px;
     }
-
+    ul.black-point {
+        li {
+            @include fz-p;
+            margin-top: 8px;
+            position: relative;
+            padding-left: 1.5em;
+            &::before {
+                position: absolute;
+                display: block;
+                content: "";
+                width: 10px;
+                height: 10px;
+                background-color: #000;
+                top: 6px;
+                left: 0;
+                border-radius: 3vw;
+              }
+              @media screen and (min-width:920px){
+                &:not(:first-child) {
+                    margin-top: 16px;
+                }
+              }
+        }
+        p {
+            margin-top: 16px;
+        }
+    }
     
 }

@@ -3452,238 +3452,37 @@ body.fixed {
   }
 }
 
-.box {
-  background-color: #fff;
-  padding: 32px;
-  border: solid 1px #AED4CA;
-  margin-top: 24px;
+#reconnection-therapy .lead-area {
+  margin: 120px auto 0;
 }
-.box ol li {
-  font-size: 1.3rem;
-}
-@media screen and (min-width: 920px) {
-  .box ol li {
-    font-size: 1.6rem;
-  }
-}
-.box ol li:not(:last-child) {
-  list-style: conic-gradient;
-  margin-left: 12px;
-}
-.box .red {
-  font-size: 1.3rem;
-  color: red;
-}
-@media screen and (min-width: 920px) {
-  .box .red {
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (min-width: 920px) {
-  .price-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: nowrap;
-        flex-flow: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 100%;
-  }
-}
-.price-box .price {
-  padding: 0;
-  margin-top: 24px;
-  font-size: 1.3rem;
-}
-@media screen and (min-width: 920px) {
-  .price-box .price {
-    font-size: 1.6rem;
+@media screen and (min-width: 768px) {
+  #reconnection-therapy .lead-area {
+    text-align: center;
   }
 }
 @media screen and (min-width: 920px) {
-  .price-box .price {
-    padding: 0;
-    margin-top: 32px;
+  #reconnection-therapy .lead-area {
+    margin: 160px auto 120px;
+    max-width: 960px;
   }
 }
-.price-box .price span {
-  color: #53b79d;
-  font-size: 1.3rem;
+#reconnection-therapy .contents-area {
+  max-width: 960px;
+  margin: 64px auto;
+  padding: 0 24px;
 }
-@media screen and (min-width: 920px) {
-  .price-box .price span {
-    font-size: 1.6rem;
-  }
-}
-.price-box ul li {
-  text-decoration: underline;
-  text-decoration-color: #AED4CA;
-  text-underline-offset: 8px;
-  margin-top: 12px;
-}
-
-.text-wrap h3 {
-  margin-top: 16px;
-  line-height: 1.5;
-}
-@media screen and (min-width: 920px) {
-  .text-wrap h3 {
-    margin: 0;
-  }
-}
-.text-wrap p {
-  margin-top: 8px;
-}
-
-@media screen and (min-width: 920px) {
-  .button-wrap {
-    margin: 32px;
-  }
-}
-
-@media screen and (min-width: 920px) {
-  .contents-inner .img-wrap {
-    width: 40%;
-  }
-}
-@media screen and (min-width: 920px) {
-  .contents-inner .text-wrap {
-    width: 54%;
-  }
-}
-.contents-inner h3 {
-  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
-  font-size: 23px;
-  position: relative;
-}
-@media screen and (min-width: 920px) {
-  .contents-inner h3 {
-    font-size: 28px;
-  }
-}
-.contents-inner h3::before {
-  position: absolute;
-  content: "";
-  display: block;
-  background-repeat: no-repeat;
-  background-image: url(../../../common/images/ornament01.png);
-  width: 25px;
-  height: auto;
-  top: 0;
-  left: 0;
-}
-
-.content1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-flow: column-reverse;
-          flex-flow: column-reverse;
-}
-@media screen and (min-width: 920px) {
-  .content1 {
-    -ms-flex-flow: nowrap;
-        flex-flow: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-ul.right-img-box {
-  margin-top: 32px;
-}
-@media screen and (min-width: 920px) {
-  ul.right-img-box {
-    margin: 0;
-  }
-}
-ul.right-img-box li:not(:first-child) {
-  margin-top: 12px;
-}
-@media screen and (min-width: 920px) {
-  ul.right-img-box li:not(:first-child) {
-    margin-top: 24px;
-  }
-}
-
-ul.green-back {
-  margin-top: 40px;
-}
-ul.green-back h4 {
-  font-size: 1.8rem;
-  position: relative;
-  padding-top: 20px;
-  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
-}
-@media screen and (min-width: 920px) {
-  ul.green-back h4 {
-    font-size: 2.3rem;
-  }
-}
-ul.green-back h4::before {
-  position: absolute;
-  content: "";
-  background-image: url(../common/images/ornament02.png);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 15px;
-  top: 0;
-  left: 0;
-  background-size: contain;
-}
-ul.green-back li:not(:first-child) {
-  margin-top: 24px;
-}
-@media screen and (min-width: 920px) {
-  ul.green-back li:not(:first-child) {
-    margin-top: 64px;
-  }
-}
-
-.content1 {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.content2 {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-ul.black-point .point-none {
-  display: none;
-}
-
-.bg-green {
-  background: #E2FDF6;
-  padding: 40px 32px;
-  margin-top: 32px;
-}
-@media screen and (min-width: 920px) {
-  .bg-green {
-    padding: 64px 40px;
-    margin-top: 64px;
-  }
-}
-
-ul.black-point li {
+#reconnection-therapy ul.black-point li {
   font-size: 1.3rem;
   margin-top: 8px;
   position: relative;
   padding-left: 1.5em;
 }
 @media screen and (min-width: 920px) {
-  ul.black-point li {
+  #reconnection-therapy ul.black-point li {
     font-size: 1.6rem;
   }
 }
-ul.black-point li::before {
+#reconnection-therapy ul.black-point li::before {
   position: absolute;
   display: block;
   content: "";
@@ -3695,30 +3494,10 @@ ul.black-point li::before {
   border-radius: 3vw;
 }
 @media screen and (min-width: 920px) {
-  ul.black-point li:not(:first-child) {
+  #reconnection-therapy ul.black-point li:not(:first-child) {
     margin-top: 16px;
   }
 }
-ul.black-point p {
+#reconnection-therapy ul.black-point p {
   margin-top: 16px;
-}
-
-#channeling-message .lead-area {
-  margin: 120px auto 0;
-}
-@media screen and (min-width: 768px) {
-  #channeling-message .lead-area {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 920px) {
-  #channeling-message .lead-area {
-    margin: 160px auto 120px;
-    max-width: 960px;
-  }
-}
-#channeling-message .contents-area {
-  max-width: 960px;
-  margin: 64px auto;
-  padding: 0 24px;
 }/*# sourceMappingURL=reconnection-therapy.css.map */

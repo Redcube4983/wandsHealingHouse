@@ -83,7 +83,11 @@
     }
 }
 
-@mixin secondHierarchy-max-width {
+@mixin max-width-1200 {
     max-width: 1200px;
+    margin: 0 auto;
+}
+@mixin max-width-920 {
+    max-width: 920px;
     margin: 0 auto;
 }
