@@ -3,17 +3,11 @@
 Template Name: reconnection-therapy
 */
 ?>
-<?php get_header(); ?>
 
 
-<?php
-/*
-Template Name: channeling-message
-*/
-?>
 <?php get_header(); ?>
 <main>
-	<div id="channeling-message">
+	<div id="reconnection-therapy">
         <div class="visual-lead-area">
             <div class="lead-area">
                 <h3 class="en">Body Re-connection Therapy</h3>
@@ -24,9 +18,9 @@ Template Name: channeling-message
         <div class="breadcrumbs-area">
             <ul class="breadcrumbs-list">
                 <li class="link"><a href="<?php echo esc_url( home_url( '/') ); ?>">トップ</a></li>
-                <li><a href="<?php echo esc_url( home_url('about-us') ); ?>">ワンズヒーリングハウスについて</a></li>
-                <li><a href="<?php echo esc_url( home_url('about-channeling') ); ?>">チャネリングについて</a></li>
-                <li>チャネリングメッセージの活用方法</li>
+                <li><a href="<?php echo esc_url( home_url('personal-program') ); ?>">パーソナルプログラム</a></li>
+                <li><a href="<?php echo esc_url( home_url('body-therapy') ); ?>">ボディセラピー＆チャネリング</a></li>
+                <li>ボディリコネクションセラピー</li>
             </ul>
         </div>
         <div class="contents-area">

@@ -13,8 +13,9 @@
             text-align: center;
         }
         @media screen and (min-width:920px){
-            margin: 160px auto 120px;
             @include max-width-920;
+            margin: 160px auto 120px;
+            
         }
     }
     .contents-area {
