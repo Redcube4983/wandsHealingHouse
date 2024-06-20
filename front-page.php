@@ -56,7 +56,7 @@ Template Name: front-page
                                 if($the_query->have_posts()):?>
                         <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
                         <li>
-                            <a href="#" class="content-wrap content01-wrap">
+                            <a href="<?php the_permalink(); ?>" class="content-wrap content01-wrap">
                                 <div class="event-img">
                                     <?php
                                     // プロフィールページで設定した画像を取得

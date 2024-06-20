@@ -6,6 +6,7 @@ Template Name: event-story
 <?php get_header(); ?>
 <main>
 	<div id="event-story">
+        
         <div class="visual-lead-area">
             <div class="lead-area">
                 <h4 class="en">Event Story</h4>
