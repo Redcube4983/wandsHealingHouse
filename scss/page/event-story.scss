@@ -45,9 +45,9 @@
             font-size: 2rem;
             @include ff-jp();
             line-height: 1.8;
-            margin-bottom: 20px;
-            @media screen and (min-width:768px){
-                margin-bottom: 30px;
+            margin-bottom: 8px;
+            @media screen and (min-width:920px){
+                font-size: 2.5rem;
             }
         }
         li {
@@ -55,42 +55,58 @@
                 margin-top: 50px;
             }
         } 
+        .en-ttl {
+            font-size: 1.6rem;
+        }
+        .img-wrap {
+            margin-top: 16px;
+            @media screen and (min-width:920px){
+                margin-top: 0;
+            }
+        }
+        .text-wrap {
+            margin-top: 16px;
+            @media screen and (min-width:920px){
+                margin-top: 0;
+            }
+        }
     }
     .info-wrap {
         padding-bottom: 50px;
         border-bottom: dotted 2px #D8E8DA;
-        @media screen and (min-width:768px){
+        @media screen and (min-width:920px){
             display: flex;
             flex-flow: wrap;
             justify-content: space-between;
             width: 100%;
+            margin-top: 24px;
         }
         @media screen and (min-width:920px){
         }
         .img-wrap {
-            @media screen and (min-width:768px){
+            @media screen and (min-width:920px){
                 width: 35%;
             }
         }
         .text-wrap {
-            @media screen and (min-width:768px){
+            @media screen and (min-width:920px){
                 width: 60%;
             }
         }
         p {
-            margin-top: 20px;
-            @media screen and (min-width:768px){
-                margin: 0;
+            margin-top: 12px;
+            @media screen and (min-width:920px){
             }
         }
-    }
-    .sub-info {
-        margin-top: 50px;
         h5 {
             font-size: 1.8rem;
             @include ff-jp();
             line-height: 1.8;
         }
+        
+    }
+    .sub-info {
+        margin-top: 24px;
         p {
             margin: 0;
         }
@@ -120,10 +136,6 @@
             width: 70%;
             margin: 20px 13px 10px;
             color: #3B453E;
-            @media screen and (min-width:768px){
-            }
-            @media screen and (min-width:920px){
-            }
         }
         h6 {
             font-size: 1.5rem;
@@ -181,12 +193,12 @@
         padding: 35px;
         border: solid 1px #AED4CA;
         border-radius: 20vw;
-        @media screen and (min-width:768px){
+        @media screen and (min-width:920px){
             border-radius: 15vw;
             padding: 60px;
             margin: 0 15px;
         }
-        @media screen and (min-width:768px){
+        @media screen and (min-width:920px){
             @include max-width-920;
             margin: 0 auto;
             border-radius: 7vw;
@@ -255,15 +267,12 @@
                 justify-content: space-between;
             }
             li {
-                @media screen and (min-width:768px){
-                    width: 190px;
-                }
                 @media screen and (min-width:920px){
                     width: 32%;
                 }
                 &:not(:first-child) {
                     margin-top: 10px;
-                    @media screen and (min-width:768px){
+                    @media screen and (min-width:920px){
                         margin: 0;
                     }
                 }

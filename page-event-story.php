@@ -36,7 +36,7 @@ Template Name: event-story
             <?php while ($the_query->have_posts()): $the_query->the_post();?>
             <li class="">
                     <h4><?php the_title(); ?></h4>
-
+                    <h3 class="en-ttl"><?php the_field('english-ttl'); ?></h3>
                     <div class="info-wrap">
                         <div class="img-wrap">
                         <?php
@@ -50,10 +50,10 @@ Template Name: event-story
                             }?>
                         </div>
                         <div class="text-wrap">
+                        <h5><?php the_field('sub-event-ttl'); ?></h5>
                             <p><?php the_field('detail-sentence'); ?></p>
                             <div class="about-detail-wrap">
                                 <div class="sub-info">
-                                    <h5><?php the_field('sub-event-ttl'); ?></h5>
                                     <p class=""><?php the_field('sub-event-detail'); ?></p>
                                 </div>
                                 <!-- -----------------サブ サブループ--------------------- -->

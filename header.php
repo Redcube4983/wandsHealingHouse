@@ -100,9 +100,8 @@
                     <a class="main-navi-link" href="<?php echo esc_url( home_url('event-program') ); ?>">イベントプログラム</a>
                     <div><span></span></div>
                     <ul class="sab-nav">
-                        <li><a href="#">イベント詳細ページ</a></li>
                         <li><a href="<?php echo esc_url( home_url('event-story') ); ?>">イベントストーリー</a></li>
-                        <li class="sub-page-link"><a class="sp-sub-link" href="<?php echo esc_url( home_url('#') ); ?>">イベントストーリー詳細</a></li>
+                        <li class="sub-page-link"><a class="sp-sub-link" href="<?php echo esc_url( home_url('#') ); ?>">イベントレポート</a></li>
                     </ul>
                 </li>
                 <li class="main-navi parent">

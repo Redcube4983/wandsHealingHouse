@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: archive-event-program
+Template Name: event-program
 */
 ?>
 <?php get_header(); ?>
@@ -31,6 +31,32 @@ Template Name: archive-event-program
 	</div>
 	<div class="contents-area">
 		<div class="event-article-area">
+		<?php if (have_posts()) : ?>
+		<?php while (have_posts()) : the_post(); ?>
+			<ul class="article-wrap">
+				<li>
+					<p class="img">
+					<?php
+					// プロフィールページで設定した画像を取得
+					$profileImage = get_field('event-img');
+					$size = 'large';
+					// medium, large, fullなども指定可能
+					if( $profileImage ) {
+						echo wp_get_attachment_image( $profileImage, $size );
+					}?>
+					</p>
+					<div class="right">
+						<div class="text-wrap">
+							<p class="ttl"><?php the_title(); ?></p>
+							<p class="date">12月3日(日)</p>
+							<p class="sentence"><?php the_content(); ?></p>
+						</div>
+						<div class="button-wrap"><a href="<?php the_permalink(); ?>">read more</a></div>
+					</div>
+				</li>
+			</ul>
+			<?php endwhile; ?>
+		<?php endif; ?>
 			<ul class="article-wrap">
 				<li>
 					<p class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/event-program/img01.jpg" alt=""></p>

@@ -20,9 +20,10 @@ function change_posts_per_page($query) {
        $query->set( 'posts_per_page', '12' );
        return;
   }
-  /* アーカイブページ表示件数を12件にする */
+  /* アーカイブページ表示件数を12件にする *///メインループの指定
   if ( $query->is_archive() ) {
-       $query->set( 'posts_per_page', '12' );
+       $query->set( 'posts_per_page', '12' );//件数表示
+       $query->set( 'post_type', 'event-story' );
        return;
   }
   /* カテゴリーページ表示件数を12件にする */

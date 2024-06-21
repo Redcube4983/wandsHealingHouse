@@ -3503,21 +3503,40 @@ body.fixed {
   font-size: 2rem;
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
   line-height: 1.8;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 920px) {
   #event-story .story-boxes h4 {
-    margin-bottom: 30px;
+    font-size: 2.5rem;
   }
 }
 #event-story .story-boxes li:not(:first-child) {
   margin-top: 50px;
 }
+#event-story .story-boxes .en-ttl {
+  font-size: 1.6rem;
+}
+#event-story .story-boxes .img-wrap {
+  margin-top: 16px;
+}
+@media screen and (min-width: 920px) {
+  #event-story .story-boxes .img-wrap {
+    margin-top: 0;
+  }
+}
+#event-story .story-boxes .text-wrap {
+  margin-top: 16px;
+}
+@media screen and (min-width: 920px) {
+  #event-story .story-boxes .text-wrap {
+    margin-top: 0;
+  }
+}
 #event-story .info-wrap {
   padding-bottom: 50px;
   border-bottom: dotted 2px #D8E8DA;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 920px) {
   #event-story .info-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3528,33 +3547,29 @@ body.fixed {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
+    margin-top: 24px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 920px) {
   #event-story .info-wrap .img-wrap {
     width: 35%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 920px) {
   #event-story .info-wrap .text-wrap {
     width: 60%;
   }
 }
 #event-story .info-wrap p {
-  margin-top: 20px;
+  margin-top: 12px;
 }
-@media screen and (min-width: 768px) {
-  #event-story .info-wrap p {
-    margin: 0;
-  }
-}
-#event-story .sub-info {
-  margin-top: 50px;
-}
-#event-story .sub-info h5 {
+#event-story .info-wrap h5 {
   font-size: 1.8rem;
   font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
   line-height: 1.8;
+}
+#event-story .sub-info {
+  margin-top: 24px;
 }
 #event-story .sub-info p {
   margin: 0;
@@ -3735,14 +3750,14 @@ body.fixed {
   border: solid 1px #AED4CA;
   border-radius: 20vw;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 920px) {
   #event-story .check-box02 {
     border-radius: 15vw;
     padding: 60px;
     margin: 0 15px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 920px) {
   #event-story .check-box02 {
     max-width: 920px;
     margin: 0 auto;
@@ -3835,11 +3850,6 @@ body.fixed {
             justify-content: space-between;
   }
 }
-@media screen and (min-width: 768px) {
-  #event-story .consider-event-area .img-wrap li {
-    width: 190px;
-  }
-}
 @media screen and (min-width: 920px) {
   #event-story .consider-event-area .img-wrap li {
     width: 32%;
@@ -3848,7 +3858,7 @@ body.fixed {
 #event-story .consider-event-area .img-wrap li:not(:first-child) {
   margin-top: 10px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 920px) {
   #event-story .consider-event-area .img-wrap li:not(:first-child) {
     margin: 0;
   }

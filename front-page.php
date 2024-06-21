@@ -69,7 +69,7 @@ Template Name: front-page
                                 </div>
                                 <div class="event-text-button-wrap">
                                     <div class="text-wrap">
-                                        <p><span><?php echo get_field('title'); ?></span><br><?php echo get_field('date'); ?><br><?php echo get_field('sentence'); ?></p>
+                                        <p><span><?php the_title(); ?></span><br><?php echo get_field('date'); ?><br><?php echo get_field('sentence'); ?></p>
                                     </div>
                                 </div>
                             </a>

@@ -3974,13 +3974,6 @@ main {
     width: 100%;
   }
 }
-@media screen and (min-width: 1280px) {
-  #event-wrap .contents-wrap .content-wrap {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
-  }
-}
 @media screen and (min-width: 768px) {
   #event-wrap .contents-wrap .content-wrap .event-img {
     width: 40%;

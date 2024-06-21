@@ -29,12 +29,11 @@
                             <h3><a class="main-navi-link" href="<?php echo esc_url( home_url('event-program') ); ?>">イベントプログラム</a></h3>
                             <div><span></span></div>
                             <ul class="sab-nav">
-                                <li><span class="plus"></span><a class="sub-p" href="<?php echo esc_url( home_url('#') ); ?>">イベント詳細ページ</a></li>
                                 <li class="grandchild">
                                     <span class="plus"></span><a class="sub-p" href="<?php echo esc_url( home_url('event-story') ); ?>">イベントストーリー</a>
                                     <ul>
                                         <li>
-                                            <span class="minus"></span><a class="grandchild-p" href="<?php echo esc_url( home_url('#') ); ?>">イベントストーリー詳細</a>
+                                            <span class="minus"></span><a class="grandchild-p" href="<?php echo esc_url( home_url('#') ); ?>">イベントレポート</a>
                                         </li>
                                     </ul>
                                 </li>
