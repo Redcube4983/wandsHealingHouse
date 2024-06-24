@@ -1,12 +1,3 @@
-<?php
-/*
-Template Name: channeling-dialogue
-*/
-?>
-
-<?php get_header(); ?>
-
-
 
 <?php
 /*

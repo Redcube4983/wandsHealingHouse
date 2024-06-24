@@ -52,6 +52,10 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/term-of-use.css">
     <?php elseif(is_page(array('sitemap'))) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sitemap.css">
+    
+    <?php elseif (is_single(array('event-program') ) ): ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single.css">
+    <?php elseif (is_404()) : ?>
     <?php else: ?>
     <?php endif; ?>
     <!-- jquery 3.6.1 -->

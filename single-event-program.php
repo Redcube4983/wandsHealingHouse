@@ -1,11 +1,14 @@
 <?php
 /*
-Template Name: single-event-program
+Template Name: event-program
 */
 ?>
 <?php get_header(); ?>
+
+
 <main>
-<div id="event-story">
+
+<div id="single-area">
         <div class="visual-lead-area">
             <div class="lead-area">
                 <h4 class="en">Event Story</h4>
@@ -16,7 +19,7 @@ Template Name: single-event-program
         <div class="breadcrumbs-area">
             <ul class="breadcrumbs-list">
                 <li class="link"><a href="<?php echo esc_url( home_url( '/') ); ?>">トップ</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/topics/') ); ?>">トピックス一覧</a></li>
+                <li><a href="<?php echo esc_url( home_url( '/event-program/') ); ?>">イベントプログラム</a></li>
                 <li><?php the_field('sentence'); ?></li>
             </ul>
         </div>

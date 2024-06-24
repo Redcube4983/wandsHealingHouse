@@ -31,14 +31,23 @@ Template Name: event-program
 	</div>
 	<div class="contents-area">
 		<div class="event-article-area">
-		<?php if (have_posts()) : ?>
-		<?php while (have_posts()) : the_post(); ?>
+		
 			<ul class="article-wrap">
+			<?php $args = array(
+            'post_type' => 'event-program',
+            'post_status' => 'publish',// 公開済の投稿を指定
+            'paged' => $paged, 
+            'posts_per_page' => 3// 投稿件数の指定
+            );
+            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+            $the_query = new WP_Query($args);
+            if($the_query->have_posts()):?>
+            <?php while ($the_query->have_posts()): $the_query->the_post();?>
 				<li>
 					<p class="img">
 					<?php
 					// プロフィールページで設定した画像を取得
-					$profileImage = get_field('event-img');
+					$profileImage = get_field('main-img');
 					$size = 'large';
 					// medium, large, fullなども指定可能
 					if( $profileImage ) {
@@ -47,45 +56,18 @@ Template Name: event-program
 					</p>
 					<div class="right">
 						<div class="text-wrap">
-							<p class="ttl"><?php the_title(); ?></p>
-							<p class="date">12月3日(日)</p>
-							<p class="sentence"><?php the_content(); ?></p>
+							<span class="ttl"><?php the_title(); ?></span>
+							<span class="date"><?php the_field('date'); ?></span>
+							<h3 class="sentence"><?php the_field('sentence'); ?></h3>
+							<p class="sentence2"><?php the_field('sentence2'); ?></p>
 						</div>
 						<div class="button-wrap"><a href="<?php the_permalink(); ?>">read more</a></div>
 					</div>
 				</li>
-			</ul>
-			<?php endwhile; ?>
-		<?php endif; ?>
-			<ul class="article-wrap">
-				<li>
-					<p class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/event-program/img01.jpg" alt=""></p>
-					<div class="right">
-						<div class="text-wrap">
-							<p class="ttl">お申し込み受付中</p>
-							<p class="date">12月3日(日)</p>
-							<p class="sentence"><span class="sub-ttl">第３回スターシードお茶会のご案内</span><br>
-							12月3日（日）第3回スターシードお茶会（無料）<br>@wands healing houseを行います。<br>
-							開催日時・場所 日程：12月3日（日）14:00-17:00（入退室自由：何時に来て何時に帰ってもOKです） <br>
-							場所：ワンズヒーリングハウス（東京都北区） （最寄駅・・・</p>
-						</div>
-						<div class="button-wrap"><a href="<?php echo esc_url( home_url( '/') ); ?>">read more</a></div>
-					</div>
-				</li>
-				<li>
-					<p class="img"><img src="<?php echo get_template_directory_uri(); ?>/images/event-program/img02.jpg" alt=""></p>
-					<div class="right">
-						<div class="text-wrap">
-							<p class="ttl">満席となりました</p>
-							<p class="date">12月2日(土)</p>
-							<p class="sentence"><span class="sub-ttl">第３回スターシードお茶会のご案内</span><br>
-							12月3日（日）第3回スターシードお茶会（無料）<br>@wands healing houseを行います。<br>
-							開催日時・場所 日程：12月3日（日）14:00-17:00（入退室自由：何時に来て何時に帰ってもOKです） <br>
-							場所：ワンズヒーリングハウス（東京都北区） （最寄駅・・・</p>
-						</div>
-						<div class="button-wrap"><a href="<?php echo esc_url( home_url( '/') ); ?>">read more</a></div>
-					</div>
-				</li>
+				<?php endwhile; ?>
+                <?php else: ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
 			</ul>
 		</div>
 		<div class="event-story-area">

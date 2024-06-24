@@ -49,7 +49,7 @@ Template Name: front-page
                                 'post_type' => 'event-program',
                                 'post_status' => 'publish',// 公開済の投稿を指定
                                 'paged' => $paged, 
-                                'posts_per_page' => 3// 投稿件数の指定
+                                'posts_per_page' => 2// 投稿件数の指定
                                 );
                                 $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
                                 $the_query = new WP_Query($args);
