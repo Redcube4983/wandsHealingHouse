@@ -91,7 +91,7 @@ Template Name: front-page
                             <p>終了したイベントについての報告を掲載しています。</p>
                         </div>
                         <div class="button-wrap">
-                            <a href="#" class="">read more</a>
+                            <a href="<?php echo esc_url( home_url('event-story') ); ?>" class="">read more</a>
                         </div>
                     </div>
                 </div>
@@ -105,8 +105,6 @@ Template Name: front-page
                     <span class="en-ttl">menu</span>
                     <h2 class="contents-ttl">パーソナルプログラム</h2>
                 </div>
-                
-                
 
                 <div class="content-wrap">
                     <div class="content-wrap-a">
@@ -128,7 +126,7 @@ Template Name: front-page
                                 </div>
                             </div>
                             <div class="button-wrap">
-                                <a href="#" class="button">read more</a>
+                                <a href="<?php echo esc_url( home_url('channeling-dialogue') ); ?>" class="button">read more</a>
                             </div>
                         </div>
                     </div>
@@ -152,7 +150,7 @@ Template Name: front-page
                                 </div>
                             </div>
                             <div class="button-wrap">
-                                <a href="#" class="button">read more</a>
+                                <a href="<?php echo esc_url( home_url('body-therapy') ); ?>" class="button">read more</a>
                             </div>
                         </div>
                     </div>
@@ -184,7 +182,7 @@ Template Name: front-page
                                     大天使ミハエル オフィシャルチャネラーです。</p>
                             </div>
                             <div class="button-wrap">
-                                <a href="#" class="button">read more</a>
+                                <a href="<?php echo esc_url( home_url('wands-association') ); ?>" class="button">read more</a>
                             </div>
                         </div>
                     </div>
@@ -199,7 +197,7 @@ Template Name: front-page
                                     「自分を愛すること」の大切さを教えてくれる大天使です。</p>
                             </div>
                             <div class="button-wrap">
-                                <a href="#" class="button">read more</a>
+                                <a href="<?php echo esc_url( home_url('about-channeling') ); ?>" class="button">read more</a>
                             </div>
                         </div>
                     </div>

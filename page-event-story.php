@@ -98,7 +98,7 @@ Template Name: event-story
                                 <?php endif; ?>
                                 <!-- ------------------------------------- -->
                                 <div class="button-wrap">
-                                    <a href="<?php echo esc_url( home_url( '/') ); ?>">イベントストーリー一覧はこちら</a>
+                                    <a href="<?php echo esc_url( home_url( 'event-story-report') ); ?>">レポート一覧はこちら</a>
                                 </div>
                             </div>
                         </div>
