@@ -3452,7 +3452,7 @@ body.fixed {
   }
 }
 
-#single-area {
+#event-story-report {
   background-image: url(../images/event-program/bg-object.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -3460,14 +3460,19 @@ body.fixed {
   padding-top: 150px;
 }
 @media screen and (min-width: 768px) {
-  #single-area {
+  #event-story-report {
     background-size: 80%;
     background-position-x: right;
   }
 }
 @media screen and (min-width: 920px) {
-  #single-area {
+  #event-story-report {
     background-size: 60%;
     background-position-x: right;
   }
-}/*# sourceMappingURL=story-report.css.map */
+}
+#event-story-report .contents-area {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 20px 24px;
+}/*# sourceMappingURL=event-story-report.css.map */

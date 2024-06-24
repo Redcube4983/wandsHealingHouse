@@ -1,0 +1,26 @@
+
+@use "../global" as *;
+@use "../object" as *;
+@use "../../common/css/layout" as *;
+
+
+
+
+
+#event-story-report-area {
+    .lead-area {
+        margin: 120px auto 0;
+        @media screen and (min-width:768px){
+            text-align: center;
+        }
+        @media screen and (min-width:920px){
+            @include max-width-920;
+            margin: 160px auto 120px;
+            
+        }
+    }
+    .contents-area {
+        @include max-width-920;
+        padding: 20px 24px;
+    }
+}

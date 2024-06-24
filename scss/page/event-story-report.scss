@@ -7,7 +7,7 @@
 
 
 
-#single-area {
+#event-story-report {
     background-image: url(../images/event-program/bg-object.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -21,4 +21,9 @@
         background-size: 60%;
         background-position-x: right;
     }
+    .contents-area {
+        @include max-width-920;
+        padding: 20px 24px;
+    }
 }
+

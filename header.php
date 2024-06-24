@@ -53,10 +53,12 @@
     <?php elseif(is_page(array('sitemap'))) : ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sitemap.css">
     <?php elseif(is_page(array('event-story-report'))) : ?>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/story-report.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/event-story-report.css">
     
     <?php elseif (is_singular(array('event-program') ) ): ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single.css">
+    <?php elseif (is_singular(array('event-story') ) ): ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single-event-story-report.css">
     <?php elseif (is_404()) : ?>
     <?php else: ?>
     <?php endif; ?>
@@ -107,7 +109,7 @@
                     <div><span></span></div>
                     <ul class="sab-nav">
                         <li><a href="<?php echo esc_url( home_url('event-story') ); ?>">イベントストーリー</a></li>
-                        <li class="sub-page-link"><a class="sp-sub-link" href="<?php echo esc_url( home_url('#') ); ?>">イベントレポート</a></li>
+                        <li class="sub-page-link"><a class="sp-sub-link" href="<?php echo esc_url( home_url('event-story-report') ); ?>">イベントレポート</a></li>
                     </ul>
                 </li>
                 <li class="main-navi parent">

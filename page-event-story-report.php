@@ -5,7 +5,7 @@ Template Name: event-story-report
 ?>
 <?php get_header(); ?>
 <main>
-	<div id="event-story">
+	<div id="event-story-report">
         
         <div class="visual-lead-area">
             <div class="lead-area">

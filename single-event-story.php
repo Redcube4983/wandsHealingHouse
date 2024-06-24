@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: event-program
+Template Name: event-story
 */
 ?>
 <?php get_header(); ?>
@@ -8,7 +8,7 @@ Template Name: event-program
 
 <main>
 
-<div id="single-area">
+<div id="event-story-report-area">
         <div class="visual-lead-area">
             <div class="lead-area">
                 <h4 class="en">Event Story</h4>
@@ -24,15 +24,11 @@ Template Name: event-program
             </ul>
         </div>
     </div> 
-<div id="page-visual">
-        <div class="page-visual-inner">
-        </div>
-    </div>
-    <section id="event-story-post" class="Scroll-bottom2">
+    <section id="event-story-post" class="contents-area">
     
         <?php if (have_posts()): ?>
         <?php while (have_posts()) : the_post(); ?>
-    <!--------アーティクルスペース-------->
+        <!--------アーティクルスペース-------->
 		<article>
         
             <div class="img-wrap">
