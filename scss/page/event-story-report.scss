@@ -22,7 +22,7 @@
         background-position-x: right;
     }
     .contents-area {
-        @include max-width-920;
+        @include max-width-1200;
         padding: 20px 24px;
     }
 }

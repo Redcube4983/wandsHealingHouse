@@ -90,7 +90,7 @@ Template Name: event-story
                                         }?>
                                     <div class="text-wrap">
                                         <h6><?php $title = the_title(); ?></h6>
-                                        <p><?php the_field('story-detail'); ?></p>
+                                        <p><?php the_field('report-brief'); ?></p>
                                     </div>
                                 </a>
                                 <?php endwhile; ?>

@@ -8,29 +8,29 @@ Template Name: event-story
 
 <main>
 
-<div id="event-story-report-area">
+    <div id="event-story-report">
         <div class="visual-lead-area">
             <div class="lead-area">
-                <h4 class="en">Event Story</h4>
-                <h3 class="jp">イベントストーリー</h3>
-                <p class="lead-sentence">コンプレックス（複合）型のワーズヒーリングハウスでは、定期的に多彩なイベントを企画しています。</p>
+                <h4 class="en">Report</h4>
+                <h3 class="jp">レポート</h3>
+                <!-- <p class="lead-sentence">コンプレックス（複合）型のワーズヒーリングハウスでは、定期的に多彩なイベントを企画しています。</p> -->
             </div>
         </div>
         <div class="breadcrumbs-area">
             <ul class="breadcrumbs-list">
                 <li class="link"><a href="<?php echo esc_url( home_url( '/') ); ?>">トップ</a></li>
-                <li><a href="<?php echo esc_url( home_url( '/event-program/') ); ?>">イベントプログラム</a></li>
-                <li><?php the_field('sentence'); ?></li>
+                <li><a href="<?php echo esc_url( home_url( 'event-story') ); ?>">イベントストーリー</a></li>
+                <li><?php the_title(); ?></li>
             </ul>
         </div>
     </div> 
-    <section id="event-story-post" class="contents-area">
+    <section id="event-story-report-inner" class="contents-area">
     
         <?php if (have_posts()): ?>
         <?php while (have_posts()) : the_post(); ?>
         <!--------アーティクルスペース-------->
 		<article>
-        
+        <h1 class=""><?php the_title(); ?></h1>
             <div class="img-wrap">
                 <?php
                 // プロフィールページで設定した画像を取得
@@ -42,8 +42,7 @@ Template Name: event-story
                 }?>
             </div>
             <div class="text-wrap">
-            <h1 class="single-title"><?php the_title(); ?></h1>
-            <span class="date"><?php the_field('story-detail'); ?></span>
+            <span class="date"><?php the_field('report-detail'); ?></span>
             </div>
 			
 		</article>
