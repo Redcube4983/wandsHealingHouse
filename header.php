@@ -56,7 +56,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/event-story-report.css">
     
     <?php elseif (is_singular(array('event-program') ) ): ?>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single-program.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single-event-program.css">
     <?php elseif (is_singular(array('event-story') ) ): ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/single-event-story-report.css">
     <?php elseif (is_404()) : ?>
