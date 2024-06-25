@@ -7,7 +7,6 @@ Template Name: event-program
 
 
 <main>
-
     <div id="single-area">
         <div class="visual-lead-area">
             <div class="lead-area">
@@ -23,41 +22,42 @@ Template Name: event-program
                 <li><?php the_field('sentence'); ?></li>
             </ul>
         </div>
-    </div> 
-    <div id="page-visual">
-        <div class="page-visual-inner">
-        </div>
-    </div>
-    <section id="" class="contents-area">
     
-        <?php if (have_posts()): ?>
-        <?php while (have_posts()) : the_post(); ?>
-    <!--------アーティクルスペース-------->
-		<article>
+        <div id="page-visual">
+            <div class="page-visual-inner">
+            </div>
+        </div>
+        <section id="" class="contents-area">
         
-            <div class="img-wrap">
-                <?php
-                // プロフィールページで設定した画像を取得
-                $profileImage = get_field('main-img');
-                $size = 'large';
-                // medium, large, fullなども指定可能
-                if( $profileImage ) {
-                    echo wp_get_attachment_image( $profileImage, $size );
-                }?>
-            </div>
-            <div class="text-wrap">
-            <h1 class="single-title"><?php the_title(); ?></h1>
-            <span class="date"><?php the_field('date'); ?></span>
-            <h3 class="sub-ttl"><?php the_field('sentence'); ?></h3>
-            <p><?php the_field('sentence2'); ?></p>
-            </div>
-			
-		</article>
-        <?php endwhile; ?>
-        <?php else: ?>
-        <!-- 投稿が無い場合の処理 -->
-        <?php endif; ?>
-    </section>
+            <?php if (have_posts()): ?>
+            <?php while (have_posts()) : the_post(); ?>
+            <!--------アーティクルスペース-------->
+            <article>
+            
+                <div class="img-wrap">
+                    <?php
+                    // プロフィールページで設定した画像を取得
+                    $profileImage = get_field('main-img');
+                    $size = 'large';
+                    // medium, large, fullなども指定可能
+                    if( $profileImage ) {
+                        echo wp_get_attachment_image( $profileImage, $size );
+                    }?>
+                </div>
+                <div class="text-wrap">
+                <h1 class="single-title"><?php the_title(); ?></h1>
+                <span class="date"><?php the_field('date'); ?></span>
+                <h3 class="sub-ttl"><?php the_field('sentence'); ?></h3>
+                <p><?php the_field('sentence2'); ?></p>
+                </div>
+                
+            </article>
+            <?php endwhile; ?>
+            <?php else: ?>
+            <!-- 投稿が無い場合の処理 -->
+            <?php endif; ?>
+        </section>
+    </div> 
 </main>
 <?php get_footer(); ?>
 
