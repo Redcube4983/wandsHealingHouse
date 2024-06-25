@@ -3463,14 +3463,6 @@ body.fixed {
     width: 100%;
   }
 }
-#single-area .contents-area h1 {
-  font-size: 1.6rem;
-}
-@media screen and (min-width: 920px) {
-  #single-area .contents-area h1 {
-    font-size: 1.8rem;
-  }
-}
 #single-area .contents-area .img-wrap {
   margin-top: 18px;
 }
@@ -3516,4 +3508,13 @@ body.fixed {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 24px;
+}
+#event-story-report h2 {
+  margin-top: 32px;
+}
+#event-story-report ul {
+  margin-top: 32px;
+}
+#event-story-report ul li {
+  margin-top: 24px;
 }/*# sourceMappingURL=event-story-report.css.map */

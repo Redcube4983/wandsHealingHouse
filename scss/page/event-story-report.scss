@@ -25,5 +25,15 @@
         @include max-width-1200;
         padding: 20px 24px;
     }
+    h2 {
+        margin-top: 32px;
+    }
+    ul {
+        margin-top: 32px;
+        li {
+            margin-top: 24px;
+        }
+    }
+    
 }
 
