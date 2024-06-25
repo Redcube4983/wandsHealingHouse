@@ -5,4 +5,18 @@
 .contents-area {
     @include max-width-920;
     padding: 20px 24px;
+    margin-top: 48px;
+    h1 {
+        font-size: 1.6rem;
+        @media screen and (min-width:920px){
+            font-size: 1.8rem;
+        }
+    }
+    .img-wrap {
+        margin-top: 18px;
+    }
+    .text-wrap {
+        margin-top: 18px;
+        @include fz-p;
+    }
 }

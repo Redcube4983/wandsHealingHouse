@@ -3456,6 +3456,27 @@ body.fixed {
   max-width: 920px;
   margin: 0 auto;
   padding: 20px 24px;
+  margin-top: 48px;
+}
+.contents-area h1 {
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 920px) {
+  .contents-area h1 {
+    font-size: 1.8rem;
+  }
+}
+.contents-area .img-wrap {
+  margin-top: 18px;
+}
+.contents-area .text-wrap {
+  margin-top: 18px;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 920px) {
+  .contents-area .text-wrap {
+    font-size: 1.6rem;
+  }
 }
 
 #faq .contents-area {
