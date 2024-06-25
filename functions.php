@@ -1,5 +1,6 @@
 <?php
-
+	
+  remove_filter ('acf_the_content', 'wpautop');
 /* メインクエリの表示を置き換える */
 function change_posts_per_page($query) {
   /* 管理画面,メインクエリに干渉しないために必須 */
@@ -73,3 +74,5 @@ function mvwpform_autop_filter() {
   }
 }
 mvwpform_autop_filter();
+
+

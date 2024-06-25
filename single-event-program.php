@@ -32,6 +32,13 @@ Template Name: event-program
             <?php if (have_posts()): ?>
             <?php while (have_posts()) : the_post(); ?>
             <!--------アーティクルスペース-------->
+                
+                <div class="text-wrap">
+                    <h1 class="single-title"><?php the_title(); ?></h1>
+                    <span class="date"><?php the_field('date'); ?></span>
+                    <h3 class="sub-ttl"><?php the_field('sentence'); ?></h3>
+                    <p><?php the_field('sentence2'); ?></p>
+                </div>
                 <div class="img-wrap">
                     <?php
                     // プロフィールページで設定した画像を取得
@@ -41,12 +48,6 @@ Template Name: event-program
                     if( $profileImage ) {
                         echo wp_get_attachment_image( $profileImage, $size );
                     }?>
-                </div>
-                <div class="text-wrap">
-                <h1 class="single-title"><?php the_title(); ?></h1>
-                <span class="date"><?php the_field('date'); ?></span>
-                <h3 class="sub-ttl"><?php the_field('sentence'); ?></h3>
-                <p><?php the_field('sentence2'); ?></p>
                 </div>
                 
             <?php endwhile; ?>

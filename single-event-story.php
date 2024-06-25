@@ -30,6 +30,10 @@ Template Name: event-story
         <?php while (have_posts()) : the_post(); ?>
         <!--------アーティクルスペース-------->
 		<article>
+            <div class="text-wrap">
+                <h1 class=""><?php the_title(); ?></h1>
+                <p class="report-sentence"><?php the_field('report-detail'); ?></p>
+            </div>
             <div class="img-wrap">
                 <?php
                 // プロフィールページで設定した画像を取得
@@ -40,11 +44,6 @@ Template Name: event-story
                     echo wp_get_attachment_image( $profileImage, $size );
                 }?>
             </div>
-            <div class="text-wrap">
-            <h1 class=""><?php the_title(); ?></h1>
-            <span class="date"><?php the_field('report-detail'); ?></span>
-            </div>
-			
 		</article>
         <?php endwhile; ?>
         <?php else: ?>

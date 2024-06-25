@@ -3453,21 +3453,13 @@ body.fixed {
 }
 
 #single-area .contents-area {
-  max-width: 1200px;
+  max-width: 920px;
   margin: 0 auto;
   padding: 20px 24px;
   margin-top: 48px;
 }
 @media screen and (min-width: 920px) {
   #single-area .contents-area {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: nowrap;
-        flex-flow: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     width: 100%;
   }
 }
@@ -3479,13 +3471,15 @@ body.fixed {
     font-size: 1.8rem;
   }
 }
+#single-area .contents-area .img-wrap {
+  margin-top: 18px;
+}
 @media screen and (min-width: 920px) {
   #single-area .contents-area .img-wrap {
-    width: 40%;
+    width: 60%;
   }
 }
 #single-area .contents-area .text-wrap {
-  margin-top: 18px;
   font-size: 1.3rem;
 }
 @media screen and (min-width: 920px) {
@@ -3495,7 +3489,7 @@ body.fixed {
 }
 @media screen and (min-width: 920px) {
   #single-area .contents-area .text-wrap {
-    width: 58%;
+    margin: 0;
   }
 }
 
@@ -3512,5 +3506,21 @@ body.fixed {
     max-width: 920px;
     margin: 0 auto;
     margin: 160px auto 120px;
+  }
+}
+.event-story-report h1 {
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 920px) {
+  .event-story-report h1 {
+    font-size: 2rem;
+  }
+}
+.event-story-report .report-sentence {
+  margin-top: 8px;
+}
+@media screen and (min-width: 920px) {
+  .event-story-report .report-sentence {
+    margin-top: 12px;
   }
 }/*# sourceMappingURL=single-event-story-report.css.map */
