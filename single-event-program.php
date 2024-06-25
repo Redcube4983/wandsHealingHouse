@@ -8,7 +8,7 @@ Template Name: event-program
 
 <main>
 
-<div id="single-area">
+    <div id="single-area">
         <div class="visual-lead-area">
             <div class="lead-area">
                 <h4 class="en">Event Story</h4>
@@ -24,11 +24,11 @@ Template Name: event-program
             </ul>
         </div>
     </div> 
-<div id="page-visual">
+    <div id="page-visual">
         <div class="page-visual-inner">
         </div>
     </div>
-    <section id="event-news" class="Scroll-bottom2">
+    <section id="" class="contents-area">
     
         <?php if (have_posts()): ?>
         <?php while (have_posts()) : the_post(); ?>

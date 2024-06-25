@@ -1,0 +1,8 @@
+@use "../../../scss/global" as *;
+@use "../../../common/css/layout" as *;
+
+
+.contents-area {
+    @include max-width-1200;
+    padding: 20px 24px;
+}

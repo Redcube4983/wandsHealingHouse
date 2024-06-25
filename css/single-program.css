@@ -3452,6 +3452,12 @@ body.fixed {
   }
 }
 
+.contents-area {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px;
+}
+
 #single-area {
   background-image: url(../images/event-program/bg-object.jpg);
   background-size: 100%;
@@ -3470,4 +3476,4 @@ body.fixed {
     background-size: 60%;
     background-position-x: right;
   }
-}/*# sourceMappingURL=single.css.map */
+}/*# sourceMappingURL=single-program.css.map */
