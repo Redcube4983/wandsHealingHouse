@@ -11,8 +11,8 @@ Template Name: event-program
         <div class="visual-lead-area">
             <div class="lead-area">
                 <h4 class="en">Event Story</h4>
-                <h3 class="jp">イベントストーリー</h3>
-                <p class="lead-sentence">コンプレックス（複合）型のワーズヒーリングハウスでは、定期的に多彩なイベントを企画しています。</p>
+                <h3 class="jp">イベントプログラム詳細</h3>
+                <!-- <p class="lead-sentence">コンプレックス（複合）型のワーズヒーリングハウスでは、定期的に多彩なイベントを企画しています。</p> -->
             </div>
         </div>
         <div class="breadcrumbs-area">
@@ -27,13 +27,11 @@ Template Name: event-program
             <div class="page-visual-inner">
             </div>
         </div>
-        <section id="" class="contents-area">
+        <article id="" class="contents-area">
         
             <?php if (have_posts()): ?>
             <?php while (have_posts()) : the_post(); ?>
             <!--------アーティクルスペース-------->
-            <article>
-            
                 <div class="img-wrap">
                     <?php
                     // プロフィールページで設定した画像を取得
@@ -51,12 +49,11 @@ Template Name: event-program
                 <p><?php the_field('sentence2'); ?></p>
                 </div>
                 
-            </article>
             <?php endwhile; ?>
             <?php else: ?>
             <!-- 投稿が無い場合の処理 -->
             <?php endif; ?>
-        </section>
+        </article>
     </div> 
 </main>
 <?php get_footer(); ?>

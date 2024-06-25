@@ -8,7 +8,7 @@ Template Name: event-story
 
 <main>
 
-    <div id="event-story-report">
+    <div id="single-area" class="event-story-report">
         <div class="visual-lead-area">
             <div class="lead-area">
                 <h4 class="en">Report</h4>
@@ -23,14 +23,13 @@ Template Name: event-story
                 <li><?php the_title(); ?></li>
             </ul>
         </div>
-    </div> 
-    <section id="event-story-report-inner" class="contents-area">
+    
+    <article id="" class="contents-area">
     
         <?php if (have_posts()): ?>
         <?php while (have_posts()) : the_post(); ?>
         <!--------アーティクルスペース-------->
 		<article>
-        <h1 class=""><?php the_title(); ?></h1>
             <div class="img-wrap">
                 <?php
                 // プロフィールページで設定した画像を取得
@@ -42,6 +41,7 @@ Template Name: event-story
                 }?>
             </div>
             <div class="text-wrap">
+            <h1 class=""><?php the_title(); ?></h1>
             <span class="date"><?php the_field('report-detail'); ?></span>
             </div>
 			
@@ -50,7 +50,8 @@ Template Name: event-story
         <?php else: ?>
         <!-- 投稿が無い場合の処理 -->
         <?php endif; ?>
-    </section>
+    </article>
+    </div> 
 </main>
 <?php get_footer(); ?>
 
