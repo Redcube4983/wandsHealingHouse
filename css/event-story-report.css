@@ -3509,12 +3509,100 @@ body.fixed {
   margin: 0 auto;
   padding: 20px 24px;
 }
-#event-story-report h2 {
+#event-story-report .contents-area ul {
   margin-top: 32px;
 }
-#event-story-report ul {
-  margin-top: 32px;
+@media screen and (min-width: 920px) {
+  #event-story-report .contents-area ul .category-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-flow: nowrap;
+        flex-flow: nowrap;
+  }
 }
-#event-story-report ul li {
+#event-story-report .contents-area ul li {
   margin-top: 24px;
+}
+@media screen and (min-width: 920px) {
+  #event-story-report .contents-area ul li {
+    margin-top: 48px;
+  }
+}
+#event-story-report .contents-area ul li a {
+  -webkit-box-shadow: 0 0 8px #d8dddb;
+          box-shadow: 0 0 8px #d8dddb;
+  display: block;
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#event-story-report .contents-area ul li a:hover {
+  -webkit-box-shadow: 0 0 13px #c0c6c4;
+          box-shadow: 0 0 13px #c0c6c4;
+}
+#event-story-report .contents-area ul li h3 {
+  font-size: 1.6rem;
+  text-decoration: underline;
+  color: #000;
+}
+@media screen and (min-width: 920px) {
+  #event-story-report .contents-area ul li h3 {
+    font-size: 2rem;
+  }
+}
+#event-story-report .contents-area ul li .img-wrap {
+  margin-top: 12px;
+}
+@media screen and (min-width: 920px) {
+  #event-story-report .contents-area ul li .img-wrap {
+    margin: 0;
+    width: 35%;
+  }
+}
+#event-story-report .contents-area ul li .text-wrap {
+  margin-top: 12px;
+  color: #000;
+}
+@media screen and (min-width: 920px) {
+  #event-story-report .contents-area ul li .text-wrap {
+    margin: 0;
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 5%;
+  }
+}
+#event-story-report .contents-area ul li .text-wrap p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+@media screen and (min-width: 920px) {
+  #event-story-report .contents-area ul li .text-wrap p {
+    margin: 0;
+  }
+}
+#event-story-report h2 {
+  font-size: 2rem;
+  font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+  line-height: 1;
+}
+@media screen and (min-width: 920px) {
+  #event-story-report h2 {
+    font-size: 2.3rem;
+    margin-top: 64px;
+  }
 }/*# sourceMappingURL=event-story-report.css.map */

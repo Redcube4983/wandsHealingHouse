@@ -11,7 +11,8 @@ Template Name: event-story
             <div class="lead-area">
                 <h4 class="en">Event Story</h4>
                 <h3 class="jp">イベントストーリー</h3>
-                <p class="lead-sentence">コンプレックス（複合）型のワーズヒーリングハウスでは、定期的に多彩なイベントを企画しています。</p>
+                <p class="lead-sentence">コンプレックス（複合）型のワンズヒーリングハウスは、多彩なイベントを企画・運営しております。<br>
+チャネラー・ミハエルノブコと、パートナーの藤原シュウ（ツインレイ）による共同作業により、皆様へ癒しのプログラムをご提供いたします。</p>
             </div>
         </div>
         <div class="breadcrumbs-area">
@@ -118,7 +119,7 @@ Template Name: event-story
             </div>
             <div class="check-box02">
                 <p class="ttl">イベントで行う「チャネリング体験」について</p>
-                <p class="sent">コラボレーションイベントでの「チャネリング体験」では、ゲストのエネルギーをミハエルが感知し、その方に向けたメッセージを個別にお届けいたします（約5分前後）。またご家族やお仕事、恋愛などに関するご相談がございましたら、ミハエルとの深い対話を楽しむために、<a class="sentence-link" href="<?php echo esc_url( home_url( '/') ); ?>">チャネリング ダイアローグ（45分の個人セッション）</a>のご予約をお勧めいたします。どうぞお気軽にお問い合わせください。</p>
+                <p class="sent">コラボレーションイベントでの「チャネリング体験」では、ゲストのエネルギーをミハエルが感知し、その方に向けたメッセージを個別にお届けいたします（約5分前後）。またご家族やお仕事、恋愛などに関するご相談がございましたら、ミハエルとの深い対話を楽しむために、<a class="sentence-link" href="<?php echo esc_url( home_url( 'channeling-dialogue') ); ?>">チャネリング ダイアローグ（45分の個人セッション）</a>のご予約をお勧めいたします。どうぞお気軽にお問い合わせください。</p>
             </div>
             <div class="consider-event-area">
                 <div class="wrap">

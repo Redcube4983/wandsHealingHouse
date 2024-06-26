@@ -109,7 +109,7 @@
                     <div><span></span></div>
                     <ul class="sab-nav">
                         <li><a href="<?php echo esc_url( home_url('event-story') ); ?>">イベントストーリー</a></li>
-                        <li class="sub-page-link"><a class="sp-sub-link" href="<?php echo esc_url( home_url('event-story-report') ); ?>">イベントレポート</a></li>
+                        <li class="sub-page-link"><a class="sp-sub-link" href="<?php echo esc_url( home_url('event-story-report') ); ?>">イベントレポート一覧</a></li>
                     </ul>
                 </li>
                 <li class="main-navi parent">

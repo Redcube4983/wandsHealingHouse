@@ -33,7 +33,7 @@
                                     <span class="plus"></span><a class="sub-p" href="<?php echo esc_url( home_url('event-story') ); ?>">イベントストーリー</a>
                                     <ul>
                                         <li>
-                                            <span class="minus"></span><a class="grandchild-p" href="<?php echo esc_url( home_url('#') ); ?>">イベントレポート</a>
+                                            <span class="minus"></span><a class="grandchild-p" href="<?php echo esc_url( home_url('#') ); ?>">イベントレポート一覧</a>
                                         </li>
                                     </ul>
                                 </li>

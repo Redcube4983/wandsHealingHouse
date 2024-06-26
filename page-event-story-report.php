@@ -9,7 +9,7 @@ Template Name: event-story-report
         
         <div class="visual-lead-area">
             <div class="lead-area">
-                <h4 class="en">Event Story</h4>
+                <h4 class="en">Report List</h4>
                 <h3 class="jp">レポート一覧</h3>
                 <!-- <p class="lead-sentence">コンプレックス（複合）型のワーズヒーリングハウスでは、定期的に多なイベントを企画しています。</p> -->
             </div>
@@ -51,7 +51,6 @@ Template Name: event-story-report
                 <li>
                     <a href="<?php the_permalink(); ?>">
                         <div class="category-wrap">
-                            <h3><?php $title = the_title(); ?></h3>
                             <div class="img-wrap">
                                     <?php
                                     // プロフィールページで設定した画像を取得
@@ -63,6 +62,7 @@ Template Name: event-story-report
                                     }?>
                                 </div>
                                 <div class="text-wrap">
+                                <h3><?php $title = the_title(); ?></h3>
                                 <p><?php the_field('story-detail'); ?></p>
                             </div>
                         </div>

@@ -42,6 +42,8 @@
                 }
                 .text-wrap {
                     margin-top: 20px;
+                    display: flex;
+                    flex-flow: column;
                     .ttl {
                         font-size: 1.5rem;
                         @include ff-jp();
@@ -73,7 +75,7 @@
                             }
                         }
                     }
-                    .sentence2 {
+                    p {
                         overflow: hidden;
                         display: -webkit-box;
                         -webkit-box-orient: vertical;
