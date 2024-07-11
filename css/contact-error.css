@@ -3678,4 +3678,11 @@ body.fixed {
   #error {
     margin-top: 32px;
   }
+}
+#error span {
+  font-size: 1.3rem;
+}
+
+.p-form span.error {
+  font-size: 1.3rem;
 }/*# sourceMappingURL=contact-error.css.map */

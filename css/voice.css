@@ -3553,56 +3553,98 @@ body.fixed {
   }
 }
 
-.voice-list .button {
+ul.voice-list li {
+  margin-top: 24px;
+}
+ul.voice-list li:nth-child(1n) .box {
+  border: solid 1.5px #AED4CA;
+}
+ul.voice-list li:nth-child(1n) .name {
+  background-color: #AED4CA;
+}
+ul.voice-list li:nth-child(2n) .box {
+  border: solid 1.5px #ECBAD4;
+}
+ul.voice-list li:nth-child(2n) .name {
+  background-color: #ECBAD4;
+}
+@media screen and (min-width: 920px) {
+  ul.voice-list li:nth-child(2n) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+  }
+}
+ul.voice-list li:nth-child(3n) .box {
+  border: solid 1.5px #FDBF8A;
+}
+ul.voice-list li:nth-child(3n) .name {
+  background-color: #FDBF8A;
+}
+@media screen and (min-width: 920px) {
+  ul.voice-list li {
+    margin-top: 48px;
+  }
+}
+ul.voice-list .button {
   text-decoration: none;
   border: none;
   background-color: inherit;
   width: 25vw;
   height: 8vw;
 }
-.voice-list .box {
+ul.voice-list .box {
   position: relative;
   padding: 16px;
-  border: solid 1.5px #AED4CA;
-  border-radius: 10vw;
+  border-radius: 35px;
 }
 @media screen and (min-width: 920px) {
-  .voice-list .box {
+  ul.voice-list .box {
     padding: 32px;
+    width: 80%;
   }
 }
-.voice-list .box .name {
+ul.voice-list .box .name {
   position: absolute;
   left: 0;
   top: 0;
   color: #fff;
   font-size: 1.3rem;
-  background-color: #AED4CA;
   padding: 16px 24px;
-  border-radius: 9vw 0;
+  border-radius: 34px 0;
 }
 @media screen and (min-width: 920px) {
-  .voice-list .box .name {
+  ul.voice-list .box .name {
     font-size: 1.6rem;
   }
 }
-.voice-list .box .ttl {
+ul.voice-list .box .ttl {
   font-size: 1.4rem;
   font-weight: bold;
   margin-top: 40px;
 }
 @media screen and (min-width: 920px) {
-  .voice-list .box .ttl {
+  ul.voice-list .box .ttl {
     font-size: 1.8rem;
   }
 }
-.voice-list .box .button-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+ul.voice-list .box button {
+  width: 100%;
+  background-color: inherit;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5vw;
+  margin: 16px 0 0 auto;
+  width: 200px;
+  height: 44px;
+}
+ul.voice-list .box a {
+  text-decoration: underline;
+  color: #289DC1;
 }
 
 .txt-hide {
@@ -3624,12 +3666,20 @@ button.more {
 }
 
 button.more::after {
-  content: "もっと見る";
+  content: "read more";
   -webkit-transition: 0.2s;
   transition: 0.2s;
   -erbkit-transition: 0.2s;
 }
 
 button.more.on-click::after {
-  content: "閉じる";
+  content: "close";
+}
+
+.more {
+  display: none;
+}
+
+button {
+  display: block;
 }/*# sourceMappingURL=voice.css.map */

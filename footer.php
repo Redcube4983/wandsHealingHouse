@@ -1,6 +1,6 @@
 <footer>
     <section class="contact-button-wrap">
-        <a href="#" class="button"><span>contact</span><br><h3>ご予約・お問い合わせはこちら</h3></a>
+        <a href="<?php echo esc_url( home_url('contact') ); ?>" class="button"><span>contact</span><br><h3>ご予約・お問い合わせはこちら</h3></a>
     </section>
     <div class="footer-wrap">
         <div class="footer-flbox">
@@ -131,7 +131,7 @@
     </script>
 <!-- 共通js -->
 <script src="<?php echo get_template_directory_uri(); ?>/common/js/common.js"></script>
-<?php if( is_page(array('faq','voice'))): ?>
+<?php if( is_page(array('faq'))): ?>
     <script>
      $(function(){
     		//クリックで動く
@@ -141,6 +141,52 @@
     		});
     	});
     </script>
+<?php endif; ?>
+<?php if( is_page(array('voice'))): ?>
+<script>
+(function () {
+  const textCropLength = 100
+
+  document.querySelectorAll('.js-cropText').forEach( (el) => {
+      const text = el.innerHTML
+
+      // 文字数がtextCropLength以下なら何もしない
+      if ( text.length <= textCropLength ) return true
+
+      // 文字を分割する
+      const text1 = text.substr(0, textCropLength)
+      const text2 = text.substr(textCropLength)
+      let html = '<span>' + text1 + '</span>'
+      html += '<span class="more">' + text2 + '</span>'
+      html += '<span class="dot">…</span>'
+      el.innerHTML = html
+
+      // もっと見るのボタンを作成
+      const showMore = document.createElement('button')
+      const showMoreText = document.createTextNode('read more')
+      showMore.appendChild(showMoreText)
+      
+
+      // もっと見るのボタンに対してイベントを設定
+      // 閉じている場合は開く・開いている場合は閉じる
+      showMore.addEventListener('click', function(ev) {
+          const self = ev.target
+          const state = self.innerHTML === 'read more' ? 'close' : 'open'
+
+          if ( state === 'close' ) {
+              self.innerHTML = 'close'
+              self.parentNode.querySelector('.more').style.display = 'inline'
+              self.parentNode.querySelector('.dot').style.display = 'none'
+          } else {
+              self.innerHTML = 'read more'
+              self.parentNode.querySelector('.more').style.display = 'none'
+              self.parentNode.querySelector('.dot').style.display = 'inline'
+          }
+      })
+      el.appendChild(showMore)
+  })
+}())
+</script>
 <?php endif; ?>
 <?php wp_footer(); ?>
 </body>
