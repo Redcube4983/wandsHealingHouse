@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="format-detection" content="telephone=no,address=no,email=no">
-    <link rel="icon" type="image/x-icon" href="">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/common/images/icon.png">
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/swiper-bundle.min.css">

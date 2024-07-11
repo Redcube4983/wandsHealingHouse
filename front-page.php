@@ -41,7 +41,7 @@ Template Name: front-page
                             ワークショップを開催しています。<br>
                             お気軽にご参加ください。</p>
                         <div class="button-wrap">
-                            <a href="<?php echo esc_url( home_url( 'event-program') ); ?>" class="button">read more</a>
+                            <a href="<?php echo esc_url( home_url('event-program') ); ?>" class="button">read more</a>
                         </div>
                     </div>
                     <ul class="contents-wrap">
