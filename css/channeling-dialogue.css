@@ -3865,4 +3865,10 @@ ul.black-point p {
     font-size: 2rem;
     margin: 64px 0;
   }
+}
+
+#donation {
+  display: block;
+  padding-top: 80px;
+  margin-top: -80px;
 }/*# sourceMappingURL=channeling-dialogue.css.map */

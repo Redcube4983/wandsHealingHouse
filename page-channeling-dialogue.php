@@ -51,7 +51,7 @@ Template Name: channeling-dialogue
                                     <div class="price">
                                         <span>PRICE</span>
                                         <ul>
-                                            <li>5,000円以上の<a href="<?php echo esc_url( home_url('#') ); ?>">ドネーション</a>（寄付・支援金）制</li>
+                                            <li>5,000円以上の<a href="#donation">ドネーション</a>（寄付・支援金）制</li>
                                         </ul>
                                     </div>
                                     <div class="button-wrap">
@@ -97,7 +97,7 @@ Template Name: channeling-dialogue
                                 </div>
                             </li>
                             <li>
-                                <div class="">
+                                <div id="donation">
                                     <h4>ドネーションについて</h4>
                                     <p>ワンズヒーリングハウスのすべての活動は、社会貢献の一環と考えています。<br>チャネリングダイアローグ（対話）個人セッションおよびミハエルのオープンチャネリング ダイアローグ (カフェスタイル)においては、ドネーション制（支援金）といたしております。ミハエルからのガイダンスを受けて、このような形式といたしました。</p>
                                 </div>
